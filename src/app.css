@@ -1,0 +1,43 @@
+
+/*
+
+ 	Page Default Styles
+ 	
+*/
+
+.page-content{
+	padding: 20px;
+	font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+
+.mdl-layout__header{
+	background-color: #D24F2E;
+}
+
+.mdl-main-color .mdl-button.mdl-button--colored{
+	color: #D24F2E;
+}
+
+.mdl-button--fab.mdl-button--colored{
+	background-color: rgba(210, 79, 46, 1);
+}
+
+.mdl-button--fab.mdl-button--colored:hover, .mdl-button--fab.mdl-button--colored:focus:not(:active), .mdl-button--fab.mdl-button--colored:active{
+	background-color: rgba(210, 79, 46, 0.7);
+}
+
+.mdl-card{
+	display: inline-flex;
+	margin: 10px;
+}
+
+.mdl-fixed-pos{
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}
+
+.mdl-card__supporting-text{
+	height: 60px;
+    overflow-y: auto;
+}
