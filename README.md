@@ -15,4 +15,4 @@ $ http-server ./src -p 3000
 To view your project, go to: [http://localhost:3000/](http://localhost:3000/)
 
 [1]:https://drive.google.com/drive/u/0/folders/0B1IoBiWvJpgTOElOcWdRQUQ2Nkk
-[2]:https://github.com/talosdigital/u-css/src
+[2]:https://github.com/talosdigital/u-css/tree/master/src
