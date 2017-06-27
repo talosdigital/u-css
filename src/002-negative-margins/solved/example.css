@@ -3,3 +3,52 @@
 .trash{
 	color: black;
 }
+.container{
+	margin: 0 30px;
+}
+
+.content {
+	width:100%; 
+	float:left; 
+	margin-right: -200px;
+}
+.content p {
+	margin-right: 210px;
+}
+.sidebar {
+	width: 200px; 
+	float: left;
+}
+
+.demo-list-item {
+  	width: 300px;
+}
+
+.example2{
+	clear: both;
+}
+
+.example2 ul{
+	text-align: center;
+	list-style:none;
+}
+
+.example2 li{
+    border-bottom: 1px solid #ddd;
+    width: 100px;
+    line-height: 1.5em;
+}
+
+.title{
+	font-weight: 600;
+}
+
+.col2 {
+	margin-left:100px;
+}
+.col3 {
+	margin-left:200px;
+}
+.top {
+	margin-top:-6.3em;
+}
