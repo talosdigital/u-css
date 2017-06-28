@@ -11,8 +11,9 @@ You should read about Negative Margins Documentation, in this examples why asume
 # Content
 Content of the practice materials, take your time to develop the content, if you have any question, we will provide extra material in eavery practice so you can dig deeper in the knowlage:
 
-1. Create 2 columns layouts (Content and Sidebar) using negative margin
-2. Create a list of 6 elements divide them into 3 columns using negative margin
+1. Create 2 columns layouts (Content and Sidebar) using negative margin.
+2. Create a list of 6 elements divide them into 3 columns using negative margin.
+3. Create a Sticky Footer with fixed footer height.
 
 > Runing this examples you may fine troubles with the npm.
 
