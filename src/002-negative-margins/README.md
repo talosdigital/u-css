@@ -1,9 +1,9 @@
-### 002 - Negative Margins
+# 002 - Negative Margins
 
-# Before 
+### Before 
 You should read about Negative Margins Documentation here [Smashing Magazine][1]
 
-# To Do
+### To Do
 
 1. Create 2 columns layouts (Content and Sidebar) using negative margin.
 2. Create a list of 6 elements divide them into 3 columns using negative margin.
