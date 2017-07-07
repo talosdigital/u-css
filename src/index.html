@@ -17,6 +17,9 @@
     <!-- Always shows a header, even in smaller screens. -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
+        <div aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button">
+          <i class="material-icons">home</i>
+        </div>
         <div class="mdl-layout__header-row">
           <!-- Title -->
           <span class="mdl-layout-title">U-CSS</span>
@@ -24,6 +27,16 @@
           <div class="mdl-layout-spacer"></div>
         </div>
       </header>
+      <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">U-CSS</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="https://github.com/talosdigital/u-css" target="_blank">Get Started</a>
+        <a class="mdl-navigation__link" href="https://drive.google.com/drive/u/0/folders/0B1IoBiWvJpgTOElOcWdRQUQ2Nkk" target="_blank">Basics Docs</a>
+        <a class="mdl-navigation__link" href="https://www.w3schools.com/css/default.asp" target="_blank">W3 Css</a>
+        <a class="mdl-navigation__link" href="https://getmdl.io/components/index.html" target="_blank">Materials</a>
+        <a class="mdl-navigation__link" href="https://v4-alpha.getbootstrap.com/getting-started/introduction/" target="_blank">Bootstrap 4</a>
+      </nav>
+    </div>
       <main class="mdl-layout__content">
         <div class="page-content">
           <!-- Card Block --> 
@@ -42,6 +55,11 @@
                 Solution
               </a>
             </div>
+            <div class="mdl-card__menu">
+              <a class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" href="https://github.com/talosdigital/u-css/tree/master/src/001-float-property" target="_blank">
+                <i class="material-icons">info_outline</i>
+              </a>
+            </div>
           </div>
           <!-- End Card Block --> 
 
@@ -58,6 +76,30 @@
                 Example
               </a>
               <a href="/002-negative-margins/solved" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                Solution
+              </a>
+            </div>
+            <div class="mdl-card__menu">
+              <a class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" href="https://github.com/talosdigital/u-css/tree/master/src/002-negative-margins" target="_blank">
+                <i class="material-icons">info_outline</i>
+              </a>
+            </div>
+          </div>
+          <!-- End Card Block --> 
+
+          <!-- Card Block --> 
+          <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">006 - Basic Layout</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              All it uses is border and negative margin and in the other hand same layout using flex.
+            </div>
+            <div class="mdl-card__actions mdl-card--border mdl-main-color">
+              <a href="/006-basic-layout/example" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                Example
+              </a>
+              <a href="/006-basic-layout/solved" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
                 Solution
               </a>
             </div>

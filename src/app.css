@@ -14,6 +14,10 @@
 	background-color: #D24F2E;
 }
 
+.mdl-layout__drawer-button:focus{
+	outline: none;
+}
+
 .mdl-main-color .mdl-button.mdl-button--colored{
 	color: #D24F2E;
 }
