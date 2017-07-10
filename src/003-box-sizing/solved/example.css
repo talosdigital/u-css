@@ -6,3 +6,23 @@
 .container{
 	margin: 0 30px;
 }
+
+.example1, .example2, .example3{
+	clear: both;
+}
+
+.box-model, .content-box, .box-sizing{
+	width: 1000px;
+	height: 80px;
+	margin: 15px;
+    padding: 15px;
+    border: 5px solid #D24F2E;
+}
+
+.content-box{
+	box-sizing: content-box;
+}
+
+.box-sizing{
+	box-sizing: border-box;
+}
