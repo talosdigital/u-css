@@ -1,8 +1,7 @@
 # 003 - Box Sizing
 
 ### Before 
-You should read about Box Model Documentation here [CSS Tricks][1]
-You should read about Box Sizing Documentation here [CSS Tricks][2]
+You should read about Box Model Documentation here [CSS Tricks][1] and read about Box Sizing Documentation here [CSS Tricks][2].
 
 ### To Do
 
