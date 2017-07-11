@@ -1,4 +1,4 @@
-# 004 Display
+# 004 - Display
 
 ### Before 
 You should read about Display Documentation here [CSS Tricks][1].
