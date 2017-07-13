@@ -1,4 +1,4 @@
-# 007- Z Index
+# 007- Z Index, !important and Inheritance
 
 ### Before 
 You should read about Z Index Documentation here [CSS Tricks][1], about !important Documentation here [Smashing Magazine][2] and about Inheritance Documentation here [Smashing Magazine][3].
