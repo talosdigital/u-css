@@ -11,8 +11,8 @@ Using Z Index, !important and Inheritance CSS Property, create the next items:
 2. Create a new container overlapping the first one background color lightskyblue.
 3. In this container create a header with a sub title and an article and 2 text divide by a line.
 4. Create 2 new containers overlapping the second one with 0.8 opacity.
-5. The first container should have a title and 3 paragraph 
-6. And the second container should have a list with 10 elements and odd should be bold excepting the first element.
+5. The first container should have a title and 3 paragraph and be white
+6. And the second container should be yellow and have a list with 10 elements and odd should be bold excepting the first element.
 
 ![alt text](solved/Photo-Example.jpg)
 
