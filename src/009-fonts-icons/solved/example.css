@@ -1,0 +1,320 @@
+/* Practice Layout */
+
+.trash{
+	color: black;
+}
+.container{
+	margin: 0 30px 30px 30px;
+}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/* fonts*/
+@font-face {
+    font-family: 'verdana';
+    src: url('fonts/raleway/raleway-bold-webfont.eot');
+    src: url('fonts/raleway/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/raleway/raleway-bold-webfont.woff2') format('woff2'),
+    url('fonts/raleway/raleway-bold-webfont.woff') format('woff'),
+    url('fonts/raleway/raleway-bold-webfont.ttf') format('truetype'),
+    url('fonts/raleway/raleway-bold-webfont.svg#ralewaybold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arial';
+    src: url('fonts/raleway/raleway-regular-webfont.eot');
+    src: url('fonts/raleway/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/raleway/raleway-regular-webfont.woff2') format('woff2'),
+    url('fonts/raleway/raleway-regular-webfont.woff') format('woff'),
+    url('fonts/raleway/raleway-regular-webfont.ttf') format('truetype'),
+    url('fonts/raleway/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sans-serif';
+    src: url('fonts/raleway/raleway-thin-webfont.eot');
+    src: url('fonts/raleway/raleway-thin-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/raleway/raleway-thin-webfont.woff2') format('woff2'),
+    url('fonts/raleway/raleway-thin-webfont.woff') format('woff'),
+    url('fonts/raleway/raleway-thin-webfont.ttf') format('truetype'),
+    url('fonts/raleway/raleway-thin-webfont.svg#ralewaythin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+
+}
+h1{
+    font-family: 'verdana';
+    letter-spacing: 2px;
+    font-size: 2.5em;
+}
+h2, h3, h4, h5, h6{
+    font-family: 'sans-serif' !important;
+}
+body {
+    counter-reset: section;
+    margin: 0;
+    padding: 0;
+}
+.global{
+    margin: 0;
+    padding: 5%;
+    position: relative;
+    background-color: #96baba;
+}
+.wrapper{
+    margin: 0;
+    background-color: lightskyblue;
+    padding: 5%;
+}
+.project{
+    display: inline;
+    color: #fff;
+    font-family: 'sans-serif';
+    font-size: 20px;
+    background-color: hotpink;
+    padding: 10px 20px;
+}
+.project span{
+    font-size: 19px;
+}
+.beauty{
+    color: #fff;
+    width: 60%;
+}
+.beauty .title{
+    text-transform: capitalize;
+}
+.beauty .title span{
+    text-transform: uppercase;
+}
+.beauty p{
+    font-family: 'sans-serif';
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+hr{
+    background-color: #db2525;
+    border-color: #db2525;
+}
+p::first-letter {
+    font-family: 'verdana';
+    font-weight: 900;
+}
+.gray-box{
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.8;
+    bottom: 0;
+    background-color: #111;
+    overflow-y:auto;
+    z-index: 0;
+}
+.white-box{
+    width: 60%;
+    background-color: white;
+    font-family: 'arial';
+    letter-spacing: normal;
+    color: black;
+    margin-left: -12%;
+    padding: 10px 10px 10px 12%;
+    opacity: 0.8;
+}
+
+.green-box{
+    box-sizing: border-box;
+    position: absolute;
+    background-color: #f1f7a3;
+    top: 10%;
+    right: 0;
+    color: gray;
+    z-index: 15;
+    width: 35%;
+    opacity: 0.9;
+    padding: 5%;
+}
+
+.green-box li::after {
+    counter-increment: section;
+    content: ' ' counter(section);
+
+}
+.green-box h1{
+    padding-bottom: 10px;
+    padding-left: 1%;
+}
+.green-box ul, .green-box h1{
+    font-family: 'sans-serif', sans-serif;
+    list-style-type: none;
+    margin: 0;
+}
+.green-box ul{
+    line-height: 30px;
+    padding: 2%;
+}
+
+.green-box ul li[title~="bold"]{
+    font-family: 'arial', sans-serif;
+    font-weight: bold;
+}
+
+.pink-box{
+    background-color: hotpink;
+}
+.context{
+    margin-top: 10%;
+}
+.pull-left{
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    color: white;
+    font-family: 'arial', sans-serif;
+    padding: 5%;
+}
+.last-boxes-content{
+    clear: both;
+}
+.last-boxes-content p:last-child{
+    color: gray;
+}
+.last-boxes-content p:last-child::first-letter{
+    color: black;
+}
+.last-boxes{
+    background-color: white;
+    box-sizing: border-box;
+    float: left;
+    color: black;
+    font-family: 'arial', sans-serif;
+    padding: 5%;
+    z-index: 10;
+}
+.extra-top-margin{
+    margin-top: 10%;
+    width: 30%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+}
+.requirements-box{
+    width: 70%;
+}
+.last-boxes-content p:last-child span{
+    text-decoration: underline;
+}
+.html-css-box{
+    width: 50%;
+    padding: 0 10%;
+    background-color: #f1f7a3;
+    clear: both;
+}
+.html-css-box p{
+    font-family: 'arial', sans-serif;
+    text-decoration: underline;
+    color: #666;
+    display: inline-block;
+}
+.html-css-box p::first-letter{
+    font-family: 'arial', sans-serif;
+    font-weight: normal;
+}
+
+.pink-box.pull-left, .last-boxes{
+    position: relative;
+    opacity: 0.9;
+    z-index: 10;
+}
