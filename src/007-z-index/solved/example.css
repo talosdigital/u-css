@@ -1,120 +1,147 @@
 /* Practice Layout */
+html, body, div{
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+    counter-reset: section;
+    margin: 0;
+    padding: 0;
+}
+
+article, aside, footer, header, nav, section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+h1{
+    letter-spacing: 2px !important;
+    font-size: 2.5em;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, header{
+    font-family: sans-serif;
+    letter-spacing: normal;
+}
+
+body {
+    counter-reset: section;
+    margin: 0;
+    padding: 0;
+}
 
 .trash{
 	color: black;
 }
+
 .container{
-	margin: 0 30px;
-}
-body,
-html {
-	margin: 0;
-	padding: 0;
-	color: #787878;
+	margin: 0 30px 30px 30px;
+    padding: 5%;
+    position: relative;
+    background-color: #96baba;
 }
 
-/** wrap  **/
-.wrap {
-	margin: 0 auto;
-	background-color: #E8E8E8;
-	max-width: 1200px;
+.wrapper{
+    margin: 0;
+    background-color: lightskyblue;
+    padding: 5%;
+}
+.project-header{
+    display: inline;
+    color: #fff;
+    font-size: 25px;
+    background-color: hotpink;
+    padding: 10px 20px;
+}
+.project-header span{
+    font-size: 19px;
 }
 
-/** header  **/
-.header {
-	background-color: #E8E8E8;
-	padding: 15px;
+.beauty{
+    color: #fff;
+    width: 60%;
 }
 
-.header h1 {
-	color: #787878;
-	font-size: 35px;
-  line-height: 30px;
-	margin: 0;
-	display: inline;
+.beauty .title{
+    text-transform: capitalize;
 }
 
-.header span{
-	float: right;
+.beauty .title span{
+    text-transform: uppercase;
 }
 
-/** nav  **/
-.nav {
-	padding: 15px;
-	background-color: #DCDCDC;
+.beauty p{
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
-.nav ul {
-	margin:0;
-	padding:0;
-	list-style:none;
+hr{
+    background-color: #db2525;
+    border-color: #db2525;
 }
 
-.nav li {
-	line-height: 15px;
-	display: inline;
+.white-box{
+    width: 60%;
+    background-color: white;
+    color: black;
+    margin-left: -12.1%;
+    padding: 10px 10px 10px 12%;
+    opacity: 0.8;
+}
+.yellow-box{
+    box-sizing: border-box;
+    position: absolute;
+    background-color: #f1f7a3;
+    top: 10%;
+    right: 0;
+    color: gray;
+    z-index: 15;
+    width: 35%;
+    opacity: 0.8;
+    padding: 5%;
 }
 
-.nav li:not(:last-child) {
-	padding-right: 10px;
-	margin-right: 10px;
+.yellow-box h1{
+    padding-bottom: 10px;
+    padding-left: 1%;
+}
+.yellow-box ul, .yellow-box h1{
+    list-style-type: none;
+    margin: 0;
+}
+.yellow-box ul{
+    line-height: 30px;
+    padding: 2%;
+}
+.yellow-box ul li{
+    font-weight: lighter;
 }
 
-.nav a {
-	text-decoration: none;
-}
-
-/*section*/
-
-.sections{
-  display: table;
-}
-
-.sections article{
-	display: table-cell;
-	vertical-align: middle;
-	width: 50%;
-	padding: 15px;
-}
-
-/* table */
-
-.table{
-	margin: 15px 0;
-  display: table;
-  width:100%;
-  border-collapse:collapse;
-  background-color: #C8C8C8;
-}
-
-.table-row{
-  display: table-row;
-  text-align: center;
-}
-
-.table-cell, .table-head{
-  display: table-cell;
-  padding:1em;
-  border:#f0f0f0 1px solid;
-}
-
-.table-head{
-  font-weight:bold;
-}
-
-/* boxes*/
-
-.box{
-	margin: 15px 0;
-}
-
-.box div {
-  display: inline-block;
-  width: 150px;
-  height: 75px;
-  margin: 10px;
-  border: 3px solid #73AD21;  
-  text-align: center;
-  padding: 15px;
-  box-sizing: border-box;
+.yellow-box ul li.bold{
+    font-weight: bold !important;
 }

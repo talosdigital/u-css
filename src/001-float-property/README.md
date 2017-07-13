@@ -10,7 +10,7 @@ Using Float CSS Property, create the next items:
 
 1. A horizontal nav bar menu.
 2. Two columns below nav bar.
-3. In the fist column created, float an image with text wrapping it.
+3. In the first column created, float an image with text wrapping it.
 4. Below columns created, do a gallery of images. 
 
 The distribution of this example looks like:
