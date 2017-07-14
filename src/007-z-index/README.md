@@ -7,7 +7,8 @@ You should read about Z Index Documentation here [CSS Tricks][1], about !importa
 
 Using Z Index, !important and Inheritance CSS Property, create the next items:
 
-1. Create a container with background color #96baba.
+0. Use all the text sans-serif and letter-spacing normal, the articles, nav, section display block.
+1. Create a container with background color #96baba. 
 2. Create a new container overlapping the first one background color lightskyblue.
 3. In this container create a header with a sub title and an article and 2 text divide by a line.
 4. Create 2 new containers overlapping the second one with 0.8 opacity.
