@@ -1,104 +1,176 @@
-/* Practice Layout */
-html, body, div{
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
     margin: 0;
     padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-article, nav, section {
-    display:block;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-nav ul {
-    list-style:none;
-}
+/*  GENERAL STYLES
+   ============================= */
 
-hr {
-    display:block;
-    height:1px;
-    border:0;
-    border-top:1px solid #cccccc;
-    margin: 1em 0;
-    padding:0;
-}
-
-h1{
-    letter-spacing: 2px !important;
-    font-size: 2.5em;
-}
-
-h1, h2, h3, h4, h5, h6, p, span, header, a{
+html, body {
+    background-color: #D5EADE;
+    color: #FFFFFF;
     font-family: sans-serif;
-    letter-spacing: normal;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1.5;
+    position: relative;
+}
+
+p {
+    padding: 2% 0; 
+}
+
+p::first-letter {
+    font-weight: 600;
+}
+
+.title {
+    font-size: 2em;
+    line-height: 2.5;
 }
 
 .trash{
-	color: black;
+  color: black;
 }
 
 .container{
-	margin: 0 30px 30px 30px;
-    padding: 5%;
-    position: relative;
-    background-color: #96baba;
+  position: relative;
 }
 
-.wrapper{
-    background-color: lightskyblue;
-    padding: 5%;
-}
 
-.blue-box{
-    color: #fff;
-    width: 60%;
-}
+/*  DESKTOP STYLES 
+   ============================= */
 
-.blue-box p{
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-hr{
-    background-color: #db2525;
-    border-color: #db2525;
-}
-
-.white-box{
-    width: 60%;
-    background-color: white;
-    color: black;
-    margin-left: -12.1%;
-    padding: 10px 10px 10px 12%;
-    opacity: 0.8;
-}
-.yellow-box{
+.blue-wrapper {
+    background-color: #76C4D1;
     box-sizing: border-box;
-    position: absolute;
-    background-color: #f1f7a3;
-    top: 10%;
+    margin: 5%;
+    padding: 5% 0;
+    min-height: 100%;
+    overflow: auto
+}
+
+.gray-wrapper {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
     right: 0;
-    color: gray;
-    z-index: 15;
-    width: 35%;
-    opacity: 0.8;
+    top: 0;
+    bottom: 0;
+    width: 30%;
+    min-height: 100%;
+}
+
+.yellow-wrapper {
+    background-color: #DFE180;
+    box-sizing: border-box;
+    color: #8C8D57;
+    line-height: 1;
     padding: 5%;
+    position: absolute;
+    margin-top: 5%;
+    right: 5%;
+    top: 0;
+    width: 30%;
 }
 
-.yellow-box h1{
-    padding-bottom: 10px;
-    padding-left: 1%;
-}
-.yellow-box ul, .yellow-box h1{
-    list-style-type: none;
-    margin: 0;
-}
-.yellow-box ul{
-    line-height: 30px;
-    padding: 2%;
-}
-.yellow-box ul li{
-    font-weight: lighter;
+.yellow-wrapper .title-list {
+    font-size: 2em;
+    padding-bottom: 5%;
 }
 
-.bold{
-    font-weight: bold !important;
+.yellow-wrapper ul {
+    counter-reset: section;
+}
+
+.yellow-wrapper li {
+    padding: 2% 0;
+    font-weight: 100;
+}
+
+.yellow-wrapper .bold{
+    font-weight: 400;
+}
+
+.first-content {
+    box-sizing: border-box;
+    padding-left: 5%;
+    width: 60%;
+}
+
+.first-content .box-title {
+    background-color: #E72840;
+    box-sizing: border-box;
+    line-height: 2.5;
+    padding: 0 10px;
+    width: 30%;
+    text-transform: uppercase;
+}
+
+.first-content .content-title {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.first-content hr{
+    border-bottom: 1px solid #E72840;
+} 
+
+.first-content .content-one p {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5% 0;
+}
+
+.first-content .content-two {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000000;
+    padding: 5% 5% 5% 20%;
+    margin-left: -20%;
+}
+
+.first-content .content-two p {
+    font-size: 0.9em;
+    font-weight: 400;
+    padding: 2% 0;
 }

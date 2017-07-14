@@ -1,47 +1,50 @@
-/* Practice Layout */
-html, body, div{
-    border:0;
-    outline:0;
-    vertical-align:baseline;
-    background:transparent;
-    counter-reset: section;
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
     margin: 0;
     padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-article, aside, footer, header, nav, section {
-    display:block;
-}
-
-nav ul {
-    list-style:none;
-}
-
-a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-}
-
-/* change border colour to suit your needs */
-hr {
-    display:block;
-    height:1px;
-    border:0;
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
-}
-
-input, select {
-    vertical-align:middle;
-}
-
-/* fonts*/
 @font-face {
-    font-family: 'verdana';
+    font-family: 'raleway';
     src: url('fonts/raleway/raleway-bold-webfont.eot');
     src: url('fonts/raleway/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
     url('fonts/raleway/raleway-bold-webfont.woff2') format('woff2'),
@@ -50,11 +53,10 @@ input, select {
     url('fonts/raleway/raleway-bold-webfont.svg#ralewaybold') format('svg');
     font-weight: bold;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'arial';
+    font-family: 'raleway';
     src: url('fonts/raleway/raleway-regular-webfont.eot');
     src: url('fonts/raleway/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
     url('fonts/raleway/raleway-regular-webfont.woff2') format('woff2'),
@@ -63,11 +65,10 @@ input, select {
     url('fonts/raleway/raleway-regular-webfont.svg#ralewayregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'sans-serif';
+    font-family: 'raleway';
     src: url('fonts/raleway/raleway-thin-webfont.eot');
     src: url('fonts/raleway/raleway-thin-webfont.eot?#iefix') format('embedded-opentype'),
     url('fonts/raleway/raleway-thin-webfont.woff2') format('woff2'),
@@ -76,195 +77,138 @@ input, select {
     url('fonts/raleway/raleway-thin-webfont.svg#ralewaythin') format('svg');
     font-weight: 100;
     font-style: normal;
+}
 
+/*  GENERAL STYLES
+   ============================= */
+
+html, body {
+    background-color: #D5EADE;
+    color: #FFFFFF;
+    font-family: "raleway", verdana, arial, sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1.5;
+    position: relative;
 }
-h1{
-    font-family: 'verdana';
-    letter-spacing: 2px;
-    font-size: 2.5em;
+
+p {
+    padding: 2% 0; 
 }
-h2, h3, h4, h5, h6{
-    font-family: 'sans-serif' !important;
+
+p::first-letter {
+    font-weight: 600;
 }
-body {
-    counter-reset: section;
-    margin: 0;
-    padding: 0;
+
+.title {
+    font-size: 2em;
+    line-height: 2.5;
 }
 
 .trash{
-    color: black;
+  color: black;
 }
 
 .container{
-    margin: 0 30px 30px 30px;
-    padding: 5%;
-    position: relative;
-    background-color: #96baba;
+  position: relative;
 }
 
-.wrapper{
-    margin: 0;
-    background-color: lightskyblue;
-    padding: 5%;
+
+/*  DESKTOP STYLES 
+   ============================= */
+
+.blue-wrapper {
+    background-color: #76C4D1;
+    box-sizing: border-box;
+    margin: 5%;
+    padding: 5% 0;
+    min-height: 100%;
+    overflow: auto
 }
-.project{
-    display: inline;
-    color: #fff;
-    font-family: 'sans-serif';
-    font-size: 20px;
-    background-color: hotpink;
-    padding: 10px 20px;
-}
-.project span{
-    font-size: 19px;
-}
-.beauty{
-    color: #fff;
-    width: 60%;
-}
-.beauty .title{
-    text-transform: capitalize;
-}
-.beauty .title span{
-    text-transform: uppercase;
-}
-.beauty p{
-    font-family: 'sans-serif';
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-hr{
-    background-color: #db2525;
-    border-color: #db2525;
-}
-p::first-letter {
-    font-family: 'verdana';
-    font-weight: 900;
-}
-.gray-box{
-    width: 30%;
-    height: 100%;
-    position: absolute;
+
+.gray-wrapper {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    right: 0;
     top: 0;
-    right: 0;
-    opacity: 0.8;
     bottom: 0;
-    background-color: #111;
-    overflow-y:auto;
-    z-index: 0;
-}
-.white-box{
-    width: 60%;
-    background-color: white;
-    font-family: 'arial';
-    letter-spacing: normal;
-    color: black;
-    margin-left: -12.1%;
-    padding: 10px 10px 10px 12%;
-    opacity: 0.8;
-}
-
-.green-box{
-    box-sizing: border-box;
-    position: absolute;
-    background-color: #f1f7a3;
-    top: 10%;
-    right: 0;
-    color: gray;
-    z-index: 15;
-    width: 35%;
-    opacity: 0.9;
-    padding: 5%;
-}
-
-.green-box li::after {
-    counter-increment: section;
-    content: ' ' counter(section);
-
-}
-.green-box h1{
-    padding-bottom: 10px;
-    padding-left: 1%;
-}
-.green-box ul, .green-box h1{
-    font-family: 'sans-serif', sans-serif;
-    list-style-type: none;
-    margin: 0;
-}
-.green-box ul{
-    line-height: 30px;
-    padding: 2%;
-}
-
-.green-box ul li[title~="bold"]{
-    font-family: 'arial', sans-serif;
-    font-weight: bold;
-}
-
-.pink-box{
-    background-color: hotpink;
-}
-.context{
-    margin-top: 10%;
-}
-.pull-left{
-    box-sizing: border-box;
-    width: 50%;
-    float: left;
-    color: white;
-    font-family: 'arial', sans-serif;
-    padding: 5%;
-}
-.last-boxes-content{
-    clear: both;
-}
-.last-boxes-content p:last-child{
-    color: gray;
-}
-.last-boxes-content p:last-child::first-letter{
-    color: black;
-}
-.last-boxes{
-    background-color: white;
-    box-sizing: border-box;
-    float: left;
-    color: black;
-    font-family: 'arial', sans-serif;
-    padding: 5%;
-    z-index: 10;
-}
-.extra-top-margin{
-    margin-top: 10%;
     width: 30%;
-    padding-right: 5%;
-    padding-bottom: 2%;
-}
-.requirements-box{
-    width: 70%;
-}
-.last-boxes-content p:last-child span{
-    text-decoration: underline;
-}
-.html-css-box{
-    width: 50%;
-    padding: 0 10%;
-    background-color: #f1f7a3;
-    clear: both;
-}
-.html-css-box p{
-    font-family: 'arial', sans-serif;
-    text-decoration: underline;
-    color: #666;
-    display: inline-block;
-}
-.html-css-box p::first-letter{
-    font-family: 'arial', sans-serif;
-    font-weight: normal;
+    min-height: 100%;
 }
 
-.pink-box.pull-left, .last-boxes{
-    position: relative;
-    opacity: 0.9;
-    z-index: 10;
+.yellow-wrapper {
+    background-color: #DFE180;
+    box-sizing: border-box;
+    color: #8C8D57;
+    line-height: 1;
+    padding: 5%;
+    position: absolute;
+    margin-top: 5%;
+    right: 5%;
+    top: 0;
+    width: 30%;
+}
+
+.yellow-wrapper .title-list {
+    font-size: 2em;
+    padding-bottom: 5%;
+}
+
+.yellow-wrapper ul {
+    counter-reset: section;
+}
+
+.yellow-wrapper li {
+    padding: 2% 0;
+}
+
+.yellow-wrapper li::after {
+    counter-increment: section;
+    content: " " counters(section,".");
+}
+
+.yellow-wrapper li:nth-child(2n+3){
+    font-weight: 400;
+}
+
+.first-content {
+    box-sizing: border-box;
+    padding-left: 5%;
+    width: 60%;
+}
+
+.first-content .box-title {
+    background-color: #E72840;
+    box-sizing: border-box;
+    line-height: 2.5;
+    padding: 0 10px;
+    width: 30%;
+    text-transform: uppercase;
+}
+
+.first-content .content-title {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.first-content .content-one p {
+    letter-spacing: 1px;
+    padding: 5% 0;
+}
+
+.first-content .content-one p:not(:last-child){
+    border-bottom: 1px solid #E72840;
+} 
+
+.first-content .content-two {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000000;
+    padding: 5% 5% 5% 20%;
+    margin-left: -20%;
+}
+
+.first-content .content-two p {
+    font-size: 0.9em;
+    font-weight: 400;
+    padding: 2% 0;
 }
