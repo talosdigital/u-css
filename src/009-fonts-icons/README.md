@@ -5,7 +5,7 @@ You should read about Font Size Documentation here [Kyle Schaeffer][1], about Fo
 
 ### To Do
 
-Continue the Z Index, !important and Inheritance exercice we are going to change some labels using Fonts and Icons.
+Continue the Z Index, !important and Inheritance exercice in which we are going to change some labels using Fonts and Icons.
 
 1. Change the Inheritance font for raleway thin with, verdana, arial, sans-serif.
 2. The first letter in all the simple text should be bold.
