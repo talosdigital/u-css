@@ -68,7 +68,7 @@ table {
 }
 
 @font-face {
-  font-family: 'raleway-light';
+  font-family: 'raleway-thin';
   src: url('fonts/raleway/raleway-thin-webfont.eot');
   src: url('fonts/raleway/raleway-thin-webfont.eot?#iefix') format('embedded-opentype'),
   url('fonts/raleway/raleway-thin-webfont.woff2') format('woff2'),
@@ -85,7 +85,7 @@ table {
 html, body {
   background-color: #D5EADE;
   color: #FFFFFF;
-  font-family: "raleway-light", verdana, arial, sans-serif;
+  font-family: "raleway-thin", sans-serif;
   font-size: 16px;
   font-weight: 100;
   line-height: 1.5;

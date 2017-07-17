@@ -5,17 +5,21 @@ You should read about Font Size Documentation here [Kyle Schaeffer][1], about Fo
 
 ### To Do
 
-Using Z Index, !important and Inheritance CSS Property, create the next items:
+Continue the Z Index, !important and Inheritance exercice we are going to change some labels using Fonts and Icons.
 
-1. Create a container with background color #96baba.
-2. Create a new container overlapping the first one background color lightskyblue.
-3. In this container create a header with a sub title and an article and 2 text divide by a line.
-4. Create 2 new containers overlapping the second one with 0.8 opacity.
-5. The first container should have a title and 3 paragraph and be white
-6. And the second container should be yellow and have a list with 10 elements and odd should be bold excepting the first element.
-
+1. Change the Inheritance font for raleway thin with, verdana, arial, sans-serif.
+2. The first letter in all the simple text should be bold.
+3. Remove the second test at the blue container and create an input with a find in page icon ([Material][6]).
+4. Add 3 icons to the right between the title and the first text ([Font Awesome][5]).
+4. Remove the third test at the white container and create a button with fingerprint icon ([Material][6]).
+5. On the yellow container the pair items should use ‘pt’ and have a text after saying “using ‘pt’ “ 
+6. On the yellow container the odd items except the first one should be raleway normal, use ‘em’ and have a text after saying “using ‘em’ ”.
+ 
+![alt text](solved/Photo-Example.jpg)
  
  [1]: http://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/
  [2]: https://css-tricks.com/almanac/properties/f/font-size/
  [3]: https://css-tricks.com/snippets/css/fluid-typography/
  [4]: https://css-tricks.com/snippets/css/using-font-face/
+ [5]: http://fontawesome.io/icons/
+ [6]: https://material.io/icons/
