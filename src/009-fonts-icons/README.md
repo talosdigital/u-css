@@ -1,11 +1,11 @@
-# 009 Fonts Icons
+# 009 Fonts, Icons and Sizes
 
 ### Before 
 You should read about Font Size Documentation here [Kyle Schaeffer][1], about Font Size Properties here [CSS Tricks][2], about Fluid Typography here [CSS Tricks][3] and about Using @font-face here [CSS Tricks][4].
 
 ### To Do
 
-Continue the Z Index, !important and Inheritance exercice in which we are going to change some labels using Fonts and Icons.
+Continue the Z Index, !important and Inheritance exercice in which we are going to change some labels using Fonts, Icons and Sizes.
 
 1. Change the Inheritance font for raleway thin with, verdana, arial, sans-serif.
 2. The first letter in all the simple text should be bold.
