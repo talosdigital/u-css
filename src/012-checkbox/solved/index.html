@@ -39,75 +39,126 @@
     </div>
 
     <section class="container">
-      <div class="control-group">
-        <h1>Checkboxes</h1>
-        <label class="control control--checkbox">First checkbox
-          <input type="checkbox" checked="checked"/>
-          <div class="control__indicator"></div>
-        </label>
-        <label class="control control--checkbox">Second checkbox
-          <input type="checkbox"/>
-          <div class="control__indicator"></div>
-        </label>
-        <label class="control control--checkbox">Disabled
-          <input type="checkbox" disabled="disabled"/>
-          <div class="control__indicator"></div>
-        </label>
-        <label class="control control--checkbox">Disabled & checked
-          <input type="checkbox" disabled="disabled" checked="checked"/>
-          <div class="control__indicator"></div>
-        </label>
+
+      <div class="tabs">
+        <input name="tabs" type="radio" id="tab-1" checked="checked" class="input"/>
+        <label for="tab-1" class="label">Checkboxes</label>
+        <div class="panel">
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in arcu magna. Pellentesque sit amet vestibulum ex, eget placerat metus. Sed vel sagittis massa, eu interdum mauris. Ut congue ipsum ex, eu egestas nisi ullamcorper vitae. Suspendisse potenti. Suspendisse blandit placerat ex, vitae suscipit purus dapibus id. Nulla facilisi. Mauris porttitor diam eu orci sodales tempor. Donec rutrum sit amet quam vitae congue. Donec sit amet convallis risus. Quisque mi augue, mattis lacinia mollis non, iaculis sit amet lectus.</p>
+
+
+           <div class="control-group">
+            <h3>Checkboxes</h3>
+            <label class="control control--checkbox">First checkbox
+              <input type="checkbox" checked="checked"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--checkbox">Second checkbox
+              <input type="checkbox"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--checkbox">Disabled
+              <input type="checkbox" disabled="disabled"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--checkbox">Disabled & checked
+              <input type="checkbox" disabled="disabled" checked="checked"/>
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+        </div>
+
+        <input name="tabs" type="radio" id="tab-2" class="input"/>
+        <label for="tab-2" class="label">Radio Buttons</label>
+        <div class="panel">
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in arcu magna. Pellentesque sit amet vestibulum ex, eget placerat metus. Sed vel sagittis massa, eu interdum mauris. Ut congue ipsum ex, eu egestas nisi ullamcorper vitae. Suspendisse potenti. Suspendisse blandit placerat ex, vitae suscipit purus dapibus id. Nulla facilisi. Mauris porttitor diam eu orci sodales tempor. Donec rutrum sit amet quam vitae congue. Donec sit amet convallis risus. Quisque mi augue, mattis lacinia mollis non, iaculis sit amet lectus.</p>
+
+          <div class="control-group">
+            <h3>Radio Buttons</h3>
+            <label class="control control--radio">First radio
+              <input type="radio" name="radio" checked="checked"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--radio">Second radio
+              <input type="radio" name="radio"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--radio">Disabled
+              <input type="radio" name="radio2" disabled="disabled"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--radio">Disabled & checked
+              <input type="radio" name="radio2" disabled="disabled" checked="checked"/>
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+        </div>
+
+        <input name="tabs" type="radio" id="tab-3" class="input"/>
+        <label for="tab-3" class="label">Cards</label>
+        <div class="panel">
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in arcu magna. Pellentesque sit amet vestibulum ex, eget placerat metus. Sed vel sagittis massa, eu interdum mauris. Ut congue ipsum ex, eu egestas nisi ullamcorper vitae. Suspendisse potenti. Suspendisse blandit placerat ex, vitae suscipit purus dapibus id. Nulla facilisi. Mauris porttitor diam eu orci sodales tempor. Donec rutrum sit amet quam vitae congue. Donec sit amet convallis risus. Quisque mi augue, mattis lacinia mollis non, iaculis sit amet lectus.</p>
+          <div class="list-checks">
+            <ul>
+              <li>
+                <img src="./images/user.png" />
+                <div>
+                  <h3>Headline</h3>
+                  <p>Lorem ipsum dolor sit amet...</p>
+                </div>
+                <label class="control control--checkbox">
+                  <input type="checkbox" checked="checked"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </li>
+                
+              <li>
+                <img src="./images/user.png" />
+               <div>
+                  <h3>Headline</h3>
+                  <p>Lorem ipsum dolor sit amet...</p>
+                </div>
+                <label class="control control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </li>
+           
+              <li>
+                <img src="./images/user.png" />
+                <div>
+                  <h3>Headline</h3>
+                  <p>Lorem ipsum dolor sit amet...</p>
+                </div>
+                <label class="control control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </li>
+           
+              <li>
+                <img src="./images/user.png" />
+                <div>
+                  <h3>Headline</h3>
+                  <p>Lorem ipsum dolor sit amet...</p>
+                </div>
+                <label class="control control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
-
-      <div class="control-group">
-        <h1>Radio buttons</h1>
-        <label class="control control--radio">First radio
-          <input type="radio" name="radio" checked="checked"/>
-          <div class="control__indicator"></div>
-        </label>
-        <label class="control control--radio">Second radio
-          <input type="radio" name="radio"/>
-          <div class="control__indicator"></div>
-        </label>
-        <label class="control control--radio">Disabled
-          <input type="radio" name="radio2" disabled="disabled"/>
-          <div class="control__indicator"></div>
-        </label>
-        <label class="control control--radio">Disabled & checked
-          <input type="radio" name="radio2" disabled="disabled" checked="checked"/>
-          <div class="control__indicator"></div>
-        </label>
-      </div>
+     
 
 
-      <div class="control-group">
-        <h1>Select boxes</h1>
-        <div class="select">
-          <select>
-            <option>First select</option>
-            <option>Option</option>
-            <option>Option</option>
-          </select>
-          <div class="select__arrow"></div>
-        </div>
-        <div class="select">
-          <select>
-            <option>Second select</option>
-            <option>Option</option>
-            <option>Option</option>
-          </select>
-          <div class="select__arrow"></div>
-        </div>
-        <div class="select">
-          <select disabled="disabled">
-            <option>Disabled</option>
-            <option>Option</option>
-            <option>Option</option>
-          </select>
-          <div class="select__arrow"></div>
-        </div>
-      </div>
+      
     </section>
   </body>
 </html>
