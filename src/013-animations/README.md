@@ -12,7 +12,7 @@ You should read about Animation Properties here [CSS Tricks][1], read about Tran
 
 
 
-![alt text](solved/example013)
+![alt text](solved/Photo-Example.jpg)
 
  [1]: https://css-tricks.com/almanac/properties/a/animation/
  [2]: https://css-tricks.com/almanac/properties/t/transform/
