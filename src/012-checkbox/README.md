@@ -1,7 +1,7 @@
 # 012 - Checkboxes and Radio Buttons
 
 ### Before 
-You should read about Styling Web Links Properties here [Smashing Magazine][1], about Styling Button Properties here [Call Me Nick][2] and about Styling Lists Properties here [Smashing Magazine][3].
+You should read about Checkbox and Radio Buttons here [W3 Schools][1] and [Web Design][2].
 
 ### To Do
 
@@ -11,6 +11,5 @@ You should read about Styling Web Links Properties here [Smashing Magazine][1], 
 4. In the third tab create a list of card with a image and text left and a checkbox right.
 
 
- [1]: https://www.smashingmagazine.com/2010/02/the-definitive-guide-to-styling-web-links/
- [2]: http://callmenick.com/post/stylish-css-buttons
- [3]: https://www.smashingmagazine.com/2009/12/styling-html-lists-with-css-techniques-and-resources/
+ [1]: https://www.w3schools.com/html/html_forms.asp
+ [2]: https://webdesign.tutsplus.com/articles/quick-tip-easy-css3-checkboxes-and-radio-buttons--webdesign-8953
