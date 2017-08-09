@@ -1,0 +1,130 @@
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.trash{
+  color: black;
+}
+.container{
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 1em;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  position: relative;
+}
+.wallpaper{
+  background: url("images/image.jpg") no-repeat center -50% fixed;
+ -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  overflow: hidden;
+  position: relative;
+  height: 500px;
+  width: 100%;
+  z-index: -1;
+}
+.wrap{
+  width: 1170px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: -5em 2em 2em 2em;
+}
+.wrap .card{
+  width: 350px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin: .2em;
+  text-align: center;
+  background-color: white;
+}
+.wrap .card:hover{
+ 
+  cursor: pointer;
+}
+.wrap img{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-bottom: .5em;
+}
+
+.wrapper{
+  display: flex;
+}
+
+.wrapper aside{
+  width: 200px;
+  padding: .5em;
+}
+.wrapper aside:first-child{
+  order: 3;
+}
+.wrapper aside li{
+  margin-bottom: .5em;
+}
+.wrapper aside li:hover{
+  font-size: 1.1em;
+}
+.wrapper aside a{
+  cursor: pointer;
+}
+.wrapper article{
+  flex-grow: 2;
+  display: inline-flex;
+  flex-wrap: wrap-reverse;
+  align-items: start;
+  justify-content: space-around;
+}
+
+
+.main{
+  flex-grow: 2;
+  text-align: center;
+}
+.footer{
+  background-color: #9370DB;
+  height: 300px;
+}
