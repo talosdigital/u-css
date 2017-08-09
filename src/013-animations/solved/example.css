@@ -108,9 +108,6 @@ table {
   display:inline; 
   float:left;
   -webkit-perspective: 500; 
-  -webkit-transform-style: preserve-3d;
-  -webkit-transition-property: perspective; 
-  -webkit-transition-duration: 0.5s; 
 }
   
 .article li img { 
