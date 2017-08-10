@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
     <!-- Import App Css file -->
     <link href="./example.css" rel="stylesheet" type="text/css">
     
@@ -39,8 +42,127 @@
     </div>
 
     <section class="container">
-       
-        
+      <section class="bootstrap-example">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-3">Using Bootstrap</h1>
+            <p class="lead">Create a the following layout</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-block">
+                <h3 class="card-title">Card title</h3>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <img class="float-left" src="https://placeimg.com/40/40/tech" alt="Card image cap">
+                   <div class="float-left block">
+                    <p>Cras justo odio</p>
+                    <a href="#" class="card-link">Click!</a>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <img class="float-left" src="https://placeimg.com/40/40/tech" alt="Card image cap">
+                  <div class="float-left block">
+                    <p>Dapibus ac facilisis in</p>
+                    <a href="#" class="card-link">Click!</a>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <img class="float-left" src="https://placeimg.com/40/40/tech" alt="Card image cap">
+                  <div class="float-left block">
+                    <p>Vestibulum at eros</p>
+                    <a href="#" class="card-link">Click!</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+             <div class="card">
+              <div class="card-block">
+               <h3 class="card-title">Card title</h3>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+              <div class="card-block">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+            <div class="card">
+              <h3 class="card-header">Special title treatment</h3>
+              <div class="card-block">
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <br>
+                <button class="btn btn-warning float-right btn-sm">Go somewhere</button>
+              </div>
+            </div>
+            <div class="card">
+              <h3 class="card-header">Search</h3>
+              <div class="card-block">
+                <input type="text" class="form-control" placeholder="Search...">
+                <br>
+                <button class="btn btn-warning float-right btn-sm">Go somewhere</button>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-8">
+            <div class="card-group">
+              <div class="card margin-left">
+                <img class="card-img-top" src="https://placeimg.com/250/350/arch" alt="Card image cap">
+                <!-- <div class="card-block">
+                  <h4 class="card-title">Card title</h4>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div> -->
+                <div class="card-footer ">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card margin-left">
+                <img class="card-img-top" src="https://placeimg.com/250/350/nature" alt="Card image cap">
+                <!-- <div class="card-block">
+                  <h4 class="card-title">Card title</h4>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div> -->
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card margin-left">
+                <img class="card-img-top" src="https://placeimg.com/250/350/people" alt="Card image cap">
+               <!--  <div class="card-block">
+                  <h4 class="card-title">Card title</h4>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div> -->
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card margin-left">
+                <img class="card-img-top" src="https://placeimg.com/250/350/animals" alt="Card image cap">
+               <!--  <div class="card-block">
+                  <h4 class="card-title">Card title</h4>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div> -->
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
 </html>
