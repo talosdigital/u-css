@@ -54,6 +54,16 @@ table {
   flex-direction: column;
   position: relative;
 }
+.main{
+  flex-grow: 2;
+  text-align: center;
+}
+
+.footer{
+  background-color: #9370DB;
+  height: 300px;
+}
+
 .wallpaper{
   background: url("images/image.jpg") no-repeat center -50% fixed;
  -webkit-background-size: 100% 100%;
@@ -66,30 +76,80 @@ table {
   width: 100%;
   z-index: -1;
 }
+
+/* wrap */
+
 .wrap{
-  width: 1170px;
+  max-width: 1170px;
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: -5em 2em 2em 2em;
 }
+
 .wrap .card{
   width: 350px;
   border: 2px solid #ddd;
   border-radius: 5px;
-  margin: .2em;
-  text-align: center;
+  margin: 1em .2em;
   background-color: white;
 }
+
 .wrap .card:hover{
- 
   cursor: pointer;
 }
-.wrap img{
+.wrap .card .img-container:hover{
+  animation: zoomIn 5s linear infinite;
+}
+.img-container{
+  background-size: contain;
+  transform: scale(.99,.99);
+}
+
+.wrap .card img{
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   margin-bottom: .5em;
 }
+
+.wrap .card .description{
+  padding: .5em;
+  text-align: left;
+}
+
+.wrap .card .options{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 40px;
+  box-sizing: border-box;
+  border-top: 2px solid #ddd;
+  margin-top: .5em;
+}
+.wrap .card .options .list, .wrap .card .options .read-more{
+  padding: .5em;
+  margin: .2em;
+}
+
+.wrap .card .options .list a{
+  color: #aaa;
+}
+
+.wrap .card .options .list a:hover{
+  color: #888;
+}
+
+.wrap .card .options .list a:not(:last-child):after{
+  content: ',';
+}
+
+.wrap .card .options .read-more:hover{
+  background-color: #eee;
+  border-radius: 2px;
+  -webkit-transition-duration: 1s; 
+}
+
+/* wrapper */
 
 .wrapper{
   display: flex;
@@ -119,12 +179,19 @@ table {
   justify-content: space-around;
 }
 
+@keyframes zoomIn {
+  from {
+    opacity: .9;
+    transform: scale(1, 1);
+  }
 
-.main{
-  flex-grow: 2;
-  text-align: center;
+  50% {
+    opacity: 1;
+  }
 }
-.footer{
-  background-color: #9370DB;
-  height: 300px;
+
+.zoomIn {
+  animation-name: zoomIn;
 }
+
+
