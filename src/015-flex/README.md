@@ -7,7 +7,7 @@ You should read about Flex here [CSS Tricks][1].
 
 Create a the following layout:
 
-![alt-text-1](solved/desktop.jpg) ![alt-text-2](solved/table.jpg)
+![alt-text-1](solved/desktop.jpg) ![alt-text-2](solved/tablet.jpg)
 
 
 1. Using Flex
