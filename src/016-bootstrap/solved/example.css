@@ -52,24 +52,33 @@ table {
 a{
   color: #f0ad4e;
 }
+a:hover{
+  opacity: .8;
+}
 
-.bootstrap-example .card{
+/* Bootstrap */
+
+.card{
   margin-bottom: 1em;
 }
 
-.bootstrap-example .block{
+.block{
   display: block;
   margin-left: .5em;
 }
 
+.card-footer spam{
+  vertical-align: -webkit-baseline-middle;
+}
+
 @media (min-width: 800px) {
-  .bootstrap-example .margin-left{
+  .margin-left{
     margin-left: 1em !important;
   }
 }
 
 @media (max-width: 800px) {
-  .bootstrap-example .margin-left{
+  .margin-left{
     margin-left: none !important;
   }
 }
