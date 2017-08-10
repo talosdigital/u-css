@@ -13,6 +13,6 @@ Create a the following layout:
 1. Using Flex
 
 
-![alt text](solved/table.jpg)
+![alt text2](solved/table.jpg)
 
  [1]: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
