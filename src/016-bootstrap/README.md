@@ -7,9 +7,7 @@ You should read about Bootstrap here [V4 Alpha][2], about Responsive Web Design 
 
 Create a the following layout:
 
-1.
-
-![alt text](solved/Photo-Example.jpg)
+![alt text](solved/example.jpg)
 
  [1]: https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/ 
  [2]: https://v4-alpha.getbootstrap.com/layout/grid/

@@ -53,7 +53,7 @@ a{
   color: #f0ad4e;
 }
 a:hover{
-  opacity: .8;
+  color: #f07a19;
 }
 
 /* Bootstrap */
@@ -69,6 +69,23 @@ a:hover{
 
 .card-footer spam{
   vertical-align: -webkit-baseline-middle;
+}
+
+.no-margin-bottom{
+  margin-bottom: 0 !important;
+}
+
+.list-options{
+  padding: 0;
+}
+.btn-options{
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  padding: .75rem 1.25rem;
+  border: none;
+  border-radius: 0;
+  text-align: left;
 }
 
 @media (min-width: 800px) {
