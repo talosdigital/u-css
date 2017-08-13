@@ -15,7 +15,7 @@ Continue the Z Index, !important and Inheritance exercice in which we are going 
 5. On the yellow container the pair items should use ‘pt’ and have a text after saying “using ‘pt’ “ 
 6. On the yellow container the odd items except the first one should be raleway normal, use ‘em’ and have a text after saying “using ‘em’ ”.
  
-![alt text](solved/Photo-Example.jpg)
+![alt text](solved/photo-example.jpg)
  
  [1]: http://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/
  [2]: https://css-tricks.com/almanac/properties/f/font-size/
