@@ -1,0 +1,45 @@
+/* Practice Layout */
+body,
+html {
+  color: #787878;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/** container  **/
+.bs-container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/** example box  **/
+.bs-example {
+  background-color: #E8E8E8;
+  clear: both;
+  padding: 15px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.bs-example h3 {
+  font-size: 1.5em;
+}
+
+/** box  **/
+.bs-box {
+  background-color: #E8E8E8;
+  border: 3px solid #D24F2E;
+  margin: 15px;
+  padding: 15px;
+  width: 500px;
+}
+
+.bs-content-box{
+	box-sizing: content-box;
+}
+
+.bs-box-sizing{
+	box-sizing: border-box;
+}

@@ -6,14 +6,15 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
+    <!-- Ignore this, it's for the header -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link href="../../app.css" rel="stylesheet" type="text/css">
 
     <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/example.css" rel="stylesheet" type="text/css">
+
   </head>
   <body>
   	<!-- Always shows a header, even in smaller screens. -->
@@ -32,33 +33,38 @@
       <main class="mdl-layout__content">
         <div class="page-content">
          <!-- Practice Content Goes Here -->
+
+          <section class="bs-container">
+
+            <div class="bs-example">
+              <h3> Box Model </h3>
+              <div class="bs-box bs-box-model">
+                <p>Since the dawn of CSS, the box model has worked like this by default:</p>
+                <p>width + padding + border = actual visible/rendered width of an element's box</p>
+                <p>height + padding + border = actual visible/rendered height of an element's box</p>
+              </div>
+            </div>
+
+            <div class="bs-example">
+              <h3>Box Sizing : Content Box </h3>
+              <div class="bs-box bs-content-box">
+                <p>Default. The width and height properties (and min/max properties) includes only the content. Border, padding, or margin are not included</p>
+              </div>
+            </div>
+
+            <div class="bs-example">
+              <h3>Box Sizing : border-box </h3>
+              <div class="bs-box bs-box-sizing">
+                <p>The width and height properties (and min/max properties) includes content, padding and border, but not the margin</p>
+              </div>
+            </div>
+
+          </section>
+
         </div>
       </main>
     </div>
 
-    <section class="container">
 
-      <div class="example1">
-        <h3> Box Model </h3>
-        <div class="box-model">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget mi et tortor porta maximus. Donec eget tempus felis, nec condimentum dolor. Nunc in eros laoreet purus tempus accumsan cursus eget libero. Vivamus ut tortor id sapien cursus elementum sit amet sed turpis. 
-        </div>
-      </div>
-
-      <div class="example2">
-        <h3>1. Content Box </h3>
-        <div class="content-box">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget mi et tortor porta maximus. Donec eget tempus felis, nec condimentum dolor. Nunc in eros laoreet purus tempus accumsan cursus eget libero. Vivamus ut tortor id sapien cursus elementum sit amet sed turpis. 
-        </div>
-      </div>
-  
-      <div class="example3">
-        <h3>2. Box Sizing </h3>
-        <div class="box-sizing">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget mi et tortor porta maximus. Donec eget tempus felis, nec condimentum dolor. Nunc in eros laoreet purus tempus accumsan cursus eget libero. Vivamus ut tortor id sapien cursus elementum sit amet sed turpis. 
-        </div>
-      </div>
-     
-    </section>
   </body>
 </html>
