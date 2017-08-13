@@ -1,21 +1,23 @@
 ### 008 - Advanced Selectors
 
 ### Before 
-You should read about Float CSS Property Documentation here:
-[The Mystery Of The CSS Float Property][1]
+You should read about advanced Selectors Documentation here:
+[Complex Selectors][1]
 
 ### To Do
 
-Using Float CSS Property, create the next items:
+Using Complex Selectors, create the next items:
 
-1. A horizontal nav bar menu.
-2. Two columns below nav bar.
-3. In the first column created, float an image with text wrapping it.
-4. Below columns created, do a gallery of images. 
+1. A bar with a text centered.
+2. Two columns below (aside and section).
+3. In the first column created, add 3 sections: first one has title and simple list, second one has title and list with items with background, and third one has title and list of avatars.
+  
+  ![alt text](solved/images/item-1.png)
+  
+4. Add a section with shopping cards, the fist one with a special link.
+ 
+ ![alt text](solved/images/item-2.png)
 
-The distribution of this example looks like:
 
-![alt text](solved/images/items.png)
-
-[1]: https://www.smashingmagazine.com/2009/10/the-mystery-of-css-float-property/
+[1]: http://learn.shayhowe.com/advanced-html-css/complex-selectors/
 
