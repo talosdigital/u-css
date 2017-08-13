@@ -15,7 +15,7 @@ Using Float CSS Property, create the next items:
 
 The distribution of this example looks like:
 
-![alt text](solved/items.png)
+![alt text](solved/images/items.png)
 
 [1]: https://www.smashingmagazine.com/2009/10/the-mystery-of-css-float-property/
 
