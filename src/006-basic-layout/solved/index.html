@@ -6,14 +6,15 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
+    <!-- Ignore this, it's for the header -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link href="../../app.css" rel="stylesheet" type="text/css">
 
     <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/example.css" rel="stylesheet" type="text/css">
+
   </head>
   <body>
   	<!-- Always shows a header, even in smaller screens. -->
@@ -32,137 +33,136 @@
       <main class="mdl-layout__content">
         <div class="page-content">
          <!-- Practice Content Goes Here -->
-        </div>
-      </main>
-    </div>
+          <section class="container">
 
-    <section class="container">
+            <h3>1. Without a wrapper <code>div</code>, with border and negative margin</h3>
+            <div class="example1">
+              <div class="header">
+                <ul class="list">
+                  <li>
+                    <span> Home </span>
+                  </li>
+                  <li>
+                    <span> About </span>
+                  </li>
+                  <li>
+                    <span> Contact Us </span>
+                  </li>
+                </ul>
+              </div>
 
-      <h3>1. Without a wrapper <code>div</code>, with border and negative margin</h3>
-      <div class="example1">
-        <div class="header">
-          <ul class="list">
-            <li> 
-              <span> Home </span>
-            </li>
-            <li> 
-              <span> About </span>
-            </li>
-            <li> 
-               <span> Contact Us </span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="sidebar">
-          <ul class="demo-list-item mdl-list">
-            <li class="mdl-list__item">
+              <div class="sidebar">
+                <ul class="demo-list-item mdl-list">
+                  <li class="mdl-list__item">
               <span class="mdl-list__item-primary-content">
                 <i class="material-icons mdl-list__item-icon">home</i>
                 Home
               </span>
-            </li>
-            <li class="mdl-list__item">
+                  </li>
+                  <li class="mdl-list__item">
               <span class="mdl-list__item-primary-content">
                 <i class="material-icons mdl-list__item-icon">description</i>
                 About
               </span>
-            </li>
-            <li class="mdl-list__item">
+                  </li>
+                  <li class="mdl-list__item">
               <span class="mdl-list__item-primary-content">
                 <i class="material-icons mdl-list__item-icon">email</i>
                 Contact US
               </span>
-            </li>
-          </ul>
-        </div>
+                  </li>
+                </ul>
+              </div>
 
-        <div class="main">
-          <p>Lorem ipsum...</p>
-          <p>Lorem ipsum...</p>
-          <p>Lorem ipsum...</p>
-          <p>Lorem ipsum...</p>
-          <p>Lorem ipsum...</p>
-          <p>Lorem ipsum...</p>
-          <p>Lorem ipsum...</p>
-        </div>
+              <div class="main">
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+              </div>
 
-        <div class="footer">
-          <ul class="list">
-            <li> 
-              <span> Talos Digital </span>
-            </li>
-            <li> 
-               <span> Contact Us </span>
-            </li>
-          </ul>
-        </div>
-      </div>
+              <div class="footer">
+                <ul class="list">
+                  <li>
+                    <span> Talos Digital </span>
+                  </li>
+                  <li>
+                    <span> Contact Us </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-      <h3>2. Using flex, flex-direction, and wrapper <code>div</code></h3>
+            <h3>2. Using flex, flex-direction, and wrapper <code>div</code></h3>
 
-      <div class="example2">
-        <div class="header">
-          <ul class="list">
-            <li> 
-              <span> Home </span>
-            </li>
-            <li> 
-              <span> About </span>
-            </li>
-            <li> 
-               <span> Contact Us </span>
-            </li>
-          </ul>
-        </div>
+            <div class="example2">
+              <div class="header">
+                <ul class="list">
+                  <li>
+                    <span> Home </span>
+                  </li>
+                  <li>
+                    <span> About </span>
+                  </li>
+                  <li>
+                    <span> Contact Us </span>
+                  </li>
+                </ul>
+              </div>
 
-        <div class="wrapper">
-          <div class="sidebar">
-            <ul class="demo-list-item mdl-list">
-              <li class="mdl-list__item">
+              <div class="wrapper">
+                <div class="sidebar">
+                  <ul class="demo-list-item mdl-list">
+                    <li class="mdl-list__item">
                 <span class="mdl-list__item-primary-content">
                   <i class="material-icons mdl-list__item-icon">home</i>
                   Home
                 </span>
-              </li>
-              <li class="mdl-list__item">
+                    </li>
+                    <li class="mdl-list__item">
                 <span class="mdl-list__item-primary-content">
                   <i class="material-icons mdl-list__item-icon">description</i>
                   About
                 </span>
-              </li>
-              <li class="mdl-list__item">
+                    </li>
+                    <li class="mdl-list__item">
                 <span class="mdl-list__item-primary-content">
                   <i class="material-icons mdl-list__item-icon">email</i>
                   Contact US
                 </span>
-              </li>
-            </ul>
-          </div>
+                    </li>
+                  </ul>
+                </div>
 
-          <div class="main">
-            <p>Lorem ipsum...</p>
-            <p>Lorem ipsum...</p>
-            <p>Lorem ipsum...</p>
-            <p>Lorem ipsum...</p>
-            <p>Lorem ipsum...</p>
-            <p>Lorem ipsum...</p>
-            <p>Lorem ipsum...</p>
-          </div>
-        </div>
-        
-        <div class="footer">
-          <ul class="list">
-            <li> 
-              <span> Talos Digital </span>
-            </li>
-            <li> 
-               <span> Contact Us </span>
-            </li>
-          </ul>
-        </div>
-      </div>
+                <div class="main">
+                  <p>Lorem ipsum...</p>
+                  <p>Lorem ipsum...</p>
+                  <p>Lorem ipsum...</p>
+                  <p>Lorem ipsum...</p>
+                  <p>Lorem ipsum...</p>
+                  <p>Lorem ipsum...</p>
+                  <p>Lorem ipsum...</p>
+                </div>
+              </div>
 
-    </section>
+              <div class="footer">
+                <ul class="list">
+                  <li>
+                    <span> Talos Digital </span>
+                  </li>
+                  <li>
+                    <span> Contact Us </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </section>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
