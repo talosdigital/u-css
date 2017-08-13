@@ -7,7 +7,7 @@ You should read about Background Documentation here [CSS Tricks][1], about Backg
 
 Create a the following view with this colors #D24F2E and #f5a275:
 
-![alt text](solved/Photo-Example.jpg)
+![alt text](solved/photo-example.jpg)
 
 1. Create a radial gradient to change the background using rgba.
 2. Create a header using text shadows and below create a linear gradient using hexa.

@@ -82,7 +82,7 @@ html, body, main, .page-content {
 }
 
 .background {
-  background-image: url("background.jpg");
+  background-image: url("images/background.jpg");
   height: 250px;
   background-attachment: fixed;
   background-position: center;
