@@ -1,20 +1,17 @@
 /* Practice Layout */
-
-.trash{
-	color: black;
-}
-
 body,
 html {
+  color: #787878;
+  font-size: 16px;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
-  color: #787878;
 }
 
-.centering-wrap {
-  max-width: 1200px;
+.c-wrap {
+  background-color: #E8E8E8;
   margin: 0 auto;
-  background-color: black;
+  max-width: 1200px;
   padding: 20px;
 }
 
