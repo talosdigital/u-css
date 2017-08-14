@@ -59,20 +59,20 @@ a:hover{
 /* Bootstrap */
 
 .card{
-  margin-bottom: 1em;
+  margin: 0 0 1em 0;
 }
 
 .block{
   display: block;
-  margin-left: .5em;
+  margin: 0 0 0 .5em;
 }
 
 .card-footer spam{
   vertical-align: -webkit-baseline-middle;
 }
 
-.no-margin-bottom{
-  margin-bottom: 0 !important;
+.no-margin{
+  margin: 0 0 0 0 !important;
 }
 
 .list-options{
@@ -88,14 +88,16 @@ a:hover{
   text-align: left;
 }
 
+/* Desktop */
 @media (min-width: 800px) {
   .margin-left{
-    margin-left: 1em !important;
+    margin-left: 0 0 0 1em !important;
   }
 }
 
+/* Tables */
 @media (max-width: 800px) {
   .margin-left{
-    margin-left: none !important;
+    margin-left: 0 0 0 0 !important;
   }
 }
