@@ -1,0 +1,60 @@
+.trash{
+  color: black;
+}
+.container{
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-size: 1em;
+}
+a{
+  color: #f0ad4e;
+}
+a:hover, a:focus{
+  color: #f07a19;
+}
+
+/* Bootstrap */
+
+.card{
+  margin: 0 0 1em 0;
+}
+
+.block{
+  display: block;
+  margin: 0 0 0 .5em;
+}
+
+.card-footer spam{
+  vertical-align: -webkit-baseline-middle;
+}
+
+.no-margin{
+  margin: 0 !important;
+}
+
+.list-options{
+  padding: 0;
+}
+.btn-options{
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  padding: .75rem 1.25rem;
+  border: none;
+  border-radius: 0;
+  text-align: left;
+}
+
+/* Desktop */
+@media (min-width: 800px) {
+  .margin-left{
+    margin: 0 0 0 1em !important;
+  }
+}
+
+/* Tables */
+@media (max-width: 800px) {
+  .margin-left{
+    margin: 0 !important;
+  }
+}

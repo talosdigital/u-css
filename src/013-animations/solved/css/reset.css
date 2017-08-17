@@ -42,11 +42,3 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.trash{
-  color: black;
-}
-.container{
-  margin: 0 30px;
-  font-family: sans-serif;
-  font-size: 1.25em;
-}
