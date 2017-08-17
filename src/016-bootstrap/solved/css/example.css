@@ -28,10 +28,6 @@ a:hover, a:focus{
   vertical-align: -webkit-baseline-middle;
 }
 
-.no-margin{
-  margin: 0 !important;
-}
-
 .list-options{
   padding: 0;
 }

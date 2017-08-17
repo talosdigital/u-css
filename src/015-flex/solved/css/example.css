@@ -11,6 +11,11 @@
   flex-direction: column;
   position: relative;
 }
+
+html, body, main, .page-content {
+  padding: 0 !important;
+}
+
 .main{
   flex-grow: 2;
   text-align: center;
@@ -56,18 +61,29 @@
   cursor: pointer;
 }
 
-.wrap .card .img-container:hover{
-  animation: zoomIn 8s ease-out infinite;
-}
-.img-container{
-  background-size: contain;
-  transform: scale(.99,.99);
+.img-container {
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 250px;
 }
 
 .wrap .card img{
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   margin-bottom: .5em;
+  width: 100%;
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.wrap .card:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .wrap .card .description{
