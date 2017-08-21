@@ -1,2 +1,335 @@
 /* Practice: Responsive Design and Media Queries */
 
+/*==================================================
+=            Mobile First Method             =
+==================================================*/
+
+body,
+html {
+  color: #787878;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+.page-content {
+  padding: 0;
+}
+
+.content {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  position: fixed;
+  transition-duration: .2s;
+  width: 100%;
+  z-index: 4;
+}
+
+.navbar .logo i,
+.navbar .responsive-icon i{
+  cursor: pointer;
+  font-size: 3em;
+  padding: 10px 20px;
+}
+
+.navbar  a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar #responsive-menu {
+  background-color: #fafafa;
+  box-sizing: border-box;
+  color: #424242;
+  height: 100%;
+  left: 0;
+  max-height: 100%;
+  position: fixed;
+  overflow: visible;
+  overflow-y: auto;
+  top: 56px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 0;
+  z-index: 5;
+}
+
+.navbar #responsive-menu a {
+  color: #757575;
+}
+
+.navbar #responsive-menu li {
+  cursor: pointer;
+  padding: 20px;
+}
+.navbar #responsive-menu li:first-child i {
+  cursor: pointer;
+  opacity: 0.5;
+  position: absolute;
+  right: 20px;
+}
+
+.navbar #responsive-menu li:not(:first-child):hover {
+  background-color: #e0e0e0;
+}
+
+.navbar #responsive-menu-toggle,
+.navbar #menu{
+  display: none;
+}
+
+.navbar #responsive-menu-toggle:checked + #responsive-menu {
+  width: 240px;
+}
+
+/* Background Navbar*/
+.bg-effect {
+  background: linear-gradient(to bottom,rgba(0,0,0,.5) 0,transparent 100%);
+  position: absolute;
+  width: 100%;
+  height: 216px;
+  left: 0;
+  top: 0;
+  z-index: 3;
+}
+
+.bg-section {
+  background-image: url(../images/bg1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 216px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  filter: blur(3px);
+}
+
+/* Path Section */
+.path {
+  display: flex;
+  margin: 40px 0;
+  padding: 20px 0;
+}
+
+.path-list ol li {
+  display: inline;
+}
+
+.path-list ol li:not(:first-child)::before {
+  content: ' / ';
+}
+
+.path-list ol li  a{
+  color: rgba(0,0,0,.87);
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.path-list ol li:not(:last-child) a:hover{
+  color: #448aff;
+}
+
+.path-list ol li:last-child  a{
+  cursor: default;
+  opacity: .5;
+}
+
+.navigation {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  border-radius: 50%;
+  color: #e91e63;
+  height: 32px;
+  min-width: 32px;
+  position: relative;
+  width: 32px;
+}
+
+.navigation a:hover {
+  background-color: rgba(158,158,158,.2);
+}
+
+.navigation a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  line-height: 24px;
+  -webkit-transform: translate(-12px,-12px);
+  transform: translate(-12px,-12px);
+  width: 24px;
+}
+
+/* Product Section */
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
+.product .thumbs {
+  order: 2;
+}
+
+.product .product-slider {
+  order: 1;
+}
+
+.product .product-description {
+  order: 3;
+}
+
+/* Slider */
+.slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider-images {
+  width: 1800px;
+  height: 400px;
+  clear: both;
+  position: relative;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
+}
+
+.slider-image {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+.slider #slider-image-1:target ~ .slider-images {
+  left: 0px;
+}
+
+.slider #slider-image-2:target ~ .slider-images {
+  left: -600px;
+}
+
+.slider #slider-image-3:target ~ .slider-images {
+  left: -1200px;
+}
+
+/* thumbs */
+.thumbs {
+  display: flex;
+  padding-top: 20px;
+}
+
+.thumbs > a {
+  cursor: pointer;
+}
+
+.thumbs > a:not(:last-child) {
+  padding-right: 10px;
+}
+
+/* Product description */
+.product-description {
+  padding: 40px 0;
+}
+
+.product-description h1,
+.product-description h2{
+  color: #000;
+  font-size: 2.2em;
+}
+
+.product-description del {
+  opacity: 0.5;
+}
+
+.product-description p {
+  color: rgba(0,0,0,.5);
+  font-size: 1.5em;
+  font-weight: 100;
+  letter-spacing: .02em;
+  margin-top: 40px;
+}
+
+.product-description .score {
+  color: #448aff;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbar {
+    padding: 40px;
+  }
+
+  .navbar .responsive-icon,
+  .navbar #responsive-menu{
+    display: none;
+  }
+
+  .navbar #menu {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+
+  .navbar #menu li {
+    padding: 20px;
+  }
+
+  .product {
+    flex-direction: row;
+  }
+
+  .product .thumbs {
+    order: 1;
+  }
+
+  .product .product-slider {
+    order: 2;
+  }
+
+  .product .product-description {
+    order: 3;
+    padding: 0 20px;
+  }
+
+  .slider {
+    width: 600px;
+  }
+
+  .thumbs {
+    flex-direction: column;
+    padding-top: 0;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
+
+

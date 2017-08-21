@@ -10,6 +10,12 @@ You should read about Responsive Design here :
 
 ### To Do
 
+Using Mobile first method, follow the next steps:
+
+1. Define the breakpoints for media queries. Minimum size is: 320px and Maximum size is 1200px.
+2. 
+ 
+
 
  [1]: https://www.smashingmagazine.com/2010/07/how-to-use-css3-media-queries-to-create-a-mobile-version-of-your-website/
  [2]: https://alistapart.com/article/responsive-web-design
