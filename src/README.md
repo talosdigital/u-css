@@ -34,6 +34,6 @@ Content of the practice materials, take your time to develop the content, if you
 [11]: https://github.com/talosdigital/u-css/tree/master/src/011-styling
 [12]: https://github.com/talosdigital/u-css/tree/master/src/012-checkbox
 [13]: https://github.com/talosdigital/u-css/tree/master/src/013-animations
-[14]: https://github.com/talosdigital/u-css/tree/master/src/014-responsive-desing
+[14]: https://github.com/talosdigital/u-css/tree/master/src/014-responsive-design
 [15]: https://github.com/talosdigital/u-css/tree/master/src/015-flex
 [16]: https://github.com/talosdigital/u-css/tree/master/src/016-bootstrap
