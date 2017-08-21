@@ -1,3 +1,5 @@
+/* Practice: Fonts and icons */
+
 @font-face {
   font-family: 'raleway-bold';
   src: url('fonts/raleway/raleway-bold-webfont.eot');
@@ -48,7 +50,7 @@ html, body {
 }
 
 p {
-  padding: 2% 0; 
+  padding: 2% 0;
 }
 
 p::first-letter {
@@ -69,7 +71,7 @@ p::first-letter {
 }
 
 
-/*  DESKTOP STYLES 
+/*  DESKTOP STYLES
    ============================= */
 
 .blue-wrapper {
@@ -119,7 +121,7 @@ p::first-letter {
 
 .yellow-wrapper li::before {
   content: "\2713 ";
-  padding-right: 5px; 
+  padding-right: 5px;
 }
 
 .yellow-wrapper li::after {
@@ -175,7 +177,7 @@ p::first-letter {
 
 .first-content .content-one p:not(:last-child){
   border-bottom: 1px solid #E72840;
-} 
+}
 
 .first-content .content-one .input-search{
   width: 200px;

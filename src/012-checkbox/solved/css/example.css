@@ -1,4 +1,4 @@
-/* Practice Layout */
+/* Practice: Checkboxes and Radio Buttons */
 .trash{
   color: black;
 }
@@ -179,32 +179,32 @@
 .list-checks {
   margin: 20px;
 }
- 
+
 .list-checks ul {
   list-style-type: none;
   width: 500px;
 }
- 
+
 h3 {
   font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
 }
- 
+
 .list-checks li img {
   float: left;
   margin: 0 15px 0 0;
   width: 100px;
   height: auto;
 }
- 
+
 .list-checks li p {
   font: 200 12px/1.5 Georgia, Times New Roman, serif;
 }
- 
+
 .list-checks li {
   padding: 10px;
   overflow: hidden;
 }
- 
+
 .list-checks li:hover {
   background: #eee;
   cursor: pointer;

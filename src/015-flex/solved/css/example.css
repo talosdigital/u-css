@@ -1,4 +1,4 @@
-/* Practice Layout */
+/* Practice: Flex */
 .trash{
   color: black;
 }
@@ -121,7 +121,7 @@ html, body, main, .page-content {
 .wrap .card .options .read-more:hover{
   background-color: #eee;
   border-radius: 2px;
-  -webkit-transition-duration: 1s; 
+  -webkit-transition-duration: 1s;
 }
 
 @keyframes zoomIn {

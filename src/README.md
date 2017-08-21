@@ -18,7 +18,7 @@ Content of the practice materials, take your time to develop the content, if you
 * 013 - [Transform, Transition and Animations][13]
 * 014 - [Responsive Design and Media Queries][14]
 * 015 - [Flex][15]
-* 015 - [Bootstrap and Material Column System][16]
+* 016 - [Bootstrap and Material Column System][16]
 
 [0]: https://github.com/talosdigital/u-css/tree/master/src/000-fundamentals
 [1]: https://github.com/talosdigital/u-css/tree/master/src/001-float-property

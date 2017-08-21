@@ -1,4 +1,4 @@
-# 002 - Negative Margins
+# 006 - Basic Layout
 
 ### Before 
 You should read about Equal Heigh Column Layout here [Smashing Magazine][1]

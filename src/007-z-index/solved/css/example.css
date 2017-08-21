@@ -1,3 +1,4 @@
+/* Practice: Z-index */
 /*  GENERAL STYLES
    ============================= */
 
@@ -12,7 +13,7 @@ html, body {
 }
 
 p {
-    padding: 2% 0; 
+    padding: 2% 0;
 }
 
 p::first-letter {
@@ -33,7 +34,7 @@ p::first-letter {
 }
 
 
-/*  DESKTOP STYLES 
+/*  DESKTOP STYLES
    ============================= */
 
 .blue-wrapper {
@@ -108,7 +109,7 @@ p::first-letter {
 
 .first-content hr{
   border-bottom: 1px solid #E72840;
-} 
+}
 
 .first-content .content-one p {
   text-transform: uppercase;
