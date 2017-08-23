@@ -1,4 +1,13 @@
 /* Practice: Transform, Transition and Animations */
+body,
+html {
+  color: #787878;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
 .trash{
   color: black;
 }
@@ -127,6 +136,34 @@
   background-color:#6a191f; color:#fff;
 }
 
+@media (max-width: 1200px) {
+  .wrap .article li:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap .article li:not(:first-child) {
+    display: none;
+  }
+}
+
+@media (max-width: 426px) {
+  .article ul {
+    list-style:none;
+    margin: 0;
+    height: 400px;
+  }
+  .article img {
+    float: left;
+    margin: 0 10px 0 0;
+    width: 275px;
+  }
+  .article li:hover .animal-info{
+    margin-left: 18px;
+  }
+}
+
 /* notes */
 .notes{
   width: calc(100% - 350px);
@@ -206,6 +243,21 @@
   z-index:5;
 }
 
+@media (max-width: 1024px) {
+  .notes ul li:nth-child(odd) {
+    display: none;
+  }
+}
+@media (max-width: 426px) {
+  .notes{
+    width: 100%;
+    height: 100%;
+  }
+  .notes ul li:not(:nth-child(2)) {
+    display: none;
+  }
+}
+
 /** sidebar  **/
 .sidebar {
   float: right;
@@ -267,6 +319,19 @@
       -moz-transform: scale(1);
       -o-transform: scale(1);
     }
+}
+
+@media (max-width: 1024px) {
+  .sidebar{
+    height: 500px;
+  }
+}
+
+@media (max-width: 426px) {
+  .sidebar{
+    width: 100%;
+    height: 100%;
+  }
 }
 
 

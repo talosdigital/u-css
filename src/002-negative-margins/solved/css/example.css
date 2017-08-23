@@ -12,6 +12,7 @@ h5 {
   font-size: 1.2em;
   font-weight: 600;
   margin-bottom: 10px;
+  max-width: calc(100% - 210px);
 }
 
 .clear {

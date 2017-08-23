@@ -13,7 +13,11 @@
 }
 
 html, body, main, .page-content {
-  padding: 0 !important;
+  color: #787878;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
 .main{

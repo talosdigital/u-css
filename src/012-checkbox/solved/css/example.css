@@ -1,4 +1,13 @@
 /* Practice: Checkboxes and Radio Buttons */
+body,
+html {
+  color: #787878;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
 .trash{
   color: black;
 }
@@ -61,6 +70,8 @@
   display: none;
   padding: 20px 30px 30px;
   background: #fff;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 @media (min-width: 600px) {

@@ -21,6 +21,7 @@ html {
   padding: 15px;
   margin-bottom: 30px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .bs-example h3 {
@@ -33,7 +34,7 @@ html {
   border: 3px solid #D24F2E;
   margin: 15px;
   padding: 15px;
-  width: 500px;
+  max-width: 500px;
 }
 
 .bs-content-box{

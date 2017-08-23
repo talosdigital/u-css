@@ -226,3 +226,28 @@ p::first-letter {
   text-align: right;
   width: 100%;
 }
+
+/*  MOBILE STYLES 
+   ============================= */
+@media (max-width: 640px) {
+    .gray-wrapper {
+        display: none;
+    }
+
+    .yellow-wrapper, 
+    .first-content, 
+    .first-content .box-title,
+    .second-content .float-content,
+    .third-content .float-content-one,
+    .third-content .float-content-two {
+        margin: 0;
+        line-height: 1.5;
+        padding: 5%;
+        width: 100%;
+    }
+
+    .yellow-wrapper {
+        position: relative;
+        right: 0;
+    }
+}

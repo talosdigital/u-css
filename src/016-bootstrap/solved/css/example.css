@@ -1,4 +1,13 @@
 /* Practice: Bootstrap and Material Column System */
+body,
+html {
+  color: #787878;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
 .trash{
   color: black;
 }
@@ -17,12 +26,12 @@ a:hover, a:focus{
 /* Bootstrap */
 
 .card{
-  margin: 0 0 1em 0;
+  margin-bottom: 1em;
 }
 
 .block{
   display: block;
-  margin: 0 0 0 .5em;
+  margin-left: .5em;
 }
 
 .card-footer spam{
@@ -45,7 +54,7 @@ a:hover, a:focus{
 /* Desktop */
 @media (min-width: 800px) {
   .margin-left{
-    margin: 0 0 0 1em !important;
+    margin-left: 1em !important;
   }
 }
 

@@ -110,3 +110,11 @@ html {
   text-align: center;
   width: 150px;
 }
+
+@media (max-width: 768px) {
+  .d-sections article {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+  }
+}
