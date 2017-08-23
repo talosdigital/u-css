@@ -16,6 +16,16 @@ Continue the Z Index, !important and Inheritance exercice in which we are going 
 6. On the yellow container the odd items except the first one should be raleway normal, use ‘em’ and have a text after saying “using ‘em’ ”.
  
 ![alt text](solved/photo-example.jpg)
+
+### Evaluation Criteria
+
+1. Make it Readable.
+2. Good Practices.
+3. Use HTML5.
+4. Structure Naming Convention.
+5. Responsive skills.
+6. Use correct Cascade code.
+7. Use correct Inheritance.
  
  [1]: http://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/
  [2]: https://css-tricks.com/almanac/properties/f/font-size/

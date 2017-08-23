@@ -17,5 +17,11 @@ The distribution of this example looks like:
 
 ![alt text](solved/images/items.png)
 
-[1]: https://www.smashingmagazine.com/2009/10/the-mystery-of-css-float-property/
+### Evaluation Criteria
 
+1. Make it Readable.
+2. Good Practices.
+3. Use HTML5.
+4. Structure Naming Convention.
+
+[1]: https://www.smashingmagazine.com/2009/10/the-mystery-of-css-float-property/

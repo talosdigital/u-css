@@ -9,4 +9,15 @@ You should read about Negative Margins Documentation here [Smashing Magazine][1]
 2. Create a list of 6 elements divide them into 3 columns using negative margin.
 3. Create a Sticky Footer with fixed footer height.
 
+The distribution of this example looks like:
+
+![alt text](solved/items.png)
+
+### Evaluation Criteria
+
+1. Make it Readable.
+2. Good Practices.
+3. Use HTML5.
+4. Structure Naming Convention.
+
  [1]: https://www.smashingmagazine.com/2009/07/the-definitive-guide-to-using-negative-margins/

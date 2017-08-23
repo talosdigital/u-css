@@ -29,6 +29,15 @@ Follow the next steps:
 
 ![alt text](solved/images/item-5.png)
  
+### Evaluation Criteria
+
+1. Make it Readable.
+2. Good Practices.
+3. Use HTML5.
+4. Structure Naming Convention.
+5. Responsive skills.
+6. Use correct Cascade code.
+7. Use correct Inheritance.
  
  [1]: http://callmenick.com/post/stylish-css-buttons
  [2]: https://www.smashingmagazine.com/2010/02/the-definitive-guide-to-styling-web-links/

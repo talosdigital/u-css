@@ -16,5 +16,16 @@ Create 2 container with:
 	
 2. Second container using Box Sizing.
 
+![alt text](solved/items.png)
+
+### Evaluation Criteria
+
+1. Make it Readable.
+2. Good Practices.
+3. Use HTML5.
+4. Structure Naming Convention.
+5. Use correct Cascade code.
+7. Use correct Inheritance.
+
  [1]: https://css-tricks.com/the-css-box-model/ 
  [2]: https://css-tricks.com/almanac/properties/b/box-sizing/

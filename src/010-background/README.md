@@ -14,6 +14,15 @@ Create a the following view with this colors #D24F2E and #f5a275:
 3. Create 2 boxes with left top inside with shadow and rigth bottom outside black shadow.
 4. Inside the boxes create and image and a title and text align, the text should have a light text shadow.
  
+### Evaluation Criteria
+
+1. Make it Readable.
+2. Good Practices.
+3. Use HTML5.
+4. Structure Naming Convention.
+5. Responsive skills.
+6. Use correct Cascade code.
+7. Use correct Inheritance.
 
  [1]: https://css-tricks.com/almanac/properties/b/background/   
  [2]: https://css-tricks.com/almanac/properties/b/background-image/ 

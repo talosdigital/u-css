@@ -12,4 +12,13 @@ Create a the following layout:
 1. Using Equal Heigh Columns
 2. Using Flex
 
+### Evaluation Criteria
+
+1. Make it Readable.
+2. Good Practices.
+3. Use HTML5.
+4. Structure Naming Convention.
+5. Use correct Cascade code.
+6. Use correct Inheritance.
+
  [1]: https://www.smashingmagazine.com/2010/11/equal-height-columns-using-borders-and-negative-margins-with-css/

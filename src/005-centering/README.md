@@ -28,6 +28,16 @@ The distribution of this example looks like:
 
 ![alt text](solved/items.png)
 
+### Evaluation Criteria
+
+1. Make it Readable.
+2. Good Practices.
+3. Use HTML5.
+4. Structure Naming Convention.
+5. Responsive skills.
+6. Use correct Cascade code.
+7. Use correct Inheritance.
+
 [1]: https://www.w3schools.com/css/css_align.asp 
 [2]: https://css-tricks.com/centering-css-complete-guide/ 
 [3]: https://www.smashingmagazine.com/2013/08/absolute-horizontal-vertical-centering-css/ 
