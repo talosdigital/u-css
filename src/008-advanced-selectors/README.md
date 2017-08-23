@@ -24,7 +24,7 @@ Using Complex Selectors, create the next items:
 2. Good Practices.
 3. Use HTML5.
 4. Structure Naming Convention.
-5. Responsive skills.
+5. Responsive skills screens from 768px to 1440px.
 6. Use correct Cascade code.
 7. Use correct Inheritance.
 

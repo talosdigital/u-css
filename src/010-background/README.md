@@ -20,7 +20,7 @@ Create a the following view with this colors #D24F2E and #f5a275:
 2. Good Practices.
 3. Use HTML5.
 4. Structure Naming Convention.
-5. Responsive skills.
+5. Responsive skills screens from 425px to 1440px.
 6. Use correct Cascade code.
 7. Use correct Inheritance.
 

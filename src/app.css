@@ -45,3 +45,9 @@
 	height: 60px;
     overflow-y: auto;
 }
+.mdl-layout-title{
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}

@@ -10,13 +10,15 @@ You should read about Checkbox and Radio Buttons here [W3 Schools][1] and [Web D
 3. In the second tab create list of 4 radio buttons, the first checked, the second unchecked, the third disable and the fourth disable and checked.
 4. In the third tab create a list of card with a image and text left and a checkbox right.
 
+![alt text](solved/images/item.png)
+
 ### Evaluation Criteria
 
 1. Make it Readable.
 2. Good Practices.
 3. Use HTML5.
 4. Structure Naming Convention.
-5. Responsive skills.
+5. Responsive skills screens from 320px to 1440px.
 6. Use correct Cascade code.
 7. Use correct Inheritance.
 
