@@ -13,7 +13,12 @@
 
     <!-- Import App Css file -->
     <link href="css/reset.css" rel="stylesheet" type="text/css">
-    <link href="css/example.css" rel="stylesheet" type="text/css">
+    <link href="css/general.css" rel="stylesheet" type="text/css">
+    <link href="css/header.css" rel="stylesheet" type="text/css">
+    <link href="css/path.css" rel="stylesheet" type="text/css">
+    <link href="css/product.css" rel="stylesheet" type="text/css">
+    <link href="css/discount.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
 
   </head>
   <body>
@@ -83,46 +88,146 @@
                 <a href=""><i class="material-icons">keyboard_arrow_right</i></a>
               </div>
             </div>
+          </section>
 
-            <div class="product">
-              <div class="thumbs">
-                <a href="#slider-image-1"><img src="images/product-31-a-small-notinclude.jpg" alt=""></a>
-                <a href="#slider-image-2"><img src="images/product-31-b-small-notinclude.jpg" alt=""></a>
-                <a href="#slider-image-3"><img src="images/product-31-c-small-notinclude.jpg" alt=""></a>
-              </div>
 
-              <div class="product-slider">
-                <div class="slider">
-                  <span id="slider-image-1"></span>
-                  <span id="slider-image-2"></span>
-                  <span id="slider-image-3"></span>
-                  <div class="slider-images">
-                    <img src="images/product-31-a-big-notinclude.jpg"  class="slider-image" />
-                    <img src="images/product-31-b-big-notinclude.jpg"  class="slider-image" />
-                    <img src="images/product-31-c-big-notinclude.jpg"  class="slider-image" />
+          <section class="product content">
+            <div class="product-thumbs">
+              <a href="#slider-image-1"><img src="images/products/product-31-a-small-notinclude.jpg" alt=""></a>
+              <a href="#slider-image-2"><img src="images/products/product-31-b-small-notinclude.jpg" alt=""></a>
+              <a href="#slider-image-3"><img src="images/products/product-31-c-small-notinclude.jpg" alt=""></a>
+            </div>
+
+            <div class="product-slider">
+              <img src="images/products/product-31-a-big-notinclude.jpg" class="image" />
+            </div>
+
+            <article class="product-description">
+              <h1>Green Fancy Top</h1>
+              <h2><del>$100.000</del> $50.000</h2>
+              <p class="score">
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star_border</i>
+              </p>
+              <p>Lorem ipsum dolor sit amet, integer modi, hac platea aenean sed ullamcorper phasellus, dui suspendisse dui, magna vel. In libero velit enim optio et, in maecenas, in dolor pellentesque. Velit non dui. Volutpat vehicula sodales lectus donec platea lacus, erat a et morbi ac ac aenean.</p>
+            </article>
+          </section>
+
+          <section class="discount">
+            <div class="discount-background discount-background-parallax"></div>
+            <div class="discount-content">
+              <h2 class="title">Get 10% off on your first order</h2>
+              <div><button class="button" >Get a Discount</button></div>
+            </div>
+          </section>
+
+          <footer class="footer">
+            <div class="dropdown-container">
+              <div class="dropdown-footer">
+                <h3 class="heading">About us</h3>
+                <input id="about" type="checkbox">
+                <div class="content-down">
+                  <p>Lorem ipsum dolor sit amet, ut vel mollis, amet enim. Leo torquent, mauris at sit dictumst mollis nulla, nulla mollis nulla amet. Integer ultricies mauris, suspendisse cras ac rutrum amet, id quam porttitor porttitor scelerisque pellentesque ullamcorper. Vehicula in pellentesque. Quis fermentum a semper metus ac, id nec. Mauris lorem diam ligula ut sed nunc. Tincidunt velit. Vehicula lobortis, vestibulum dui mauris diam sem, laoreet proin imperdiet posuere.</p>
+                  <p>Neque amet venenatis auctor vivamus, elementum mollis neque, nulla scelerisque duis eu integer.</p>
+                  <div>
+                    <i class="fa fa-cc-mastercard"></i>
+                    <i class="fa fa-cc-visa"></i>
+                    <i class="fa fa-cc-amex"></i>
+                    <i class="fa fa-cc-diners-club"></i>
+                    <i class="fa fa-cc-paypal"></i>
+                    <i class="fa fa-cc-jcb"></i>
                   </div>
                 </div>
               </div>
+              <div class="dropdown-footer">
+                <h3 class="heading">Open hours</h3>
+                <input id="about" type="checkbox">
+                <div class="content-down">
+                  <div class="calendar">
+                    <div class="calendar-item">
+                      <div class="day">Monday</div>
+                      <div class="time">10:00 - 20:00</div>
+                    </div>
+                    <div class="calendar-item">
+                      <div class="day">Tuesday</div>
+                      <div class="time">10:00 - 20:00</div>
+                    </div>
+                    <div class="calendar-item">
+                      <div class="day">Wednesday</div>
+                      <div class="time">10:00 - 20:00</div>
+                    </div>
+                    <div class="calendar-item">
+                      <div class="day">Thursday</div>
+                      <div class="time">10:00 - 20:00</div>
+                    </div>
+                    <div class="calendar-item">
+                      <div class="day">Friday</div>
+                      <div class="time">10:00 - 20:00</div>
+                    </div>
+                    <div class="calendar-item">
+                      <div class="day">Saturday</div>
+                      <div class="time">10:00 - 20:00</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown-footer">
+                <h3 class="heading">Latest products</h3>
+                <input id="about" type="checkbox">
+                <div class="content-down">
+                  <img src="images/latest-products/p1.jpg" alt="">
+                  <img src="images/latest-products/p2.jpg" alt="">
+                  <img src="images/latest-products/p3.jpg" alt="">
+                  <img src="images/latest-products/p4.jpg" alt="">
+                  <img src="images/latest-products/p5.jpg" alt="">
+                  <img src="images/latest-products/p6.jpg" alt="">
+                  <img src="images/latest-products/p7.jpg" alt="">
+                  <img src="images/latest-products/p8.jpg" alt="">
+                  <img src="images/latest-products/p9.jpg" alt="">
+                  <img src="images/latest-products/p10.jpg" alt="">
+                </div>
+              </div>
+              <div class="dropdown-footer">
+                <h3 class="heading">Our store</h3>
+                <input id="about" type="checkbox">
+                <div class="content-down">
+                  <p>Lorem ipsum dolor sit amet, ut vel mollis, amet enim.</p>
+                  <p>
+                    Lorem mollis
+                    MSU 8-9, Levels 7&9
+                    Birmingham B5 4BG
+                    (44) 121 616 2169
+                  </p>
 
-              <div class="product-description">
-                <h1>Green Fancy Top</h1>
-                <h2><del>$100.000</del> $50.000</h2>
-                <p class="score">
-                  <i class="material-icons">star</i>
-                  <i class="material-icons">star</i>
-                  <i class="material-icons">star</i>
-                  <i class="material-icons">star</i>
-                  <i class="material-icons">star_border</i>
-                </p>
-                <p>Lorem ipsum dolor sit amet, integer modi, hac platea aenean sed ullamcorper phasellus, dui suspendisse dui, magna vel. In libero velit enim optio et, in maecenas, in dolor pellentesque. Velit non dui. Volutpat vehicula sodales lectus donec platea lacus, erat a et morbi ac ac aenean.</p>
+                  <p>lalala.com</p>
+
+                  <div>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-linkedin"></i>
+                  </div>
+                </div>
               </div>
             </div>
-          </section>
+
+            <ul class="links-footer">
+              <li><a href="">Conditions</a></li>
+              <li><a href="">Help</a></li>
+              <li><a href="">Privacy</a></li>
+              <li><a href="">Terms</a></li>
+            </ul>
+
+          </footer>
 
         </div>
       </main>
     </div>
 
+
+    <script src="https://use.fontawesome.com/bcb0bef265.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
     <script src="app.js"></script>
   </body>

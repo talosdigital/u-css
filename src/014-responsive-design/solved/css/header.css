@@ -1,0 +1,174 @@
+/* Practice: Responsive Design and Media Queries */
+
+/*==================================================
+=                   Header                         =
+==================================================*/
+
+/* General */
+nav.navbar-scroll {
+  background-color: #e91e63;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  top: 0;
+}
+
+nav.navbar-no-scroll {
+  background-color: transparent;
+  box-shadow: none;
+  top: 64px;
+}
+
+.bg-effect {
+  background: linear-gradient(to bottom,rgba(0,0,0,.5) 0,transparent 100%);
+  position: absolute;
+  width: 100%;
+  height: 216px;
+  left: 0;
+  top: 0;
+  z-index: 3;
+}
+
+.bg-section {
+  background-image: url(../images/backgrounds/bg1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 216px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  filter: blur(3px);
+}
+
+/* Navbar */
+.navbar {
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  position: fixed;
+  transition-duration: .2s;
+  width: 100%;
+  z-index: 4;
+}
+
+.navbar .logo i,
+.navbar .responsive-icon i{
+  cursor: pointer;
+  font-size: 3em;
+  padding: 10px 20px;
+}
+
+.navbar  a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar  #menu a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width .3s;
+}
+
+.navbar  #menu a:hover::after {
+  width: 100%;
+}
+
+.navbar #responsive-menu {
+  background-color: #fafafa;
+  box-sizing: border-box;
+  color: #424242;
+  height: 100%;
+  left: 0;
+  max-height: 100%;
+  position: fixed;
+  overflow: visible;
+  overflow-y: auto;
+  top: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 0;
+  z-index: 5;
+}
+
+.navbar #responsive-menu a {
+  color: #757575;
+}
+
+.navbar #responsive-menu li {
+  cursor: pointer;
+  padding: 20px;
+}
+
+.navbar #responsive-menu li:first-child i {
+  cursor: pointer;
+  opacity: 0.5;
+  position: absolute;
+  right: 20px;
+}
+
+.navbar #responsive-menu li:not(:first-child):hover {
+  background-color: #e0e0e0;
+}
+
+.navbar #responsive-menu-toggle,
+.navbar #menu{
+  display: none;
+}
+
+.navbar #responsive-menu-toggle:checked + #responsive-menu {
+  width: 240px;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  nav.navbar-scroll {
+    background-color: #448aff;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbar {
+    padding: 40px;
+  }
+
+  .navbar .responsive-icon,
+  .navbar #responsive-menu{
+    display: none;
+  }
+
+  .navbar #menu {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+
+  .navbar #menu li {
+    padding: 20px;
+  }
+
+  nav.navbar-scroll {
+    background-color: #6600cc;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  nav.navbar-scroll {
+    background-color: #ff6600;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  nav.navbar-scroll {
+    background-color: #e91e63;
+  }
+}
