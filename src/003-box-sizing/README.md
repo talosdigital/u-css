@@ -1,7 +1,14 @@
 # 003 - Box Sizing
 
 ### Before 
-You should read about Box Model Documentation here [CSS Tricks][1] and read about Box Sizing Documentation here [CSS Tricks][2].
+You should read about Box Model and Box Sizing here:
+
+1. [The CSS Box Model][1] 
+2. [Box Sizing][2]
+
+#
+The estimation for this practice is: 1 hours.
+#
 
 ### To Do
 
@@ -16,7 +23,9 @@ Create 2 container with:
 	
 2. Second container using Box Sizing.
 
-![alt text](solved/items.png)
+#
+ #####Check the design and animations in the solution part.
+#
 
 ### Evaluation Criteria
 
@@ -24,8 +33,10 @@ Create 2 container with:
 2. Good Practices.
 3. Use HTML5.
 4. Structure Naming Convention.
-5. Use correct Cascade code.
+5. Responsive skills are not required.
+6. Use correct Cascade code.
 7. Use correct Inheritance.
+8. Goal: The practice should look as be required.
 
  [1]: https://css-tricks.com/the-css-box-model/ 
  [2]: https://css-tricks.com/almanac/properties/b/box-sizing/

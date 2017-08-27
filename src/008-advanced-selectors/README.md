@@ -4,6 +4,10 @@
 You should read about advanced Selectors Documentation here:
 [Complex Selectors][1]
 
+#
+The estimation for this practice is: 4 hours.
+#
+
 ### To Do
 
 Using Complex Selectors, create the next items:
@@ -17,6 +21,10 @@ Using Complex Selectors, create the next items:
 4. Add a section with shopping cards, the fist one with a special link.
  
  ![alt text](solved/images/item2.png)
+ 
+ #
+  #####Check the design and animations in the solution part.
+ #
 
 ### Evaluation Criteria
 
@@ -27,6 +35,7 @@ Using Complex Selectors, create the next items:
 5. Responsive skills screens from 768px to 1440px.
 6. Use correct Cascade code.
 7. Use correct Inheritance.
+8. Goal: The practice should look as be required.
 
 [1]: http://learn.shayhowe.com/advanced-html-css/complex-selectors/
 

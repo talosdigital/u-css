@@ -8,6 +8,9 @@ You should read about Styling Web Links Properties here:
 3. [CSS list][3]
 4. [Various CSS Input Text Styles][4]
 
+#
+The estimation for this practice is: 4 hours.
+#
 
 ### To Do
 
@@ -28,6 +31,10 @@ Follow the next steps:
 ![alt text](solved/images/item-3.png)
 
 ![alt text](solved/images/item-5.png)
+
+#
+ #####Check the design and animations in the solution part.
+#
  
 ### Evaluation Criteria
 
@@ -38,6 +45,7 @@ Follow the next steps:
 5. Responsive skills screens from 768px to 1440px.
 6. Use correct Cascade code.
 7. Use correct Inheritance.
+8. Goal: The practice should look as be required.
  
  [1]: http://callmenick.com/post/stylish-css-buttons
  [2]: https://www.smashingmagazine.com/2010/02/the-definitive-guide-to-styling-web-links/

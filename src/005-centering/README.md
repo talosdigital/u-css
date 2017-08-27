@@ -8,6 +8,9 @@ You should read about Centering Components Documentation here:
 3. [Absolute Horizontal Vertical Centering CSS][3]
 4. [Centering Elements with Flexbox][4]
 
+#
+The estimation for this practice is: 2 hours.
+#
 
 ### To Do
 
@@ -24,9 +27,9 @@ Using methods for Centering in CSS, create the next items:
 9. A Block-level element with a fixed height, centered vertically within a parent.
 10. A Block-level element with an unknown height, centered vertically within a parent.
 
-The distribution of this example looks like:
-
-![alt text](solved/items.png)
+#
+ #####Check the design and animations in the solution part.
+#
 
 ### Evaluation Criteria
 
@@ -34,9 +37,10 @@ The distribution of this example looks like:
 2. Good Practices.
 3. Use HTML5.
 4. Structure Naming Convention.
-5. Responsive skills.
+5. Responsive skills are optionals.
 6. Use correct Cascade code.
 7. Use correct Inheritance.
+8. Goal: The practice should look as be required.
 
 [1]: https://www.w3schools.com/css/css_align.asp 
 [2]: https://css-tricks.com/centering-css-complete-guide/ 

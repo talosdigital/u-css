@@ -1,7 +1,11 @@
 # 013 - Transform, Transition and Animations
 
 ### Before 
-You should read about Animation Properties here [CSS Tricks][1], read about Transform Properties here[CSS Tricks][2] and read about Transitions here[CSS Tricks][3].
+You should read about Animation Properties here [CSS Tricks][1], read about Transform Properties here [CSS Tricks][2] and read about Transitions here [CSS Tricks][3].
+
+#
+The estimation for this practice is: 8 hours.
+#
 
 ### To Do
 
@@ -12,6 +16,10 @@ You should read about Animation Properties here [CSS Tricks][1], read about Tran
 
 ![alt text](solved/Photo-Example.jpg)
 
+#
+ #####Check the design and animations in the solution part.
+#
+
 ### Evaluation Criteria
 
 1. Make it Readable.
@@ -21,6 +29,7 @@ You should read about Animation Properties here [CSS Tricks][1], read about Tran
 5. Responsive skills screens from 425px to 1440px.
 6. Use correct Cascade code.
 7. Use correct Inheritance.
+8. Goal: The practice should look as be required.
 
 
  [1]: https://css-tricks.com/almanac/properties/a/animation/

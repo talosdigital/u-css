@@ -3,6 +3,10 @@
 ### Before 
 You should read about Background Documentation here [CSS Tricks][1], about Background Image Properties here [CSS Tricks][2], about Shadows Documentatio here [W3 School][3], about Using Box Shadow here [CSS Tricks][4] and about Using Text Shadow here [CSS Tricks][5].
 
+#
+The estimation for this practice is: 5 hours.
+#
+
 ### To Do
 
 Create a the following view with this colors #D24F2E and #f5a275:
@@ -14,6 +18,10 @@ Create a the following view with this colors #D24F2E and #f5a275:
 3. Create 2 boxes with left top inside with shadow and rigth bottom outside black shadow.
 4. Inside the boxes create and image and a title and text align, the text should have a light text shadow.
  
+ #
+  #####Check the design and animations in the solution part.
+ #
+ 
 ### Evaluation Criteria
 
 1. Make it Readable.
@@ -23,6 +31,7 @@ Create a the following view with this colors #D24F2E and #f5a275:
 5. Responsive skills screens from 425px to 1440px.
 6. Use correct Cascade code.
 7. Use correct Inheritance.
+8. Goal: The practice should look as be required.
 
  [1]: https://css-tricks.com/almanac/properties/b/background/   
  [2]: https://css-tricks.com/almanac/properties/b/background-image/ 

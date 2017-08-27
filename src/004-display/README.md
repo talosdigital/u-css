@@ -1,7 +1,11 @@
 # 004 - Display
 
 ### Before 
-You should read about Display Documentation here [CSS Tricks][1].
+You should read about Display Documentation here [Display][1].
+
+#
+The estimation for this practice is: 2 hours.
+#
 
 ### To Do
 
@@ -15,6 +19,10 @@ Using Display CSS Property, create the next items:
 
 ![alt text](solved/items.png)
 
+#
+ #####Check the design and animations in the solution part.
+#
+
 ### Evaluation Criteria
 
 1. Make it Readable.
@@ -24,5 +32,6 @@ Using Display CSS Property, create the next items:
 5. Responsive skills screens from 425px to 1440px.
 6. Use correct Cascade code.
 7. Use correct Inheritance.
+8. Goal: The practice should look as be required.
 
- [1]: https://css-tricks.com/almanac/properties/d/display/
+[1]: https://css-tricks.com/almanac/properties/d/display/
