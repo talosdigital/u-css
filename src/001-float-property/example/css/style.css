@@ -4,6 +4,22 @@
     background: #e9e7e9;
     margin: 0 auto;
     width: 1200px;
+    color: #767479;
+}
+p {
+    line-height: 1.5;
+}
+
+h1, h2 {
+    font-size: 1.6rem;
+}
+
+h2 {
+    padding-bottom: 16px;
+}
+
+header, nav, article, aside {
+    padding:16px;
 }
 
 header {
@@ -28,13 +44,14 @@ section {
 
 article {
     background: #c9c7c9;
-    width:75%;
+    width:69%;
     float: left;
 }
 
 article img {
+    border: solid 1px #bbb;
     float: left;
-    margin: 0px 20px;
+    margin: 0 15px 0 0;
 }
 
 article p {
@@ -54,4 +71,21 @@ aside {
 
 .galley img {
     float:left;
+    margin: 0 22px 22px 0;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+.clearfix {
+    zoom: 1;
 }
