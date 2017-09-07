@@ -5,16 +5,20 @@ body {
 
 #main-container {
     background-color: #FFFFFF;
-    padding: 20px 10%;
+    padding: 20px 5%;
 }
 
-#main-container > h1, .menu, article, aside {
+#main-container > h1, .menu, article, aside, .gallery {
     padding: 20px 15px;
     box-sizing: border-box;
 }
 
 #main-container > h1 {
     background-color: #999999;
+}
+
+#main-container img {
+    max-width: 100%;
 }
 
 .menu {
@@ -27,25 +31,8 @@ body {
     color: #333333;
 }
 
-.content > article {
-    background-color: #BBBBBB;
-    float: left;
-    width: 60%
-}
-
-.main-article > img {
-    float: left;
-    padding-right: 20px;
-} 
-
-.content > aside {
+.content {
     background-color: #CCCCCC;
-    float: right;
-    width: 40%;
-}
-
-h1 {
-    padding-bottom: 10px;
 }
 
 .cf:before,
@@ -56,4 +43,39 @@ h1 {
 
 .cf:after {
     clear: both;
+}
+
+.content > article {
+    background-color: #BBBBBB;
+    float: left;
+    width: 70%
+}
+
+.main-article > img {
+    float: left;
+    padding-right: 20px;
+} 
+
+.content > aside {
+    background-color: #CCCCCC;
+    float: right;
+    width: 30%;
+}
+
+.sidebar > input {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+h1 {
+    padding-bottom: 10px;
+}
+
+.gallery {
+    background-color: #EEEEEE;
+}
+
+.gallery > img {
+    padding: 0 10px 10px 0;
 }
