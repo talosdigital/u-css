@@ -5,7 +5,9 @@ body {
 
 #main-container {
     background-color: #FFFFFF;
-    padding: 20px 5%;
+    padding: 20px 20px 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #main-container > h1, .menu, article, aside, .gallery {
@@ -63,19 +65,41 @@ body {
 }
 
 .sidebar > input {
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: none;
     display: block;
     margin-bottom: 20px;
+    padding: 5px;
     width: 100%;
+}
+
+.sidebar a {
+    color: #333333;
 }
 
 h1 {
     padding-bottom: 10px;
+    font-size: 1.5rem;
 }
 
 .gallery {
     background-color: #EEEEEE;
+    float: left;
+    margin-bottom: 20px;
 }
 
-.gallery > img {
-    padding: 0 10px 10px 0;
+.gallery ul > li {
+    float: left;
+    padding: 20px 20px 0 0;
+}
+
+@media (max-width: 800px) { 
+    .content > article {
+        width: 100%;
+    }
+
+    .content > aside {
+        width: 100%
+    }
 }
