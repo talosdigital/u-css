@@ -1,0 +1,59 @@
+body {
+    font: 18px arial, sans-serif;
+    color: #333333;
+}
+
+#main-container {
+    background-color: #FFFFFF;
+    padding: 20px 10%;
+}
+
+#main-container > h1, .menu, article, aside {
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+
+#main-container > h1 {
+    background-color: #999999;
+}
+
+.menu {
+    background-color: #AAAAAA;
+}
+
+.menu > a {
+    padding-right: 15px;
+    text-decoration: none;
+    color: #333333;
+}
+
+.content > article {
+    background-color: #BBBBBB;
+    float: left;
+    width: 60%
+}
+
+.main-article > img {
+    float: left;
+    padding-right: 20px;
+} 
+
+.content > aside {
+    background-color: #CCCCCC;
+    float: right;
+    width: 40%;
+}
+
+h1 {
+    padding-bottom: 10px;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
