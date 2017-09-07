@@ -1,0 +1,57 @@
+/* Practice Layout */
+
+.content {
+    background: #e9e7e9;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+header {
+    background: #e9e7e9;
+}
+
+nav {
+    background: #dddbdd;
+}
+
+nav ul {
+
+}
+
+nav li {
+    display:inline;
+}
+
+section {
+    width: 100%;
+}
+
+article {
+    background: #c9c7c9;
+    width:75%;
+    float: left;
+}
+
+article img {
+    float: left;
+    margin: 0px 20px;
+}
+
+article p {
+
+}
+
+aside {
+    background:#e9e7e9;
+    float:right;
+    width:25%;
+}
+
+.galley {
+    clear: both;
+    background: #f6f4f6;
+}
+
+.galley img {
+    float:left;
+}
