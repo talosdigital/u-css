@@ -1,91 +1,97 @@
 /* Practice Layout */
 
 .content {
-    background: #e9e7e9;
-    margin: 0 auto;
-    width: 1200px;
-    color: #767479;
+  background: #e9e7e9;
+  margin: 0 auto;
+  width: 1200px;
+  color: #767479;
 }
-p {
-    line-height: 1.5;
+
+p, aside li {
+  line-height: 1.5;
 }
 
 h1, h2 {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 h2 {
-    padding-bottom: 16px;
+  padding-bottom: 16px;
 }
 
-header, nav, article, aside {
-    padding:16px;
+header, nav, article, aside, .galley {
+  padding: 16px;
 }
 
 header {
-    background: #e9e7e9;
+  background: #E8E8E8;
 }
 
 nav {
-    background: #dddbdd;
-}
-
-nav ul {
-
+  background: #DCDCDC;
 }
 
 nav li {
-    display:inline;
+  display: inline;
+  margin-right: 13px;
 }
 
 section {
-    width: 100%;
+  width: 100%;
 }
 
 article {
-    background: #c9c7c9;
-    width:69%;
-    float: left;
+  background: #C8C8C8;
+  float: left;
+  width: 68%;
 }
 
 article img {
-    border: solid 1px #bbb;
-    float: left;
-    margin: 0 15px 0 0;
-}
-
-article p {
-
+  border: solid 1px #bbb;
+  float: left;
+  margin: 0 15px 0 0;
 }
 
 aside {
-    background:#e9e7e9;
-    float:right;
-    width:25%;
+  background: #E8E8E8;
+  float: right;
+  width: 26%;
+}
+
+form input {
+  border: none;
+  border-radius: 4px;
+  display: block;
+  height: 25px;
+  width: 100%;
 }
 
 .galley {
-    clear: both;
-    background: #f6f4f6;
+  clear: both;
+  background: #F5F5F5;
+}
+
+.galley h2 {
+  padding-bottom: 0;
 }
 
 .galley img {
-    float:left;
-    margin: 0 22px 22px 0;
+  float: left;
+  padding: 9px;
 }
 
 .clearfix:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 
 .clearfix {
-    display: inline-block;
+  display: inline-block;
 }
 
 .clearfix {
-    zoom: 1;
+  zoom: 1;
 }
