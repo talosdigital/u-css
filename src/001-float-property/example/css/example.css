@@ -1,4 +1,4 @@
-/*General styles*/
+/* General styles */
 * {
 	box-sizing: border-box;
 }
@@ -18,6 +18,7 @@ p {
 section.main-content {
 	background: #d7dcd6;
 	float: left;
+	width: 100%;
 }
 
 /* nav styles */
@@ -28,10 +29,14 @@ nav {
 }
 
 nav a {
+	border: 1px dotted;
 	color: #627b64;
 	float: left;
-	padding: 10px 20px;
+	padding: 20px 15px;
+	text-align: center;
 	text-decoration: none;
+	text-transform: capitalize;
+	width: 25%;
 }
 
 nav a:hover {
@@ -51,12 +56,6 @@ section.l-column {
 	float: left;
 	margin: 0px 15px 10px 0px;
 }
-@media (max-width: 800px) {
-	section.l-column {
-		width: 100%;
-		padding-right: 33px;
-	}
-}
 
 /* aside styles */
 aside.r-column {
@@ -64,13 +63,6 @@ aside.r-column {
 	background: #d2d8cf;
 	padding: 20px 33px 20px 15px;
 	width: 35%;	
-}
-@media (max-width: 800px) {
- aside.r-column {
-		clear: both;
-		padding-left: 20px;
-    width: 100%;
- }
 }
 
 /* article styles */
@@ -94,8 +86,29 @@ article.gallery {
 	width: 100%;
 }
 
+/* Media queries styles */
 @media (max-width: 800px) {
+	section.l-column {
+		width: 100%;
+		padding-right: 33px;
+	}
+	
+	aside.r-column {
+		clear: both;
+		padding-left: 20px;
+    width: 100%;
+ }
+
 	.gallery li {
 		width: 33.33%;
+	}
+}
+
+@media (max-width: 530px) {
+  nav a {
+		width: 50%;
+	}
+	section p {
+		clear: both;
 	}
 }
