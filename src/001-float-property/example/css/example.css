@@ -59,7 +59,7 @@ section.l-column {
 
 /* aside styles */
 aside.r-column {
-	float: left;
+	float: right;
 	background: #d2d8cf;
 	padding: 20px 33px 20px 15px;
 	width: 35%;	
