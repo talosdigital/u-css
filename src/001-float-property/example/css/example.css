@@ -70,7 +70,7 @@ aside.r-column {
 article.gallery {
 	clear: both;
 	background: #c3d2c4;
-	float: left;
+	overflow: auto;
 	width: 100%;
 	padding: 15px 20px;
 }
