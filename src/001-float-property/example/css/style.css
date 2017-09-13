@@ -19,8 +19,12 @@ h2 {
   padding-bottom: 16px;
 }
 
-header, nav, article, aside, .galley {
+header, article, aside, .galley {
   padding: 16px;
+}
+
+nav {
+  padding: 16px 16px 0 16px;
 }
 
 article, aside, .galley {
