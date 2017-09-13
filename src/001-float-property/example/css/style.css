@@ -32,7 +32,7 @@ nav {
 }
 
 nav li {
-  display: inline;
+  float: left;
   margin-right: 13px;
 }
 
@@ -43,19 +43,21 @@ section {
 article {
   background: #C8C8C8;
   float: left;
-  width: 68%;
+  width: 70%;
+  box-sizing: border-box;
 }
 
 article img {
   border: solid 1px #bbb;
   float: left;
-  margin: 0 15px 0 0;
+  margin-right: 15px;
 }
 
 aside {
   background: #E8E8E8;
   float: right;
-  width: 26%;
+  width: 30%;
+  box-sizing: border-box;
 }
 
 form input {
@@ -90,8 +92,4 @@ form input {
 
 .clearfix {
   display: inline-block;
-}
-
-.clearfix {
-  zoom: 1;
 }
