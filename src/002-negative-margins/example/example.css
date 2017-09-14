@@ -1,5 +1,32 @@
 /* Practice Layout */
 
-.trash{
+.fl-left{
+    float: left;
+}
+
+section {
+    background-color: #F5F5F5;
+    margin: 10px 0;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#section1 .content {
+    width: 100%;
+    margin-right: -300px;
+}
+
+#section1 .sidebar{
+    width: 300px;
+}
+
+.wrapper {
+    margin-right: 300px;
+}
+
+
+.trash {
 	color: black;
 }
+
