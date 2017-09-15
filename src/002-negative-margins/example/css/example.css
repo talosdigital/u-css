@@ -51,6 +51,9 @@ aside.sidebar li,
 .sidebar .material-icons {
 	font-size: 1.6em;
 }
+.sidebar .material-icons {
+	color: #9c6464;
+}
 
 aside.sidebar a {
 	text-decoration: none;
@@ -81,7 +84,7 @@ aside.sidebar a {
 	margin-left:200px;
 }
 
-/* */
+/* Sticky footer styles */
 .page-wrap {
 	min-height: 100%;
   margin-bottom: -40px;
