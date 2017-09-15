@@ -102,3 +102,20 @@ article p {
 .section2 .section3 {
 
 }
+
+footer.sticky {
+  background-color: #D24F2E;
+}
+
+footer.sticky ul {
+  padding: 10px 15px;
+}
+
+footer.sticky li{
+  display: inline;
+  padding: 10px 12px;
+}
+
+footer.sticky a{
+  color: #fff;
+}
