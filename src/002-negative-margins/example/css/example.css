@@ -99,12 +99,15 @@ article p {
   margin-top: -15em;
 }
 
-.section2 .section3 {
-
+.section3 .page-wrap {
+  min-height: 100%;
+  margin-bottom: -37px;
 }
 
 footer.sticky {
   background-color: #D24F2E;
+  height: 37px;
+  margin-top: 30px;
 }
 
 footer.sticky ul {
@@ -118,4 +121,10 @@ footer.sticky li{
 
 footer.sticky a{
   color: #fff;
+}
+
+.section3 .page-wrap:after {
+  content: "";
+  display: block;
+  height: 37px;
 }
