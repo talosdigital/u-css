@@ -1,0 +1,67 @@
+/* Practice Layout */
+
+.page-content {
+	margin: 0 auto;
+	max-width: 1200px;
+	color: #787878;
+}
+
+section {
+	padding: 20px;
+	background-color: #F5F5F5;
+	margin-bottom: 30px;
+}
+
+section h1 {
+	border-bottom: 1px solid #D24F2E;
+	font-size: 1.5em;
+	line-height: 60px;
+	margin-bottom: 28px;
+}
+
+section h2 {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+article p{
+	line-height: 25px;
+}
+
+.section1 .column1 {
+	float: left;
+	margin-right: -200px;
+	width: 100%;
+}
+
+.section1 .column2 {
+	float: left;
+	width: 200px;
+}
+
+.section2 {
+	
+}
+
+.columns {
+	list-style:none;
+}
+
+.columns li {
+	line-height:1.3em;
+}
+.columns .col2 {
+	margin-left:100px;
+}
+.columns .col3 {
+	margin-left:200px;
+}
+.columns .top {
+	margin-top:-2.6em;
+}
+
+.section3 {
+
+}
+
