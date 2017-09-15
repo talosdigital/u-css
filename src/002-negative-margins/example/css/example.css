@@ -29,6 +29,10 @@ article p{
 	line-height: 25px;
 }
 
+.section1 {
+	overflow: auto;
+}
+
 .section1 .column1 {
 	float: left;
 	margin-right: -200px;
@@ -64,4 +68,17 @@ article p{
 .section3 {
 
 }
+
+/*.clearfix:after {*/
+	/*content: ".";*/
+	/*display: block;*/
+	/*height: 0;*/
+	/*clear: both;*/
+	/*visibility: hidden;*/
+/*}*/
+
+/*.clearfix {*/
+	/*display: inline-block;*/
+/*}*/
+
 
