@@ -1,5 +1,5 @@
 /* General styles */
-*{
+* {
 	box-sizing: border-box;
 }
 
@@ -30,13 +30,13 @@ section.main {
 
 /* Content and side bar Styles */
 
-section.content {
+.content {
 	float: left;
 	margin-right: -300px;
 	width: 100%;
 }
 
-section.content * {
+.content * {
 	margin-right: 320px;
 }
 
@@ -51,6 +51,7 @@ aside.sidebar li,
 .sidebar .material-icons {
 	font-size: 1.6em;
 }
+
 .sidebar .material-icons {
 	color: #9c6464;
 }
