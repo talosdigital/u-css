@@ -13,7 +13,9 @@
 
     <!-- Import App Css file -->
     <link href="./example.css" rel="stylesheet" type="text/css">
-    
+    <!-- Practice css -->
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/example.css" rel="stylesheet">
   </head>
   <body>
   	<!-- Always shows a header, even in smaller screens. -->
@@ -31,7 +33,21 @@
       </header>
       <main class="mdl-layout__content">
         <div class="page-content">
-         <!-- Practice Content Goes Here -->
+          <!-- Practice Content Goes Here -->
+          <!-- Content box structure -->
+          <section class="main">
+            <h2>Box Sizing : Content Box</h2>
+            <div class="container c-box">
+              <p>Default. The width and height properties (and min/max properties) includes only the content. Border, padding, or margin are not included, and some loren ipsum dolor here because i don't know what can i write now on this section so, that's all.</p>
+            </div>
+          </section>
+          <!-- Box sizing structure -->
+          <section class="main">
+            <h2>Box Sizing : border-box</h2>
+            <div class="container b-box">
+              <p>The width and height properties (and min/max properties) includes content, padding and border, but not the margin</p>
+            </div>
+          </section>
         </div>
       </main>
     </div>
