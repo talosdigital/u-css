@@ -2,8 +2,21 @@
 
 .page-content {
   color: #787878;
+}
+
+main {
   margin: 0 auto;
   max-width: 1200px;
+}
+
+
+h1 {
+  font-size: 2.5em;
+  line-height: 60px;
+}
+
+p {
+  line-height: 25px;
 }
 
 a {
@@ -29,13 +42,8 @@ nav ul li {
   display: inline-block;
 }
 
-h1 {
-  font-size: 2.5em;
-  line-height: 60px;
-}
-
-p {
-  line-height: 25px;
+.section1 {
+  padding: 0;
 }
 
 .section1 > div {
@@ -43,6 +51,29 @@ p {
   padding: 15px;
   vertical-align: middle;
   width: 50%;
+}
+
+.section2 {
+  background-color: #C8C8C8;
+  border-collapse: collapse;
+  display: table;
+  width: 100%;
+}
+
+.section2 .row {
+  border: #f0f0f0 1px solid;
+  display: table-row;
+  text-align: center;
+}
+
+.section2 .row.head {
+  font-weight: bold;
+}
+
+.section2 .cell {
+  border: #f0f0f0 1px solid;
+  display: table-cell;
+  padding: 18px;
 }
 
 .section3 div {
