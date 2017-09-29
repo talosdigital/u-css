@@ -3,3 +3,103 @@
 .trash{
 	color: black;
 }
+
+body {
+    color: #777777;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+
+.main.container {
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #E0E0E0;
+}
+
+.main .container {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container.header > div{
+    display: inline-block;
+}
+
+.header-title {
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.nav {
+    background: #D0D0D0;
+}
+ 
+.nav > div {
+    display: inline-block;
+} 
+
+.nav a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: #777777;
+    font-size: 16px;
+}
+
+.two-columns {
+    font-size: 0;
+    display: flex;
+    align-items: center;
+}
+
+.two-columns > div {
+    display: inline-block;
+    width: 50%;
+}
+
+.div-table.container {
+    padding: 0;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    background: #C0C0C0;
+    font-size: 16px;
+    border-collapse: collapse;
+}
+
+.table-header, .table-cell {
+    display: table-cell;
+    text-align: center;
+    padding: 15px 0;
+    border: 1px solid #FFFFFF;
+}
+
+.table-header-group {
+    display: table-header-group;
+    font-weight: bold;
+}
+
+.table-header-group .table-header {
+    width: 33.33%;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.gallery.container {
+    padding: 20px 0 0 0;
+}
+
+.box {
+    display: inline-block;
+    width: 150px;
+    padding: 10px;
+    height: 80px;
+    border: 3px solid #FF0000;
+    margin: 10px 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
