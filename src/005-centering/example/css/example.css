@@ -1,0 +1,156 @@
+/* Practice Layout */
+
+.page-content {
+  color: #787878;
+}
+
+.main-content {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #E8E8E8;
+}
+
+header h1, nav, .section1 .inline div,
+.section1 .flex div, .section2 .center2,
+.section3 .table p,
+.section4 .flex,
+.section5 .center,
+.section6 {
+  background-color: #d4d2d4;
+}
+
+h1 {
+  height: 40px;
+  line-height: 40px;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+p {
+  line-height: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+section, nav {
+  display: block;
+  line-height: 23px;
+}
+
+nav {
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  color: #FF4081;
+}
+
+nav ul li {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.section1 .inline {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section1 .inline div {
+  display: inline-block;
+  padding: 40px;
+  margin: 5px;
+  text-align: left;
+  width: 200px;
+}
+
+.section1 .flex {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 23px;
+}
+
+.section1 .flex div {
+  width: 200px;
+  padding: 40px;
+  margin: 5px;
+}
+
+.section2 .center2 {
+  height: 100px;
+  line-height: 100px;
+  padding: 20px;
+  width: 50%;
+  white-space: nowrap;
+}
+
+.section3 .table {
+  display: table;
+  height: 250px;
+  width: 240px;
+  margin: 15px 0;
+}
+
+.section3 .table p {
+  display: table-cell;
+  padding: 20px;
+  vertical-align: middle;
+}
+
+.section4 .flex {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  justify-content: center;
+  padding: 40px;
+}
+
+.section5 .center {
+  height: 300px;
+  margin: 20px 0;
+  width: 100%;
+  position: relative;
+  resize: vertical;
+  overflow: auto;
+}
+
+.section5 .center div,
+.section6 .center2{
+  background-color: #aaa8aa;
+}
+
+.section5 .center div {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  right: 20px;
+  height: 100px;
+  margin-top: -70px;
+  color: white;
+  padding: 20px;
+}
+
+.section6 {
+  height: 300px;
+  margin: 20px 0;
+  position: relative;
+  resize: vertical;
+  overflow: auto;
+  width: 100%;
+}
+
+.section6 .center2 {
+  color: white;
+  left: 20px;
+  position: absolute;
+  top: 50%;
+  padding: 20px;
+  right: 20px;
+  resize: vertical;
+  transform: translateY(-50%);
+  overflow: auto;
+}
