@@ -13,7 +13,9 @@
 
     <!-- Import App Css file -->
     <link href="./example.css" rel="stylesheet" type="text/css">
-    
+    <!-- Css Practice -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/example.css" rel="stylesheet" type="text/css">
   </head>
   <body>
   	<!-- Always shows a header, even in smaller screens. -->
@@ -31,7 +33,75 @@
       </header>
       <main class="mdl-layout__content">
         <div class="page-content">
-         <!-- Practice Content Goes Here -->
+          <!-- Practice Content Goes Here -->
+          <!-- First exercise -->
+          <h2>1. Without a wrapper div, with border and negative margin</h2>
+          <div class="body">
+            <header>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </header>
+            <aside class="nw">
+              <ul>
+                <li><a href="" class="flex-align"><i class="material-icons">home</i> Home </a></li>
+                <li><a href="" class="flex-align"><i class="material-icons">description</i> About </a></li>
+                <li><a href="" class="flex-align"><i class="material-icons">email</i> Contact us </a></li>
+              </ul>
+            </aside>
+            <article class="nw">
+              <p>Lorem ipsum...</p>
+              <p>Lorem ipsum...</p>
+              <p>Lorem ipsum...</p>
+              <p>Lorem ipsum...</p>
+              <p>Lorem ipsum...</p>
+              <p>Lorem ipsum...</p>
+              <p>Lorem ipsum...</p>
+            </article>
+            <footer>
+              <ul>
+                <li><a href="#">Talos Digital</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </footer>
+          </div>
+          <!-- Second exercise -->
+          <h2>2. Using flex, flex-direction, and wrapper div</h2>
+          <div class="body">
+            <header>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </header>
+            <div class="wrapper">
+              <aside class="fx">
+                <ul>
+                  <li><a href="" class="flex-align"><i class="material-icons">home</i> Home </a></li>
+                  <li><a href="" class="flex-align"><i class="material-icons">description</i> About </a></li>
+                  <li><a href="" class="flex-align"><i class="material-icons">email</i> Contact us </a></li>
+                </ul>
+              </aside>
+              <article class="fx">
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+              </article>
+            </div>
+            <footer>
+              <ul>
+                <li><a href="#">Talos Digital</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </footer>
+          </div>
         </div>
       </main>
     </div>
