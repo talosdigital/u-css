@@ -32,8 +32,8 @@
     </header>
     <main class="mdl-layout__content">
         <div class="page-content">
+            <h1>1. Without a wrapper div, with border and negative margin</h1>
             <div class="layout1">
-                <h1>1. Without a wrapper div, with border and negative margin</h1>
                 <header>
                     <ul>
                         <li>Home</li>
@@ -41,24 +41,40 @@
                         <li>Contact Us</li>
                     </ul>
                 </header>
-                <section>
-                    <aside>
-                        <ul>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Contact Us</li>
-                        </ul>
-                    </aside>
-                    <article>
-                        <p>Lorem Ipsum...</p>
-                        <p>Lorem Ipsum...</p>
-                        <p>Lorem Ipsum...</p>
-                        <p>Lorem Ipsum...</p>
-                        <p>Lorem Ipsum...</p>
-                        <p>Lorem Ipsum...</p>
-                        <p>Lorem Ipsum...</p>
-                    </article>
-                </section>
+
+                <aside>
+                    <ul class="demo-list-item mdl-list">
+                        <li class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons mdl-list__item-icon">home</i>
+                                    Home
+                            </span>
+                        </li>
+                        <li class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons mdl-list__item-icon">description</i>
+                                    About
+                            </span>
+                        </li>
+                        <li class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons mdl-list__item-icon">email</i>
+                                    Contact US
+                            </span>
+                        </li>
+                    </ul>
+                </aside>
+
+                <main>
+                    <p>Lorem Ipsum...</p>
+                    <p>Lorem Ipsum...</p>
+                    <p>Lorem Ipsum...</p>
+                    <p>Lorem Ipsum...</p>
+                    <p>Lorem Ipsum...</p>
+                    <p>Lorem Ipsum...</p>
+                    <p>Lorem Ipsum...</p>
+                </main>
+
                 <footer>
                     <ul>
                         <li>Talos Digital</li>
@@ -66,8 +82,8 @@
                     </ul>
                 </footer>
             </div>
+            <h1>2. Using flex, flex-direction, and wrapper div</h1>
             <div class="layout2">
-                <h1>2. Using flex, flex-direction, and wrapper div</h1>
                 <header>
                     <ul>
                         <li>Home</li>
@@ -75,15 +91,31 @@
                         <li>Contact Us</li>
                     </ul>
                 </header>
-                <section>
+                <div class="wrapper">
                     <aside>
-                        <ul>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Contact Us</li>
+                        <ul class="demo-list-item mdl-list">
+                            <li class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons mdl-list__item-icon">home</i>
+                                    Home
+                            </span>
+                            </li>
+                            <li class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons mdl-list__item-icon">description</i>
+                                    About
+                            </span>
+                            </li>
+                            <li class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons mdl-list__item-icon">email</i>
+                                    Contact US
+                            </span>
+                            </li>
                         </ul>
                     </aside>
-                    <article>
+
+                    <main>
                         <p>Lorem Ipsum...</p>
                         <p>Lorem Ipsum...</p>
                         <p>Lorem Ipsum...</p>
@@ -91,8 +123,8 @@
                         <p>Lorem Ipsum...</p>
                         <p>Lorem Ipsum...</p>
                         <p>Lorem Ipsum...</p>
-                    </article>
-                </section>
+                    </main>
+                </div>
                 <footer>
                     <ul>
                         <li>Talos Digital</li>
