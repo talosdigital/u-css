@@ -3,3 +3,75 @@
 .trash{
 	color: black;
 }
+
+/** Wrap **/
+.paginaejemplo{
+  background-color: #82b1ff;
+  margin: auto;
+  max-width: 70%;
+  overflow:hidden;
+}
+
+/** header  **/
+.header {
+  background-color: #0d47a1;
+  color:white;
+  height: 80px;
+  padding: 0 15px;
+  margin: -24px 0 0 0;
+}
+
+/** nav  **/
+.topnav {
+  overflow: hidden;
+  background-color: #1565c0;
+  text-overflow: ellipsis;
+}
+
+/** nav font **/
+.topnav a{
+  color: white;
+}
+
+/** content article **/
+.content-article{
+  background-color: #bbdefb;
+  box-sizing: border-box;
+  float:left;
+  padding: 15px 15px 77px 15px;
+  width:60%;
+}
+
+.content-article img{
+  float:left;
+  margin: 0 10px 0 0;
+}
+
+/** content aside **/
+.content-aside{
+  background-color: #2196f3;
+  box-sizing: border-box;
+  float:right;
+  padding: 15px;
+  width:40%;
+}
+
+/** content gallery **/
+.content-gallery{
+  background-color: #b2ebf2;
+  clear: both;
+  overflow: auto;
+  padding: 15px 15px 15px 15px;
+}
+
+.content-gallery ul {
+  list-style:none;
+
+}
+
+.content-gallery li {
+  float: left;
+	margin:0;
+	padding: 10px;
+}
+
