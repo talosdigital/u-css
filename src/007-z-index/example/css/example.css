@@ -40,7 +40,7 @@ html, body {
   padding: 5% 0;
 }
 
-.container2 article :first-child p{
+hr {
   border-bottom: 1px solid #E72840;
 }
 
