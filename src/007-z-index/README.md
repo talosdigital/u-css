@@ -9,6 +9,8 @@ The estimation for this practice is: 3 hours.
 
 ### To Do
 
+Using Z Index, !important and Inheritance CSS Property, create the next items:
+
 Create a the following layout:
 
 ![alt text](solved/Photo-Example.jpg)
