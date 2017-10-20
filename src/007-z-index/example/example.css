@@ -3,3 +3,17 @@
 .trash{
 	color: black;
 }
+
+body {
+	font-family: sans-serif;
+	letter-spacing: normal;
+	background: #D5EADE;
+}
+
+article, nav, section {
+	display: block;
+}
+
+.main-container {
+	background: #76C4D1;
+}
