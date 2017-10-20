@@ -1,0 +1,63 @@
+/* Practice: Z-index */
+/*  GENERAL STYLES
+   ============================= */
+
+html, body {
+  background-color: #D5EADE;
+  color: #FFFFFF;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.5;
+  position: relative;
+}
+
+.page-content {
+  padding: 150px;
+}
+
+.container1 {
+  background: #96baba;
+  z-index:10;
+  position: relative;
+}
+
+.container2 {
+  background: #76C4D1;
+  z-index:100;
+  padding: 90px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.container2 h1 {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.container2 p {
+  letter-spacing: 1px;
+  padding: 5% 0;
+}
+
+.container2 article :first-child p{
+  border-bottom: 1px solid #E72840;
+}
+
+.container3 {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000000;
+  padding: 5% 5% 5% 20%;
+  margin-left: -20%;
+}
+
+.container3 h2 {
+  font-size: 2em;
+  line-height: 2.5;
+}
+
+.container3 p {
+  font-size: 0.9em;
+  font-weight: 400;
+  padding: 2% 0;
+}
