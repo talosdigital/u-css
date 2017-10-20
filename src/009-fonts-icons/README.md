@@ -11,7 +11,13 @@ The estimation for this practice is: 1 hours.
 
 Continue the Z Index, !important and Inheritance exercice in which we are going to change some labels using Fonts, Icons and Sizes.
 
-Create a the following layout:
+1. Change the Inheritance font for raleway thin with, verdana, arial, sans-serif.
+2. The first letter in all the simple text should be bold.
+3. Remove the second test at the blue container and create an input with a find in page icon ([Material][6]).
+4. Add 3 icons to the right between the title and the first text ([Font Awesome][5]).
+4. Remove the third test at the white container and create a button with fingerprint icon ([Material][6]).
+5. On the yellow container the pair items should use ‘pt’ and have a text after saying “using ‘pt’ “ 
+6. On the yellow container the odd items except the first one should be raleway normal, use ‘em’ and have a text after saying “using ‘em’ ”.
  
 ![alt text](solved/photo-example.jpg)
 
