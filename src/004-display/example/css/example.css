@@ -1,0 +1,101 @@
+/* General styles */
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	color: #787878;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+h1 {
+	font-size: 2.1em;
+	margin: 25px 0px 15px 20px;	
+}
+
+h2 {
+	font-size: 1.8em;
+	font-weight: bold;
+	margin: 5px 0px 15px 0px;
+}
+
+p {
+  line-height: 1.3;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+	background-color: #e8e8e8;
+	margin: 0 20px;
+}
+
+.inline-b {
+	display: inline-block;
+}
+
+/* small text Styles */
+.small {
+	color: #b3b3b3;
+	font-size: 0.7em;
+}
+
+/* horizontal nav menu styles */
+nav {
+	background-color:	#dcdcdc;
+	padding: 15px 15px 15px 20px;
+}
+
+nav li {
+	display: inline;
+	padding-right: 20px;
+	font-size: 1.1em;
+}
+
+/* 2col styles */
+.two-col article {
+	display: table-cell;
+	padding: 20px;
+	vertical-align: middle;
+	width: 50%;
+}
+
+/* table styles */
+.table {
+	display: table;
+	width: 100%
+}
+
+.table-row {
+	display: table-row;
+}
+
+.table-cell {
+	background-color: #c8c8c8; 
+	border: 1px solid #f2f2f2;
+	display: table-cell;
+	padding: 20px 10px;
+	text-align: center;
+	width: 33.33%;
+}
+
+.t-header {
+	font-weight: bold;
+}
+
+/* boxes gallery Styles */
+.gallery-bx {
+	padding: 20px
+}
+
+.gallery-bx .box{
+	border: 3px solid #73ad21;
+	display: inline-block;
+	margin: 0 10px 20px 0;
+	padding: 20px;
+  text-align: center;
+  width: 160px;
+}
