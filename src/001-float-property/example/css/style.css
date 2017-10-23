@@ -1,0 +1,101 @@
+/* Practice Layout */
+
+.content {
+  background: #e9e7e9;
+  margin: 0 auto;
+  width: 1200px;
+  color: #767479;
+}
+
+p, aside li {
+  line-height: 1.5;
+}
+
+h1, h2 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  padding-bottom: 16px;
+}
+
+header, article, aside, .galley {
+  padding: 16px;
+}
+
+nav {
+  padding: 16px 16px 0 16px;
+}
+
+article, aside, .galley {
+  box-sizing: border-box;
+}
+
+header {
+  background: #E8E8E8;
+}
+
+nav {
+  background: #DCDCDC;
+}
+
+nav li {
+  float: left;
+  margin-right: 13px;
+}
+
+section {
+  width: 100%;
+}
+
+article {
+  background: #C8C8C8;
+  float: left;
+  width: 70%;
+}
+
+article img {
+  border: solid 1px #bbb;
+  float: left;
+  margin-right: 15px;
+}
+
+aside {
+  background: #E8E8E8;
+  float: right;
+  width: 30%;
+}
+
+form input {
+  border: none;
+  border-radius: 4px;
+  display: block;
+  height: 25px;
+  width: 100%;
+}
+
+.galley {
+  clear: both;
+  background: #F5F5F5;
+}
+
+.galley h2 {
+  padding-bottom: 0;
+}
+
+.galley img {
+  float: left;
+  padding: 9px;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: inline-block;
+}
