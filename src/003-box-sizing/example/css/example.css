@@ -1,0 +1,45 @@
+/* Practice Layout */
+
+body,
+html {
+  color: #787878;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+
+/** Wrap page **/
+ .paginaejemplo{
+   margin: auto;
+   max-width: 65%;
+ }
+
+ /** Wrap **/
+ .contenido{
+   background-color:#eceff1;
+   padding:5px;
+   margin-bottom:20px;
+ }
+
+ /** bloque **/
+  .bloque{
+     width: 1000px;
+     height: 80px;
+     margin: 15px;
+     padding: 15px;
+     border: 5px solid #D24F2E;
+     overflow:auto;
+     background-color:yellow;
+  }
+
+/** Segundo bloque **/
+ .segundo{
+  box-sizing:content-box;
+ }
+
+/** Tercero bloque **/
+ .tercero{
+  box-sizing:border-box;
+ }
