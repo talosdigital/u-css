@@ -1,0 +1,105 @@
+body {
+    font: 18px arial, sans-serif;
+    color: #333333;
+}
+
+.mdl-layout__content {
+    background-color: #FFFFFF;
+    padding: 20px 20px 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mdl-layout__content > h1, .menu, article, aside, .gallery {
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+
+.mdl-layout__content > h1 {
+    background-color: #999999;
+}
+
+.mdl-layout__content img {
+    max-width: 100%;
+}
+
+.menu {
+    background-color: #AAAAAA;
+}
+
+.menu > a {
+    padding-right: 15px;
+    text-decoration: none;
+    color: #333333;
+}
+
+.content {
+    background-color: #CCCCCC;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.content > article {
+    background-color: #BBBBBB;
+    float: left;
+    width: 70%
+}
+
+.main-article > img {
+    float: left;
+    padding-right: 20px;
+} 
+
+.content > aside {
+    background-color: #CCCCCC;
+    float: right;
+    width: 30%;
+}
+
+.sidebar > input {
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: none;
+    display: block;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 100%;
+}
+
+.sidebar a {
+    color: #333333;
+}
+
+h1 {
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.gallery {
+    background-color: #EEEEEE;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.gallery ul > li {
+    float: left;
+    padding: 20px 20px 0 0;
+}
+
+@media (max-width: 800px) { 
+    .content > article {
+        width: 100%;
+    }
+
+    .content > aside {
+        width: 100%
+    }
+}
