@@ -1,0 +1,114 @@
+/* General styles */
+* {
+	box-sizing: border-box;
+}
+
+h2 {
+	color: gray;
+	font-size: 2em;
+  font-weight: bold;
+  margin: 10px;
+}
+
+p {
+	color: gray;
+	line-height: 1.2;
+}
+
+section.main-content {
+	background: #d7dcd6;
+	float: left;
+	width: 100%;
+}
+
+/* nav styles */
+nav {
+	background: #c3d2c4;
+	float: left;
+	width: 100%;
+}
+
+nav a {
+	border: 1px dotted;
+	color: #627b64;
+	float: left;
+	padding: 20px 15px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: capitalize;
+	width: 25%;
+}
+
+nav a:hover {
+	background: #627b64;
+	color: #c3d2c4;
+}
+
+/* section styles */
+section.l-column {
+	background: #d7dcd6;
+	float: left;
+	padding: 20px 15px 20px 20px;
+	width: 65%;
+}
+
+.img-wp {
+	float: left;
+	margin: 0px 15px 10px 0px;
+}
+
+/* aside styles */
+aside.r-column {
+	float: right;
+	background: #d2d8cf;
+	padding: 20px 33px 20px 15px;
+	width: 35%;	
+}
+
+/* article styles */
+
+article.gallery {
+	clear: both;
+	background: #c3d2c4;
+	overflow: auto;
+	width: 100%;
+	padding: 15px 20px;
+}
+
+.gallery li {
+	float: left;
+	padding: 10px 15px 10px 0;
+	width: 25%;
+}
+
+.gallery img {
+	float: left;
+	width: 100%;
+}
+
+/* Media queries styles */
+@media (max-width: 800px) {
+	section.l-column {
+		width: 100%;
+		padding-right: 33px;
+	}
+	
+	aside.r-column {
+		clear: both;
+		padding-left: 20px;
+    width: 100%;
+ }
+
+	.gallery li {
+		width: 33.33%;
+	}
+}
+
+@media (max-width: 530px) {
+  nav a {
+		width: 50%;
+	}
+	section p {
+		clear: both;
+	}
+}
