@@ -13,7 +13,7 @@ html, body {
 }
 
 .page-content {
-  padding: 150px;
+  padding: 20px;
 }
 
 .container1 {
@@ -24,10 +24,13 @@ html, body {
 
 .container2 {
   background: #76C4D1;
-  z-index:100;
+  z-index:20;
   padding: 90px;
   position: relative;
-  margin: 0 auto;
+  box-sizing: border-box;
+  margin: 5%;
+  min-height: 100%;
+  overflow: auto;
 }
 
 .container2 h1 {
@@ -40,6 +43,11 @@ html, body {
   padding: 5% 0;
 }
 
+.container2 section {
+  box-sizing: border-box;
+  width: 60%;
+}
+
 hr {
   border-bottom: 1px solid #E72840;
 }
@@ -47,8 +55,8 @@ hr {
 .container3 {
   background-color: rgba(255, 255, 255, 0.8);
   color: #000000;
-  padding: 5% 5% 5% 20%;
-  margin-left: -20%;
+  padding: 5% 5% 5% 11%;
+  margin-left: -90px;
 }
 
 .container3 h2 {
@@ -60,4 +68,74 @@ hr {
   font-size: 0.9em;
   font-weight: 400;
   padding: 2% 0;
+}
+
+.container4 {
+  background-color: #DFE180;
+  box-sizing: border-box;
+  color: #8C8D57;
+  line-height: 1;
+  padding: 5%;
+  position: absolute;
+  margin-top: 11%;
+  right: 6.5%;
+  top: 0;
+  width: 30%;
+  z-index: 30;
+}
+
+.container4 h2 {
+  font-size: 2em;
+  padding-bottom: 5%;
+}
+
+.container4 li{
+  padding: 2% 0;
+
+}
+
+.container4 li:nth-child(odd) {
+  font-weight: bold;
+}
+
+.container4 li:nth-child(even) {
+  font-weight: normal;
+}
+
+.container5 {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 30%;
+  min-height: 100%;
+  z-index: 25;
+}
+
+@media (max-width: 640px) {
+  .container5 {
+    display: none;
+  }
+
+  .container4,
+  .container2 > section{
+    margin: 0;
+    line-height: 1.5;
+    padding: 5%;
+    width: 100%;
+  }
+
+  .container2 {
+    padding: 0;
+  }
+
+  .container3 {
+    margin-left: -20px;
+  }
+
+  .container4 {
+    position: relative;
+    right: 0;
+  }
 }
