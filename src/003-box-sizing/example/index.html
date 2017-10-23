@@ -31,7 +31,28 @@
       </header>
       <main class="mdl-layout__content">
         <div class="page-content">
-         <!-- Practice Content Goes Here -->
+         <section>
+           <h1>Box Model</h1>
+           <div class="box default">
+              <p>Since the dawn of CSS, the box model has worked like this by default:
+              width + padding + border = actual visible/rendered width of an element's box
+              height + padding + border = actual visible/rendered height of an element's box</p>
+           </div>
+         </section>
+         <section>
+           <h1>Box Sizing: content-box</h1>
+           <div class="box content-box">
+             <p>Default. The width and height properties (and min/max properties)
+              includes only the content. Border, padding, or margin are not included</p>
+           </div>
+         </section>
+         <section>
+           <h1>Box Sizing: border-box</h1>
+           <div class="box border-box">
+             <p>The width and height properties (and min/max properties) includes content, 
+             padding and border, but not the margin</p>
+           </div>
+         </section>
         </div>
       </main>
     </div>
