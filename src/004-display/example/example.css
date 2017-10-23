@@ -1,5 +1,90 @@
 /* Practice Layout */
 
-.trash{
-	color: black;
+body,
+html {
+  color: #787878;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
+
+.containerDisplay {
+   background-color: #E8E8E8;
+   margin: 0 auto;
+   max-width: 1400px;
+}
+
+/**** header ****/
+.headerDisplay {
+   background-color: #E8E8E8;
+	 padding: 15px;
+}
+
+headerDisplay h1 {
+	color: #676767;
+	font-size: 24px;
+  line-height: 20px;
+	 margin: 0;
+}
+
+/**** nav ****/
+.navDisplay {
+  background-color: #DCDCDC;
+	padding: 15px;
+}
+
+.navDisplay ul {
+  list-style:none;
+	margin: 0;
+	padding: 0;
+}
+
+.navDisplay li {
+	line-height: 15px;
+	display: inline;
+}
+
+
+.navDisplay li:not(:last-child) {
+	padding-right: 15px;
+	margin-right: 15px;
+}
+
+/*** TableSection ***/
+.tableSection {
+  display: table;
+}
+
+.tableSection article {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+}
+
+
+/*** TableDisplay ***/
+
+.tableDisplay{
+  margin: 25px 0;
+  background-color: #DCDCDC;
+  display: table;
+  width: 100%;
+}
+
+.table-rowDisplay{
+  display: table-row;
+  text-align: center;
+}
+
+.table-cellDisplay,
+.table-headDisplay {
+  display:table-cell;
+  border: 1px solid #676767;
+}
+
+.table-headDisplay {
+  font-weight:bold;
+}
+
+
