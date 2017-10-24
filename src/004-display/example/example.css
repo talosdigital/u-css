@@ -81,10 +81,28 @@ headerDisplay h1 {
 .table-headDisplay {
   display:table-cell;
   border: 1px solid #676767;
+  padding: 1.5em;
 }
 
 .table-headDisplay {
   font-weight:bold;
 }
 
+
+/*** GaleryDisplay ***/
+
+.galleryDisplay {
+   margin:15px;
+   padding: .25em;
+}
+
+.galleryDisplay div{
+    border: 2px solid #19A96C;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 90px;
+    width: 180px;
+    margin: 15px;
+    text-align: center;
+}
 
