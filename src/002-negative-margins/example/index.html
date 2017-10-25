@@ -8,7 +8,7 @@
 
   <!-- Ignore this, it's for the header -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <!--<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">-->
   <link href="../../app.css" rel="stylesheet" type="text/css">
 
   <!-- Import App Css file -->
@@ -33,23 +33,90 @@
     <div class="page-content">
       <!-- Practice Content Goes Here -->
 
-      <!--top section-->
-      <section>
-        <article><p>Main content in here</p></article>
-        <div id="sidebar"><p>I’m the Sidebar! </p></div>
-      </section>
+        <!--top section-->
+        <section class="top-section">
+          <article>
 
-      <!--middle section-->
-      <section>
+            <img src="https://media.istockphoto.com/photos/fluffy-puppy-husky-dog-with-blue-eyes-picture-id514788370"
+                 alt="image">
 
-      </section>
+            <p>Generally, HTML5 was designed for backwards compatibility with older HTML versions and XHTML. For
+              that reason, it is recommended to avoid using XML declarations or attributes.</p></article>
+          <div id="sidebar">
+            <nav>
+              <ul>
+                <li>
+                  <a class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">pets</i>
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">favorite</i>
+                    Favorite
+                  </a>
+                </li>
+                <li>
+                  <a class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">restaurant</i>
+                    Food
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
 
-      <!--bottom section-->
-      <section>
+        <!--middle section-->
+        <section class="mdl-section">
 
-      </section>
+          <ul class="mdl-ul">
+            <li>
+              <a class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">pets</i>
+                Home
+              </a>
+            </li>
+            <li>
+              <a class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">favorite</i>
+                Favorite
+              </a>
+            </li>
+            <li class="col2 top">
+              <a class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">restaurant</i>
+                Food
+              </a>
+            </li>
+            <li class="col2">
+              <a class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">pets</i>
+                Home
+              </a>
+            </li>
+            <li class="col3 top">
+              <a class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">favorite</i>
+                Favorite
+              </a>
+            </li>
+            <li class="col3">
+              <a class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">restaurant</i>
+                Food
+              </a>
+            </li>
+          </ul>
 
+        </section>
     </div>
+    <!--bottom section-->
+    <footer>
+      <p>Sticky Footer</p>
+    </footer>
+
   </main>
 </div>
 
