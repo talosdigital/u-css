@@ -1,5 +1,88 @@
 /* Practice Layout */
 
-.trash{
-	color: black;
+.trash {
+  color: black;
+}
+
+.page-content {
+  background-color: #000000;
+  min-height: calc(100vh - 50px);
+}
+
+.mdl-list__item-icon, .mdl-list__item-icon.material-icons {
+
+  color: white;
+}
+
+/*top section */
+.top-section {
+  background-color: #9b9b9b;
+  overflow: auto;
+}
+
+img {
+  float: left;
+  max-width: 200px;
+  max-height: 200px;
+
+}
+
+article {
+  background-color: #9b9b9b;
+  float: left;
+  margin-right: -200px;
+  width: 100%;
+}
+
+article > p {
+  margin-right: 210px;
+}
+
+#sidebar {
+  background-color: #2aa1c0;
+  color: white;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+
+}
+
+/*middle section*/
+.mdl-section {
+  background-color: #C8C8C8;
+}
+
+.mdl-ul {
+  list-style: none;
+}
+
+.mdl-ul > li > i {
+  color: black;
+}
+
+li {
+  line-height: 1.4em;
+}
+
+.col2 {
+  margin-left: 100px;
+}
+
+.col3 {
+  margin-left: 200px;
+}
+
+.top {
+  margin-top: -58px;
+}
+
+/*bottom section*/
+footer {
+  background-color: #2aa1c0;
+  color: white;
+  height: 50px;
+  margin-top: -50px;
+  padding-top: 10px;
+  text-align: center;
 }

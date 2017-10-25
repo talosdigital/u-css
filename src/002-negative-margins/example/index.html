@@ -1,40 +1,124 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>002 - Negative Margins</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+<head>
+  <meta charset="utf-8">
+  <title>002 - Negative Margins</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link href="../../app.css" rel="stylesheet" type="text/css">
+  <!-- Ignore this, it's for the header -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!--<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">-->
+  <link href="../../app.css" rel="stylesheet" type="text/css">
 
-    <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
-  </head>
-  <body>
-  	<!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
-          <i class="material-icons">home</i>
-        </a>
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">002 - Negative Margins</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
-        </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-         <!-- Practice Content Goes Here -->
-        </div>
-      </main>
+  <!-- Import App Css file -->
+  <link href="./example.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
+      <i class="material-icons">home</i>
+    </a>
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">002 - Negative Margins</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
     </div>
+  </header>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <!-- Practice Content Goes Here -->
 
-  </body>
+        <!--top section-->
+        <section class="top-section">
+          <article>
+
+            <img src="https://media.istockphoto.com/photos/fluffy-puppy-husky-dog-with-blue-eyes-picture-id514788370"
+                 alt="image">
+
+            <p>Generally, HTML5 was designed for backwards compatibility with older HTML versions and XHTML. For
+              that reason, it is recommended to avoid using XML declarations or attributes.</p></article>
+          <div id="sidebar">
+            <nav>
+              <ul>
+                <li>
+                  <a class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">pets</i>
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">favorite</i>
+                    Favorite
+                  </a>
+                </li>
+                <li>
+                  <a class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">restaurant</i>
+                    Food
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+
+        <!--middle section-->
+        <section class="mdl-section">
+
+          <ul class="mdl-ul">
+            <li>
+              <a class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">pets</i>
+                Home
+              </a>
+            </li>
+            <li>
+              <a class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">favorite</i>
+                Favorite
+              </a>
+            </li>
+            <li class="col2 top">
+              <a class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">restaurant</i>
+                Food
+              </a>
+            </li>
+            <li class="col2">
+              <a class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">pets</i>
+                Home
+              </a>
+            </li>
+            <li class="col3 top">
+              <a class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">favorite</i>
+                Favorite
+              </a>
+            </li>
+            <li class="col3">
+              <a class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">restaurant</i>
+                Food
+              </a>
+            </li>
+          </ul>
+
+        </section>
+    </div>
+    <!--bottom section-->
+    <footer>
+      <p>Sticky Footer</p>
+    </footer>
+
+  </main>
+</div>
+
+</body>
 </html>
