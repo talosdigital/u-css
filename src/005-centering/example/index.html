@@ -2,18 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>001 - Float Property</title>
+    <title>005 - Centering</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
+    <!-- Ignore this, it's for the header -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link href="../../app.css" rel="stylesheet" type="text/css">
 
     <!-- Import App Css file -->
     <link href="./example.css" rel="stylesheet" type="text/css">
-    
+
   </head>
   <body>
   	<!-- Always shows a header, even in smaller screens. -->
@@ -24,7 +24,7 @@
         </a>
         <div class="mdl-layout__header-row">
           <!-- Title -->
-          <span class="mdl-layout-title">001 - Float Property</span>
+          <span class="mdl-layout-title">005 - Centering</span>
           <!-- Add spacer, to align navigation to the right -->
           <div class="mdl-layout-spacer"></div>
         </div>
@@ -32,6 +32,58 @@
       <main class="mdl-layout__content">
         <div class="page-content">
          <!-- Practice Content Goes Here -->
+
+
+          <section class="wrapper-section">
+            <h3 class="h3-text-center">This text is centered</h3>
+
+            <nav class="nav-center-links">
+              <ul>
+                <li><a href="">Link 1</a></li>
+                <li><a href="">Link 2</a></li>
+                <li><a href="">Link 3</a></li>
+                <li><a href="">Link 4</a></li>
+              </ul>
+            </nav>
+
+            <div class="div-inline-block-center">
+              <div>I'm an element that is block-like with my siblings and we're centered in a row. I'm an element that is block-like with my siblings and we're centered in a row.</div>
+              <div>I'm an element that is block-like with my siblings and we're centered in a row. I have more content in me than my siblings do. </div>
+              <div>I'm an element that is block-like with my siblings and we're centered in a row.</div>
+            </div>
+
+            <div class="div-flex-center">
+              <div> I'm an element that is block-like with my siblings and we're centered in a row.</div>
+              <div>I'm an element that is block-like with my siblings and we're centered in a row. I have more content in me than my siblings do.</div>
+              <div>I'm an element that is block-like with my siblings and we're centered in a row.</div>
+            </div>
+
+            <div class="div-line-center">
+              I'm a centered line.
+            </div>
+
+            <div class="div-vertically-center-table">
+              <p>I'm vertically centered multiple lines of text in a CSS-created table layout.</p>
+            </div>
+
+            <div class="div-flex-center-vertically">
+              <p>I'm vertically centered multiple lines of text in a flexbox container. Lorem ipsum dolor sit amet, pharetra vitae corrupti eu amet in. Ut nibh ut tellus lacinia habitasse proin, arcu aliquet ut. Dis phasellus orci pulvinar assumenda a ligula, egestas morbi sapien congue sollicitudin, quam tortor placerat at leo elit sed. Augue rutrum quam eros auctor venenatis adipisci, elementum etiam felis nec conubia ac, non pede pede proin vitae, justo magna vestibulum, integer quis turpis. Quisque vestibulum congue, vulputate eget ipsum, eget mauris duis orci sociosqu neque dolorem, mi senectus vestibulum in, nec eu nibh turpis auctor erat. Odio purus mauris dui nec massa nisl, per pulvinar, nulla gravida suspendisse arcu ac tenetur luctus. Iaculis in tortor vel dolor a, vehicula aliquet class quisque, a vehicula in porta. Morbi dui sodales sapien libero lorem. Mollis duis vitae sodales odio pellentesque. Nunc eligendi odio metus. Quam est, elit eleifend ante elementum aliquam vitae.</p>
+            </div>
+
+            <div class="div-block-level-center">
+              <div>
+                <p>I'm a block-level element with a fixed height, centered vertically within my parent.</p>
+              </div>
+            </div>
+
+            <div class="div-position-center-no-height">
+              <div>
+                <p>I'm a block-level element with an unknown height, centered vertically within my parent. I'm a block-level element with an unknown height, centered vertically within my parent. I'm a block-level element with an unknown height, centered vertically within my parent.</p>
+              </div>
+            </div>
+
+          </section>
+
         </div>
       </main>
     </div>
