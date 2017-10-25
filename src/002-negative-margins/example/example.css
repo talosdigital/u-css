@@ -1,5 +1,23 @@
 /* Practice Layout */
 
-.trash{
-	color: black;
+.trash {
+  color: black;
+}
+
+/*top section */
+article {
+  width: 100%;
+  float: left;
+  margin-right: -200px;
+  background-color: #9b9b9b
+}
+
+article > p {
+  margin-right: 210px;
+}
+
+#sidebar {
+  width: 200px;
+  float: left;
+  background-color: #2aa1c0;
 }
