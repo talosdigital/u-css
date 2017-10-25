@@ -1,0 +1,133 @@
+/* Practice Layout */
+
+/* Wrap */
+.content{
+	background-color: #eeeeee;
+	margin: auto;
+	max-width: 1200px;
+	padding: 20px;
+}
+
+/* Bar */
+.bar{
+	background-color: #bdbdbd;
+	text-align: center;
+}
+
+.bar p{
+	padding: 8px;
+}
+
+/* Navbar */
+.navbar{
+	background-color: #bdbdbd;
+}
+.navbar ul{
+	list-style: none;
+	text-align: center;
+	padding: 8px;
+}
+
+.navbar li{
+	display: inline-block;
+	margin: 0px 25px;
+}
+
+/* Block center, different level */
+.first-block-section{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.first-block-section div{
+	background-color:#bdbdbd;
+	display: inline-block;
+	padding: 50px;
+	text-align: justify;
+	width: 200px;
+}
+
+/* Block center by flexbox */
+.second-block-section{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.second-block-section div{
+	background-color:#bdbdbd;
+	padding: 50px;
+	margin: 5px;
+	text-align: justify;
+	width: 200px;
+}
+
+/* Center text by line height */
+.line-height-section{
+	background-color:#bdbdbd;
+	height: 150px;
+	line-height: 142px;
+	margin-bottom: 30px;
+	text-align: center;
+	width: 50%;
+}
+
+/* Center text by vertical align */
+.multiline-height-section{
+	background-color:#bdbdbd;
+	display: table;
+	height: 150px;
+	margin-bottom: 30px;
+	padding: 10px;
+	width: 200px;
+}
+
+.multiline-height-section div{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* Center multiline by flexbox */
+.multiline-flex-center-vertically{
+	background-color:#bdbdbd;
+	display: flex;
+  flex-direction: column;
+	height: 300px;
+	justify-content: center;
+	margin-bottom: 30px;
+	padding: 10px;
+}
+
+/* Center fixed height within a parent */
+.center-fixed-height{
+	background-color:#bdbdbd;
+	height: 300px;
+	margin-bottom: 30px;
+	padding: 10px;
+	position: relative;
+
+}
+
+.center-fixed-height div{
+	background-color: lightgray;
+	height: 100px;
+  margin-top: -50px;
+	padding: 10px;
+	position: absolute;
+  top: 50%;
+}
+
+/* Center unknown height within a parent */
+.center-unknown-height{
+	background-color:#bdbdbd;
+	height: 100px;
+	padding: 10px;
+	position: relative;
+}
+
+.center-unknown-height div{
+	background-color: lightgray;
+	position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
