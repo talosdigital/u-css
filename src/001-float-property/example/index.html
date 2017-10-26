@@ -6,18 +6,19 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
+    <!-- Ignore this, it's for the header -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link href="../../app.css" rel="stylesheet" type="text/css">
 
     <!-- Import App Css file -->
     <link href="./example.css" rel="stylesheet" type="text/css">
-    
+
   </head>
   <body>
   	<!-- Always shows a header, even in smaller screens. -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+       <!-- Everything starts at the beginning-->
       <header class="mdl-layout__header">
         <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
           <i class="material-icons">home</i>
@@ -29,9 +30,82 @@
           <div class="mdl-layout-spacer"></div>
         </div>
       </header>
+
       <main class="mdl-layout__content">
         <div class="page-content">
          <!-- Practice Content Goes Here -->
+
+
+          <div class="wrapper">
+            <!--First: header menu -->
+            <header class="header">
+               <h1 class="tittles">Example to float-property</h1>
+            </header>
+             <nav class="navigation">
+
+               <ul>
+                 <li><a href="">Menu_One </a></li>
+                 <li><a href="">Menu_Two </a></li>
+                 <li><a href="">Menu_Three </a></li>
+                 <li><a href="">Menu_Four </a></li>
+                 <li><a href="">Menu_Five</a></li>
+                 <li><a href="">Menu_Six </a></li>
+               </ul>
+             </nav>
+            <!--Second: article and  float image -->
+            <article class="topArticle">
+              <h2 class="tittles"> National Aeronautics and Space Administration - NASA</h2>
+              <img src="images/NASA_logo.png">
+              <p>The National Aeronautics and Space Administration (NASA /ˈnæsə/) is an independent agency of the executive branch of the United States federal government responsible for the civilian space program, as well as aeronautics and aerospace research.</p>
+              <p>President Dwight D. Eisenhower established NASA in 1958 with a distinctly civilian (rather than military) orientation encouraging peaceful applications in space science. The National Aeronautics and Space Act was passed on July 29, 1958, disestablishing NASA's predecessor, the National Advisory Committee for Aeronautics (NACA). The new agency became operational on October 1, 1958</p>
+              <p>Since that time, most US space exploration efforts have been led by NASA, including the Apollo Moon landing missions, the Skylab space station, and later the Space Shuttle. Currently, NASA is supporting the International Space Station and is overseeing the development of the Orion Multi-Purpose Crew Vehicle, the Space Launch System and Commercial Crew vehicles. The agency is also responsible for the Launch Services Program (LSP) which provides oversight of launch operations and countdown management for unmanned NASA launches.</p>
+              <p>NASA science is focused on better understanding Earth through the Earth Observing System, advancing heliophysics through the efforts of the Science Mission Directorate's Heliophysics Research Program, exploring bodies throughout the Solar System with advanced robotic spacecraft missions such as New Horizons, and researching astrophysics topics, such as the Big Bang, through the Great Observatories and associated programs.[16] NASA shares data with various national and international organizations such as from the Greenhouse Gases Observing Satellite. Since 2011, NASA has been criticized for low cost efficiency, achieving little results in return for high development costs.</p>
+            </article>
+
+            <!--Three: Create sidebar for search -->
+            <aside class="sidebarColoum">
+                <label class="search">
+
+                  Search for
+                  <input type="text">
+                </label>
+                <p>Class sed non curabitur aliquet. Dicta erat. Egestas ut. Hymenaeos dolor a natoque nec arcu massa, libero justo donec. Erat quisque ante eget pharetra vitae quam, donec a imperdiet, lectus integer duis eu vivamus turpis quia, nulla quis habitant in commodo, nonummy maecenas urna dui ligula ipsum. Sed maecenas proin sed wisi integer. Pellentesque congue platea velit nam. Taciti diam, sed fermentum neque, arcu urna sem morbi ante wisi dictum, in suspendisse in mi. Hendrerit consequat mollis mi ac ipsum dictumst, eget amet, rhoncus nisl pellentesque pharetra. Taciti elit aliquam lacus.</p>
+
+                <ul>
+                  <li><a href="">Something 1</a></li>
+                  <li><a href="">Something 2</a></li>
+                  <li><a href="">Something 3</a></li>
+                  <li><a href="">Something 4</a></li>
+                  <li><a href="">Something 5</a></li>
+                  <li><a href="">Something 6</a></li>
+                  <li><a href="">Something 7</a></li>
+                  <li><a href="">Something 8</a></li>
+                </ul>
+            </aside>
+
+            <section class="gallery">
+              <h2>Pictures of NASA</h2>
+              <ul>
+                <li><a href="#thumb"><img src="images/NASA_logo.png" alt="image" width="200px"/><span><br />NASA</span></a></li>
+                <li><a href="#thumb"><img src="images/ISS_1.jpg" alt="image" width="200px"/><span><br />ISS</span></a></li>
+                <li><a href="#thumb"><img src="images/hubble_1.jpg" alt="image" width="200px"><span><br />Hubble picture</span></a></li>
+                <li><a href="#thumb"><img src="images/hubble_1995.jpg" alt="image" width="200px"><span><br />Hubble picture 1995</span></a></li>
+                <li><a href="#thumb"><img src="images/hubble_telescope.jpg" alt="image" width="200px"><span ><br />Hubble  telescope</span></a></li>
+                <li><a href="#thumb"><img src="images/moon.jpg" alt="image" width="200px"><span><br />Moon</span></a></li>
+                <li><a href="#thumb"><img src="images/man_moon.jpg" alt="image" width="200px"><span><br />Man walk on the moon</span></a></li>
+                <li><a href="#thumb"><img src="images/nasa_earth.jpg" alt="image" width="200px"><span><br />Earth at nigth</span></a></li>
+                <li><a href="#thumb"><img src="images/curiosity_mars.jpg" alt="image" width="200px"><span><br />Curiosity</span></a></li>
+                <li><a href="#thumb"><img src="images/curiosity.jpg" alt="image" width="200px"><span><br />Curiosity</span></a></li>
+                <li><a href="#thumb"><img src="images/cassini.jpg" alt="image" width="200px"><span><br />Cassini</span></a></li>
+                <li><a href="#thumb"><img src="images/galaxy.jpg" alt="image" width="200px"><span><br />Galaxy</span></a></li>
+                <li><a href="#thumb"><img src="images/earth.jpg" alt="image" width="200px"><span><br />Earth</span></a></li>
+                <li><a href="#thumb"><img src="images/hubble_telescope.jpg" alt="image" width="200px"><span><br />Hubble  telescope</span></a></li>
+                <li><a href="#thumb"><img src="images/moon.jpg" alt="image" width="200px"><span><br />Moon</span></a></li>
+                <li><a href="#thumb"><img src="images/man_moon.jpg" alt="image" width="200px"><span><br />Man walk on the moon</span></a></li>
+              </ul>
+
+            </section>
+          </div>
         </div>
       </main>
     </div>

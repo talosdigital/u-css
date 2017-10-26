@@ -1,5 +1,146 @@
 /* Practice Layout */
 
-.trash{
-	color: black;
+body,
+html {
+  color: #787878;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
+
+h5 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  max-width: calc(100% - 350px);
+}
+
+.container {
+   margin: 0px;
+   max-width: 1200px  ;
+}
+
+.container h3 {
+  border-bottom: 1px solid #D84723;
+  font-size: 1.3em;
+  line-height: 40px;
+  margin-bottom: 50px;
+}
+
+.Div {
+   overflow: auto;
+   padding: 20px;
+   margin-bottom:40px;
+}
+
+.firstDiv {
+   background-color: rgba(210, 234, 244, 0.7);
+}
+
+.secondDiv {
+   background-color: rgba(210, 234, 244, 0.6);
+}
+
+.thirdDiv {
+   background-color: rgba(210, 234, 244, 0.5);
+}
+
+/**First Exercise**/
+.contentColumn {
+	 float: left;
+	 margin-right: -320px;
+	 width: 100%;
+}
+
+.contentColumn p {
+   margin-right: 350px;
+}
+
+.sidebarColumn {
+	 float: left;
+	 width: 250px;
+}
+
+.sidebarColumn h5 {
+   margin-left: 40px;
+}
+
+.sidebarColumn ul {
+   list-style: none;
+   margin-left: 100px;
+   border-left: 2px solid #fff
+}
+
+.sidebarColumn ul li {
+    list-style: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+/**Second Exercise**/
+.column-list {
+    list-style: none;
+    text-align: center;
+}
+
+.column-list li {
+    border-bottom: 1px solid #ddd;
+    line-height: 2em;
+     width: 100px;
+}
+
+.title {
+    font-weight: 600;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.columnTwo {
+    margin-left: 100px;
+}
+
+.columnThree {
+    margin-left: 200px;
+}
+
+.top {
+   margin-top: -9em;
+}
+
+
+/**Third Exercise**/
+
+.wrapper {
+   min-height: 100%
+   margin-bottom: -42px;
+}
+
+
+.wrapper p {
+   text-align: justify;
+   text-justify: inter-word;
+}
+
+.wrapper button {
+   margin-top: 30px;
+   margin-bottom: 45px;
+}
+
+
+.style-footer {
+ background-color: #FF5733;
+ color: #FFFFFF;
+
+}
+
+.footer {
+    padding: 12px 20px;
+    margin: 0px;
+}
+
+.footer li {
+ display: inline;
+ padding: 20px 30px 0px 0px;
+}
+
+
