@@ -1,0 +1,20 @@
+/* Practice Layout */
+
+.page-content{
+	background-color: #e1f5fe;
+}
+
+.container{
+  background-color: #b2ebf2;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.content-one p{
+  border-bottom: 1px solid #E72840;
+}
+
+.blue-wrapper{
+
+}
