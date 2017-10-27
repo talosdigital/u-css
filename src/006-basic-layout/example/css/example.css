@@ -1,0 +1,119 @@
+/* Practice Layout */
+
+.wraper{
+  background-color: #ffab91;
+  margin: auto;
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+/* Navbar*/
+#navbar{
+  background: #e64a19;
+}
+
+/* Sidebar */
+#sidebar {
+  float: left;
+  width: 200px;
+  background: #81d4fa;
+}
+
+#sidebar i{
+  color: white;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Main */
+#main {
+  border-left: 200px solid #81d4fa;
+  padding: 20px;
+}
+
+/* Footer */
+#footer {
+  background: #e64a19;
+  clear: left;
+}
+
+/* Navbar and footer style */
+
+#navbar, #footer{
+  overflow: hidden;
+}
+
+#navbar a, #footer a, #sidebar a{
+  color: white;
+  font-weight: bold;
+  margin-right: 40px;
+  text-decoration: none;
+}
+
+#navbar ul, #footer ul, #sidebar ul{
+  list-style: none;
+  padding: 0 20px;
+}
+
+#navbar li, #footer li{
+  display: inline;
+}
+
+/* Example 2 */
+
+/*container*/
+.example2{
+  background-color: #ffab91;
+  margin: auto;
+  width: 60%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Wraper */
+.wraper2 {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Sidebar */
+.wraper2 #sidebar2 {
+  width: 200px;
+  background: #8cd0d2;
+}
+
+/* Main */
+.wraper2 #main2 {
+  padding: 20px;
+  flex: 1;
+  background-color: #ffd0c4;
+}
+
+/* Navbar and footer */
+.example2 #navbar2,
+.example2 #footer2 {
+  background-color: #e64a19;
+}
+
+#sidebar2 i{
+  color: white;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+#navbar2 a, #footer2 a, #sidebar2 a{
+  color: white;
+  font-weight: bold;
+  margin-right: 40px;
+  text-decoration: none;
+}
+
+#navbar2 ul, #footer2 ul, #sidebar2 ul{
+  list-style: none;
+  padding: 0 20px;
+}
+
+#navbar2 li, #footer2 li{
+  display: inline;
+}
