@@ -1,0 +1,77 @@
+/* General styles */
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	font-size: 15px;
+	line-height: 22px;
+	color: #787878;
+}
+
+h1 {
+	font-size: 2.5em;
+	margin-bottom: 30px;
+}
+
+h2 {
+	font-size: 1.7em;
+	margin-bottom: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-practice {
+	margin: 0 auto;
+	max-width: 1200px;
+	display: flex;
+}
+
+/* Header styles */
+header {
+	color: #000;
+	border-bottom: 1px solid #ebebeb;
+	padding: 25px 0px;
+	text-align: center;
+}
+
+/** Aside Styles **/
+aside {
+	width: 20%;
+}
+
+aside h3 {
+	border-bottom: 2px solid #ebebeb;
+	font-size: 1.1em;
+	padding: 25px 0px;
+	letter-spacing: 3px;
+}
+
+aside ul {
+	margin-top: 15px;
+}
+
+aside ul a {
+	color: inherit;
+	font-size: 0.7em;
+}
+
+aside ul a:hover {
+	color: #fbc2d4;
+}
+
+.currency ul li a{
+	background-color: #ebebeb;
+	border-bottom: 1px solid #fbc2d4;
+	display: block;
+	margin-bottom: 5px;
+	padding: 5px 10px;
+}
+
+.currency ul li a:hover{
+	background-color: #fbc2d4;
+	color: inherit;
+}
+/* */
