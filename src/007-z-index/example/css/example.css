@@ -1,20 +1,73 @@
 /* Practice Layout */
 
-.page-content{
-	background-color: #e1f5fe;
+html, body {
+	background-color: #D5EADE;
+	color: #FFFFFF;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.5;
 }
 
-.container{
-  background-color: #b2ebf2;
+.container-wrap{
+  background-color: #76C4D1;
   margin: auto;
   width: 90%;
   margin-bottom: 20px;
 }
 
-.content-one p{
+/* Blue-wrapper */
+.blue-wrapper{
+	box-sizing: border-box;
+	margin-top: 70px;
+	overflow: auto;
+	padding: 5% 0 8% 0;
+}
+
+/* Content within blue-wrapper */
+.first-content{
+	padding-left: 90px;
+	width: 50%;
+}
+
+.first-content hr{
   border-bottom: 1px solid #E72840;
 }
 
-.blue-wrapper{
+.content-two{
+	background-color: rgba(255, 255, 255, 0.8);
+	color: black;
+	padding: 5% 5% 5% 20%;
+	margin-left: -20%;
+	z-index: 0;
+}
 
+/* Yellow-wrapper */
+.yellow-wrapper{
+	background-color: #DFE180;
+	box-sizing: border-box;
+	color: black;
+	margin-top: 10%;
+	padding: 5%;
+	position: absolute;
+	right: 5%;
+  top: 0;
+	width: 30%;
+	z-index: 2;
+}
+
+.yellow-wrapper li {
+	list-style: none;
+	line-height: 2;
+}
+
+/* Grey wrapper */
+.gray-wrapper{
+	background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 30%;
+  min-height: 100%;
 }
