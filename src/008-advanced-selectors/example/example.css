@@ -2,11 +2,13 @@
 
 body {
 	color: #787878;
+    font-family: RobotoRoboto, Helvetica, Arial, sans-serif;
 }
 
 header {
-	padding-bottom: 30px;
-	margin-top: 30px;
+	padding-bottom: 40px;
+	margin-top: 40px;
+    border-bottom: 1px solid #EBEBEB;
 }
 
 header > h1 {
@@ -17,7 +19,12 @@ header > h1 {
 }
 
 aside {
-	max-width: 300px;
+	max-width: 250px;
+}
+
+aside, section {
+    display: inline-block;
+    vertical-align: top;
 }
 
 aside h3 {
@@ -25,7 +32,7 @@ aside h3 {
 	padding-bottom: 30px;
 	text-transform: uppercase;
 	font-size: 18px;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
 }
 
 aside h3 + ul {
@@ -33,10 +40,10 @@ aside h3 + ul {
 	border-top: 2px solid #EBEBEB;
 }
 
-aside > div > ul > li > a{
+aside > div > ul > li a {
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 11px;
 }
 
 aside > div > ul > li {
@@ -44,19 +51,178 @@ aside > div > ul > li {
 	margin-bottom: 10px;
 }
 
-aside > div > ul > li > a:hover{
+aside > div > ul > li a:hover{
 	color: #FBC2D4;
 }
 
-aside >div:nth-child(2) > ul {
-	
+aside > div:nth-child(2) > ul > li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+aside > div:nth-child(2) > ul > li:not(:last-child) > a {
+    border-bottom: 1px solid #fbc2d4;
+}
+
+aside > div:nth-child(2) > ul > li > a {
+    display: block;
+    background-color: #EBEBEB;
+    padding: 12px 5px;
+    font-size: 10px;
+}
+
+aside > div:nth-child(2) > ul > li > a:hover {
+    background-color: #FBC2D4;
+    color: #787878;
+}
+
+aside > div:nth-child(3) > ul li {
+    vertical-align: top;
+}
+
+aside > div:nth-child(3) > ul li a {
+    text-transform: none;
+    font-size: 14px;
+}
+
+aside > div:nth-child(3) > ul a + p {
+    color: #9b9b9b;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+aside > div:nth-child(3) > ul a + p:after {
+    content: "total price";
+    font-size: 11px;
+    margin-left: 5px;
+}
+
+aside > div:nth-child(3) > ul img {
+    max-width: 70px;
+}
+
+aside > div:nth-child(3) > ul .description {
+    padding: 5px;
+    display: inline-block;
+    vertical-align: top;
+    width: 175px;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #787878;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+footer p {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+main section {
+    padding-top: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+section > ul {
+    padding-left: 15px;
+}
+
+section > ul > li {
+    transition:all 0.8s ease;
+    display: inline-block;
+    width: 240px;
+    margin-right: 5px;
+    vertical-align: top;
+}
+
+section > ul > li:hover {
+    opacity: 0.6;
+}
+
+section > ul > li .img-wrapper {
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+section > ul > li .img-wrapper > a {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background-color: #fbc2d4;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    width: 80px;
+    padding: 10px;
+    color: #FFFFFF;
+    line-height: 20px;
+}
+
+section > ul > li .img-wrapper img {
+    transition:all 0.5s ease;
+}
+
+section > ul > li .img-wrapper:hover img {
+    transform: scale(1.2);
+}
+
+section > ul > li img {
+    width: 100%;
+}
+
+section > ul > li > span {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.list-header {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.list-header > div {
+    float: right;
+}
+
+.list-header .buttons > span {
+    border: 1px solid #EBEBEB;
+    padding: 10px;
+    display: inline-block;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.list-header > span  {
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.list-header .buttons > span.selected {
+    background-color: #000000;
+}
+
+.list-header .buttons > span.selected i {
+    color: #FFFFFF;
 }
 
 .content {
-    border-top: 1px solid #EBEBEB;
-    padding: 20px;
+    padding-top: 10px 5px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .trash{
 	color: black;
 }
+
