@@ -226,3 +226,8 @@ section > ul > li > span {
 	color: black;
 }
 
+@media (max-width: 1240px) {
+	footer p {
+		padding-left: 40px;
+	}
+}
