@@ -1,5 +1,62 @@
 /* Practice Layout */
 
+body {
+	color: #787878;
+}
+
+header {
+	padding-bottom: 30px;
+	margin-top: 30px;
+}
+
+header > h1 {
+	font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+}
+
+aside {
+	max-width: 300px;
+}
+
+aside h3 {
+	padding-top: 20px;
+	padding-bottom: 30px;
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+
+aside h3 + ul {
+	padding-top: 20px;
+	border-top: 2px solid #EBEBEB;
+}
+
+aside > div > ul > li > a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+aside > div > ul > li {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+aside > div > ul > li > a:hover{
+	color: #FBC2D4;
+}
+
+aside >div:nth-child(2) > ul {
+	
+}
+
+.content {
+    border-top: 1px solid #EBEBEB;
+    padding: 20px;
+}
+
 .trash{
 	color: black;
 }
