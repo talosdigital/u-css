@@ -1,8 +1,8 @@
 
 # U - CSS
-The purpose of this practices it's to guide **Front End** developers to understand usefull concepts about **css**, teaching them the best practices and daily basis use cases leading them to avoid regular mistakes.
+The purpose of this practices is to guide **Front End** developers to understand usefull concepts about **css**, teaching them the best practices and daily basis use cases leading them to avoid regular mistakes.
 ### How to start? 
-Before taking this course, you should have at least an basic knowledge in css. Given that, we have a course prepared for you [Talos html and css course][1], then go to [content][2] index to see the practices.
+Before taking this course, you should have at least a basic knowledge in css. Given that, we have a course prepared for you at [Talos html and css course][1], then go to [content][2] index to see the practices.
 
 ### Install
 To run the examples follow the commands below:
