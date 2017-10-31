@@ -1,0 +1,48 @@
+/* Font */
+body,
+html {
+	color: #787878;
+}
+
+h1{
+	font-size: 1.7em;
+}
+
+h2{
+	border-bottom: 2px solid #ebebeb;
+	font-size: 1.2em;
+	font-weight: 500;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+h2 + ul li:not(.cs-avatar) a{
+  color: inherit;
+  font-size: 0.8em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+h2 + ul  {
+	list-style: none;
+	padding-left: 0;
+}
+
+/* Title */
+.page-title {
+	border-bottom: 1px solid #ebebeb;
+	color: #000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Container */
+.page-container{
+	margin: auto;
+  width: 60%;
+}
+
+/* Aside */
+.page-container{
+
+}
