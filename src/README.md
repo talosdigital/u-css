@@ -1,6 +1,6 @@
 ### Content
 
-Content of the practice materials, take your time to develop the content, if you have any question, we will provide extra material in every practice so you can dig deeper in the knowlage:
+Content of the practice materials, take your time to develop the content, if you have any question, we will provide extra material in every practice so you can dig deeper in the knowledge:
 
 * 000 - [Fundamentals][0]
 * 001 - [Float Property][1]
