@@ -21,7 +21,7 @@ Create 2 container with:
 
 1. First container using Content Box.
 	
-2. Second container using Box Sizing.
+2. Second container using Border Box.
 
 #
  #####Check the design and animations in the solution part.
