@@ -1,0 +1,122 @@
+/* Practice Layout */
+
+@font-face {
+  font-family: 'raleway-bold';
+  src: url('fonts/raleway/raleway-bold-webfont.eot');
+  src: url('fonts/raleway/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/raleway/raleway-bold-webfont.woff2') format('woff2'),
+  url('fonts/raleway/raleway-bold-webfont.woff') format('woff'),
+  url('fonts/raleway/raleway-bold-webfont.ttf') format('truetype'),
+  url('fonts/raleway/raleway-bold-webfont.svg#ralewaybold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway-normal';
+  src: url('fonts/raleway/raleway-regular-webfont.eot');
+  src: url('fonts/raleway/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/raleway/raleway-regular-webfont.woff2') format('woff2'),
+  url('fonts/raleway/raleway-regular-webfont.woff') format('woff'),
+  url('fonts/raleway/raleway-regular-webfont.ttf') format('truetype'),
+  url('fonts/raleway/raleway-regular-webfont.svg#ralewayregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway-thin';
+  src: url('fonts/raleway/raleway-thin-webfont.eot');
+  src: url('fonts/raleway/raleway-thin-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/raleway/raleway-thin-webfont.woff2') format('woff2'),
+  url('fonts/raleway/raleway-thin-webfont.woff') format('woff'),
+  url('fonts/raleway/raleway-thin-webfont.ttf') format('truetype'),
+  url('fonts/raleway/raleway-thin-webfont.svg#ralewaythin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+html, body {
+	background-color: #D5EADE;
+	color: #FFFFFF;
+  font-family: "raleway-thin", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+/* Font */
+
+.content-one p {
+	text-transform: uppercase;
+}
+
+p::first-letter {
+  font-family: 'raleway-bold';
+}
+
+
+/* Container */
+.container-wrap{
+  background-color: #76C4D1;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+/* Blue-wrapper */
+.blue-wrapper{
+	box-sizing: border-box;
+	margin-top: 70px;
+	overflow: auto;
+	padding: 5% 0 8% 0;
+}
+
+/* Content within blue-wrapper */
+.first-content{
+	padding-left: 90px;
+	width: 50%;
+}
+
+.first-content hr{
+  border-bottom: 1px solid #E72840;
+}
+
+.content-two{
+	background-color: rgba(255, 255, 255, 0.8);
+	color: black;
+	padding: 5% 5% 5% 20%;
+	margin-left: -20%;
+	z-index: 0;
+}
+
+/* Yellow-wrapper */
+.yellow-wrapper{
+	background-color: #DFE180;
+	box-sizing: border-box;
+	color: black;
+	margin-top: 10%;
+	padding: 5%;
+	position: absolute;
+	right: 5%;
+  top: 0;
+	width: 30%;
+	z-index: 2;
+}
+
+.yellow-wrapper li {
+	list-style: none;
+	line-height: 2;
+}
+
+/* Grey wrapper */
+.gray-wrapper{
+	background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 30%;
+  min-height: 100%;
+}
