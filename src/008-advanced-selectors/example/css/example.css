@@ -44,7 +44,7 @@ aside {
 
 aside h3 {
 	border-bottom: 2px solid #ebebeb;
-	font-size: 1.1em;
+	font-size: 1.2em;
 	padding: 25px 0px;
 	letter-spacing: 3px;
 }
@@ -74,4 +74,34 @@ aside ul a:hover {
 	background-color: #fbc2d4;
 	color: inherit;
 }
-/* */
+
+.valored li {
+	clear: both;
+}
+
+.valored img {
+	width: 70px;
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+.valored .description {
+	float: left;
+	width: 160px;
+}
+
+.valored .description div:nth-child(1) {
+	font-size: 1.4em;
+}
+
+.valored .description div:nth-child(2) {
+	color: #9b9b9b;
+	float: left;
+	font-size: 1.6em;
+	margin-right: 5px;
+}
+
+.valored .description div:nth-child(3) {
+	font-size: 0.7em;
+	color: #9b9b9b;
+}
