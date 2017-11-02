@@ -1,0 +1,60 @@
+/* Practice Layout */
+
+body {
+	background: radial-gradient(ellipse at center, rgba(245,162,117,1)  0%, rgba(210,79,46,1)  59%, rgba(210,79,46,1)  100%);
+	font-size: 16px;
+}
+
+/* Container */
+.page-container{
+	margin: auto;
+}
+
+/* Font Header */
+.page-container header {
+	color: #fff;
+	text-align: center;
+}
+
+.page-container h2 {
+	font-size: 3em;
+	font-weight: 500;
+	text-shadow: 3px -3px #000000;
+}
+
+.page-container h3 {
+	font-size: 2em;
+	text-shadow: -3px 3px #000000;
+}
+.page-container  header span {
+  width: 100%;
+  margin: 0 0%;
+  display: block;
+  border: none;
+  color: white;
+  height: 3px;
+  background:  linear-gradient(to right, #D24F2E 0%, #f5a275 36%, #f5a275 63%, #D24F2E 100%);
+
+  box-shadow: 2px 2px 2px 0px #D24F2E 0%;
+}
+
+/* Doctor boxes */
+.doctor-content{
+	background-color: #f5a275;
+	border-radius: 100px;
+	color: inherit;
+	max-width: 600px;
+}
+
+.doctor-content h2, p{
+	font-size: 1em;
+}
+
+.doctor-image{
+	border-radius: 100px;
+	float: left;
+	height: 100px;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 100px;
+}
