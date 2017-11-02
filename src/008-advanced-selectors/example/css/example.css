@@ -39,7 +39,7 @@ header {
 
 /** Aside Styles **/
 aside {
-	width: 20%;
+	width: 250px;
 }
 
 aside h3 {
@@ -104,4 +104,106 @@ aside ul a:hover {
 .valored .description div:nth-child(3) {
 	font-size: 0.7em;
 	color: #9b9b9b;
+}
+
+/** Section styles **/
+
+.catalog {
+	float: right;
+  width: calc(100% - 250px);
+}
+
+.catalog .header {
+	margin: 20px 0px;
+	display: flex;
+	justify-content: space-between;
+	line-height: 40px;
+}
+
+.catalog .header div:first-child {
+  font-size: 1.1em;
+}
+
+.icons {
+	display: flex;
+}
+
+.catalog .icons a{
+	position: relative;
+	height: 40px;
+	width: 38px;
+}
+
+.catalog .icons a:first-child {
+	background-color: #000;
+	color: #fff;
+	margin-right: 10px;
+}
+
+.catalog .icons a:last-child {
+	border: 1px solid #ebebeb;
+	color: #757575;
+}
+
+.catalog .icons i {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.catalog .wrap-images {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+.catalog .wrap-images a {
+  color: inherit;
+}
+
+.catalog .wrap-images article {
+	width: 240px;
+	margin-right: 10px;
+	position: relative;
+	transition: all 0.3s;
+}
+
+.catalog .wrap-images article:hover {
+	opacity: 0.5;
+}
+
+.wrap-images article:first-child .catalog-img:before {
+    content: "NEW COLLECTION";
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background: #fbc2d4;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 0.7em;
+		width: 90px;
+		z-index: 1;
+}
+
+.catalog .catalog-img {
+	overflow: hidden;
+	height: 300px;
+  width: 240px;
+}
+
+.catalog img {
+	width: 100%;
+	transition: all 0.3s;
+}
+
+.catalog img:hover {
+	transform: scale(1.1);
+}
+
+footer {
+	background: #787878;
+	color: #fff;
+	padding: 60px 30px;
+	margin: 0 -20px -20px -20px;
 }
