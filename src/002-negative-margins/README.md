@@ -1,7 +1,7 @@
 # 002 - Negative Margins
 
 ### Before 
-You should read about Negative Margins Documentation here [Smashing Magazine][1]
+You should read about Negative Margins Documentation here [Smashing Magazine][1] and about Sticky Footer [CSS Tricks][2].
 
 
 #
@@ -36,3 +36,4 @@ $ http-server ./src -p 3000
 8. Goal: The practice should look as be required.
 
 [1]: https://www.smashingmagazine.com/2009/07/the-definitive-guide-to-using-negative-margins/
+[2]: https://css-tricks.com/couple-takes-sticky-footer/
