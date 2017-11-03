@@ -27,7 +27,7 @@ Please check and make the same design and animations than page has in the soluti
 Using Mobile first method, follow the next steps:
 
 1. Define the breakpoints for media queries. Minimum size is: 320px and Maximum size is 1200px.
-
+2. Follow the final design in solution button part.
  
 ### Evaluation Criteria
 
