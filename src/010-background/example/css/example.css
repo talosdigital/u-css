@@ -38,16 +38,39 @@ body {
   box-shadow: 2px 2px 2px 0px #D24F2E 0%;
 }
 
-/* Doctor boxes */
-.doctor-content{
-	background-color: #f5a275;
-	border-radius: 100px;
-	color: inherit;
-	max-width: 600px;
+/* Container boxes*/
+.content-container{
+	height: 100%;
+	margin-top: 100px;
+	overflow: auto;
 }
 
+/* Doctor boxes */
+.doctor-content{
+	align-items: center;
+	background-color: #f5a275;
+	border-radius: 100px;
+	box-shadow: 3px 3px 3px 1px #D24F2E, inset -1px -1px 1px rgba(255, 255, 255, 0.2),  inset 2px 2px 7px rgba(255, 255, 255, 0.6);
+	color: inherit;
+	display: inline-flex;
+	height: 150px;
+	margin-left: 10%;
+	padding: 10px;
+	box-sizing: border-box;
+	width: 35%;
+}
+
+.doctor-content:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+
 .doctor-content h2, p{
+	text-shadow: 1px 1px #333;
+	color: #fff;
 	font-size: 1em;
+	margin: 0px;
 }
 
 .doctor-image{
