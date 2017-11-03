@@ -1,0 +1,182 @@
+/* Practice: Advanced Selectors */
+body,
+html {
+  color: #787878;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  border-bottom: 2px solid #ebebeb;
+  font-size: 1.125em;
+  font-weight: normal;
+  letter-spacing: 3px;
+  line-height: 40px;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.page-content > header {
+  border-bottom: 1px solid #ebebeb;
+  color: #000;
+  font-size: 1.6em;
+  line-height: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+.main > aside {
+  display: inline-block;
+  width: 250px;
+}
+
+.main > section {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 290px);
+}
+
+.main .currency li{
+  background-color: #ebebeb;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.main .currency li:hover{
+  background-color: #fbc2d4;
+}
+
+.main .currency li:not(:last-child) {
+  border-bottom: 1px solid #fbc2d4;
+  margin-bottom: 5px;
+}
+
+.main .best {
+  min-height: 100px;
+}
+
+.main .best > img {
+  float: left;
+  height: auto;
+  margin-right: 10px;
+  width: 70px;
+}
+
+.main .best > div a {
+  color: inherit;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  text-transform: capitalize;
+}
+
+.main .best > div p {
+  color: #9b9b9b;
+}
+
+.main .best > div p::after {
+  content: ' total price';
+  font-size: 0.5em;
+}
+
+.main .filters {
+  line-height: 40px;
+  margin: 20px 0;
+}
+
+.main .filters > div{
+  float: right;
+}
+
+.main .filters > div button {
+  background-color: transparent;
+  border: 1px solid #ebebeb;
+  height: 40px;
+  margin-left: 5px;
+}
+
+.main .filters  > div button:first-child{
+  background-color: #000;
+}
+
+.main > section > div  {
+  line-height: 40px;
+  margin: 20px 0;
+}
+
+.main > section > .products  {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.main > section > .products .img {
+  box-sizing: border-box;
+  height: 300px;
+  margin-right: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 15rem;
+}
+
+.main > section > .products .img:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.main > section > .products img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.main > section > .products div {
+  position: relative;
+}
+
+.main > section > .products div:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.5s ease-out 0s;
+}
+
+.main > section > .products div > a {
+  background-color: #fbc2d4;
+  color: #fff;
+  font-size: 0.7em;
+  font-weight: 100;
+  line-height: 25px;
+  padding: 1px 8px;
+  position: absolute;
+  top: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 90px;
+}
+
+h2 + ul li a {
+  color: inherit;
+  font-size: 0.7em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+h2 + ul li a:hover {
+  color: #fbc2d4;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #787878;
+  color: #fff;
+  height: 100px;
+  line-height: 100px;
+  margin: 0 -20px -20px;
+  padding: 20px;
+}
+
