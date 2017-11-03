@@ -1,0 +1,174 @@
+/* General styles */
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	color: #787878;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+h1 {
+	font-size: 2.1em;
+	margin: 25px 0px 15px 20px;	
+}
+
+h2 {
+	font-size: 1.8em;
+	font-weight: bold;
+	margin: 5px 0px 15px 0px;
+}
+
+p {
+  line-height: 1.3;
+}
+
+a {
+  text-decoration: none;
+}
+
+div {
+	margin-bottom: 20px;
+}
+
+.main {
+	background-color: #e8e8e8;
+	margin: auto;
+	max-width: 1200px;
+	padding: 20px;
+}
+
+/* center text Styles */
+.center-h {
+	text-align: center;
+}
+
+.center-h p {
+	background-color: #d2d2d2;
+	padding: 10px;
+}
+
+/* bar nav Styles */
+nav {
+	background-color: #d2d2d2;
+	margin-bottom: 20px;
+	padding: 10px;
+	text-align: center;
+}
+
+nav li {
+	display: inline;
+	margin-right: 15px;
+}
+
+/* block elements centered Styles */
+.block-center {
+	text-align: center;
+}
+
+.block {
+	background-color: #d2d2d2;	
+	margin-right: 5px;
+	padding: 30px;
+	width: 280px;
+}
+
+.block-center p {
+	display: inline-block;
+}
+
+/* Centered with flexbox Styles */
+.flex-center {
+	display: flex;
+	justify-content: center;
+	 
+}
+
+/* Centered text block Styles */
+.center-v {
+	background-color: #d2d2d2;		
+	height: 100px;
+	line-height: 100px;
+	padding: 20px;
+	width: 500px;
+	white-space: nowrap;
+	box-sizing: content-box;
+}
+
+/* centered 'table' Styles */
+.center-table {
+  background-color: #d2d2d2;
+  display: table;
+  height: 250px;
+  width: 240px;
+}
+
+.center-table p {
+  display: table-cell;
+  margin: 0;
+  padding: 20px;
+  vertical-align: middle;
+}
+
+/*Center with flexbox Styles */
+.center-flex {
+  background-color: #d2d2d2;
+	display: flex;
+	flex-direction: column;
+	height: 400px;
+	justify-content: center;
+	overflow: auto;
+}
+
+.center-flex p{
+  padding: 20px;
+}
+
+/* 
+ *  center block within parent Styles 
+ */
+
+ /* with fixed height */
+.block-fixed-h {
+  background-color: #d2d2d2;
+  height: 300px;
+  position: relative;
+  resize: vertical;
+  overflow: auto;
+}
+
+.block-fixed-h p {
+	background-color: #a8a8a8;
+	color: #fff;
+	height: 100px;
+	left: 25px;
+	margin-top: -50px;
+	padding: 25px;
+	position: absolute;
+	right: 25px;
+	top: 50%;
+}
+
+/* With unknown height */
+.block-unknown-h {
+  background-color: #d2d2d2;
+  height: 300px;
+  overflow: auto;
+  position: relative;
+  resize: vertical;
+}
+
+.block-unknown-h p {
+	background-color: #a8a8a8;
+	color: #fff;
+	left: 25px;
+	min-height: 100px;
+  overflow: auto;
+	padding: 25px;
+	position: absolute;
+	resize: vertical;
+	right: 25px;
+	top: 50%;
+	transform: translateY(-50%);
+}
