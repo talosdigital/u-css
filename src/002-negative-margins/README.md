@@ -3,19 +3,26 @@
 ### Before 
 You should read about Negative Margins Documentation here [Smashing Magazine][1]
 
+
 #
 The estimation for this practice is: 2 hours.
 #
 
 ### To Do
 
-1. Create 2 columns layouts (Content and Sidebar) using negative margin.
-2. Create a list of 6 elements divide them into 3 columns using negative margin.
-3. Create a Sticky Footer with fixed footer height.
+Run the base project.
 
-#
- #####Check the design and animations in the solution part.
-#
+```sh
+$ npm install http-server -g
+$ cd u-css/
+$ http-server ./src -p 3000
+```
+
+1. Please check and make the same design and animations than page has in the solution part, go there clicking in solution button from each box in the home view.
+2. Create 2 columns layouts (Content and Sidebar) using negative margin.
+3. Create a list of 6 elements divide them into 3 columns using negative margin.
+4. Create a Sticky Footer with fixed footer height.
+
 
 ### Evaluation Criteria
 

@@ -9,15 +9,22 @@ The estimation for this practice is: 5 hours.
 
 ### To Do
 
+Run the base project.
+
+```sh
+$ npm install http-server -g
+$ cd u-css/
+$ http-server ./src -p 3000
+```
+
+Please check and make the same design and animations than page has in the solution part, go there clicking in solution button from each box in the home view.
+
 Create a the following layout:
 
 ![alt-text-1](solved/desktop.jpg) ![alt-text-2](solved/tablet.jpg)
 
 1. Using Flex
 
-#
- #####Check the design and animations in the solution part.
-#
 
 ### Evaluation Criteria
 

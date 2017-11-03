@@ -9,6 +9,16 @@ The estimation for this practice is: 3 hours.
 
 ### To Do
 
+Run the base project.
+
+```sh
+$ npm install http-server -g
+$ cd u-css/
+$ http-server ./src -p 3000
+```
+
+Please check and make the same design and animations than page has in the solution part, go there clicking in solution button from each box in the home view.
+
 Using Z Index, !important and Inheritance CSS Property, create the next items:
 
 0. Use all the text sans-serif and letter-spacing normal, the articles, nav, sections display block.
@@ -20,10 +30,6 @@ Using Z Index, !important and Inheritance CSS Property, create the next items:
 6. And the second container should be yellow and have a list with 10 elements and odd should be bold excepting the first element.
 
 ![alt text](solved/Photo-Example.jpg)
-
-#
- #####Check the design and animations in the solution part.
-#
 
 ### Evaluation Criteria
 

@@ -14,6 +14,16 @@ The estimation for this practice is: 2 hours.
 
 ### To Do
 
+Run the base project.
+
+```sh
+$ npm install http-server -g
+$ cd u-css/
+$ http-server ./src -p 3000
+```
+
+Please check and make the same design and animations than page has in the solution part, go there clicking in solution button from each box in the home view.
+
 Using methods for Centering in CSS, create the next items:
 
 1. A container with max width 1200px and centered horizontally. Use margin property.
@@ -27,9 +37,6 @@ Using methods for Centering in CSS, create the next items:
 9. A Block-level element with a fixed height, centered vertically within a parent.
 10. A Block-level element with an unknown height, centered vertically within a parent.
 
-#
- #####Check the design and animations in the solution part.
-#
 
 ### Evaluation Criteria
 

@@ -12,14 +12,20 @@ The estimation for this practice is: 2 hours.
 
 Using Float CSS Property, create the next items:
 
-1. A horizontal nav bar menu.
-2. Two columns below nav bar.
-3. In the first column created, float an image with text wrapping it.
-4. Below columns created, do a gallery of images. 
+Run the base project.
 
-#
- #####Check the design and animations in the solution part.
-#
+```sh
+$ npm install http-server -g
+$ cd u-css/
+$ http-server ./src -p 3000
+```
+
+1. Please check and make the same design and animations than page has in the solution part, go there clicking in solution button from each box in the home view.
+2. A horizontal nav bar menu.
+3. Two columns below nav bar.
+4. In the first column created, float an image with text wrapping it.
+5. Below columns created, do a gallery of images. 
+
 
 ### Evaluation Criteria
 

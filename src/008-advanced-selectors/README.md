@@ -10,6 +10,16 @@ The estimation for this practice is: 4 hours.
 
 ### To Do
 
+Run the base project.
+
+```sh
+$ npm install http-server -g
+$ cd u-css/
+$ http-server ./src -p 3000
+```
+
+Please check and make the same design and animations than page has in the solution part, go there clicking in solution button from each box in the home view.
+
 Using Complex Selectors, create the next items:
 
 1. A bar with a text centered.
@@ -22,9 +32,6 @@ Using Complex Selectors, create the next items:
  
  ![alt text](solved/images/item2.png)
  
- #
-  #####Check the design and animations in the solution part.
- #
 
 ### Evaluation Criteria
 

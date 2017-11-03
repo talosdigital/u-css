@@ -9,6 +9,16 @@ The estimation for this practice is: 2 hours.
 
 ### To Do
 
+Run the base project.
+
+```sh
+$ npm install http-server -g
+$ cd u-css/
+$ http-server ./src -p 3000
+```
+
+Please check and make the same design and animations than page has in the solution part, go there clicking in solution button from each box in the home view.
+
 Using Display CSS Property, create the next items:
 
 1. A header with small comment next to it.
@@ -19,9 +29,6 @@ Using Display CSS Property, create the next items:
 
 ![alt text](solved/items.png)
 
-#
- #####Check the design and animations in the solution part.
-#
 
 ### Evaluation Criteria
 

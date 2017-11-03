@@ -9,6 +9,16 @@ The estimation for this practice is: 5 hours.
 
 ### To Do
 
+Run the base project.
+
+```sh
+$ npm install http-server -g
+$ cd u-css/
+$ http-server ./src -p 3000
+```
+
+Please check and make the same design and animations than page has in the solution part, go there clicking in solution button from each box in the home view.
+
 1. Create a tab with 3 sections using inputs type radio
 2. In the first tab create list of 4 checkboxes, the first checked, the second unchecked, the third disable and the fourth disable and checked.
 3. In the second tab create list of 4 radio buttons, the first checked, the second unchecked, the third disable and the fourth disable and checked.
@@ -16,9 +26,6 @@ The estimation for this practice is: 5 hours.
 
 ![alt text](solved/item.png)
 
-#
- #####Check the design and animations in the solution part.
-#
 
 ### Evaluation Criteria
 

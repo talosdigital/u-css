@@ -14,6 +14,16 @@ The estimation for this practice is: 4 hours.
 
 ### To Do
 
+Run the base project.
+
+```sh
+$ npm install http-server -g
+$ cd u-css/
+$ http-server ./src -p 3000
+```
+
+Please check and make the same design and animations than page has in the solution part, go there clicking in solution button from each box in the home view.
+
 Follow the next steps:
 
 1.Create a box with a background image and a centered title.
@@ -32,9 +42,6 @@ Follow the next steps:
 
 ![alt text](solved/images/item-5.png)
 
-#
- #####Check the design and animations in the solution part.
-#
  
 ### Evaluation Criteria
 

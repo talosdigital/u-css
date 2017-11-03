@@ -14,14 +14,20 @@ The estimation for this practice is: 8 hours.
 
 ### To Do
 
+Run the base project.
+
+```sh
+$ npm install http-server -g
+$ cd u-css/
+$ http-server ./src -p 3000
+```
+
+Please check and make the same design and animations than page has in the solution part, go there clicking in solution button from each box in the home view.
+
 Using Mobile first method, follow the next steps:
 
 1. Define the breakpoints for media queries. Minimum size is: 320px and Maximum size is 1200px.
-2. 
 
-#
- #####Check the design and animations in the solution part.
-#
  
 ### Evaluation Criteria
 

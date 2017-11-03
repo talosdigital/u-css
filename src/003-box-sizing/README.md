@@ -12,6 +12,16 @@ The estimation for this practice is: 1 hours.
 
 ### To Do
 
+Run the base project.
+
+```sh
+$ npm install http-server -g
+$ cd u-css/
+$ http-server ./src -p 3000
+```
+
+Please check and make the same design and animations than page has in the solution part, go there clicking in solution button from each box in the home view.
+
 Create 2 container with:
 - width: 1000px
 - height: 80px;
@@ -23,9 +33,6 @@ Create 2 container with:
 	
 2. Second container using Box Sizing.
 
-#
- #####Check the design and animations in the solution part.
-#
 
 ### Evaluation Criteria
 

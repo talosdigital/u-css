@@ -9,6 +9,16 @@ The estimation for this practice is: 8 hours.
 
 ### To Do
 
+Run the base project.
+
+```sh
+$ npm install http-server -g
+$ cd u-css/
+$ http-server ./src -p 3000
+```
+
+Please check and make the same design and animations than page has in the solution part, go there clicking in solution button from each box in the home view.
+
 1. Create a title animated to change opacity from 1 to 0, duration 60s and be infinite using @keyframes.
 2. Create a list of cards, this cards are going to be initial rotateY 30deg and hover will rotateY 0deg.
 3. Create an article with 9 notes, the pair have to be rotate 4deg and the odd -6deg. The hover should scale the note 1.25.
@@ -16,9 +26,6 @@ The estimation for this practice is: 8 hours.
 
 ![alt text](solved/Photo-Example.jpg)
 
-#
- #####Check the design and animations in the solution part.
-#
 
 ### Evaluation Criteria
 

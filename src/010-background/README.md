@@ -9,6 +9,16 @@ The estimation for this practice is: 5 hours.
 
 ### To Do
 
+Run the base project.
+
+```sh
+$ npm install http-server -g
+$ cd u-css/
+$ http-server ./src -p 3000
+```
+
+Please check and make the same design and animations than page has in the solution part, go there clicking in solution button from each box in the home view.
+
 Create a the following view with this colors #D24F2E and #f5a275:
 
 ![alt text](solved/photo-example.jpg)
@@ -17,10 +27,7 @@ Create a the following view with this colors #D24F2E and #f5a275:
 2. Create a header using text shadows and below create a linear gradient using hexa.
 3. Create 2 boxes with left top inside with shadow and rigth bottom outside black shadow.
 4. Inside the boxes create and image and a title and text align, the text should have a light text shadow.
- 
- #
-  #####Check the design and animations in the solution part.
- #
+
  
 ### Evaluation Criteria
 

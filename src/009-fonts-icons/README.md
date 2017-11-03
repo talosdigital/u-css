@@ -9,6 +9,16 @@ The estimation for this practice is: 1 hours.
 
 ### To Do
 
+Run the base project.
+
+```sh
+$ npm install http-server -g
+$ cd u-css/
+$ http-server ./src -p 3000
+```
+
+Please check and make the same design and animations than page has in the solution part, go there clicking in solution button from each box in the home view.
+
 Continue the Z Index, !important and Inheritance exercice in which we are going to change some labels using Fonts, Icons and Sizes.
 
 1. Change the Inheritance font for raleway thin with, verdana, arial, sans-serif.
@@ -21,9 +31,6 @@ Continue the Z Index, !important and Inheritance exercice in which we are going 
  
 ![alt text](solved/photo-example.jpg)
 
-#
- #####Check the design and animations in the solution part.
-#
 
 ### Evaluation Criteria
 
