@@ -1,0 +1,172 @@
+/* Font */
+body,
+html {
+	color: #787878;
+	font-size: 12px;
+}
+
+h1{
+	font-size: 1.7em;
+}
+
+h2{
+	border-bottom: 2px solid #ebebeb;
+	font-size: 1.2em;
+	font-weight: 500;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+h2 + ul li:not(.cs-avatar) a{
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+h2 + ul li a:hover{
+	color: #fbc2d4;
+}
+
+h2 + ul  {
+	list-style: none;
+	padding-left: 0;
+}
+
+/* Title */
+.page-title {
+	border-bottom: 1px solid #ebebeb;
+	color: #000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Container */
+.page-container{
+	margin: auto;
+	width: 65%;
+}
+
+/* Aside */
+.page-container > aside{
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+	width: 280px;
+}
+
+.cs-button-list li{
+	background-color: #e7e7e7;
+	margin-bottom: 5px;
+	padding: 3px;
+}
+.cs-button-list li a{
+		margin-left: 3px;
+}
+
+.cs-button-list li:hover{
+	background-color: #fbc2d4;
+}
+
+.cs-button-list li:not(:last-child){
+	border-bottom: 1px solid #fbc2d4;
+}
+
+.cs-avatar {
+  min-height: 100px;
+}
+
+.cs-avatar a{
+	color: inherit;
+	cursor: pointer;
+}
+
+.cs-avatar p{
+	font-size: 17px;
+}
+
+.cs-avatar > img {
+	cursor: pointer;
+	float: left;
+	margin-right: 10px;
+	width: 70px;
+}
+
+/* Section */
+.page-container > section{
+	box-sizing: border-box;
+	display: inline-block;
+	width: calc(100% - 300px);
+}
+
+.cs-top-list {
+  margin: 20px 0;
+}
+
+.cs-top-list div{
+	float: right;
+}
+
+.cs-top-list button:first-child{
+	background-color: #000;
+}
+
+.cs-top-list button:first-child  i{
+  color: #fff;
+}
+
+.cs-card {
+	cursor: pointer;
+	position: relative;
+}
+
+.cs-card p, a{
+	margin-bottom: 0px;
+}
+.cs-cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.cs-card-img img{
+	box-sizing: border-box;
+  margin-right: 10px;
+	height: 300px;
+	position: relative;
+	width: 240px;
+	-moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cs-card-img:hover img {
+	-moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.cs-onsale{
+	color: #fff;
+	background-color: #fbc2d4;
+	padding: 6px;
+	position: absolute;
+	left: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	top:12px;
+}
+
+/* Footer */
+footer{
+	background-color: #818181;
+	color: #fff;
+	font-size: 1.5em;
+	height: 100px;
+	line-height: 100px;
+	margin: 0 -20px -20px;
+}
+
+footer div {
+  margin: 0 auto;
+	max-width: 1250px;
+}

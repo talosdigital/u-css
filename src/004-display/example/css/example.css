@@ -1,0 +1,88 @@
+/* Practice Layout */
+
+/** Wrap **/
+.paginaejemplo{
+  background-color: #82b1ff;
+  margin: auto;
+  max-width: 65%;
+  overflow:auto;
+}
+
+/** header  **/
+.header {
+  background-color: #0d47a1;
+  color:white;
+  height: 80px;
+  padding: 0 15px;
+}
+
+.topnav{
+  background-color:yellow;
+  padding:15px;
+}
+
+.topnav ul{
+  margin: 0;
+  padding: 0;
+}
+
+.titulo-pagina{
+  margin-top:0px;
+  display:inline;
+}
+
+/** Body sections **/
+
+/** Article **/
+.body-section{
+  display:table;
+}
+
+.body-section article{
+  display:table-cell;
+  padding:15px;
+  vertical-align: middle;
+  width:50%;
+}
+
+/** Table **/
+.body-table{
+  background-color: #C8C8C8;
+  border-collapse:collapse;
+  display:table;
+  margin:15px 0;
+  width:100%;
+}
+
+.body-table-row{
+  display:table-row;
+  text-align: center;
+}
+
+.body-table-cell, .body-table-head{
+  border: 1px solid #82b1ff;
+  display:table-cell;
+  padding:15px;
+}
+
+.body-table-head{
+  font-weight: bold;
+}
+
+/** Box **/
+.body-box{
+  margin-bottom:15px;
+  vertical-align:middle;
+  width:100%;
+}
+
+.body-box div{
+  border: 10px solid #f4511e;
+  box-sizing: border-box;
+  display: inline-block;
+  height:150px;
+  margin: 10px;
+  padding:50px;
+  text-align: center;
+  width:200px;
+}

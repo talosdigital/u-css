@@ -1,0 +1,115 @@
+/* Practice Layout */
+
+body,
+html {
+  color: #787878;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+
+/** Wrap **/
+.paginaejemplo{
+  margin: auto;
+  max-width: 65%;
+  overflow:hidden;
+}
+
+/** Sections **/
+.section-content{
+  background-color:#eceff1;
+  padding:20px;
+  margin-bottom: 30px;
+  overflow: auto;
+}
+
+/** Sections title **/
+.section-content h2{
+  border-bottom: 1px solid #D24F2E;
+}
+
+/** Sections article **/
+.sc-article{
+  float:left;
+  width:100%;
+  margin-right:-200px;
+}
+
+.sc-article p{
+  margin-right: 260px;
+}
+
+/** Sections aside **/
+.sc-aside{
+  float:left;
+  border-left: 1px solid #a7a7a7;
+  padding: 10px 0 10px 0;
+}
+
+.fs-list{
+  list-style:none;
+  margin-left:-25px;
+}
+
+.fs-list li{
+  margin-bottom: 25px;
+}
+
+.fs-list i{
+  margin-right: 25px;
+}
+
+
+/** Second section **/
+
+.ss-list{
+  list-style:none;
+  text-align: center;
+}
+
+.ss-list li{
+  border-bottom: 1px solid #191A28;
+   line-height: 2em;
+    width: 100px;
+}
+
+.list-header{
+  text-transform:uppercase;
+  font-weight: 600;
+}
+
+.col2{
+  margin-left: 99px;
+}
+
+.col3{
+  margin-left: 180px;
+}
+
+.list-top{
+  margin-top: -116px;
+}
+
+/** Third section **/
+
+.part3-footer{
+  background-color: #D24F2E;
+    color: #fff;
+}
+
+.ts-list{
+  padding: 10px 15px;
+   margin: 0;
+}
+
+
+.ts-list li{
+   display: inline;
+    padding: 10px 15px;
+}
+
+.botonclass{
+   margin-bottom: 10px;
+}

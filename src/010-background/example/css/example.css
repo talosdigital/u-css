@@ -1,0 +1,83 @@
+/* Practice Layout */
+
+body {
+	background: radial-gradient(ellipse at center, rgba(245,162,117,1)  0%, rgba(210,79,46,1)  59%, rgba(210,79,46,1)  100%);
+	font-size: 16px;
+}
+
+/* Container */
+.page-container{
+	margin: auto;
+}
+
+/* Font Header */
+.page-container header {
+	color: #fff;
+	text-align: center;
+}
+
+.page-container h2 {
+	font-size: 3em;
+	font-weight: 500;
+	text-shadow: 3px -3px #000000;
+}
+
+.page-container h3 {
+	font-size: 2em;
+	text-shadow: -3px 3px #000000;
+}
+.page-container  header span {
+  width: 100%;
+  margin: 0 0%;
+  display: block;
+  border: none;
+  color: white;
+  height: 3px;
+  background:  linear-gradient(to right, #D24F2E 0%, #f5a275 36%, #f5a275 63%, #D24F2E 100%);
+
+  box-shadow: 2px 2px 2px 0px #D24F2E 0%;
+}
+
+/* Container boxes*/
+.content-container{
+	height: 100%;
+	margin-top: 100px;
+	overflow: auto;
+}
+
+/* Doctor boxes */
+.doctor-content{
+	align-items: center;
+	background-color: #f5a275;
+	border-radius: 100px;
+	box-shadow: 3px 3px 3px 1px #D24F2E, inset -1px -1px 1px rgba(255, 255, 255, 0.2),  inset 2px 2px 7px rgba(255, 255, 255, 0.6);
+	color: inherit;
+	display: inline-flex;
+	height: 150px;
+	margin-left: 10%;
+	padding: 10px;
+	box-sizing: border-box;
+	width: 35%;
+}
+
+.doctor-content:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+
+.doctor-content h2, p{
+	text-shadow: 1px 1px #333;
+	color: #fff;
+	font-size: 1em;
+	margin: 0px;
+}
+
+.doctor-image{
+	border-radius: 100px;
+	float: left;
+	height: 100px;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 100px;
+}
