@@ -1,0 +1,215 @@
+/* Font Family */
+@font-face {
+  font-family: 'raleway-bold';
+  src: url('fonts/raleway/raleway-bold-webfont.eot');
+  src: url('fonts/raleway/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/raleway/raleway-bold-webfont.woff2') format('woff2'),
+  url('fonts/raleway/raleway-bold-webfont.woff') format('woff'),
+  url('fonts/raleway/raleway-bold-webfont.ttf') format('truetype'),
+  url('fonts/raleway/raleway-bold-webfont.svg#ralewaybold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway-normal';
+  src: url('fonts/raleway/raleway-regular-webfont.eot');
+  src: url('fonts/raleway/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/raleway/raleway-regular-webfont.woff2') format('woff2'),
+  url('fonts/raleway/raleway-regular-webfont.woff') format('woff'),
+  url('fonts/raleway/raleway-regular-webfont.ttf') format('truetype'),
+  url('fonts/raleway/raleway-regular-webfont.svg#ralewayregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway-thin';
+  src: url('fonts/raleway/raleway-thin-webfont.eot');
+  src: url('fonts/raleway/raleway-thin-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/raleway/raleway-thin-webfont.woff2') format('woff2'),
+  url('fonts/raleway/raleway-thin-webfont.woff') format('woff'),
+  url('fonts/raleway/raleway-thin-webfont.ttf') format('truetype'),
+  url('fonts/raleway/raleway-thin-webfont.svg#ralewaythin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* General styles */
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	font-family: 'raleway-thin';
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: normal;
+	background-color: #d5eade; 
+}
+
+h1 {
+	font-size: 2.5em;
+	margin-bottom: 30px;
+}
+
+h2 {
+	font-size: 1.7em;
+	margin-bottom: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p::first-letter {
+  font-family: 'raleway-bold'
+}
+
+section {
+	padding: 30px;
+}
+
+hr {
+	border-bottom: 1px solid red;
+}
+
+.page-content {
+	padding: 0;
+	font-family: 'raleway-thin', Verdana, Arial, Helvetica, sans-serif;	
+}
+
+.s-container {
+	background-color: #76C4D1;
+	padding-right: 45%;
+	position: relative;
+  z-index: 1;
+}
+
+.s-container header, .s-container article {
+  color: #fff;
+}
+
+.s-container article,
+.s-container article p {
+  padding: 30px 0px;
+}
+
+.s-container .input {
+	position: relative;
+}
+
+.s-container .input i {
+	position: absolute;
+	color: #000;
+	top: 3px;
+	left: 6px;
+}
+
+.s-container .input input {
+  border: none;
+  height: 30px;
+  padding-left: 35px;
+  border-radius: 7px;
+}
+
+.t-container {
+	background-color: #fff;
+	margin-top: 30px;
+	opacity: 0.8;
+	position: relative;
+	right: 30px;
+}
+
+.t-container .icons {
+	text-align: right;
+	margin-bottom: 10px;
+}
+
+.t-container .finger-button {
+	margin-top: 10px;
+}
+
+.t-container .finger-button a{
+  background-color: rgb(255,64,129);
+  color: #fff;
+  padding: 8px 10px 8px 35px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.t-container .finger-button i {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+.l-container {
+	background-color: yellow;
+	margin-top: 55px;
+	opacity: 0.8;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 40%;
+	z-index: 3;
+}
+
+.l-container ul li:nth-child(even) {
+	font-size: 12pt;
+}
+
+.l-container ul li:nth-child(even)::after {
+	content: " using 'pt'";
+}
+
+.l-container ul li:nth-child(odd) {
+	font-family: 'raleway-normal';
+	font-size: 1em;
+}
+
+.l-container ul li:nth-child(odd)::after {
+  content: " using 'em'";
+}
+
+.l-container ul li:nth-child(1) {
+	font: inherit;
+}
+
+.l-container ul li:nth-child(1)::after {
+  content: "";
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.div-bck {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 30%;
+  height: 100%;
+  position: fixed;
+  right: 0px;
+	top: 0px;
+	z-index: 1;
+}
+
+@media (max-width: 610px) {
+	.f-container {
+		position: initial;
+	}
+	
+	.s-container { 
+		padding-right: 20px;
+	}
+
+	.l-container {
+		position: initial;
+		width: 100%;
+	}
+
+	.div-bck {
+		display: none;
+	}
+
+}
