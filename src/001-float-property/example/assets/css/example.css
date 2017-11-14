@@ -1,4 +1,8 @@
 /* Practice Layout */
+* {
+	box-sizing: border-box;
+}
+
 body {
 	color: #69686a;
 }
@@ -25,14 +29,9 @@ body {
 	margin: 0 auto;
 }
 
-.page-content .header {
-	padding: 1px;
-}
-
 .page-content .header .heading {
 	margin: 0;
 	padding: 15px;
-	color: #69686a;
 }
 
 .page-content .navbar {
@@ -53,7 +52,6 @@ body {
 	float: left;
 	width: 350px;
 	padding: 15px;
-	box-sizing: border-box;
 }
 
 .sidebar .form-control {
@@ -69,12 +67,10 @@ body {
 	float: left;
 	padding: 15px;
 	width: calc(100% - 350px);
-	box-sizing: border-box;
 	background-color: #c8c8c8;
 }
 
 .main-content .sub-heading {
-	color: #69686a;
 	margin: 0;
 	margin-bottom: 15px;
 }
@@ -86,7 +82,6 @@ body {
 
 .main-content p::first-letter {
 	float: left;
-	color: #69686a;
 	font-size: 60px;
 	margin: 20px;
 }
@@ -106,7 +101,6 @@ body {
 	padding: 15px;
 	float: left;
 	width: 100%;
-	box-sizing: border-box;
 }
 
 .footer .comment-list li {
@@ -120,7 +114,6 @@ body {
 
 .footer .comment-list li p::first-letter {
 	font-size: 30px;
-	color: #69686a;
 }
 
 .footer .comment-list .thumbnail {
@@ -131,7 +124,6 @@ body {
 .footer .comment-box {
 	padding: 15px;
 	width: 100%;
-	box-sizing: border-box;
 	border: 1px solid green;
 }
 
