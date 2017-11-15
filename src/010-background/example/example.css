@@ -1,5 +1,128 @@
 /* Practice Layout */
 
+body {
+    font-size: 14px;
+    background-image: radial-gradient(ellipse closest-side, rgb(245,162,117), rgb(210,79,46) 85%);
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+
+h1, h3 {
+    line-height: 1.5em;
+}
+
+h1 {
+    margin-top: 15px;
+    font-size: 3.5em;
+    text-shadow: 3px -3px #333333;
+}
+
+h3 {
+    font-size: 2.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-shadow: -3px 2px #333333;
+}
+
+.header-container {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.header-container::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(to right, #D24F2E, #F5A275 33%, #D24F2E);
+}
+
+.content {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.button {
+    width: 35%;
+    background-color: #F5A275;
+    display: inline-block;
+    border-radius: 75px;
+    height: 150px;
+    opacity: 0.8;
+    box-shadow: 3px 3px 8px #49311c, inset 3px 4px 10px -4PX #FFFFFF;
+}
+
+.button:hover {
+    opacity: 0.6;
+}
+
+.button:first-child {
+    margin-right: 120px
+}
+
+.button img {
+    border-radius: 50%;
+    border: 3px solid #FFFFFF;
+    float: left;
+    width: 100px;
+    margin: 20px 10px 0 20px;
+}
+
+.button-content {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 140px);
+    float: left;
+    padding-top: 55px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px #333333;
+    text-align: left;
+}
+
+.button-content span {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.button-content .title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.button-content .description {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
 .trash{
-	color: black;
+    color: black;
+}
+
+@media (max-width: 1200px) {
+    .button {
+        display: block;
+        margin: 0 auto;
+        width: 75%
+    }
+
+    .button:first-child {
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    .button img {
+        display: none;
+    }
+
+    .button-content {
+        text-align: center;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
 }
