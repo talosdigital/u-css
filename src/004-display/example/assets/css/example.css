@@ -1,0 +1,117 @@
+/* Practice Layout */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	color: #69686a;
+	font-size: 16px;
+}
+
+.trash{
+	color: black;
+}
+
+.ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.unstyled-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.unstyled-list a {
+	text-decoration: none;
+}
+
+.page-content__wrapper {
+	background-color: whitesmoke;
+	margin: 0 auto;
+	max-width: 75rem;
+}
+
+.page-content__wrapper .content__heading {
+	margin: 0;
+}
+
+.page-content__wrapper .content__heading,
+.page-content__wrapper .section:not(#tableSection) {
+	padding: 1rem
+}
+
+/* Navbar menu */
+
+.content__navbar {
+	background-color: lightgray;
+}
+
+.navbar__menu {
+	clear: both;
+	overflow: auto;
+}
+
+.navbar__menu .menu__item {
+	float: left;
+}
+
+.navbar__menu .menu__item-link {
+	display: block;
+	padding: 1rem;
+}
+
+/* Columns section */
+
+.section__column {
+	display: block;
+	margin: 0 -1rem;
+	padding: 1rem;
+}
+
+@media screen and (min-width:768px) {
+	.section__column {
+		display: table-cell;
+		vertical-align: middle;
+		width: 50%;
+	}
+}
+
+/* Table section */
+
+.section__table {
+	background-color: lightgray;
+	display: table;
+	width: 100%;
+}
+
+.section__table .table__row {
+	display: table-row;
+}
+
+.section__table .table__cell {
+	border: 1px solid whitesmoke;
+	display: table-cell;
+	padding: 1rem;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* Box gallery section */
+
+.section__gallery .gallery__item {
+	border: 1px solid #D24F2E;
+	display: block;
+	margin: .2rem .1rem;
+	padding: .3rem;
+}
+
+@media screen and (min-width:768px) {
+	.section__gallery .gallery__item {
+		display: inline-block;
+		max-width: 32.5%;
+	}
+}
