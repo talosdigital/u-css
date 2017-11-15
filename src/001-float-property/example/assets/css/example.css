@@ -99,7 +99,7 @@ body {
 
 .footer {
 	padding: 15px;
-	float: left;
+	clear: both;
 	width: 100%;
 }
 
@@ -107,7 +107,7 @@ body {
 	padding: 15px;
 }
 
-.footer .comment-list li p {
+.footer .comment-list p {
 	float: left;
 	margin-left: 5px;
 }
