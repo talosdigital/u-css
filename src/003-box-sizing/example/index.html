@@ -12,7 +12,8 @@
     <link href="../../app.css" rel="stylesheet" type="text/css">
 
     <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/example.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/normalize.min.css" rel="stylesheet" type="text/css">
     
   </head>
   <body>
@@ -32,6 +33,30 @@
       <main class="mdl-layout__content">
         <div class="page-content">
          <!-- Practice Content Goes Here -->
+         <div class="page-content__wrapper">
+           <section class="section" id="boxModelSection">
+              <h1 class="section__heading"> Box Model </h1>
+              <div class="section__box">
+                <p>Since the dawn of CSS, the box model has worked like this by default:</p>
+                <p>width + padding + border = actual visible/rendered width of an element's box</p>
+                <p>height + padding + border = actual visible/rendered height of an element's box</p>
+              </div>
+           </section>
+
+           <section class="section" id="contentBoxSection">
+              <h1 class="section__heading">Box Sizing : Content Box </h1>
+              <div class="section__box box-sizing--content">
+                <p>Default. The width and height properties (and min/max properties) includes only the content. Border, padding, or margin are not included</p>
+              </div>
+           </section>
+
+           <section class="section" id="borderBoxSection">
+              <h1 class="section__heading">Box Sizing : border-box </h1>
+              <div class="section__box box-sizing--border">
+                <p>The width and height properties (and min/max properties) includes content, padding and border, but not the margin</p>
+              </div>
+           </section>
+         </div>
         </div>
       </main>
     </div>

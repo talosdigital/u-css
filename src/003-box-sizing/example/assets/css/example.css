@@ -1,0 +1,41 @@
+/* Practice Layout */
+
+html {
+	color: #69686a;
+	font-size: 16px;
+}
+
+.trash{
+	color: black;
+}
+
+.page-content__wrapper, .page-content__wrapper .section {
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+.page-content__wrapper .section {
+	background-color: whitesmoke;
+	margin-bottom: 2rem;
+}
+
+.page-content__wrapper .section__heading {
+	margin: 0;
+}
+
+.page-content__wrapper .section__box {
+	background-color: #E8E8E8;
+    border: 5px solid #D24F2E;
+	height: 80px;
+    margin: 1rem;
+	max-width: 500px;
+    padding: 1rem;
+}
+
+.section__box.box-sizing--content {
+	box-sizing: content-box;
+}
+
+.section__box.box-sizing--border {
+	box-sizing: border-box;
+}
