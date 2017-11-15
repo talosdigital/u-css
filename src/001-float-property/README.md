@@ -26,6 +26,7 @@ $ http-server ./src -p 3000
 4. In the first column created, float an image with text wrapping it.
 5. Below columns created, do a gallery of images. 
 
+![alt-text-1](./design1.png)
 
 ### Evaluation Criteria
 
@@ -37,5 +38,7 @@ $ http-server ./src -p 3000
 6. Use correct Cascade code.
 7. Use correct Inheritance.
 8. Goal: The practice should look as be required.
+
+
 
 [1]: https://www.smashingmagazine.com/2009/10/the-mystery-of-css-float-property/

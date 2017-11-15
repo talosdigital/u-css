@@ -23,6 +23,7 @@ $ http-server ./src -p 3000
 3. Create a list of 6 elements divide them into 3 columns using negative margin.
 4. Create a Sticky Footer with fixed footer height.
 
+![alt-text-1](./design.png)
 
 ### Evaluation Criteria
 
@@ -34,6 +35,8 @@ $ http-server ./src -p 3000
 6. Use correct Cascade code.
 7. Use correct Inheritance.
 8. Goal: The practice should look as be required.
+
+
 
 [1]: https://www.smashingmagazine.com/2009/07/the-definitive-guide-to-using-negative-margins/
 [2]: https://css-tricks.com/couple-takes-sticky-footer/
