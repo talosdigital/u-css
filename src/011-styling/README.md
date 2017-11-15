@@ -54,7 +54,7 @@ Follow the next steps:
 7. Use correct Inheritance.
 8. Goal: The practice should look as be required.
  
- [1]: http://callmenick.com/post/stylish-css-buttons
+ [1]: https://www.w3schools.com/css/css3_buttons.asp
  [2]: https://www.smashingmagazine.com/2010/02/the-definitive-guide-to-styling-web-links/
  [3]: https://www.w3schools.com/css/css_list.asp
- [4]: http://callmenick.com/post/various-css-input-text-styles
+ [4]: https://css-tricks.com/styling-texty-inputs-only/
