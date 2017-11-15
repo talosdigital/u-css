@@ -162,7 +162,7 @@ vertical-align: middle;
   top: 40%;
   left: 30px;
   right:30px;
-    transform: translateY(-40%);
+  transform: translateY(-40%);
 }
 
 .cnt-position-center-no-height div p {
@@ -170,4 +170,33 @@ vertical-align: middle;
    margin: 0;
    padding: 40px;
    text-align: center
+}
+
+
+/**New desing **/
+.cnt-new-desing {
+    background-color: #7DC2AE;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+.cnt-new-desing > div {
+  background-color: #D35154;
+  height: 200px;
+  width: 25%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.cnt-new-desing div  > div {
+  border: 15px solid black;
+  background-color: #EFCE3E;
+  height: 40px;
+  width: 20%;
+  position: relative;
 }
