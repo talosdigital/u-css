@@ -12,8 +12,8 @@
     <link href="../../app.css" rel="stylesheet" type="text/css">
 
     <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
     <link href="./reset.css" rel="stylesheet" type="text/css">
+    <link href="./example.css" rel="stylesheet" type="text/css">
     
   </head>
   <body>
@@ -33,17 +33,16 @@
       <main class="mdl-layout__content">
         <div class="page-content">
           <section class="header"> <!-- I am using a section because the header tag is already being used -->
-            <div class="background"></div>
             <div class="heading">
               <h1>Contact us</h1>
             </div>
           </section>
-          <section class="content">
-            <form>
+          <section class="contact">
+            <form class="contact-form">
               <input type="text" name="name" placeholder="Name">
               <input type="text" name="email" placeholder="Email">
               <input type="text" name="subject" placeholder="Subject">
-              <textarea name="message" rows="10" cols="30" placeholder="Message"></textarea>
+              <textarea name="message" rows="5" cols="30" placeholder="Message"></textarea>
               <button>Send</button>
             </form>
             <p>Contact us and we will respond you as soon as possible.</p>

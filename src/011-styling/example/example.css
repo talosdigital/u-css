@@ -4,6 +4,14 @@ body {
     font-size: 14px;
 }
 
+main {
+    padding-top: 64px;
+}
+
+.mdl-layout__header{
+    position: fixed;
+}
+
 .trash{
 	color: black;
 }
@@ -13,7 +21,7 @@ body {
     height: 250px; 
 }
 
-.background {
+.header::before {
     content: "";
     display: block;
     width: 100%;
@@ -44,4 +52,48 @@ body {
 
 .page-content {
     padding: 0 0 50px 0;
+}
+
+.contact {
+    margin-top: 10px;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+/*.contact-form {
+    margin: 0 auto;
+}*/
+
+.contact-form input, .contact-form textarea {
+    font-size: 1.1em;
+    width: 100%;
+    margin-top: 20px;
+    border: 0;
+    background-color: #EEEEEE;
+    line-height: 2.5em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contact-form button {
+    background-color: #FBC2D4;
+    padding: 15px 70px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    border: 1px solid #FBC2D4;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.contact-form button:hover {
+    background-color: #FFFFFF;
+    color: #FBC2D4;
+}
+
+.contact p {
+    text-transform: uppercase;
+    margin-top: 20px;
+    color: #9B9B9B;
+    font-size: 1.1em;
+    line-height: 1.4em;
 }
