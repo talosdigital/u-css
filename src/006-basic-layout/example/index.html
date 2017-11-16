@@ -1,40 +1,201 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>006 - Basic Layout</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link href="../../app.css" rel="stylesheet" type="text/css">
+<head>
+  <meta charset="utf-8">
+  <title>006 - Basic Layout</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
 
-    <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
-  </head>
-  <body>
-  	<!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
-          <i class="material-icons">home</i>
-        </a>
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">006 - Basic Layout</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
+  <!-- Ignore this, it's for the header -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link href="../../app.css" rel="stylesheet" type="text/css">
+
+  <!-- Import App Css file -->
+  <link href="assets/css/example.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/normalize.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
+        <i class="material-icons">home</i>
+      </a>
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">006 - Basic Layout</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <!-- Practice Content Goes Here -->
+        <div class="page-content__wrapper">
+
+          <section class="section">
+            <h1 class="section__heading">
+              1. Without a wrapper div, with border and negative margin
+            </h1>
+            <div class="layout">
+              <header class="layout__header">
+                <ul class="header__menu unstyled-list">
+                  <li class="menu__item">
+                    <a href="" class="menu__item-link"> Home </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="" class="menu__item-link"> About </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="" class="menu__item-link"> Contact Us </a>
+                  </li>
+                </ul>
+              </header>
+
+              <aside class="layout__sidebar">
+                <ul class="sidebar__menu unstyled-list">
+                  <li class="menu_item">
+                    <a href="" class="menu__item-link">
+                      <i class="material-icons">home</i>
+                      Home
+                    </a>
+                  </li>
+                  <li class="menu_item">
+                    <a href="" class="menu__item-link">
+                      <i class="material-icons">description</i>
+                      About
+                    </a>
+                  </li>
+                  <li class="menu_item">
+                    <a href="" class="menu__item-link">
+                      <i class="material-icons">email</i>
+                      Contact US
+                    </a>
+                  </li>
+                </ul>
+              </aside>
+
+              <section class="layout__content">
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+
+                <div class="layout__gallery">
+                  <div class="gallery__item"></div>
+                  <div class="gallery__item"></div>
+                  <div class="gallery__item"></div>
+                  <div class="gallery__item"></div>
+                  <div class="gallery__item"></div>
+                  <div class="gallery__item"></div>
+                  <div class="gallery__item"></div>
+                  <div class="gallery__item"></div>
+                </div>
+              </section>
+
+              <footer class="layout__footer">
+                <ul class="footer__menu unstyled-list">
+                  <li class="menu__item">
+                    <a href="" class="menu__item-link"> Talos Digital </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="" class="menu__item-link"> Contact Us </a>
+                  </li>
+                </ul>
+              </footer>
+            </div>
+          </section>
+
+          <section class="section">
+            <h1 class="section__heading">
+              2. Using flex, flex-direction, and wrapper div
+            </h1>
+
+            <div class="layout">
+              <header class="layout__header">
+                <ul class="header__menu unstyled-list">
+                  <li class="menu__item">
+                    <a href="" class="menu__item-link"> Home </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="" class="menu__item-link"> About </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="" class="menu__item-link"> Contact Us </a>
+                  </li>
+                </ul>
+              </header>
+
+              <section class="layout__wrapper">
+                <aside class="layout__sidebar">
+                  <ul class="sidebar__menu unstyled-list">
+                    <li class="menu__item">
+                      <a href="" class="menu__item-link">
+                        <i class="material-icons">home</i>
+                        Home
+                      </a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="" class="menu__item-link">
+                        <i class="material-icons">description</i>
+                        About
+                      </a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="" class="menu__item-link">
+                        <i class="material-icons">email</i>
+                        Contact US
+                      </a>
+                    </li>
+                  </ul>
+                </aside>
+
+                <article class="layout__content">
+                  <p>Lorem ipsum...</p>
+                  <p>Lorem ipsum...</p>
+                  <p>Lorem ipsum...</p>
+                  <p>Lorem ipsum...</p>
+                  <p>Lorem ipsum...</p>
+                  <p>Lorem ipsum...</p>
+                  <p>Lorem ipsum...</p>
+
+                  <div class="layout__gallery">
+                    <div class="gallery__item"></div>
+                    <div class="gallery__item"></div>
+                    <div class="gallery__item"></div>
+                    <div class="gallery__item"></div>
+                    <div class="gallery__item"></div>
+                    <div class="gallery__item"></div>
+                    <div class="gallery__item"></div>
+                    <div class="gallery__item"></div>
+                  </div>
+                </article>
+              </section>
+
+              <footer class="layout__footer">
+                <ul class="footer__menu unstyled-list">
+                  <li class="menu__item">
+                    <a href="" class="menu__item-link"> Talos Digital </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="" class="menu__item-link"> Contact Us </a>
+                  </li>
+                </ul>
+              </footer>
+            </div>
+          </section>
         </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-         <!-- Practice Content Goes Here -->
-        </div>
-      </main>
-    </div>
+      </div>
+    </main>
+  </div>
 
-  </body>
+</body>
+
 </html>

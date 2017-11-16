@@ -1,0 +1,129 @@
+/* Practice Layout */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	color: #69686a;
+	font-size: 16px;
+}
+
+.trash{
+	color: black;
+}
+
+.unstyled-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.unstyled-list a {
+	text-decoration: none;
+}
+
+.page-content__wrapper {
+	max-width: 75rem;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+/* layout */
+
+.layout {
+	background-color: #ffd0c4;
+	margin: 2rem 0;
+}
+
+.layout__content {
+	padding: 1rem;
+}
+
+.layout__content p {
+	margin: 0;
+}
+
+.layout__header,
+.layout__footer {
+	background-color: #D24F2E;
+}
+
+.layout__sidebar {
+	background-color: #8cd0d2;
+	width: 20rem;
+}
+
+.layout > .layout__sidebar {
+	float: left;
+	margin-right: -20rem;
+}
+
+.layout > .layout__content {
+	border-left: 20rem solid #8cd0d2;
+}
+
+.layout > .layout__content .layout__gallery {
+	clear: both;
+	margin-top: 1rem;
+	overflow: auto;
+}
+
+.layout > .layout__content .gallery__item {
+	float: left;
+	height: 10rem;
+	width: 25%;
+}
+
+.header__menu .menu__item,
+.footer__menu .menu__item {
+	display: inline-block;
+}
+
+.header__menu .menu__item-link,
+.footer__menu .menu__item-link {
+	color: #ffffff;
+	display: block;
+	padding: .5rem 1rem;
+}
+
+.layout__gallery .gallery__item {
+	background-color: #8cd0d2;
+	border: 1px solid #D24F2E;
+}
+
+/* Sidebar menu */
+
+.sidebar__menu .menu__item-link {
+	align-items: center;
+	color: inherit;
+	display: flex;
+	padding: 1rem;
+}
+
+.sidebar__menu .material-icons {
+	margin-right: 2rem;
+}
+
+/* Second layout */
+
+.layout__wrapper {
+	display: flex;
+}
+
+.layout__wrapper .layout__content {
+	flex: 1;
+}
+
+.layout__wrapper .layout__gallery {
+	display: flex;
+}
+
+.layout__wrapper .gallery__item {
+	flex: 1;
+	height: 20rem;
+}
+
+.layout__wrapper .gallery__item:nth-child(2n) {
+	height: 14rem;
+}
