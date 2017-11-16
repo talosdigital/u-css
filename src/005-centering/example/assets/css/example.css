@@ -1,0 +1,139 @@
+/* Practice Layout */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	color: #69686a;
+	font-size: 16px;
+}
+
+.trash{
+	color: black;
+}
+
+.unstyled-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.unstyled-list a {
+	text-decoration: none;
+}
+
+.centered-text{
+	text-align: center;
+}
+
+.page-content__wrapper {
+	background-color: #E8E8E8;
+	padding: 1rem;
+}
+
+.page-content__wrapper .content__heading {
+	background-color: lightgray;
+	margin-top: 0;
+	padding: .5rem;
+}
+
+.section .section__box {
+	background-color: lightgray;
+	margin: .5rem;
+	padding: 2rem;
+	text-align: left;
+	width: 300px;
+}
+
+/* navbar */
+
+.navbar {
+	background-color: lightgray;
+	margin-bottom: 1rem;
+}
+
+.navbar__menu .menu__item {
+	display: inline-block;
+}
+
+.navbar__menu .menu__item-link {
+	display: block;
+	font-size: 1.05rem;
+	padding: .5rem;
+}
+
+/* Inline block center */
+
+.inline-container .section__box {
+	display: inline-block;
+}
+
+/* Flex block center */
+
+.flex-container {
+	align-items: stretch;
+	display: flex;
+	justify-content: center;
+}
+
+/* Vertical centered text */
+
+.vertical-center {
+	background-color: lightgray;
+	height: 6rem;
+	line-height: 6rem;
+	padding: 0 1rem;
+	width: 50%;
+}
+
+/* Table vertical align */
+
+.table-valign {
+	background-color: lightgray;
+	display: table;
+	height: 16rem;
+	margin: 1rem 0;
+	padding: 1rem;
+	width: 12rem;
+}
+
+.table-valign .table__cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* Flex vertical alignment */
+
+.flex-alignment {
+	align-items: center;
+	background-color: lightgray;
+	display: flex;
+	height: 20rem;
+	padding: 2rem;
+}
+
+/* Position center */
+
+.position-center {
+	background-color: lightgray;
+	height: 20rem;
+	margin: 1rem 0;
+	padding: 1rem;
+	position: relative;
+}
+
+.position-center .positioned-block {
+	background-color: darkgray;
+	color: #ffffff;
+	left: 1rem;
+	padding: 1rem;
+	position: absolute;
+	right: 1rem;
+	transform: translateY(-50%);
+	top: 50%;
+}
+
+.positioned-block.fixed-height {
+	height: 8rem;
+}
