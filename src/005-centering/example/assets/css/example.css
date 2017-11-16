@@ -29,6 +29,8 @@ html {
 
 .page-content__wrapper {
 	background-color: #E8E8E8;
+	margin: 0 auto;
+	max-width: 75rem;
 	padding: 1rem;
 }
 
@@ -136,4 +138,31 @@ html {
 
 .positioned-block.fixed-height {
 	height: 8rem;
+}
+
+/* Footer */
+
+.footer {
+	background-color: #7AA6A3;
+	display: flex;
+	justify-content: center;
+	padding: 5rem;
+}
+
+.footer__box {
+	align-items: center;
+	background-color: #BF5759;
+	display: flex;
+	height: 12rem;
+	justify-content: center;
+	width: 12rem;
+}
+
+.footer__box::after {
+	background-color: #DFB272;
+	border: 1rem solid #454C5B;
+	content: "";
+	display: block;
+	height: 2rem;
+	width: 2rem;
 }
