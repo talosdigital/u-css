@@ -1,40 +1,144 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>002 - Negative Margins</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link href="../../app.css" rel="stylesheet" type="text/css">
+<head>
+  <meta charset="utf-8">
+  <title>002 - Negative Margins</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
 
-    <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
-  </head>
-  <body>
-  	<!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
-          <i class="material-icons">home</i>
-        </a>
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">002 - Negative Margins</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
+  <!-- Ignore this, it's for the header -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link href="../../app.css" rel="stylesheet" type="text/css">
+
+  <!-- Import App Css file -->
+  <link href="assets/css/example.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/normalize.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
+        <i class="material-icons">home</i>
+      </a>
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">002 - Negative Margins</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <!-- Practice Content Goes Here -->
+        <div class="page-content__wrapper">
+
+          <section class="section" id="rightSidebarSection">
+            <h1 class="section__heading">Negative margin on content to allow right sidebar</h1>
+
+            <article class="section__content">
+              <h5 class="content__heading">Lorem Ipsum dolor sit amet, consectetur adipiscing elit</h5>
+              <p class="content__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus enim arcu, eget lobortis magna mattis
+                sit amet. Fusce rutrum condimentum urna ut accumsan. Pellentesque volutpat semper eleifend. Donec tempus
+                a turpis vitae elementum. Donec quis lorem eget nunc ultrices finibus. Maecenas imperdiet luctus tellus in
+                convallis. Duis interdum nibh ac nisi feugiat hendrerit. Vestibulum vitae elit non lectus lobortis sollicitudin
+                eu sit amet odio.</p>
+            </article>
+
+            <aside class="section__sidebar">
+              <nav class="section__navbar">
+                <ul class="navbar__menu unstyled-list">
+                    <li class="menu__item">
+                      <a href="javascript:void(0)" class="menu__item-link" role="button">
+                        <i class="material-icons menu__item-icon">home</i>
+                        Home
+                      </a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="javascript:void(0)" class="menu__item-link" role="button">
+                        <i class="material-icons menu__item-icon">description</i>
+                        About
+                      </a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="javascript:void(0)" class="menu__item-link" role="button">
+                        <i class="material-icons menu__item-icon">email</i>
+                        Contact US
+                      </a>
+                    </li>
+                  </ul>
+              </nav>
+            </aside>
+          </section>
+
+          <section class="section" id="columnListSection">
+            <h1 class="section__heading">Negative margin on top to align &lt; li &gt;</h1>
+
+            <ul class="unstyled-list table-list">
+              <li class="table-list__item table-list__heading">ID</li>
+              <li class="table-list__item table-list__col-1">1</li>
+              <li class="table-list__item table-list__col-1">2</li>
+              <li class="table-list__item table-list__col-1">3</li>
+              <li class="table-list__item table-list__col-2 table-list__heading--offset">Name</li>
+              <li class="table-list__item table-list__col-2">Chancho</li>
+              <li class="table-list__item table-list__col-2">Pancho</li>
+              <li class="table-list__item table-list__col-2">Gancho</li>
+              <li class="table-list__item table-list__col-3 table-list__heading--offset">PHONE</li>
+              <li class="table-list__item table-list__col-3">1234567</li>
+              <li class="table-list__item table-list__col-3">2345678</li>
+              <li class="table-list__item table-list__col-3">3456789</li>
+            </ul>
+          </section>
+
+          <section class="section" id="fixedFooterSection">
+            <h1 class="section__heading">Negative margin to create a Sticky Footer using fixed footer height</h1>
+
+            <div class="section__content">
+              <h5 class="content__heading">Lorem Ipsum</h5>
+              <p class="content__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus enim arcu, eget lobortis magna mattis
+                sit amet. Fusce rutrum condimentum urna ut accumsan. Pellentesque volutpat semper eleifend. Donec tempus
+                a turpis vitae elementum. Donec quis lorem eget nunc ultrices finibus. Maecenas imperdiet luctus tellus in
+                convallis. Duis interdum nibh ac nisi feugiat hendrerit. Vestibulum vitae elit non lectus lobortis sollicitudin
+                eu sit amet odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus enim arcu, eget lobortis
+                magna mattis sit amet. Fusce rutrum condimentum urna ut accumsan. Pellentesque volutpat semper eleifend.
+                Donec tempus a turpis vitae elementum. Donec quis lorem eget nunc ultrices finibus. Maecenas imperdiet luctus
+                tellus in convallis. Duis interdum nibh ac nisi feugiat hendrerit. Vestibulum vitae elit non lectus lobortis
+                sollicitudin eu sit amet odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus enim
+                arcu, eget lobortis magna mattis sit amet. Fusce rutrum condimentum urna ut accumsan. Pellentesque volutpat
+                semper eleifend. Donec tempus a turpis vitae elementum. Donec quis lorem eget nunc ultrices finibus. Maecenas
+                imperdiet luctus tellus in convallis. Duis interdum nibh ac nisi feugiat hendrerit. Vestibulum vitae elit
+                non lectus lobortis sollicitudin eu sit amet odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Fusce tempus enim arcu, eget lobortis magna mattis sit amet. Fusce rutrum condimentum urna ut accumsan. Pellentesque
+                volutpat semper eleifend. Donec tempus a turpis vitae elementum. Donec quis lorem eget nunc ultrices finibus.
+                Maecenas imperdiet luctus tellus in convallis. Duis interdum nibh ac nisi feugiat hendrerit. Vestibulum vitae
+                elit non lectus lobortis sollicitudin eu sit amet odio.</p>
+
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Click Me</button>
+            </div>
+
+            <footer class="section__footer">
+              <ul class="footer__list unstyled-list">
+                <li class="list__item">
+                  <a href="javascript:void(0)" class="list__item-link" role="button">home</a>
+                </li>
+                <li class="list__item">
+                  <a href="javascript:void(0)" class="list__item-link" role="button">about</a>
+                </li>
+                <li class="list__item">
+                  <a href="javascript:void(0)" class="list__item-link" role="button">contact us</a>
+                </li>
+              </ul>
+            </footer>
+          </section>
         </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-         <!-- Practice Content Goes Here -->
-        </div>
-      </main>
-    </div>
+      </div>
+    </main>
+  </div>
 
-  </body>
+</body>
+
 </html>
