@@ -42,6 +42,24 @@ body {
   padding: 1rem;
 }
 
+.blue__wrapper .article p {
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.blue__wrapper p::first-letter {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.blue__wrapper .article:first-child p {
+  letter-spacing: .1rem;
+}
+
+.blue__wrapper hr {
+  border-color: #DF183E;
+}
+
 
 /* light wrapper */
 
@@ -49,6 +67,10 @@ body {
   background-color: rgba(255, 255, 255, .9);
   color: black;
   padding: 3rem;
+}
+
+.light__wrapper .content__heading {
+  font-weight: normal;
 }
 
 
@@ -63,9 +85,15 @@ body {
 .green__wrapper {
   background-color: #E0E471;
   color: rgba(0, 0, 0, .3);
+  counter-reset: lorem-list-counter;
   max-width: 100%;
   padding: 3rem;
   z-index: 2;
+}
+
+.green__wrapper li::after {
+  counter-increment: lorem-list-counter;
+  content: " " counter(lorem-list-counter);
 }
 
 @media screen and (min-width:768px) {
