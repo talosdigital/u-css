@@ -1,0 +1,126 @@
+/* Practice Layout */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #D7EBDD;
+  color: #FFFFFF;
+  font-size: 16px;
+  position: relative;
+}
+
+.trash {
+  color: black;
+}
+
+.unstyled-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-content__wrapper {
+  position: relative;
+}
+
+
+/* Blue wrapper */
+
+.blue__wrapper {
+  background-color: #7EC5D2;
+  padding: 3rem 0;
+}
+
+.blue__wrapper .content__heading {
+  font-weight: bold;
+}
+
+.blue__wrapper .article {
+  padding: 1rem;
+}
+
+.blue__wrapper .article p {
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.blue__wrapper p::first-letter {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.blue__wrapper .article:first-child p {
+  letter-spacing: .1rem;
+}
+
+.blue__wrapper hr {
+  border-color: #DF183E;
+}
+
+
+/* light wrapper */
+
+.light__wrapper {
+  background-color: rgba(255, 255, 255, .9);
+  color: black;
+  padding: 3rem;
+}
+
+.light__wrapper .content__heading {
+  font-weight: normal;
+}
+
+
+/* Dark wrapper */
+
+.dark__wrapper {
+  display: none;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 1;
+}
+
+.green__wrapper {
+  background-color: #E0E471;
+  color: rgba(0, 0, 0, .3);
+  counter-reset: lorem-list-counter;
+  max-width: 100%;
+  padding: 3rem;
+  z-index: 2;
+}
+
+.green__wrapper li::after {
+  counter-increment: lorem-list-counter;
+  content: " " counter(lorem-list-counter);
+}
+
+@media screen and (min-width:768px) {
+  .blue__wrapper {
+    margin: 3rem;
+    padding-top: 0;
+  }
+  .blue__wrapper .article {
+    padding: 3rem 5rem;
+    width: 65%;
+  }
+  .dark__wrapper {
+    display: block;
+    bottom: 0;
+    min-height: 100%;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 30%;
+  }
+  .green__wrapper {
+    margin-top: 4rem;
+    padding-left: 4rem;
+    position: absolute;
+    right: 3rem;
+    top: 0;
+    width: 30%;
+  }
+}
