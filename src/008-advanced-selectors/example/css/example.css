@@ -1,0 +1,209 @@
+/* General styles */
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	font-size: 15px;
+	line-height: 22px;
+	color: #787878;
+}
+
+h1 {
+	font-size: 2.5em;
+	margin-bottom: 30px;
+}
+
+h2 {
+	font-size: 1.7em;
+	margin-bottom: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-practice {
+	margin: 0 auto;
+	max-width: 1200px;
+	display: flex;
+}
+
+/* Header styles */
+header {
+	color: #000;
+	border-bottom: 1px solid #ebebeb;
+	padding: 25px 0px;
+	text-align: center;
+}
+
+/** Aside Styles **/
+aside {
+	width: 250px;
+}
+
+aside h3 {
+	border-bottom: 2px solid #ebebeb;
+	font-size: 1.2em;
+	padding: 25px 0px;
+	letter-spacing: 3px;
+}
+
+aside ul {
+	margin-top: 15px;
+}
+
+aside ul a {
+	color: inherit;
+	font-size: 0.7em;
+}
+
+aside ul a:hover {
+	color: #fbc2d4;
+}
+
+.currency ul li a{
+	background-color: #ebebeb;
+	border-bottom: 1px solid #fbc2d4;
+	display: block;
+	margin-bottom: 5px;
+	padding: 5px 10px;
+}
+
+.currency ul li a:hover{
+	background-color: #fbc2d4;
+	color: inherit;
+}
+
+.valored li {
+	clear: both;
+}
+
+.valored img {
+	width: 70px;
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+.valored .description {
+	float: left;
+	width: 160px;
+}
+
+.valored .description div:nth-child(1) {
+	font-size: 1.4em;
+}
+
+.valored .description div:nth-child(2) {
+	color: #9b9b9b;
+	float: left;
+	font-size: 1.6em;
+	margin-right: 5px;
+}
+
+.valored .description div:nth-child(3) {
+	font-size: 0.7em;
+	color: #9b9b9b;
+}
+
+/** Section styles **/
+
+.catalog {
+	float: right;
+  width: calc(100% - 250px);
+}
+
+.catalog .header {
+	margin: 20px 0px;
+	display: flex;
+	justify-content: space-between;
+	line-height: 40px;
+}
+
+.catalog .header div:first-child {
+  font-size: 1.1em;
+}
+
+.icons {
+	display: flex;
+}
+
+.catalog .icons a{
+	position: relative;
+	height: 40px;
+	width: 38px;
+}
+
+.catalog .icons a:first-child {
+	background-color: #000;
+	color: #fff;
+	margin-right: 10px;
+}
+
+.catalog .icons a:last-child {
+	border: 1px solid #ebebeb;
+	color: #757575;
+}
+
+.catalog .icons i {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.catalog .wrap-images {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+.catalog .wrap-images a {
+  color: inherit;
+}
+
+.catalog .wrap-images article {
+	width: 240px;
+	margin-right: 10px;
+	position: relative;
+	transition: all 0.3s;
+}
+
+.catalog .wrap-images article:hover {
+	opacity: 0.5;
+}
+
+.wrap-images article:first-child .catalog-img:before {
+    content: "NEW COLLECTION";
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background: #fbc2d4;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 0.7em;
+		width: 90px;
+		z-index: 1;
+}
+
+.catalog .catalog-img {
+	overflow: hidden;
+	height: 300px;
+  width: 240px;
+}
+
+.catalog img {
+	width: 100%;
+	transition: all 0.3s;
+}
+
+.catalog img:hover {
+	transform: scale(1.1);
+}
+
+footer {
+	background: #787878;
+	color: #fff;
+	padding: 60px 30px;
+	margin: 0 -20px -20px -20px;
+}

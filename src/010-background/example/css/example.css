@@ -1,0 +1,104 @@
+/* General styles */
+* {
+	box-sizing: border-box;
+}
+p, h1, h2, h3, li, div {
+	letter-spacing: 1px;
+}
+
+html,
+body {
+	background-image: radial-gradient(ellipse, rgba(245, 162, 117, 1) 5%, rgba(210, 79, 46, 1) 60%);
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: normal;
+}
+
+h1 {
+	font-size: 3em;
+	line-height: 55px;
+	margin-bottom: 30px;
+	text-shadow: 3px -3px 0px #333;
+}
+
+h2 {
+	font-size: 2em;
+	margin-bottom: 10px;
+	text-shadow: -3px 2px 0px #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+	margin: 20px 0;
+  text-align: center;
+}
+
+.g-line {
+	background-image: linear-gradient(to right, #d24f2e 5%, #f5a275, #d24f2e 95%);
+	display: block;
+  height: 3px;
+	width: 100%;
+}
+
+section {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+.box-r {
+	align-items: center;
+	background-color: #f5a275;
+	border-radius: 120px;
+	box-shadow: inset 2px 2px 10px rgba(255, 255, 255, 0.5), 2px 2px 10px rgba(0, 0, 0, 0.5);
+	display: inline-flex;
+	height: 150px;
+	margin: 15px 55px 0 55px;
+	padding: 20px;
+	width: 33%;
+}
+
+.box-r div {
+  max-width: 100%;
+	overflow: auto;
+	margin-left: 10px;
+}
+
+.box-r img {
+	border: 3px solid #fff;
+	border-radius: 50%;
+	width: 106px;
+}
+
+.box-r p {
+	line-height: 25px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-shadow: 1px 1px 1px #000;
+	white-space: nowrap;
+}
+
+.box-r .title{
+	font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+	section {
+		flex-direction: column;
+	}
+	.box-r {
+		width: 80%;
+	}
+}
+
+@media (max-width: 450px) {
+  .box-r img {
+		display: none;
+	}
+}
