@@ -83,6 +83,12 @@ body {
   padding: .5rem;
 }
 
+.currency-list .list__item-link:hover,
+.currency-list .list__item-link:focus {
+  background-color: #FBBFD4;
+  color: inherit;
+}
+
 
 /* sidebar best valored */
 
@@ -143,7 +149,7 @@ body {
 
 .content__topbar button.active {
   background-color: black;
-  color: white!important;
+  color: white;
 }
 
 .content__topbar .material-icons {
