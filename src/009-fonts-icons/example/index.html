@@ -1,40 +1,99 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>009 - Fonts, Icons and Sizes</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link href="../../app.css" rel="stylesheet" type="text/css">
+<head>
+  <meta charset="utf-8">
+  <title>009 - Fonts, Icons and Sizes</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
 
-    <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
-  </head>
-  <body>
-  	<!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
-          <i class="material-icons">home</i>
-        </a>
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">009 - Fonts, Icons and Sizes</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
+  <!-- Ignore this, it's for the header -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link href="../../app.css" rel="stylesheet" type="text/css">
+
+  <!-- Import App Css file -->
+  <link href="assets/css/example.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/normalize.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
+        <i class="material-icons">home</i>
+      </a>
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">009 - Fonts, Icons and Sizes</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <!-- Practice Content Goes Here -->
+        <div class="page-content__wrapper">
+          <section class="blue__wrapper">
+            <article class="article main-content">
+              <h2 class="content__heading">Lorem ipsum dolor <span class="transformed">sit</span> amet</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie condimentum vehicula. <i class="fa fa-bicycle" aria-hidden="true"></i> Proin scelerisque neque id velit varius, quis consequat mauris semper.</p>
+              <hr>
+              <div class="searchbox">
+                <i class="material-icons">find_in_page</i>
+                <input type="text" class="searchbox__input" name="Search" placeholder="Search..">
+              </div>
+            </article>
+
+            <article class="article light__wrapper">
+              <h1 class="content__heading">Lorem ipsum dolor sit amet</h1>
+              <div class="content__toolbar">
+                <i class="fa fa-align-left" aria-hidden="true"></i>
+                <i class="fa fa-align-center" aria-hidden="true"></i>
+                <i class="fa fa-align-right" aria-hidden="true"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie condimentum vehicula. Proin scelerisque neque id velit varius, quis consequat mauris semper.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie condimentum vehicula. Proin scelerisque neque id velit varius, quis consequat mauris semper.
+              </p>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+                <i class="material-icons">fingerprint</i>
+                Lorem ipsum dolor sit amet
+              </button>
+            </article>
+          </section>
+
+          <aside class="dark__wrapper"></aside>
+
+          <section class="green__wrapper">
+            <h1 class="content__heading">Lorem ipsum dolor sit amet</h1>
+            <ul class="unstyled-list">
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem ipsum dolor</li>
+            </ul>
+          </section>
         </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-         <!-- Practice Content Goes Here -->
-        </div>
-      </main>
-    </div>
+      </div>
+    </main>
+  </div>
 
-  </body>
+</body>
+
 </html>
