@@ -1,40 +1,183 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>001 - Float Property</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link href="../../app.css" rel="stylesheet" type="text/css">
+<head>
+  <meta charset="utf-8">
+  <title>008 - Advanced selectors</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
 
-    <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
-  </head>
-  <body>
-  	<!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
-          <i class="material-icons">home</i>
-        </a>
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">001 - Float Property</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
+  <!-- Ignore this, it's for the header -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link href="../../app.css" rel="stylesheet" type="text/css">
+
+  <!-- Import App Css file -->
+  <link href="assets/css/example.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/normalize.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
+        <i class="material-icons">home</i>
+      </a>
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">008 - Advanced selectors</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <!-- Practice Content Goes Here -->
+        <div class="page-content__wrapper">
+          <h1 class="content__heading">Clothes</h1>
+          <div class="container">
+            <aside class="content__sidebar">
+              <h5 class="sidebar__subheading">Categories</h5>
+              <ul class="categories-list unstyled-list" role="navigation">
+                <li class="list__item"><a href="" class="list__item-link">Blouses and tops</a></li>
+                <li class="list__item"><a href="" class="list__item-link">Cardigans and kimonos</a></li>
+                <li class="list__item"><a href="" class="list__item-link">Jackets</a></li>
+                <li class="list__item"><a href="" class="list__item-link">Crop tops and bralettes</a></li>
+                <li class="list__item"><a href="" class="list__item-link">Chanel skirt</a></li>
+                <li class="list__item"><a href="" class="list__item-link">Skirts and shorts</a></li>
+                <li class="list__item"><a href="" class="list__item-link">New collection</a></li>
+                <li class="list__item"><a href="" class="list__item-link">Pants</a></li>
+                <li class="list__item"><a href="" class="list__item-link">Clothes</a></li>
+                <li class="list__item"><a href="" class="list__item-link">Rumpers</a></li>
+                <li class="list__item"><a href="" class="list__item-link">Coat</a></li>
+                <li class="list__item"><a href="" class="list__item-link">Dresses</a></li>
+                <li class="list__item"><a href="" class="list__item-link">Shoes and accessories</a></li>
+              </ul>
+
+              <h5 class="sidebar__subheading">Change Currency</h5>
+              <ul class="currency-list unstyled-list">
+                <li class="list__item"><a href="" class="list__item-link">COP</a></li>
+                <li class="list__item"><a href="" class="list__item-link">USD</a></li>
+                <li class="list__item"><a href="" class="list__item-link">MXN</a></li>
+              </ul>
+
+              <h5 class="sidebar__subheading">Best Valored</h5>
+              <ul class="best-valored-list unstyled-list">
+                <li class="list__item">
+                  <div class="list__item-thumbnail">
+                    <img src="assets/images/avatar1.jpg" class="thumbnail" alt="avatar1">
+                  </div>
+                  <div class="list__item-content">
+                    <a href="" class="list__item-link">Cross skirt</a>
+                    <h5 class="list__item-price">COP $142,000</h5>
+                  </div>
+                </li>
+                <li class="list__item">
+                  <div class="list__item-thumbnail">
+                    <img src="assets/images/avatar2.jpg" class="thumbnail" alt="avatar2">
+                  </div>
+                  <div class="list__item-content">
+                    <a href="" class="list__item-link">Grape blonda Croptop </a>
+                    <h5 class="list__item-price">COP $97,000</h5>
+                  </div>
+                </li>
+                <li class="list__item">
+                  <div class="list__item-thumbnail">
+                    <img src="assets/images/avatar3.jpg" class="thumbnail" alt="avatar3">
+                  </div>
+                  <div class="list__item-content">
+                    <a href="" class="list__item-link">Short sleeve shirt with lace</a>
+                    <h5 class="list__item-price">COP $105,000</h5>
+                  </div>
+                </li>
+              </ul>
+            </aside>
+
+            <section class="content__section">
+              <div class="content__topbar">
+                <span class="content__results"> Showing 1-12 of 289 results</span>
+                <div>
+                  <button class="active"><i class="material-icons mdl-list__item-icon">view_module</i></button>
+                  <button><i class="material-icons mdl-list__item-icon">view_list</i></button>
+                </div>
+              </div>
+
+              <section class="gallery">
+                <article class="gallery__item on-sale" tabindex="0">
+                  <div class="gallery__item-thumbnail">
+                    <img src="assets/images/card1.jpg" class="thumbnail__image" alt="card1">
+                  </div>
+                  <p class="gallery__item-name">Dress</p>
+                  <p class="gallery__item-price">COP $ 200.000</p>
+                  <a href="" class="gallery__add-to-cart">
+                    <i class="material-icons">add_shopping_cart</i>
+                  </a>
+                </article>
+
+                <article class="gallery__item" tabindex="0">
+                  <div class="gallery__item-thumbnail">
+                    <img src="assets/images/card2.jpg" class="thumbnail__image" alt="card2">
+                  </div>
+                  <p class="gallery__item-name">White Croptop</p>
+                  <p class="gallery__item-price">COP $ 200.000</p>
+                  <a href="" class="gallery__add-to-cart">
+                    <i class="material-icons">add_shopping_cart</i>
+                  </a>
+                </article>
+
+                <article class="gallery__item" tabindex="0">
+                  <div class="gallery__item-thumbnail">
+                    <img src="assets/images/card3.jpg" class="thumbnail__image" alt="card3">
+                  </div>
+                  <p class="gallery__item-name">White Blouse</p>
+                  <p class="gallery__item-price">COP $ 200.000</p>
+                  <a href="" class="gallery__add-to-cart">
+                    <i class="material-icons">add_shopping_cart</i>
+                  </a>
+                </article>
+
+                <article class="gallery__item" tabindex="0">
+                  <div class="gallery__item-thumbnail">
+                    <img src="assets/images/card4.jpg" class="thumbnail__image" alt="card4">
+                  </div>
+                  <p class="gallery__item-name">Black Blouse</p>
+                  <p class="gallery__item-price">COP $ 200.000</p>
+                  <a href="" class="gallery__add-to-cart">
+                    <i class="material-icons">add_shopping_cart</i>
+                  </a>
+                </article>
+
+                <article class="gallery__item" tabindex="0">
+                  <div class="gallery__item-thumbnail">
+                    <img src="assets/images/card5.jpg" class="thumbnail__image" alt="card5">
+                  </div>
+                  <p class="gallery__item-name">Long sleeve blouse</p>
+                  <p class="gallery__item-price">COP $ 200.000</p>
+                  <a href="" class="gallery__add-to-cart">
+                    <i class="material-icons">add_shopping_cart</i>
+                  </a>
+                </article>
+
+                <article class="gallery__item" tabindex="0">
+                  <div class="gallery__item-thumbnail">
+                    <img src="assets/images/card6.jpg" class="thumbnail__image" alt="card6">
+                  </div>
+                  <p class="gallery__item-name">Dark Blue Dress</p>
+                  <p class="gallery__item-price">COP $ 200.000</p>
+                  <a href="" class="gallery__add-to-cart">
+                    <i class="material-icons">add_shopping_cart</i>
+                  </a>
+                </article>
+              </section>
+            </section>
+          </div>
         </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-         <!-- Practice Content Goes Here -->
-        </div>
-      </main>
-    </div>
+      </div>
+    </main>
+  </div>
 
-  </body>
+</body>
+
 </html>
