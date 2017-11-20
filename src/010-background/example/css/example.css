@@ -1,0 +1,127 @@
+/* Practice: Background, Color and Shadows */
+body,
+html {
+  color: #787878;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  margin: 0 30px;
+  font-family: sans-serif;
+}
+
+body {
+  background: radial-gradient(ellipse at center, rgba(245, 162, 117, 1) 0%, rgba(210, 79, 46, 1) 59%, rgba(210, 79, 46, 1) 100%);
+  min-width: 100%;
+  min-height: 100%;
+  letter-spacing: 2px;
+}
+
+.content header {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.content header h1 {
+  font-weight: 500;
+  text-shadow: 3px -3px #333;
+  font-size: 3em;
+}
+
+.content header h3 {
+  font-weight: 100;
+  font-size: 2em;
+  line-height: 1.5em;
+  text-shadow: -3px 2px 0 #333;
+}
+
+.content header .line {
+  color: white;
+  background: linear-gradient(to right, #D24F2E 0%, #f5a275 36%, #f5a275 63%, #D24F2E 100%);
+  box-shadow: 2px 2px 2px 0px #D24F2E;
+  border: none;
+  display: block;
+  height: 3px;
+  margin: 0 0%;
+  width: 100%;
+}
+
+.portfolio {
+  height: 100%;
+  overflow: auto;
+  margin-top: 100px;
+}
+
+.portfolio .rounded-box {
+  align-items: center;
+  background-color: #f5a275;
+  box-sizing: border-box;
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
+  border-bottom-right-radius: 75px;
+  border-bottom-left-radius: 75px;
+  box-shadow: 3px 3px 3px 1px #D24F2E, inset 2px 2px 7px rgba(255, 255, 255, 0.6), inset -1px -1px 1px rgba(255, 255, 255, 0.2);
+  color: white;
+  display: inline-flex;
+  float: left;
+  height: 150px;
+  margin: 15px 5px 15px 10%;
+  opacity: 0.8;
+  padding: 10px;
+  width: 35%;
+}
+
+.portfolio .rounded-box img {
+  border-radius: 50%;
+  border: 3px solid white;
+  height: auto;
+  margin-left: 10px;
+  width: 100px;
+}
+
+.portfolio .rounded-box .description {
+  max-width: 100%;
+  margin-left: 10px;
+  overflow: auto;
+}
+
+.portfolio .rounded-box .description h2 {
+  font-weight: 800;
+  text-shadow: 1px 1px #333;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.portfolio .rounded-box .description p {
+  font-weight: 100;
+  overflow: hidden;
+  text-shadow: 1px 1px #333;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.portfolio .rounded-box:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.portfolio .rounded-box:hover a:hover {
+  color: #FFF;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .rounded-box {
+    width: 85% !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .portfolio .rounded-box img {
+    display: none;
+  }
+}
