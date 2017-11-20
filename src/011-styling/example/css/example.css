@@ -10,7 +10,7 @@
 
 html, body, main, .page-content {
   height: 100%;
-  padding: 0 !important;
+  padding: 0;
   font-size: 16px;
   line-height: 1.5;
   color: #9b9b9b;
@@ -37,11 +37,11 @@ footer {
 
 .content .title {
   background-image: url("../images/background.jpg");
-  height: 250px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 250px;
 }
 
 .content .title h1 {
@@ -54,6 +54,11 @@ footer {
   text-transform: uppercase;
 }
 
+.form-container,
+.input {
+  box-sizing: border-box;
+}
+
 .form-container {
   margin: 0 auto;
   padding: 20px;
@@ -61,9 +66,8 @@ footer {
 }
 
 .input {
-  background-color: #eee;
+  background-color: #EEE;
   border: 0;
-  box-sizing: border-box;
   color: #444;
   display: block;
   font-size: 15px;
@@ -92,13 +96,13 @@ footer {
 }
 
 .button:hover {
-  background-color: #fff;
+  background-color: #FFF;
   border: 1px solid #fbc2d4;
   color: #fbc2d4;
   cursor: pointer;
 }
 
-.flex-center {
+footer .footer-content {
   background-color: inherit;
   display: flex;
   flex-direction: row;
@@ -114,7 +118,7 @@ footer {
 }
 
 .column .title {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #FFF;
   letter-spacing: 3px;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -122,7 +126,7 @@ footer {
 }
 
 .column ul li {
-  padding-bottom: 10px;
+  padding-bottom: 12px;
 }
 
 .column ul li a {
@@ -133,6 +137,16 @@ footer {
 
 .column ul li a:hover {
   color: #000;
+}
+
+@media (max-width: 778px) {
+  footer .footer-content{
+    flex-direction: column;
+  }
+
+  .form-container {
+    width: 100%;
+  }
 }
 
 
