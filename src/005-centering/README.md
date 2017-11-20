@@ -37,6 +37,7 @@ Using methods for Centering in CSS, create the next items:
 9. A Block-level element with a fixed height, centered vertically within a parent.
 10. A Block-level element with an unknown height, centered vertically within a parent.
 
+![alt-text-1](./design.png)
 
 ### Evaluation Criteria
 

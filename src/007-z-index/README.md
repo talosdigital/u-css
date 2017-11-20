@@ -23,7 +23,7 @@ Using Z Index, !important and Inheritance CSS Property, create the next items:
 
 Create a the following layout:
 
-![alt text](solved/Photo-Example.jpg)
+![alt text](./design.png)
 
 ### Evaluation Criteria
 

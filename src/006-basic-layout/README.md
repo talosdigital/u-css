@@ -21,7 +21,7 @@ Please check and make the same design and animations than page has in the soluti
 
 Create a the following layout:
 
-![alt text](./layout.png)
+![alt text](./design.png)
 
 1. Using Equal Heigh Columns
 2. Using Flex
