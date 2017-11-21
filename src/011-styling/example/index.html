@@ -1,40 +1,97 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>011 - Styling Buttons, links and lists</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link href="../../app.css" rel="stylesheet" type="text/css">
+<head>
+  <meta charset="utf-8">
+  <title>011 - Styling Buttons, links and lists</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
 
-    <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
-  </head>
-  <body>
-  	<!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
-          <i class="material-icons">home</i>
-        </a>
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">011 - Styling Buttons, links and lists</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
+  <!-- Ignore this, it's for the header -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link href="../../app.css" rel="stylesheet" type="text/css">
+
+  <!-- Import App Css file -->
+  <link href="assets/css/example.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/normalize.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
+        <i class="material-icons">home</i>
+      </a>
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">011 - Styling Buttons, links and lists</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <!-- Practice Content Goes Here -->
+        <div class="page-content__wrapper">
+          <section class="hero-content">
+            <h1 class="hero__title">contact us</h1>
+          </section>
+
+          <section class="form-section">
+            <div class="container">
+              <form name="form" class="contact-form" novalidate autocomplete="off">
+                <input type="text" name="name" class="form__input" placeholder="Name">
+                <input type="email" name="email" class="form__input" placeholder="Email">
+                <input type="text" name="subject" class="form__input" placeholder="Subject">
+                <textarea name="message" class="form__input" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <button type="submit" class="form__button">send</button>
+                <p class="form__legend">CONTACT US AND WE WILL RESPOND YOU AS SOON AS POSSIBLE.</p>
+              </form>
+            </div>
+          </section>
+
+          <footer class="footer-section">
+            <nav class="footer__nav container">
+              <div class="column">
+                <h6 class="column__title">Products</h6>
+                <ul class="unstyled-list">
+                  <li class="menu__item"><a href="" class="menu__item-link">Coats and Blazers</a></li>
+                  <li class="menu__item"><a href="" class="menu__item-link">Tops</a></li>
+                  <li class="menu__item"><a href="" class="menu__item-link">Shorts</a></li>
+                  <li class="menu__item"><a href="" class="menu__item-link">Skirts</a></li>
+                  <li class="menu__item"><a href="" class="menu__item-link">Pants</a></li>
+                  <li class="menu__item"><a href="" class="menu__item-link">Dresses</a></li>
+                  <li class="menu__item"><a href="" class="menu__item-link">Shoes and Accessories</a></li>
+                </ul>
+              </div>
+              <div class="column">
+                <h6 class="column__title">General</h6>
+                <ul class="unstyled-list">
+                  <li class="menu__item"><a href="" class="menu__item-link">Best Sellers</a></li>
+                  <li class="menu__item"><a href="" class="menu__item-link">Devolutions</a></li>
+                  <li class="menu__item"><a href="" class="menu__item-link">Shipping</a></li>
+                  <li class="menu__item"><a href="" class="menu__item-link">Frequent questions</a></li>
+                  <li class="menu__item"><a href="" class="menu__item-link">Terms and Conditions</a></li>
+                </ul>
+              </div>
+              <div class="column">
+                <h6 class="column__title">Account</h6>
+                <ul class="unstyled-list">
+                  <li class="menu__item"><a href="" class="menu__item-link">Shopping Cart</a></li>
+                  <li class="menu__item"><a href="" class="menu__item-link">My Profile</a></li>
+                  <li class="menu__item"><a href="" class="menu__item-link">Checkout</a></li>
+                </ul>
+              </div>
+            </nav>
+          </footer>
         </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-         <!-- Practice Content Goes Here -->
-        </div>
-      </main>
-    </div>
+      </div>
+    </main>
+  </div>
 
-  </body>
+</body>
+
 </html>

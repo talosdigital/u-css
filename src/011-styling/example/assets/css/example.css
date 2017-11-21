@@ -1,0 +1,142 @@
+/* Practice Layout */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: #444444;
+  font-size: 16px;
+}
+
+.trash {
+  color: #000000;
+}
+
+.unstyled-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.unstyled-list a {
+  text-decoration: none;
+}
+
+.page-content {
+  padding: 0;
+}
+
+.page-content__wrapper .container {
+  margin: 0 auto;
+  max-width: 75rem;
+}
+
+
+/* hero */
+
+.hero-content {
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .5) 100%), url('../images/background.jpg') no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  height: 250px;
+  justify-content: center;
+}
+
+.hero-content .hero__title {
+  color: rgba(255, 255, 255, .7);
+  text-transform: uppercase;
+}
+
+
+/* form */
+
+.form-section {
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .form-section {
+    width: 500px;
+  }
+}
+
+.form__input {
+  background-color: #eeeeee;
+  border: 0;
+  display: block;
+  margin: 1rem 0;
+  outline: none;
+  padding: .7rem 1rem;
+  width: 100%;
+}
+
+.form__input:focus {
+  border: 1px solid #cccccc;
+}
+
+.form__button {
+  background-color: #fbc2d4;
+  border: 1px solid #fbc2d4;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem 5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form__button:hover,
+.form__button:focus {
+  background-color: #fff;
+  color: #fbc2d4;
+}
+
+.form__legend {
+  color: #cccccc;
+  margin: 1rem 0;
+}
+
+
+/* footer */
+
+.footer-section {
+  background-color: #fbc2d4;
+  color: #fff;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.footer__nav .column {
+  margin: 1rem;
+  min-width: 250px;
+}
+
+.footer__nav .column__title {
+  border-bottom: 1px solid #fff;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+.footer__nav .menu__item {
+  margin-bottom: .5rem;
+}
+
+.footer__nav .menu__item-link {
+  color: inherit;
+}
+
+.footer__nav .menu__item-link:hover,
+.footer__nav .menu__item-link:focus {
+  color: #444444;
+}
