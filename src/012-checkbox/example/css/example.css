@@ -17,7 +17,9 @@ h1 {
 }
 
 h2 {
-	font-size: 1.7em;
+	color: #787878;
+	font-size: 1.2em;
+	font-weight: bold;
 }
 
 a {
@@ -25,6 +27,7 @@ a {
 }
 
 .tabs {
+	box-shadow: 0 48px 80px -32px rgba(0,0,0,0.3);
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -35,24 +38,31 @@ a {
 }
 
 .tabs > label {
-	display: block;
-	padding: 10px 20px;
-	cursor: pointer;
-	position: relative;
-	color: #7F7F7F;
 	background: #E5E5E5;
+	display: block;
+	color: #7F7F7F;
+	cursor: pointer;
+	font-size: 1.1em;
+	font-weight: bold;
+	padding: 20px 30px;
+	position: relative;
 	width: 100%;
+}
+
+.tabs > label:hover {
+  background-color: #d8d8d8;
 }
 
 .content {
 	display: none;
+	padding: 30px;
 	width: 100%;
 }
 
 .tabs > input:checked + label {
-	top: 0;
 	background: #fff;
 	color: #000;
+	top: 0;
 }
 
 .tabs > input:checked + label + .content {
