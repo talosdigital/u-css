@@ -68,181 +68,199 @@
           </nav>
         </header>
 
-        <section class="content">
-          <div class="path">
-            <div class="path-list">
-              <ol class="unstyled-list">
-                <li>
-                  <a href="">Home</a>
-                </li>
-                <li>
-                  <a href="">Tops</a>
-                </li>
-                <li>
-                  <a href="">Green Top</a>
-                </li>
-              </ol>
-            </div>
-            <div class="navigation">
-              <a href="">
-                <i class="material-icons">keyboard_arrow_left</i>
-              </a>
-              <a href="">
-                <i class="material-icons">keyboard_arrow_right</i>
-              </a>
-            </div>
-          </div>
+        <section class="container nav-section">
+          <article class="breadcrumbs">
+            <ul class="breadcrumbs-list unstyled-list">
+              <li class="breadcrumb__item">
+                <a href="" class="breadcrumb__link">Home</a>
+              </li>
+              <li class="breadcrumb__item">
+                <a href="" class="breadcrumb__link">Tops</a>
+              </li>
+              <li class="breadcrumb__item">
+                <a href="" class="breadcrumb__link">Green Top</a>
+              </li>
+            </ul>
+          </article>
+          <article class="arrow-navigation">
+            <a href="" class="arrow">
+              <i class="material-icons">keyboard_arrow_left</i>
+            </a>
+            <a href="" class="arrow">
+              <i class="material-icons">keyboard_arrow_right</i>
+            </a>
+          </article>
         </section>
 
-        <section class="product content">
-          <div class="product-thumbs">
-            <a href="#slider-image-1">
-              <img src="assets/images/products/product-31-a-small-notinclude.jpg" alt="">
-            </a>
-            <a href="#slider-image-2">
-              <img src="assets/images/products/product-31-b-small-notinclude.jpg" alt="">
-            </a>
-            <a href="#slider-image-3">
-              <img src="assets/images/products/product-31-c-small-notinclude.jpg" alt="">
-            </a>
-          </div>
+        <section class="container product-section">
+          <article class="product-thumbnails">
+            <ul class="thumbnail-list unstyled-list">
+              <li class="thumbnail__item">
+                <a href="#slider-image-1" class="thumbnail__link">
+                  <img src="assets/images/products/product-31-a-small-notinclude.jpg" class="thumbnail__image" alt="product">
+                </a>
+              </li>
+              <li class="thumbnail__item">
+                <a href="#slider-image-2" class="thumbnail__link">
+                  <img src="assets/images/products/product-31-b-small-notinclude.jpg" class="thumbnail__image" alt="product">
+                </a>
+              </li>
+              <li class="thumbnail__item">
+                <a href="#slider-image-3" class="thumbnail__link">
+                  <img src="assets/images/products/product-31-c-small-notinclude.jpg" class="thumbnail__image" alt="product">
+                </a>
+              </li>
+            </ul>
+          </article>
 
           <div class="product-slider">
-            <img src="assets/images/products/product-31-a-big-notinclude.jpg" class="image" />
+            <img src="assets/images/products/product-31-a-big-notinclude.jpg" class="slider__image" alt="product">
           </div>
 
           <article class="product-description">
-            <h1>Green Fancy Top</h1>
-            <h2>
-              <del>$100.000</del> $50.000</h2>
-            <p class="score">
+            <h1 class="product__name">Green Fancy Top</h1>
+            <h2 class="product__price">
+              <span class="strike">$100.000</span> $50.000
+            </h2>
+            <p class="product__rating">
               <i class="material-icons">star</i>
               <i class="material-icons">star</i>
               <i class="material-icons">star</i>
               <i class="material-icons">star</i>
               <i class="material-icons">star_border</i>
             </p>
-            <p>Lorem ipsum dolor sit amet, integer modi, hac platea aenean sed ullamcorper phasellus, dui suspendisse dui, magna
-              vel. In libero velit enim optio et, in maecenas, in dolor pellentesque. Velit non dui. Volutpat vehicula sodales
-              lectus donec platea lacus, erat a et morbi ac ac aenean.</p>
+            <p class="product__summary">
+              Lorem ipsum dolor sit amet, integer modi, hac platea aenean sed ullamcorper phasellus, dui suspendisse dui, magna vel. In
+              libero velit enim optio et, in maecenas, in dolor pellentesque. Velit non dui. Volutpat vehicula sodales lectus
+              donec platea lacus, erat a et morbi ac ac aenean.
+            </p>
           </article>
         </section>
 
-        <section class="discount">
-          <div class="discount-background discount-background-parallax"></div>
-          <div class="discount-content">
-            <h2 class="title">Get 10% off on your first order</h2>
-            <div>
-              <button class="button">Get a Discount</button>
-            </div>
-          </div>
+        <section class="discount-banner">
+          <article class="discount-background discount-background-parallax"></article>
+          <article class="discount-content">
+            <h2 class="discount__title">Get 10% off on your first order</h2>
+            <button class="discount__button">Get a Discount</button>
+          </article>
         </section>
 
         <footer class="footer">
-          <div class="dropdown-container">
-            <div class="dropdown-footer">
-              <h3 class="heading">About us</h3>
-              <input id="about" type="checkbox">
-              <div class="content-down">
-                <p>Lorem ipsum dolor sit amet, ut vel mollis, amet enim. Leo torquent, mauris at sit dictumst mollis nulla,
-                  nulla mollis nulla amet. Integer ultricies mauris, suspendisse cras ac rutrum amet, id quam porttitor porttitor
-                  scelerisque pellentesque ullamcorper. Vehicula in pellentesque. Quis fermentum a semper metus ac, id nec.
-                  Mauris lorem diam ligula ut sed nunc. Tincidunt velit. Vehicula lobortis, vestibulum dui mauris diam sem,
-                  laoreet proin imperdiet posuere.</p>
-                <p>Neque amet venenatis auctor vivamus, elementum mollis neque, nulla scelerisque duis eu integer.</p>
-                <div>
+          <article class="dropdown-container">
+
+            <section class="dropdown-section">
+              <h3 class="dropdown__heading">About us</h3>
+              <label class="dropdown__toggle">
+                <input type="checkbox" class="toggle__input">
+              </label>
+              <article class="dropdown__content">
+                <p class="content__paragraph">
+                  Lorem ipsum dolor sit amet, ut vel mollis, amet enim. Leo torquent, mauris at sit dictumst mollis nulla, nulla mollis nulla
+                  amet. Integer ultricies mauris, suspendisse cras ac rutrum amet, id quam porttitor porttitor scelerisque
+                  pellentesque ullamcorper. Vehicula in pellentesque. Quis fermentum a semper metus ac, id nec. Mauris lorem
+                  diam ligula ut sed nunc. Tincidunt velit. Vehicula lobortis, vestibulum dui mauris diam sem, laoreet proin
+                  imperdiet posuere.
+                </p>
+                <p class="content__paragraph">
+                  Neque amet venenatis auctor vivamus, elementum mollis neque, nulla scelerisque duis eu integer.
+                </p>
+                <p class="content__paragraph">
                   <i class="fa fa-cc-mastercard"></i>
                   <i class="fa fa-cc-visa"></i>
                   <i class="fa fa-cc-amex"></i>
                   <i class="fa fa-cc-diners-club"></i>
                   <i class="fa fa-cc-paypal"></i>
                   <i class="fa fa-cc-jcb"></i>
-                </div>
-              </div>
-            </div>
-            <div class="dropdown-footer">
-              <h3 class="heading">Open hours</h3>
-              <input id="about" type="checkbox">
-              <div class="content-down">
-                <div class="calendar">
-                  <div class="calendar-item">
-                    <div class="day">Monday</div>
-                    <div class="time">10:00 - 20:00</div>
-                  </div>
-                  <div class="calendar-item">
-                    <div class="day">Tuesday</div>
-                    <div class="time">10:00 - 20:00</div>
-                  </div>
-                  <div class="calendar-item">
-                    <div class="day">Wednesday</div>
-                    <div class="time">10:00 - 20:00</div>
-                  </div>
-                  <div class="calendar-item">
-                    <div class="day">Thursday</div>
-                    <div class="time">10:00 - 20:00</div>
-                  </div>
-                  <div class="calendar-item">
-                    <div class="day">Friday</div>
-                    <div class="time">10:00 - 20:00</div>
-                  </div>
-                  <div class="calendar-item">
-                    <div class="day">Saturday</div>
-                    <div class="time">10:00 - 20:00</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="dropdown-footer">
-              <h3 class="heading">Latest products</h3>
-              <input id="about" type="checkbox">
-              <div class="content-down">
-                <img src="assets/images/latest-products/p1.jpg" alt="">
-                <img src="assets/images/latest-products/p2.jpg" alt="">
-                <img src="assets/images/latest-products/p3.jpg" alt="">
-                <img src="assets/images/latest-products/p4.jpg" alt="">
-                <img src="assets/images/latest-products/p5.jpg" alt="">
-                <img src="assets/images/latest-products/p6.jpg" alt="">
-                <img src="assets/images/latest-products/p7.jpg" alt="">
-                <img src="assets/images/latest-products/p8.jpg" alt="">
-                <img src="assets/images/latest-products/p9.jpg" alt="">
-                <img src="assets/images/latest-products/p10.jpg" alt="">
-              </div>
-            </div>
-            <div class="dropdown-footer">
-              <h3 class="heading">Our store</h3>
-              <input id="about" type="checkbox">
-              <div class="content-down">
-                <p>Lorem ipsum dolor sit amet, ut vel mollis, amet enim.</p>
-                <p>
-                  Lorem mollis MSU 8-9, Levels 7&9 Birmingham B5 4BG (44) 121 616 2169
                 </p>
+              </article>
+            </section>
 
-                <p>lalala.com</p>
+            <section class="dropdown-section">
+              <h3 class="dropdown__heading">Open hours</h3>
+              <label class="dropdown__toggle">
+                <input type="checkbox" class="toggle__input">
+              </label>
+              <article class="dropdown__content">
+                <ul class="calendar unstyled-list">
+                  <li class="calendar__item">
+                    <div class="calendar__day">Monday</div>
+                    <div class="calendar__time">10:00 - 20:00</div>
+                  </li>
+                  <li class="calendar__item">
+                    <div class="calendar__day">Tuesday</div>
+                    <div class="calendar__time">10:00 - 20:00</div>
+                  </li>
+                  <li class="calendar__item">
+                    <div class="calendar__day">Wednesday</div>
+                    <div class="calendar__time">10:00 - 20:00</div>
+                  </li>
+                  <li class="calendar__item">
+                    <div class="calendar__day">Thursday</div>
+                    <div class="calendar__time">10:00 - 20:00</div>
+                  </li>
+                  <li class="calendar__item">
+                    <div class="calendar__day">Friday</div>
+                    <div class="calendar__time">10:00 - 20:00</div>
+                  </li>
+                  <li class="calendar__item">
+                    <div class="calendar__day">Saturday</div>
+                    <div class="calendar__time">10:00 - 20:00</div>
+                  </li>
+                </ul>
+              </article>
+            </section>
 
-                <div>
+            <section class="dropdown-section">
+              <h3 class="dropdown__heading">Latest products</h3>
+              <label class="dropdown__toggle">
+                <input type="checkbox" class="toggle__input">
+              </label>
+              <article class="dropdown__content">
+                <img src="assets/images/latest-products/p1.jpg" class="latest-product__image" alt="product">
+                <img src="assets/images/latest-products/p2.jpg" class="latest-product__image" alt="product">
+                <img src="assets/images/latest-products/p3.jpg" class="latest-product__image" alt="product">
+                <img src="assets/images/latest-products/p4.jpg" class="latest-product__image" alt="product">
+                <img src="assets/images/latest-products/p5.jpg" class="latest-product__image" alt="product">
+                <img src="assets/images/latest-products/p6.jpg" class="latest-product__image" alt="product">
+                <img src="assets/images/latest-products/p7.jpg" class="latest-product__image" alt="product">
+                <img src="assets/images/latest-products/p8.jpg" class="latest-product__image" alt="product">
+                <img src="assets/images/latest-products/p9.jpg" class="latest-product__image" alt="product">
+                <img src="assets/images/latest-products/p10.jpg" class="latest-product__image" alt="product">
+              </article>
+            </section>
+
+            <section class="dropdown-section">
+              <h3 class="dropdown__heading">Our store</h3>
+              <label class="dropdown__toggle">
+                <input type="checkbox" class="toggle__input">
+              </label>
+              <article class="dropdown__content">
+                <p class="content__paragraph">Lorem ipsum dolor sit amet, ut vel mollis, amet enim.</p>
+                <p class="content__paragraph">Lorem mollis MSU 8-9, Levels 7&9 Birmingham B5 4BG (44) 121 616 2169</p>
+                <p class="content__paragraph">lalala.com</p>
+                <p class="content__paragraph">
                   <i class="fa fa-facebook"></i>
                   <i class="fa fa-twitter"></i>
                   <i class="fa fa-linkedin"></i>
-                </div>
-              </div>
-            </div>
-          </div>
+                </p>
+              </article>
+            </section>
+          </article>
 
-          <ul class="links-footer unstyled-list">
-            <li>
-              <a href="">Conditions</a>
+          <ul class="footer-links unstyled-list">
+            <li class="list__item">
+              <a href="" class="list__link">Conditions</a>
             </li>
-            <li>
-              <a href="">Help</a>
+            <li class="list__item">
+              <a href="" class="list__link">Help</a>
             </li>
-            <li>
-              <a href="">Privacy</a>
+            <li class="list__item">
+              <a href="" class="list__link">Privacy</a>
             </li>
-            <li>
-              <a href="">Terms</a>
+            <li class="list__item">
+              <a href="" class="list__link">Terms</a>
             </li>
           </ul>
-
         </footer>
       </div>
     </main>

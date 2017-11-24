@@ -18,18 +18,22 @@
 }
 
 .navbar {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: fixed;
   top: $top-header-size;
+  -webkit-transition: all .3s;
   transition: all .3s;
   width: 100%;
 
   &.navbar--fixed {
     background-color: $magenta;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
     top: 0;
   }
 
@@ -53,6 +57,7 @@
     overflow: auto;
     position: fixed;
     top: 0;
+    -webkit-transition: width .3s;
     transition: width .3s;
     width: 0;
     will-change: width;
@@ -93,7 +98,9 @@
   }
 
   @include breakpoint-up(md) {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 2.3rem;
 
     &.navbar--fixed {
@@ -102,7 +109,9 @@
 
     &__menu {
       background-color: transparent;
-      order: 1;
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1;
       position: static;
       width: auto;
 
@@ -121,6 +130,7 @@
           border-bottom: 2px solid $white;
           content: "";
           display: block;
+          -webkit-transition: width .3s;
           transition: width .3s;
           width: 0;
         }
