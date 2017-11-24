@@ -5,7 +5,7 @@
 
 html,
 body {
-	color: #9b9b9b;
+	color: #787878;
 	font-family: sans-serif;
 	font-size: 16px;
 	line-height: 25px;
@@ -17,7 +17,6 @@ h1 {
 }
 
 h2 {
-	color: #787878;
 	font-size: 1.2em;
 	font-weight: bold;
 }
@@ -27,8 +26,11 @@ a {
 }
 
 .tabs {
+	background-color: #EFEFEF;
 	box-shadow: 0 48px 80px -32px rgba(0,0,0,0.3);
 	display: flex;
+	margin: 0 30px;
+	max-width: 700px;
 	flex-wrap: wrap;
 }
 
@@ -54,9 +56,14 @@ a {
 }
 
 .content {
+	background-color: #fff;
 	display: none;
-	padding: 30px;
+	padding: 20px 30px;
 	width: 100%;
+}
+
+.content h2 {
+  margin-bottom: 5px;
 }
 
 .tabs > input:checked + label {
@@ -67,4 +74,161 @@ a {
 
 .tabs > input:checked + label + .content {
 	display: block;
+}
+
+.content .box {
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.1);
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	padding: 20px;
+}
+
+.content input[type="checkbox"],
+.content input[type="radio"] {
+	display: none;
+}
+
+.content input + label {
+	display: inline-block;
+	margin-bottom: 14px;
+	position: relative;
+}
+
+.content input + label span {
+	background-color: #e6e6e6;
+	display: inline-block;
+	height: 20px;
+	margin-right: 10px;
+	width: 20px;
+	position: relative;
+	top: 4px;
+}
+
+.content input:hover + label {
+	cursor: pointer;
+}
+
+.content input + label:hover span{
+	background-color: #CCCCCC;
+}
+
+.content input:checked + label span:before {
+	color: #fff;
+	content: '';
+	border-right: 2px solid;
+	border-bottom: 2px solid;
+	display: block;
+	height: 10px;
+	left: 7px;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 3px;
+	width: 4px;
+}
+
+.content input:checked + label span {
+	background-color: #12A2BD;
+}
+
+.content input:checked + label:hover span {
+	background-color: #00647A;
+}
+
+.content input:disabled + label span,
+.content input:disabled:checked + label span {
+	background-color: #F0F0F0;
+}
+
+.content input:disabled:checked + label span:before {
+	color: #B0B0B0;
+}
+
+.box input[type="radio"] + label span {
+  border-radius: 50%;
+}
+
+.box input[type="radio"]:checked + label span:before {
+	border: none;
+	background-color: #fff;
+	transform: none;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	top:7px;
+	left: 7px;
+}
+
+.cards img {
+  width: 100px;
+	height: 100px;
+	margin-right: 15px;
+}
+
+.cards {
+	margin: 30px 0 0 30px;
+}
+
+.cards li {
+	display: flex;
+	flex-wrap: wrap;
+	height: 120px;
+	max-width: 500px;
+	padding: 10px;
+}
+
+.cards li:hover{
+	background-color: #EEEEEE;
+	cursor: pointer;
+}
+
+.cards h2 {
+	margin: 0;
+}
+
+.cards p {
+	font-size: 0.7em;
+}
+
+.cards li > div {
+  margin-right: 180px;
+}
+
+@media (min-width: 600px) {
+	.tabs > label {
+		order: 1;
+		width: auto;
+	}
+
+	.content{
+		order:2;
+	}
+}
+
+@media (max-width: 690px) {
+
+	.cards li {
+    max-width: 365px;
+	}
+
+	.cards li > div {
+		margin-right: 50px;
+	}
+
+}
+
+@media (max-width: 560px) {
+	.cards img {
+		display: none;
+	}
+
+	.cards li {
+		max-width: 250px;
+	}
+}
+
+@media (max-width: 440px) {
+	.cards li {
+		max-width: 160px;
+	}
 }
