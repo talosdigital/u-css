@@ -12,6 +12,7 @@
     <link href="../../app.css" rel="stylesheet" type="text/css">
 
     <!-- Import App Css file -->
+    <link href="./reset.css" rel="stylesheet" type="text/css">
     <link href="./example.css" rel="stylesheet" type="text/css">
     
   </head>
@@ -31,7 +32,55 @@
       </header>
       <main class="mdl-layout__content">
         <div class="page-content">
-         <!-- Practice Content Goes Here -->
+          <section class="header"> <!-- I am using a section because the header tag is already being used -->
+            <div class="heading">
+              <h1>Contact us</h1>
+            </div>
+          </section>
+          <section class="contact">
+            <form class="contact-form">
+              <input type="text" name="name" placeholder="Name">
+              <input type="text" name="email" placeholder="Email">
+              <input type="text" name="subject" placeholder="Subject">
+              <textarea name="message" rows="5" cols="30" placeholder="Message"></textarea>
+              <button>Send</button>
+            </form>
+            <p>Contact us and we will respond you as soon as possible.</p>
+          </section>
+          <footer>
+            <div class="footer-container">
+                <div class="footer-column">
+                <span class="title">Products</span>
+                <ul>
+                  <li><a href="#">Coats and Blazers</a></li>
+                  <li><a href="#">Tops</a></li>
+                  <li><a href="#">Shorts</a></li>
+                  <li><a href="#">Skirts</a></li>
+                  <li><a href="#">Pants</a></li>
+                  <li><a href="#">Dresses</a></li>
+                  <li><a href="#">Shoes and Accessories</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <span class="title">General</span>
+                <ul>
+                  <li><a href="#">Best Sellers</a></li>
+                  <li><a href="#">Devolutions</a></li>
+                  <li><a href="#">Shipping</a></li>
+                  <li><a href="#">Frequent questions</a></li>
+                  <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <span class="title">Account</span>
+                <ul>
+                  <li><a href="#">Shopping Cart</a></li>
+                  <li><a href="#">My Profile</a></li>
+                  <li><a href="#">Checkout</a></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
         </div>
       </main>
     </div>
