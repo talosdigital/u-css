@@ -65,4 +65,4 @@ Test Gif
 
 Test Video
 
-[![IMAGE ALT TEXT HERE](https://www.youtube.com/watch?v=EXS_sMYdqco)]
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/EXS_sMYdqco/0.jpg)](https://www.youtube.com/watch?v=EXS_sMYdqco)
