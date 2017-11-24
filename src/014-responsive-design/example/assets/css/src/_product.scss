@@ -19,6 +19,10 @@
 
     .thumbnail__link {
       display: block;
+
+      &:hover, &:focus, &:active {
+        opacity: .5;
+      }
     }
   }
 

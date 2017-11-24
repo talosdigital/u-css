@@ -1,0 +1,64 @@
+.discount-banner {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(../images/backgrounds/bg2.jpg) no-repeat center fixed;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
+  .discount-content {
+    text-align: center;
+  }
+
+  .discount__title {
+    color: $white;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: inherit;
+    margin: 0;
+  }
+
+  .discount__button {
+    background-color: $blue;
+    border: none;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    color: $white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 3%;
+    padding: .8rem;
+    text-transform: uppercase;
+    width: 300px;
+
+    &:hover, &:focus, &:active {
+      opacity: .5;
+    }
+  }
+
+  @include breakpoint-up(xl) {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 0 1rem;
+
+    .discount-content {
+      text-align: right;
+      width: 100%;
+    }
+
+    .discount__title {
+      margin-right: 3%;
+    }
+  }
+}

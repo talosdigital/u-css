@@ -29,6 +29,7 @@
   -webkit-transition: all .3s;
   transition: all .3s;
   width: 100%;
+  z-index: 4;
 
   &.navbar--fixed {
     background-color: $magenta;
