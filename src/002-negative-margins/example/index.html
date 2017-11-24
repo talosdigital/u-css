@@ -1,40 +1,83 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>002 - Negative Margins</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+<head>
+  <meta charset="utf-8">
+  <title>002 - Negative Margins</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link href="../../app.css" rel="stylesheet" type="text/css">
+  <!-- Ignore this, it's for the header -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link href="../../app.css" rel="stylesheet" type="text/css">
 
-    <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
-  </head>
-  <body>
-  	<!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
-          <i class="material-icons">home</i>
-        </a>
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">002 - Negative Margins</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
-        </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-         <!-- Practice Content Goes Here -->
-        </div>
-      </main>
+  <!-- Import App Css file -->
+  <link href="./example.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
+      <i class="material-icons">home</i>
+    </a>
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">002 - Negative Margins</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
     </div>
+  </header>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <div class="content">
+        <nav class="common-padding">
+          <h1>Negative margin on content</h1>
+          <div class="nav-left">
+            <p>Lorep ipsum</p>
+            <p>Lorep ipsumLorep ipsumLorep ipsumLorep ipsumLorep ipsumLorep ipsumLorep ipsumLorep ipsumLorep ipsum</p>
+          </div>
+          <div class="nav-right">
+            <ul class="pink-links">
+              <li class="li-home">Home</li>
+              <li class="li-home">About</li>
+              <li class="li-home">Contact Us</li>
+            </ul>
+          </div>
+        </nav>
+        <section class="common-padding">
+          <h1>Negative margin on top to align &lt; li &gt;</h1>
+            <ul class="list-options">
+              <li>Milk</li>
+              <li>Egg</li>
+              <li>Cheese</li>
+              <li class="list-first-column list-row-column">Tuti</li>
+              <li class="list-first-column">Bread</li>
+              <li class="list-first-column">Mango</li>
+              <li class="list-second-column list-row-column">Coke</li>
+              <li class="list-second-column">Apple</li>
+              <li class="list-second-column">Orange</li>
+            </ul>
+        </section>
+      </div>
+      <footer>
+        <div class="common-padding">
+          <h1>Negative margin sticker footer</h1>
+          <p class="thick">Lorep Ipsum</p>
+          <p>Lorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep
+            IpsumLorep Ipsum</p>
+          <button>Click me</button>
+        </div>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact Us</li>
+        </ul>
+      </footer>
+    </div>
+  </main>
+</div>
 
-  </body>
+</body>
 </html>

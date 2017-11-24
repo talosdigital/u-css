@@ -1,5 +1,116 @@
 /* Practice Layout */
 
+button {
+  background-color: blue;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  margin: 4px 2px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer li {
+  display: inline;
+  padding: 8px;
+  color: white;
+}
+
+footer ul {
+  background-color: orangered;
+}
+
+h1 {
+  border-bottom: 2px solid orangered;
+  font-size: 1.4em;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+nav:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+nav, section, footer {
+  background-color: lightgray;
+}
+
+p.thick {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.common-padding {
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.content {
+  min-height: calc(100vh - 400px);
+}
+
+.footer {
+  height: 50px;
+}
+
+.li-home {
+  background: url('cell-8-0-30.png') no-repeat left center;
+  padding-left: 40px;
+
+}
+
+.list-options {
+  padding-bottom: 10px;
+}
+
+.list-row-column {
+  margin-top: -75px;
+}
+
+.list-first-column {
+  margin-left: 80px;
+}
+
+.list-second-column {
+  margin-left: 160px;
+}
+
+.mdl-layout__content {
+  padding: 0 600px;
+}
+
+.nav-left {
+  box-sizing: border-box;
+  float: left;
+  width: 70%;
+}
+
+.nav-right {
+  box-sizing: border-box;
+  border-left: solid dimgray 1px;
+  float: right;
+  width: 30%;
+}
+
+.page-content {
+  background-color: whitesmoke;
+}
+
+.pink-links {
+  color: deeppink;
+}
+
 .trash{
 	color: black;
 }
