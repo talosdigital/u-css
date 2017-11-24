@@ -56,13 +56,3 @@ Tools:
 [21]: https://meyerweb.com/eric/tools/css/reset/
 [22]: https://necolas.github.io/normalize.css/
 
-
-
-
-Test Gif
-
-![Alt Text](https://media.giphy.com/media/d30R4Gp2RnY8MHvi/giphy.gif)
-
-Test Video
-
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/EXS_sMYdqco/0.jpg)](https://www.youtube.com/watch?v=EXS_sMYdqco)
