@@ -1,0 +1,249 @@
+@font-face {
+  font-family: 'raleway-bold';
+  src: url('fonts/raleway/raleway-bold-webfont.eot');
+  src: url('fonts/raleway/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/raleway/raleway-bold-webfont.woff2') format('woff2'),
+  url('fonts/raleway/raleway-bold-webfont.woff') format('woff'),
+  url('fonts/raleway/raleway-bold-webfont.ttf') format('truetype'),
+  url('fonts/raleway/raleway-bold-webfont.svg#ralewaybold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway-normal';
+  src: url('fonts/raleway/raleway-regular-webfont.eot');
+  src: url('fonts/raleway/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/raleway/raleway-regular-webfont.woff2') format('woff2'),
+  url('fonts/raleway/raleway-regular-webfont.woff') format('woff'),
+  url('fonts/raleway/raleway-regular-webfont.ttf') format('truetype'),
+  url('fonts/raleway/raleway-regular-webfont.svg#ralewayregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway-thin';
+  src: url('fonts/raleway/raleway-thin-webfont.eot');
+  src: url('fonts/raleway/raleway-thin-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/raleway/raleway-thin-webfont.woff2') format('woff2'),
+  url('fonts/raleway/raleway-thin-webfont.woff') format('woff'),
+  url('fonts/raleway/raleway-thin-webfont.ttf') format('truetype'),
+  url('fonts/raleway/raleway-thin-webfont.svg#ralewaythin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+/*  GENERAL STYLES
+   ============================= */
+
+html, body {
+  background-color: #D5EADE;
+  color: #FFFFFF;
+  font-family: "raleway-thin", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.5;
+  position: relative;
+}
+
+p::first-letter {
+  font-family: 'raleway-bold';
+}
+
+.main-content,
+.main-content section,
+.page-content > aside {
+  box-sizing: border-box;
+}
+
+.main-content .input-search {
+  width: 200px;
+  height: 30px;
+  position: relative;
+  padding: 0;
+  margin: 15px 0;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.main-content .input-search input {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 40px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+}
+
+.main-content .input-search i {
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  width: 10px;
+  height: 10px;
+}
+
+.page-content {
+  padding: 20px;
+}
+
+.background {
+  background: #96baba;
+  z-index:10;
+  position: relative;
+}
+
+.main-content {
+  background: #76C4D1;
+  padding: 90px;
+  position: relative;
+  margin: 5%;
+  min-height: 100%;
+  overflow: auto;
+  z-index:20;
+}
+
+.main-content h1 {
+  font-size: 3em;
+  font-weight: 600;
+  font-family: 'raleway-bold';
+}
+
+.main-content p {
+  letter-spacing: 1px;
+  padding: 5% 0;
+}
+
+.main-content section {
+  width: 60%;
+}
+
+hr {
+  border-bottom: 1px solid #E72840;
+}
+
+.text-content {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000000;
+  padding: 5% 5% 5% 11%;
+  margin-left: -90px;
+}
+
+.text-content h2 {
+  font-size: 2em;
+  line-height: 2.5;
+}
+
+.text-content p {
+  font-size: 0.9em;
+  font-weight: 400;
+  padding: 2% 0;
+}
+
+.page-content > aside {
+  background-color: #DFE180;
+  color: #8C8D57;
+  line-height: 1;
+  margin-top: 11%;
+  padding: 5%;
+  position: absolute;
+  right: 6.5%;
+  top: 0;
+  width: 30%;
+  z-index: 30;
+}
+
+.page-content > aside h2 {
+  font-size: 2em;
+  padding-bottom: 5%;
+}
+
+.page-content > aside li{
+  padding: 2% 0;
+}
+
+.page-content > aside li p {
+  display: inline-block;
+}
+
+.page-content > aside ul {
+  counter-reset: section;
+}
+
+.page-content > aside li::before {
+  content: "\2713 ";
+  padding-right: 5px;
+}
+
+.page-content > aside li::after {
+  counter-increment: section;
+  content: " " counters(section,".");
+}
+
+.page-content > aside li:nth-child(2n+2) {
+  font-size: 12pt;
+}
+
+.page-content > aside li:nth-child(2n+3) {
+  font-family: 'raleway-normal';
+  font-size: 1em;
+}
+
+.page-content > aside li:nth-child(2n+2)::after {
+  counter-increment: section;
+  content: "- using 'pt' ";
+  font-family: 'raleway-bold';
+}
+
+.page-content > aside li:nth-child(2n+3)::after {
+  counter-increment: section;
+  content: "- using 'em' ";
+}
+
+.page-content > aside li:nth-child(even) {
+  font-weight: bold;
+}
+
+.page-content > aside li:nth-child(even) {
+  font-weight: normal;
+}
+
+.grey-bar {
+  background-color: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  min-height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 30%;
+  z-index: 25;
+}
+
+@media (max-width: 640px) {
+  .grey-bar {
+    display: none;
+  }
+
+  .page-content > aside,
+  .main-content > section{
+    margin: 0;
+    line-height: 1.5;
+    padding: 5%;
+    width: 100%;
+  }
+
+  .main-content {
+    padding: 0;
+  }
+
+  .text-content {
+    margin-left: -20px;
+  }
+
+  .page-content > aside {
+    position: relative;
+    right: 0;
+  }
+}
