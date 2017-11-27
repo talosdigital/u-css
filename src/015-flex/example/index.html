@@ -1,40 +1,337 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>015 - Flex</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link href="../../app.css" rel="stylesheet" type="text/css">
+<head>
+  <meta charset="utf-8">
+  <title>015 - Flex</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
 
-    <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
-  </head>
-  <body>
-  	<!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
-          <i class="material-icons">home</i>
-        </a>
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">015 - Flex</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
-        </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-         <!-- Practice Content Goes Here -->
-        </div>
-      </main>
-    </div>
+  <!-- Ignore this, it's for the header -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link href="../../app.css" rel="stylesheet" type="text/css">
 
-  </body>
+  <!-- Import App Css file -->
+  <link href="assets/css/example.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/normalize.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
+        <i class="material-icons">home</i>
+      </a>
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">015 - Flex</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <!-- Practice Content Goes Here -->
+        <section class="page-content__wrapper">
+          <header class="hero-header"></header>
+
+          <main class="cards-section">
+            <article class="card" tabindex="0">
+              <section class="card__body">
+                <div class="image-wrapper">
+                  <img src="https://placeimg.com/350/250/animals" alt="Animal">
+                </div>
+                <p class="card__content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere purus sit amet nisi commodo tincidunt. Etiam volutpat
+                  tellus vitae vestibulum pretium.
+                </p>
+              </section>
+              <footer class="card__footer">
+                <ul class="footer__links unstyled-list">
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                </ul>
+                <a href="" class="button-link" role="button">Lorem</a>
+              </footer>
+            </article>
+            <article class="card" tabindex="0">
+              <section class="card__body">
+                <div class="image-wrapper">
+                  <img src="https://placeimg.com/350/250/people" alt="Animal">
+                </div>
+                <p class="card__content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere purus sit amet nisi commodo tincidunt. Etiam volutpat
+                  tellus vitae vestibulum pretium.
+                </p>
+              </section>
+              <footer class="card__footer">
+                <ul class="footer__links unstyled-list">
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                </ul>
+                <a href="" class="button-link" role="button">Lorem</a>
+              </footer>
+            </article>
+            <article class="card" tabindex="0">
+              <section class="card__body">
+                <div class="image-wrapper">
+                  <img src="https://placeimg.com/350/250/arch" alt="Animal">
+                </div>
+                <p class="card__content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere purus sit amet nisi commodo tincidunt. Etiam volutpat
+                  tellus vitae vestibulum pretium.
+                </p>
+              </section>
+              <footer class="card__footer">
+                <ul class="footer__links unstyled-list">
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                </ul>
+                <a href="" class="button-link" role="button">Lorem</a>
+              </footer>
+            </article>
+            <article class="card" tabindex="0">
+              <section class="card__body">
+                <div class="image-wrapper">
+                  <img src="https://placeimg.com/350/250/nature" alt="Animal">
+                </div>
+                <p class="card__content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere purus sit amet nisi commodo tincidunt. Etiam volutpat
+                  tellus vitae vestibulum pretium.
+                </p>
+              </section>
+              <footer class="card__footer">
+                <ul class="footer__links unstyled-list">
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                </ul>
+                <a href="" class="button-link" role="button">Lorem</a>
+              </footer>
+            </article>
+            <article class="card" tabindex="0">
+              <section class="card__body">
+                <div class="image-wrapper">
+                  <img src="https://placeimg.com/350/250/animals" alt="Animal">
+                </div>
+                <p class="card__content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere purus sit amet nisi commodo tincidunt. Etiam volutpat
+                  tellus vitae vestibulum pretium.
+                </p>
+              </section>
+              <footer class="card__footer">
+                <ul class="footer__links unstyled-list">
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                </ul>
+                <a href="" class="button-link" role="button">Lorem</a>
+              </footer>
+            </article>
+            <article class="card" tabindex="0">
+              <section class="card__body">
+                <div class="image-wrapper">
+                  <img src="https://placeimg.com/350/250/people" alt="Animal">
+                </div>
+                <p class="card__content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere purus sit amet nisi commodo tincidunt. Etiam volutpat
+                  tellus vitae vestibulum pretium.
+                </p>
+              </section>
+              <footer class="card__footer">
+                <ul class="footer__links unstyled-list">
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                </ul>
+                <a href="" class="button-link" role="button">Lorem</a>
+              </footer>
+            </article>
+            <article class="card" tabindex="0">
+              <section class="card__body">
+                <div class="image-wrapper">
+                  <img src="https://placeimg.com/350/250/nature" alt="Animal">
+                </div>
+                <p class="card__content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere purus sit amet nisi commodo tincidunt. Etiam volutpat
+                  tellus vitae vestibulum pretium.
+                </p>
+              </section>
+              <footer class="card__footer">
+                <ul class="footer__links unstyled-list">
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                </ul>
+                <a href="" class="button-link" role="button">Lorem</a>
+              </footer>
+            </article>
+            <article class="card" tabindex="0">
+              <section class="card__body">
+                <div class="image-wrapper">
+                  <img src="https://placeimg.com/350/250/arch" alt="Animal">
+                </div>
+                <p class="card__content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere purus sit amet nisi commodo tincidunt. Etiam volutpat
+                  tellus vitae vestibulum pretium.
+                </p>
+              </section>
+              <footer class="card__footer">
+                <ul class="footer__links unstyled-list">
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                  <li class="list__item">
+                    <a href="" class="item__link">Lorem</a>
+                  </li>
+                </ul>
+                <a href="" class="button-link" role="button">Lorem</a>
+              </footer>
+            </article>
+          </main>
+
+          <footer class="footer">
+            <section class="dropdown-section">
+              <input type="checkbox" class="toggle__input" id="dropdown1">
+              <label for="dropdown1" class="dropdown__toggle">
+                <h6 class="dropdown__heading">Lorem ipsum dolor sit amet</h6>
+              </label>
+              <article class="dropdown__content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut nisl ullamcorper, consectetur lectus at, dignissim dolor.
+                Quisque ultrices laoreet lacus non interdum. Donec ut dictum metus.
+              </article>
+            </section>
+
+            <section class="dropdown-section">
+              <input type="checkbox" class="toggle__input" id="dropdown2">
+              <label for="dropdown2" class="dropdown__toggle">
+                <h6 class="dropdown__heading">Lorem ipsum dolor sit amet</h6>
+              </label>
+              <article class="dropdown__content">
+                <ul class="calendar unstyled-list">
+                  <li class="calendar__item">
+                    <span>Lorem</span>
+                    <span> 9:00AM - 7:00PM </span>
+                  </li>
+                  <li class="calendar__item">
+                    <span>Ipsum</span>
+                    <span> 9:00AM - 7:00PM </span>
+                  </li>
+                  <li class="calendar__item">
+                    <span>Dolor</span>
+                    <span> 9:00AM - 7:00PM </span>
+                  </li>
+                  <li class="calendar__item">
+                    <span>Sit</span>
+                    <span> 9:00AM - 7:00PM </span>
+                  </li>
+                </ul>
+              </article>
+            </section>
+
+            <section class="dropdown-section">
+              <input type="checkbox" class="toggle__input" id="dropdown3">
+              <label for="dropdown3" class="dropdown__toggle">
+                <h6 class="dropdown__heading">Lorem ipsum dolor sit amet</h6>
+              </label>
+              <article class="dropdown__content">
+                <div class="gallery">
+                  <img src="https://placeimg.com/80/80/nature" alt="Random image">
+                  <img src="https://placeimg.com/80/80/arch" alt="Random image">
+                  <img src="https://placeimg.com/80/80/people" alt="Random image">
+                  <img src="https://placeimg.com/80/80/animals" alt="Random image">
+                  <img src="https://placeimg.com/80/80/tech" alt="Random image">
+                  <img src="https://placeimg.com/80/80/nature" alt="Random image">
+                  <img src="https://placeimg.com/80/80/arch" alt="Random image">
+                  <img src="https://placeimg.com/80/80/people" alt="Random image">
+                  <img src="https://placeimg.com/80/80/animals" alt="Random image">
+                  <img src="https://placeimg.com/80/80/tech" alt="Random image">
+                  <img src="https://placeimg.com/80/80/animals" alt="Random image">
+                  <img src="https://placeimg.com/80/80/nature" alt="Random image">
+                </div>
+              </article>
+            </section>
+
+            <section class="dropdown-section">
+              <input type="checkbox" class="toggle__input" id="dropdown4">
+              <label for="dropdown4" class="dropdown__toggle">
+                <h6 class="dropdown__heading">Lorem ipsum dolor sit amet</h6>
+              </label>
+              <article class="dropdown__content">
+                <p class="content__paragraph">
+                  Consectetur adipiscing elit.
+                </p>
+                <p class="content__paragraph">
+                  Proin ut nisl ullamcorper
+                </p>
+                <p class="content__paragraph">
+                  Consectetur lectus at, dignissim dolor.
+                </p>
+                <p class="content__paragraph">
+                  Quisque ultrices laoreet lacus non interdum.
+                </p>
+                <p class="content__paragraph">
+                  Donec ut dictum metus.
+                </p>
+              </article>
+            </section>
+          </footer>
+        </section>
+      </div>
+    </main>
+  </div>
+
+</body>
+
 </html>
