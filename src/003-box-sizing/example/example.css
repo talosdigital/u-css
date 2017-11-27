@@ -1,4 +1,38 @@
 /* Practice Layout */
+p {
+  color: gray;
+  font-size: 1.2rem;
+}
+
+p.title {
+  color: gray;
+  font-size: 1.6rem;
+}
+
+section {
+  background-color: whitesmoke;
+  margin: 25px 0;
+  padding: 25px;
+}
+
+.common-box {
+  border: 5px solid #D24F2E;
+  padding: 20px;
+  margin-left: 20px;
+  width: 500px;
+}
+
+.borderbox {
+  box-sizing: border-box;
+}
+
+.contentbox {
+  box-sizing: content-box;
+}
+
+.page-content {
+  padding: 0 400px;
+}
 
 .trash{
 	color: black;
