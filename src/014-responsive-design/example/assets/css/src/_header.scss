@@ -1,0 +1,165 @@
+.header {
+  height: 216px;
+  position: relative;
+
+  &::before {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .5)), to(transparent)), url(../images/backgrounds/bg1.jpg) center fixed;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 0%, transparent 100%), url(../images/backgrounds/bg1.jpg) center fixed;
+    background-size: cover;
+    content: "";
+    display: block;
+    -webkit-filter: blur(3px);
+            filter: blur(3px);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.navbar {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: $top-header-size;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  width: 100%;
+  z-index: 4;
+
+  &.navbar--fixed {
+    background-color: $magenta;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    top: 0;
+  }
+
+  .material-icons {
+    color: $white;
+    font-size: 3rem;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+  }
+
+  .menu__toggle, .logo {
+    padding: .5rem 1.3rem;
+  }
+
+  &__menu {
+    background-color: $smoke;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    -webkit-transition: width .3s;
+    transition: width .3s;
+    width: 0;
+    will-change: width;
+
+    &.navbar__menu--active {
+      width: 240px;
+    }
+
+    .menu__item:first-child {
+      text-align: right;
+    }
+
+    .menu__link {
+      display: block;
+      font-size: 1rem;
+      padding: 1.5rem;
+      text-transform: uppercase;
+
+      &:not(.close) {
+        &:hover, &:focus, &:active {
+          background-color: $lightgray;
+        }
+      }
+
+      &.close {
+        display: inline-block;
+        font-size: 1.8rem;
+        opacity: .5;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  @include breakpoint-up(sm) {
+    &.navbar--fixed {
+      background-color: $blue;
+    }
+  }
+
+  @include breakpoint-up(md) {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2.3rem;
+
+    &.navbar--fixed {
+      background-color: $purple;
+    }
+
+    &__menu {
+      background-color: transparent;
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1;
+      position: static;
+      width: auto;
+
+      .menu__item {
+        display: inline-block;
+
+        &:first-child {
+          display: none;
+        }
+      }
+
+      .menu__link {
+        color: $white;
+
+        &::after {
+          border-bottom: 2px solid $white;
+          content: "";
+          display: block;
+          -webkit-transition: width .3s;
+          transition: width .3s;
+          width: 0;
+        }
+
+        &:hover, &:focus, &:active {
+          background-color: transparent!important;
+
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .menu__toggle {
+      display: none;
+    }
+  }
+
+  @include breakpoint-up(lg) {
+    &.navbar--fixed {
+      background-color: $orange;
+    }
+  }
+
+  @include breakpoint-up(xl) {
+    &.navbar--fixed {
+      background-color: $magenta;
+    }
+  }
+}

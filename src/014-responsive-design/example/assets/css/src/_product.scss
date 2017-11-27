@@ -1,0 +1,113 @@
+.product-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+
+  .thumbnail-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1.5rem 0;
+
+    .thumbnail__item:not(:last-child) {
+      padding-right: .5rem;
+    }
+
+    .thumbnail__link {
+      display: block;
+
+      &:hover, &:focus, &:active {
+        opacity: .5;
+      }
+    }
+  }
+
+  .product-slider {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+
+    .slider__image {
+      width: 100%;
+    }
+  }
+
+  .product-description {
+    padding: 1rem 0;
+
+    .product__name,
+    .product__price {
+      margin: 0;
+    }
+
+    .product__name {
+      color: $black;
+      font-size: 2.2rem;
+      margin: 0;
+    }
+
+    .product__price {
+      color: $black;
+      font-size: 2.2rem;
+
+      .strike {
+        color: $gray;
+        margin: .5rem 0;
+        text-decoration: line-through;
+      }
+    }
+
+    .product__summary, .product__rating {
+      font-size: 1.5rem;
+      font-weight: 100;
+      line-height: inherit;
+      letter-spacing: .05rem;
+      margin-top: 2.5rem;
+    }
+
+    .product__rating {
+      color: $blue;
+    }
+
+    .product__summary {
+      color: lighten($gray, 5%);
+    }
+  }
+
+  @include breakpoint-up(lg) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+
+    .thumbnail-list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 0;
+
+      .thumbnail__item:not(:last-child) {
+        padding-bottom: .5rem;
+      }
+    }
+
+    .product-slider {
+      -webkit-box-ordinal-group: initial;
+          -ms-flex-order: initial;
+              order: initial;
+
+      .slider__image {
+        width: 600px;
+      }
+    }
+
+    .product-description {
+      padding: 0 1rem;
+    }
+  }
+}

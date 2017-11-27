@@ -1,40 +1,273 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>014 - Responsive Design and Media Queries</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link href="../../app.css" rel="stylesheet" type="text/css">
+<head>
+  <meta charset="UTF-8">
+  <title>014 - Responsive Design and Media Queries</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
-  </head>
-  <body>
-  	<!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
-          <i class="material-icons">home</i>
-        </a>
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">014 - Responsive Design and Media Queries</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
-        </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-         <!-- Practice Content Goes Here -->
-        </div>
-      </main>
-    </div>
+  <!-- Ignore this, it's for the header -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link href="../../app.css" rel="stylesheet" type="text/css">
 
-  </body>
+  <!-- Import App Css file -->
+  <link href="assets/css/example.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/normalize.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
+        <i class="material-icons">home</i>
+      </a>
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">014 - Responsive Design and Media Queries</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <!-- Practice Content Goes Here -->
+        <header class="header">
+          <nav class="navbar js-navbar">
+            <button class="menu__toggle js-menu-button">
+              <i class="material-icons">reorder</i>
+            </button>
+
+            <ul class="navbar__menu js-navbar-menu unstyled-list">
+              <li class="menu__item">
+                <button class="menu__link close js-close-button">&times;</button>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Shop</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">News!</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Customize</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Cart</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Checkout</a>
+              </li>
+            </ul>
+
+            <a href="" class="logo">
+              <i class="material-icons">gesture</i>
+            </a>
+          </nav>
+        </header>
+
+        <section class="container nav-section">
+          <article class="breadcrumbs">
+            <ul class="breadcrumbs-list unstyled-list">
+              <li class="breadcrumb__item">
+                <a href="" class="breadcrumb__link">Home</a>
+              </li>
+              <li class="breadcrumb__item">
+                <a href="" class="breadcrumb__link">Tops</a>
+              </li>
+              <li class="breadcrumb__item">
+                <a href="" class="breadcrumb__link">Green Top</a>
+              </li>
+            </ul>
+          </article>
+          <article class="arrow-navigation">
+            <a href="" class="arrow">
+              <i class="material-icons">keyboard_arrow_left</i>
+            </a>
+            <a href="" class="arrow">
+              <i class="material-icons">keyboard_arrow_right</i>
+            </a>
+          </article>
+        </section>
+
+        <section class="container product-section">
+          <article class="product-thumbnails">
+            <ul class="thumbnail-list unstyled-list">
+              <li class="thumbnail__item">
+                <a href="#slider-image-1" class="thumbnail__link">
+                  <img src="assets/images/products/product-31-a-small-notinclude.jpg" class="thumbnail__image" alt="product">
+                </a>
+              </li>
+              <li class="thumbnail__item">
+                <a href="#slider-image-2" class="thumbnail__link">
+                  <img src="assets/images/products/product-31-b-small-notinclude.jpg" class="thumbnail__image" alt="product">
+                </a>
+              </li>
+              <li class="thumbnail__item">
+                <a href="#slider-image-3" class="thumbnail__link">
+                  <img src="assets/images/products/product-31-c-small-notinclude.jpg" class="thumbnail__image" alt="product">
+                </a>
+              </li>
+            </ul>
+          </article>
+
+          <div class="product-slider">
+            <img src="assets/images/products/product-31-a-big-notinclude.jpg" class="slider__image" alt="product">
+          </div>
+
+          <article class="product-description">
+            <h1 class="product__name">Green Fancy Top</h1>
+            <h2 class="product__price">
+              <span class="strike">$100.000</span> $50.000
+            </h2>
+            <p class="product__rating">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_border</i>
+            </p>
+            <p class="product__summary">
+              Lorem ipsum dolor sit amet, integer modi, hac platea aenean sed ullamcorper phasellus, dui suspendisse dui, magna vel. In
+              libero velit enim optio et, in maecenas, in dolor pellentesque. Velit non dui. Volutpat vehicula sodales lectus
+              donec platea lacus, erat a et morbi ac ac aenean.
+            </p>
+          </article>
+        </section>
+
+        <section class="discount-banner">
+          <article class="discount-content">
+            <h2 class="discount__title">Get 10% off on your first order</h2>
+            <button class="discount__button">Get a Discount</button>
+          </article>
+        </section>
+
+        <footer class="footer">
+          <article class="dropdown-container">
+
+            <section class="dropdown-section">
+              <input type="checkbox" class="toggle__input" id="dropdown1">
+              <label for="dropdown1" class="dropdown__toggle">
+                <h6 class="dropdown__heading">About us</h6>
+              </label>
+              <article class="dropdown__content">
+                <p class="content__paragraph">
+                  Lorem ipsum dolor sit amet, ut vel mollis, amet enim. Leo torquent, mauris at sit dictumst mollis nulla, nulla mollis nulla
+                  amet. Integer ultricies mauris, suspendisse cras ac rutrum amet, id quam porttitor porttitor scelerisque
+                  pellentesque ullamcorper. Vehicula in pellentesque. Quis fermentum a semper metus ac, id nec. Mauris lorem
+                  diam ligula ut sed nunc. Tincidunt velit. Vehicula lobortis, vestibulum dui mauris diam sem, laoreet proin
+                  imperdiet posuere.
+                </p>
+                <p class="content__paragraph">
+                  Neque amet venenatis auctor vivamus, elementum mollis neque, nulla scelerisque duis eu integer.
+                </p>
+                <p class="content__paragraph">
+                  <i class="fa fa-cc-mastercard"></i>
+                  <i class="fa fa-cc-visa"></i>
+                  <i class="fa fa-cc-amex"></i>
+                  <i class="fa fa-cc-diners-club"></i>
+                  <i class="fa fa-cc-paypal"></i>
+                  <i class="fa fa-cc-jcb"></i>
+                </p>
+              </article>
+            </section>
+
+            <section class="dropdown-section">
+              <input type="checkbox" class="toggle__input" id="dropdown2">
+              <label for="dropdown2" class="dropdown__toggle">
+                <h6 class="dropdown__heading">Open hours</h6>
+              </label>
+              <article class="dropdown__content">
+                <ul class="calendar unstyled-list">
+                  <li class="calendar__item">
+                    <div class="calendar__day">Monday</div>
+                    <div class="calendar__time">10:00 - 20:00</div>
+                  </li>
+                  <li class="calendar__item">
+                    <div class="calendar__day">Tuesday</div>
+                    <div class="calendar__time">10:00 - 20:00</div>
+                  </li>
+                  <li class="calendar__item">
+                    <div class="calendar__day">Wednesday</div>
+                    <div class="calendar__time">10:00 - 20:00</div>
+                  </li>
+                  <li class="calendar__item">
+                    <div class="calendar__day">Thursday</div>
+                    <div class="calendar__time">10:00 - 20:00</div>
+                  </li>
+                  <li class="calendar__item">
+                    <div class="calendar__day">Friday</div>
+                    <div class="calendar__time">10:00 - 20:00</div>
+                  </li>
+                  <li class="calendar__item">
+                    <div class="calendar__day">Saturday</div>
+                    <div class="calendar__time">10:00 - 20:00</div>
+                  </li>
+                </ul>
+              </article>
+            </section>
+
+            <section class="dropdown-section">
+              <input type="checkbox" class="toggle__input" id="dropdown3">
+              <label for="dropdown3" class="dropdown__toggle">
+                <h6 class="dropdown__heading">Latest products</h6>
+              </label>
+              <article class="dropdown__content">
+                <img src="assets/images/latest-products/p1.jpg" class="latest-product__image" alt="product">
+                <img src="assets/images/latest-products/p2.jpg" class="latest-product__image" alt="product">
+                <img src="assets/images/latest-products/p3.jpg" class="latest-product__image" alt="product">
+                <img src="assets/images/latest-products/p4.jpg" class="latest-product__image" alt="product">
+                <img src="assets/images/latest-products/p5.jpg" class="latest-product__image" alt="product">
+                <img src="assets/images/latest-products/p6.jpg" class="latest-product__image" alt="product">
+                <img src="assets/images/latest-products/p7.jpg" class="latest-product__image" alt="product">
+                <img src="assets/images/latest-products/p8.jpg" class="latest-product__image" alt="product">
+                <img src="assets/images/latest-products/p9.jpg" class="latest-product__image" alt="product">
+                <img src="assets/images/latest-products/p10.jpg" class="latest-product__image" alt="product">
+              </article>
+            </section>
+
+            <section class="dropdown-section">
+              <input type="checkbox" class="toggle__input" id="dropdown4">
+              <label for="dropdown4" class="dropdown__toggle">
+                <h6 class="dropdown__heading">Our store</h6>
+              </label>
+              <article class="dropdown__content">
+                <p class="content__paragraph">Lorem ipsum dolor sit amet, ut vel mollis, amet enim.</p>
+                <p class="content__paragraph">Lorem mollis MSU 8-9, Levels 7&9 Birmingham B5 4BG (44) 121 616 2169</p>
+                <p class="content__paragraph">lalala.com</p>
+                <p class="content__paragraph">
+                  <i class="fa fa-facebook"></i>
+                  <i class="fa fa-twitter"></i>
+                  <i class="fa fa-linkedin"></i>
+                </p>
+              </article>
+            </section>
+          </article>
+
+          <ul class="footer-links unstyled-list">
+            <li class="list__item">
+              <a href="" class="list__link">Conditions</a>
+            </li>
+            <li class="list__item">
+              <a href="" class="list__link">Help</a>
+            </li>
+            <li class="list__item">
+              <a href="" class="list__link">Privacy</a>
+            </li>
+            <li class="list__item">
+              <a href="" class="list__link">Terms</a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+
+</body>
+
 </html>
