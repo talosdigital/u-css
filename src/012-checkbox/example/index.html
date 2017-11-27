@@ -33,57 +33,108 @@
       <main class="mdl-layout__content">
         <div class="page-content">
          <!-- Practice Content Goes Here -->
-         <section class="panel">
-           <label for="checkboxes">Checkboxes</label>
-           <input type="radio" name="tabs" id="checkboxes" checked="checked">
-           <div class="tab">
-             <h1>Lorem ipsum dolor sit amet</h1>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in arcu magna. Pellentesque sit amet vestibulum ex, eget placerat metus. Sed vel sagittis massa, eu interdum mauris. Ut congue ipsum ex, eu egestas nisi ullamcorper vitae. Suspendisse potenti. Suspendisse blandit placerat ex, vitae suscipit purus dapibus id. Nulla facilisi. Mauris porttitor diam eu orci sodales tempor. Donec rutrum sit amet quam vitae congue. Donec sit amet convallis risus. Quisque mi augue, mattis lacinia mollis non, iaculis sit amet lectus.</p>
-             <div class="checkbox-container">
-               <h3>Checkboxes</h3>
-               <input type="checkbox" name="boxes" id="first">
-               <label for="first">First checkbox</label>
-               <input type="checkbox" name="boxes" id="second">
-               <label for="second">Second checkbox</label>
-               <input type="checkbox" name="boxes" id="third">
-               <label for="third">Disabled checkbox</label>
-               <input type="checkbox" name="boxes" id="fourth">
-               <label for="fourth">Disabled &amp; checked</label>
-             </div>
-           </div>
-           <label for="radios">Radio Buttons</label>
-           <input type="radio" name="tabs" id="radios">
+          <section class="panel">
+            <input type="radio" name="tabs" id="checkboxes" checked="checked">
+            <label for="checkboxes">Checkboxes</label>
             <div class="tab">
               <h1>Lorem ipsum dolor sit amet</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in arcu magna. Pellentesque sit amet vestibulum ex, eget placerat metus. Sed vel sagittis massa, eu interdum mauris. Ut congue ipsum ex, eu egestas nisi ullamcorper vitae. Suspendisse potenti. Suspendisse blandit placerat ex, vitae suscipit purus dapibus id. Nulla facilisi. Mauris porttitor diam eu orci sodales tempor. Donec rutrum sit amet quam vitae congue. Donec sit amet convallis risus. Quisque mi augue, mattis lacinia mollis non, iaculis sit amet lectus.</p>
               <div class="checkbox-container">
-                 <h3>Radio Buttons</h3>
-                 <input type="radio" name="radios" id="r-first">
-                 <label for="r-first">First checkbox</label>
-                 <input type="radio" name="radios" id="r-second">
-                 <label for="r-second">Second checkbox</label>
-                 <input type="radio" name="radios2" id="r-third">
-                 <label for="r-third">Disabled checkbox</label>
-                 <input type="radio" name="radios2" id="r-fourth">
-                 <label for="r-fourth">Disabled &amp; checked</label>
+                <h3>Checkboxes</h3>
+                <label for="bfirst">
+                  First checkbox
+                  <input type="checkbox" name="boxes" id="bfirst">
+                  <div class="styled-checkbox"></div>
+                </label>
+                <label for="bsecond">
+                  Second checkbox
+                  <input type="checkbox" name="boxes" id="bsecond">
+                  <div class="styled-checkbox"></div>                  
+                </label>
+                <label for="bthird">
+                  Disabled checkbox
+                  <input type="checkbox" name="boxes" id="bthird" disabled="disabled">
+                  <div class="styled-checkbox"></div>                  
+                </label>
+                <label for="bfourth">
+                  Disabled &amp; checked
+                  <input type="checkbox" name="boxes" id="bfourth" disabled="disabled" checked="checked">
+                  <div class="styled-checkbox"></div>                  
+                </label>
               </div>
             </div>
-           <label for="cards">Cards</label>
-           <input type="radio" name="tabs" id="cards">
-           <div class="tab">
+            <input type="radio" name="tabs" id="radios">
+            <label for="radios">Radio Buttons</label>
+            <div class="tab">
               <h1>Lorem ipsum dolor sit amet</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in arcu magna. Pellentesque sit amet vestibulum ex, eget placerat metus. Sed vel sagittis massa, eu interdum mauris. Ut congue ipsum ex, eu egestas nisi ullamcorper vitae. Suspendisse potenti. Suspendisse blandit placerat ex, vitae suscipit purus dapibus id. Nulla facilisi. Mauris porttitor diam eu orci sodales tempor. Donec rutrum sit amet quam vitae congue. Donec sit amet convallis risus. Quisque mi augue, mattis lacinia mollis non, iaculis sit amet lectus.</p>
-              <div class="checkbox-container">
-                 <h3>Radio Buttons</h3>
-                 <input type="checkbox" name="cards" id="c-first">
-                 <label for="c-first">First checkbox</label>
-                 <input type="checkbox" name="cards" id="c-second">
-                 <label for="c-second">Second checkbox</label>
-                 <input type="checkbox" name="cards" id="c-third">
-                 <label for="c-third">Disabled checkbox</label>
-                 <input type="checkbox" name="cards" id="c-fourth">
-                 <label for="c-fourth">Disabled &amp; checked</label>
+              <div class="radio-container">
+                <h3>Checkboxes</h3>
+                <label for="rfirst">
+                  First radio
+                  <input type="radio" name="radios" id="rfirst">
+                  <div class="styled-radio"></div>
+                </label>
+                <label for="rsecond">
+                  Second radio
+                  <input type="radio" name="radios" id="rsecond">
+                  <div class="styled-radio"></div>                  
+                </label>
+                <label for="rthird">
+                  Disabled
+                  <input type="radio" name="radios2" id="rthird" disabled="disabled">
+                  <div class="styled-radio"></div>                  
+                </label>
+                <label for="rfourth">
+                  Disabled &amp; checked
+                  <input type="radio" name="radios2" id="rfourth" disabled="disabled" checked="checked">
+                  <div class="styled-radio"></div>                  
+                </label>
               </div>
+            </div>
+            <input type="radio" name="tabs" id="cards">
+            <label for="cards">Cards</label>
+            <div class="tab">
+              <h1>Lorem ipsum dolor sit amet</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in arcu magna. Pellentesque sit amet vestibulum ex, eget placerat metus. Sed vel sagittis massa, eu interdum mauris. Ut congue ipsum ex, eu egestas nisi ullamcorper vitae. Suspendisse potenti. Suspendisse blandit placerat ex, vitae suscipit purus dapibus id. Nulla facilisi. Mauris porttitor diam eu orci sodales tempor. Donec rutrum sit amet quam vitae congue. Donec sit amet convallis risus. Quisque mi augue, mattis lacinia mollis non, iaculis sit amet lectus.</p>
+              <ul class="card-container">
+                <li class="card">
+                  <img src="images/user.png">
+                  <div class="content">
+                    <h3>Headline</h3>
+                    <p>Lorem ipsum dolor sit amet...</p>  
+                  </div>
+                  <input type="checkbox" name="boxes" id="cfirst">
+                  <label for="cfirst" class="styled-checkbox"></label>
+                </li>
+                <li class="card">
+                  <img src="images/user.png">
+                  <div class="content">
+                    <h3>Headline</h3>
+                    <p>Lorem ipsum dolor sit amet...</p>  
+                  </div>
+                  <input type="checkbox" name="boxes" id="csecond">
+                  <label for="csecond" class="styled-checkbox"></label>
+                </li>
+                <li class="card">
+                  <img src="images/user.png">
+                  <div class="content">
+                    <h3>Headline</h3>
+                    <p>Lorem ipsum dolor sit amet...</p>  
+                  </div>
+                  <input type="checkbox" name="boxes" id="cthird">
+                  <label for="cthird" class="styled-checkbox"></label>
+                </li>
+                <li class="card">
+                  <img src="images/user.png">
+                  <div class="content">
+                    <h3>Headline</h3>
+                    <p>Lorem ipsum dolor sit amet...</p>  
+                  </div>
+                  <input type="checkbox" name="boxes" id="cfourth">
+                  <label for="cfourth" class="styled-checkbox"></label>
+                </li>
+              </ul>
            </div>
          </section>
         </div>

@@ -1,9 +1,221 @@
 /* Practice Layout */
 
+body {
+    font-size: 14px;
+    color: #787878;
+}
+
+h1, h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
 .trash{
 	color: black;
 }
 
 .panel {
+    position: relative;
+    display: flex;
+    flex-flow: wrap;
 	width: 600px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    background-color: #EFEFEF;
+}
+
+.panel > input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.panel > label {
+    box-sizing: border-box;
+    background-color: #E5E5E5;
+    z-index: 2;
+    padding: 20px 30px;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #7f7f7f;
+    border: 3px solid transparent;
+    transition: background 0.1s, color 0.1s;
+}
+
+.panel > label:hover {
+    background-color: #D8D8D8;
+}
+
+.panel > input[type="radio"]:focus + label {
+    border: 3px solid #2AA1C0;
+}
+
+.panel > input[type="radio"]:checked + label {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+#checkboxes, label[for="checkboxes"] {
+    order: 1;
+}
+
+#radios, label[for="radios"] {
+    order: 2;
+}
+
+#cards, label[for="cards"] {
+    order: 3;
+}
+
+.panel > input[type="radio"]:checked + label + .tab {
+    display:block;
+    flex: 1 100%;
+}
+
+.tab {
+    flex-grow: 1;
+    order: 99;
+    display: none;
+    background-color: #FFFFFF;
+    padding: 30px;
+}
+
+.tab input[type="checkbox"], .tab input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.tab label:hover .styled-checkbox, 
+.tab input[type="checkbox"]:focus ~ .styled-checkbox,
+.tab .styled-checkbox:hover {
+    background-color: #CCCCCC;
+}
+
+.checkbox-container, .radio-container {
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    padding: 40px;
+    margin: 10px;
+    width: 200px;
+}
+
+.tab input[type="checkbox"]:checked ~ .styled-checkbox,
+.tab input[type="radio"]:checked ~ .styled-radio {
+    background-color: #2AA1C0;
+}
+
+.tab label:hover input[type="checkbox"]:not([disabled]):checked ~ .styled-checkbox, 
+.tab input[type="checkbox"]:checked:focus ~ .styled-checkbox,
+.tab input[type="radio"]:checked:focus ~ .styled-radio,
+.tab label:hover input[type="radio"]:not([disabled]):checked ~ .styled-radio,
+.tab input[type="checkbox"]:checked ~ .styled-checkbox:hover {
+    background-color: #0E647D;
+}
+
+.tab input[type="checkbox"]:checked ~ .styled-checkbox::after {
+    display: block;
+    content: '\2713';
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-left: 4px;
+}
+
+.tab input[type="checkbox"]:disabled ~ .styled-checkbox,
+.tab input[type="radio"]:disabled ~ .styled-radio {
+    background-color: #E6E6E6;
+    opacity: 0.6;
+}
+
+.tab input[type="checkbox"]:disabled:checked ~ .styled-checkbox:after {
+    color: #7B7B7B;
+}
+
+.tab input[type="radio"]:disabled:checked ~ .styled-radio:after {
+    background-color: #7B7B7B;
+}
+
+.tab > div label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.styled-checkbox, .styled-radio {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #E6E6E6;
+    width: 20px;
+    height: 20px;
+}
+
+.tab input[type="radio"]:checked ~ .styled-radio::after {
+    display: block;
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin-left: 6px;
+    background-color: #FFFFFF;
+    margin-top: 6px;
+}
+
+.styled-radio {
+    border-radius: 100%;
+}
+
+.checkbox-container label, .radio-container label, card-container .card {
+    line-height: 20px;
+    font-size: 1.2em;
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+.card-container {
+    width: 470px;
+    margin-left: 30px;
+}
+
+.card-container .card {
+    margin-top: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+.card-container .card p {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 0.9em;
+}
+
+.card-container .card .styled-checkbox:after {
+    padding-top: 5px;
+}
+
+.card-container .card:hover {
+    background: #eee;
+}
+
+.card-container .card img {
+    width: 100px;
+    display: inline-block;
+}
+
+.card-container .content {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card-container .styled-checkbox {
+    top: 10px;
+    right: 20px;
+    left: auto;
 }
