@@ -1,4 +1,146 @@
 /* Practice Layout */
+header {
+  text-align: center;
+}
+
+li {
+  display: inline;
+}
+
+ul {
+  text-align: center;
+}
+
+.centered-line > p {
+  background-color: lightgray;
+  display: inline-block;
+  height: 100px;
+  line-height: 100px;
+  margin: 10px 0;
+  padding: 10px;
+  width: 400px;
+}
+
+.centered-multiple-line  {
+  background-color: lightgray;
+  display: table;
+  height: 250px;
+  width: 240px;
+  margin: 20px 0;
+}
+
+.centered-multiple-line p {
+  display: table-cell;
+  margin: 0;
+  padding: 20px;
+  vertical-align: middle;
+}
+
+.centered-multiple-line-flex {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+}
+
+.common-padding-spacing {
+  background-color: lightgray;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.external-block-element {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+
+}
+
+.external-block-element {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+}
+
+.internal-block-element-fixed-height {
+  background-color: darkgray;
+  color: white;
+  height: 100px;
+  text-align: left;
+}
+
+.internal-block-element-unknown-height {
+  background-color: darkgray;
+  color: white;
+  text-align: center;
+}
+
+.multiple-square {
+  background-color: darkseagreen;
+  height: 300px;
+}
+
+.page-content {
+  background-color: whitesmoke;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.square1 {
+  background-color: firebrick;
+  height: 200px;
+  width: 200px;
+}
+
+.square2 {
+  background-color: black;
+}
+
+.square3 {
+  background-color: darkorange;
+}
+
+.square-flex {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.square-half-size {
+  height: 50%;
+  width: 50%;
+}
+
+.sticky-notes {
+  text-align: center;
+}
+
+.sticky-notes > p {
+  background-color: lightgray;
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  text-align: left;
+  width: 150px;
+}
+
+.sticky-notes-flex {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.sticky-notes-flex >  p {
+  background-color: lightgray;
+  height: 150px;
+  margin: 10px;
+  padding: 20px;
+  text-align: left;
+  width: 150px;
+}
 
 .trash{
 	color: black;
