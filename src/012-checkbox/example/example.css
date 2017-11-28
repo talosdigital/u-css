@@ -24,8 +24,8 @@ p {
     position: relative;
     display: flex;
     flex-flow: wrap;
-	width: 600px;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	max-width: 700px;
+	box-shadow: 0 50px 90px -32px rgba(0, 0, 0, 0.4);
     background-color: #EFEFEF;
 }
 
@@ -66,11 +66,11 @@ p {
 }
 
 #radios, label[for="radios"] {
-    order: 2;
+    order: 3;
 }
 
 #cards, label[for="cards"] {
-    order: 3;
+    order: 5;
 }
 
 .panel > input[type="radio"]:checked + label + .tab {
@@ -218,4 +218,22 @@ p {
     top: 10px;
     right: 20px;
     left: auto;
+}
+
+@media (max-width: 600px) {
+    .panel > label {
+        flex: 1 100%;
+    }
+
+    #checkboxes + label + .tab {
+        order: 2;
+    }
+
+    #radios + label + .tab {
+        order: 4;
+    }
+
+    #cards + label + .tab {
+        order: 6;
+    }
 }
