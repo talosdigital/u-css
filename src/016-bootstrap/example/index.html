@@ -1,40 +1,193 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>016 - Bootstrap and Material Column System</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link href="../../app.css" rel="stylesheet" type="text/css">
+<head>
+  <meta charset="utf-8">
+  <title>016 - Bootstrap and Material Column System</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
 
-    <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
-  </head>
-  <body>
-  	<!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
-          <i class="material-icons">home</i>
-        </a>
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">016 - Bootstrap and Material Column System</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
-        </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-         <!-- Practice Content Goes Here -->
-        </div>
-      </main>
-    </div>
+  <!-- Ignore this, it's for the header -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link href="../../app.css" rel="stylesheet" type="text/css">
 
-  </body>
+  <!-- Import App Css file -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+
+  <link href="assets/css/example.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
+        <i class="material-icons">home</i>
+      </a>
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">016 - Bootstrap and Material Column System</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <!-- Practice Content Goes Here -->
+        <section class="container">
+          <section class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-3">Talos Travel</h1>
+              <p class="lead">Travel is the only thing you by
+                <span> that makes you richer </span>
+              </p>
+            </div>
+          </section>
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <section class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </section>
+          </nav>
+
+          <section class="row">
+            <aside class="col-md-4">
+              <article class="card mb-3">
+                <section class="card-body">
+                  <h6 class="card-title">What are you looking?</h6>
+                </section>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-inline-flex">
+                    <img src="https://placeimg.com/40/40/tech" alt="Card image cap">
+                    <div class="ml-2">
+                      <p>Tecnology</p>
+                      <a href="#" class="card-link">Click!</a>
+                    </div>
+                  </li>
+                  <li class="list-group-item d-inline-flex">
+                    <img src="https://placeimg.com/40/40/arch" alt="Card image cap">
+                    <div class="ml-2">
+                      <p>Architecture</p>
+                      <a href="#" class="card-link">Click!</a>
+                    </div>
+                  </li>
+                  <li class="list-group-item d-inline-flex">
+                    <img src="https://placeimg.com/40/40/people" alt="Card image cap">
+                    <div class="ml-2">
+                      <p>People</p>
+                      <a href="#" class="card-link">Click!</a>
+                    </div>
+                  </li>
+                </ul>
+              </article>
+
+              <article class="card mb-3">
+                <section class="card-body">
+                  <h6 class="card-title">Buy with us!</h6>
+                </section>
+                <section class="list-group list-group-flush">
+                  <button type="button" class="list-group-item list-group-item-action">Flights</button>
+                  <button type="button" class="list-group-item list-group-item-action">Cars</button>
+                  <button type="button" class="list-group-item list-group-item-action">Hotels</button>
+                </section>
+                <section class="card-body d-flex justify-content-between">
+                  <a href="#" class="card-link">Flights + Hotels</a>
+                  <a href="#" class="card-link">Hotels + Cars</a>
+                </section>
+              </article>
+
+              <article class="card mb-3">
+                <header class="card-header">
+                  <h6 class="card-title">Are you searching some promotions?</h6>
+                </header>
+                <section class="card-body">
+                  <p class="card-text mb-4">Let us show you some special prices for today.</p>
+                  <button class="btn btn-warning float-right btn-sm">Find Promotions!</button>
+                </section>
+              </article>
+
+              <article class="card mb-3">
+                <header class="card-header">
+                  <h6 class="card-title">Searching for something in particular?</h6>
+                </header>
+                <section class="card-body">
+                  <input type="text" class="form-control mb-4" placeholder="Search...">
+                  <button class="btn btn-warning float-right btn-sm">Search!</button>
+                </section>
+              </article>
+            </aside>
+
+            <section class="col-md-8">
+              <div class="card-group">
+                <article class="card mb-lg-3 ml-lg-3">
+                  <img class="card-img-top" src="https://placeimg.com/250/350/arch" alt="Card image cap">
+                  <footer class="card-footer d-flex align-items-center justify-content-between">
+                    <span class="text-muted mr-1">Enrich Your Knowledge</span>
+                    <button class="btn btn-warning btn-sm"> GO! </button>
+                  </footer>
+                </article>
+                <article class="card mb-lg-3 ml-lg-3">
+                  <img class="card-img-top" src="https://placeimg.com/250/350/nature" alt="Card image cap">
+                  <footer class="card-footer d-flex align-items-center justify-content-between">
+                    <span class="text-muted mr-1">Be One With Nature</span>
+                    <button class="btn btn-warning btn-sm"> GO! </button>
+                  </footer>
+                </article>
+                <article class="card mb-lg-3 ml-lg-3">
+                  <img class="card-img-top" src="https://placeimg.com/250/350/people" alt="Card image cap">
+                  <footer class="card-footer d-flex align-items-center justify-content-between">
+                    <span class="text-muted mr-1">Recommended Places</span>
+                    <button class="btn btn-warning btn-sm"> GO! </button>
+                  </footer>
+                </article>
+                <article class="card mb-lg-3 ml-lg-3">
+                  <img class="card-img-top" src="https://placeimg.com/250/350/animals" alt="Card image cap">
+                  <footer class="card-footer d-flex align-items-center justify-content-between">
+                    <span class="text-muted mr-1">Pet Friendly Places</span>
+                    <button class="btn btn-warning btn-sm"> GO! </button>
+                  </footer>
+                </article>
+              </div>
+            </section>
+          </section>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
 </html>
