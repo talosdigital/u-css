@@ -1,20 +1,12 @@
 /* Practice Layout */
 article {
   background-color: lightpink;
-  box-sizing: border-box;
-  float: right;
   padding: 10px;
-  width: 800px;
+  width: 70%;
 }
 aside {
-  box-sizing: border-box;
-  float: left;
   padding: 20px;
-  width: 400px;
-}
-
-footer {
-  clear: both;
+  width: 30%;
 }
 
 ul {
@@ -36,6 +28,10 @@ p {
   margin: 2px;
 }
 
+section {
+  display: flex;
+}
+
 .main-text {
   padding: 10px;
 }
@@ -44,20 +40,23 @@ p {
   background-color: lightskyblue;
   margin: 0 auto;
   padding: 0px;
-  width: 1200px;
+  width: 80%;
 }
 
 .square {
   background-color: lightskyblue;
   border: solid orangered thin;
-  display: inline-block;
   height: 180px;
-  margin: -8px -4px;
   width: 180px;
+
 }
 
 .squares {
-  padding: 10px;
+  display: flex;
+}
+
+.squares div:nth-child(odd) {
+  height: 360px;
 }
 
 .trash{
