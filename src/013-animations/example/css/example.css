@@ -1,0 +1,78 @@
+/* General styles */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	color: #787878;
+	font-family: sans-serif;
+	font-size: 16px;
+	line-height: 25px;
+	letter-spacing: normal;
+}
+
+h1 {
+	font-size: 3em;
+	margin: 20px 0 55px 0;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Title Styles */
+.title-animated {
+	color: #FC8B45;
+	animation: opacity-animed 5s infinite;
+	width: 100%;
+}
+
+@keyframes opacity-animed {
+	0%, 50% {
+		opacity: 1;
+	}
+	25%, 75%{
+		opacity: 0;
+	}
+}
+
+/* Animal Cards Styles */
+.cards {
+	background-color: #C8C8C8;
+	display: flex;
+	padding: 35px 0 100px 0;
+	justify-content: center;
+}
+
+.card {
+	position: relative;
+	margin: 0 5px;
+	width: 320px;
+	height: 420px;
+}
+
+.card img {
+	border: 10px solid #fff;
+	width: 100%;
+}
+
+.card .center {
+	bottom: 0;
+	position: absolute;
+	z-index: 1;
+	width: 320px;
+}
+
+.card .info {
+	border: 10px solid #fff;
+	background-color: #DEDDCF;
+	margin: 0 auto;
+	width: 260px;
+}
