@@ -10,99 +10,67 @@ body, html {
   font-family: sans-serif;
 }
 
+section {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 .tabs-area {
-  margin: 0 30px;
-}
-
-.tabs > li > input[type=radio] {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-}
-
-.tabs {
-  float: none;
-  list-style: none;
-  position: relative;
-  padding: 0;
-  max-width: 700px;
-  background: #efefef;
   box-shadow: 0 48px 80px -32px rgba(0, 0, 0, 0.3);
 }
 
-.tabs li label {
-  margin-right: -5px;
-}
-
-.tabs > li {
-  display: inline-block;
-}
-
-.tabs > li > label {
-  display: block;
-  padding: 18px 30px;
-  border-radius: 2px 2px 0 0;
-  font-size: 18px;
-  font-weight: bold;
-  background: #e5e5e5;
+.tabs-area > label {
+  background: #eee;
+  border: 1px solid #ddd;
+  padding: .7em 1em;
   cursor: pointer;
-  position: relative;
-  top: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  z-index: 1;
+  margin-left: -1px;
+}
+.tabs-area > label:first-of-type {
+  margin-left: 0;
+}
+.tabs-area > div.content {
+  width: 100%;
+  margin-top: -1px;
+  padding: 1em;
+  border: 1px solid #ddd;
+  -webkit-order: 1;
+  order: 1;
 }
 
-.tabs > li > label:hover {
-  background: rgba(255, 255, 255, 0.5);
+.tabs-area > input[type=radio], .tabs-area div.content {
+  display: none;
 }
 
-[id^=tab]:checked + label {
-  background: #FFF;
-  color: #000;
-  top: 0;
+.tabs-area > input[type=radio]:checked + label {
+  background: #fff;
+  border-bottom: 1px solid #fff;
 }
 
-[id^=tab]:checked ~ [id^=tab-content] {
+.tabs-area > input[type=radio]:checked + label + div {
   display: block;
 }
 
-.tab-content {
-  z-index: 2;
-  display: none;
-  text-align: left;
-  width: 100%;
-  font-size: 20px;
-  line-height: 140%;
-  background: #FFF;
-  padding: 32px;
-  position: absolute;
-  top: 53px;
-  left: 0;
-  box-sizing: border-box;
-  -webkit-animation-duration: 0.5s;
-  -o-animation-duration: 0.5s;
-  -moz-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-}
-
-.tab-content h2 {
+.content h2 {
   font-weight: bold;
 }
 
-.tab-content p {
+.content p {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
 }
+
 
 /*Buttons*/
 
 .buttons {
   display: inline-block;
   width: 200px;
-  height: 210px;
+  height: auto;
   margin: 10px;
   padding: 30px;
   text-align: left;
@@ -198,6 +166,7 @@ body, html {
 .buttons input[disabled="disabled"][type="radio"]:checked + label:after {
   background: #7b7b7b;
 }
+
 .cards {
   width: 500px;
   box-shadow: none;
@@ -243,3 +212,27 @@ body, html {
   opacity: 0;
 }
 
+.cards img{
+  height: 80px;
+  float: left;
+  margin: 0px 10px 13px 10px;
+}
+.cards h3{
+  font-weight: bold;
+}
+
+
+.cards label {
+  float: right;
+  top:-42px;
+}
+
+.cards input[type="checkbox"] {
+  display: block;
+  float: right;
+  position: absolute;
+  top: 9px;
+  right: 13px;
+  z-index: 2;
+  opacity: 0;
+}
