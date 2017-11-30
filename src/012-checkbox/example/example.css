@@ -252,3 +252,30 @@ body, html {
   z-index: 2;
   opacity: 0;
 }
+
+@media (min-width: 375px) and (max-width: 630px){
+  .tabs-area {
+    flex-direction: column;
+  }
+
+  .tabs-area > div.content, .cards {
+    width: auto;
+  }
+
+  .buttons {
+    width: auto;
+  }
+
+  .cards label {
+    position: absolute;
+    top: 9px;
+    right: 13px;
+  }
+  #tab-one-label{order:1;}
+  #tab-two-label{order: 3;}
+  #tab-three-label{order: 5;}
+  #content_one{order: 2;}
+  #content_two{order: 4;}
+  #content_three{order: 6;}
+
+}
