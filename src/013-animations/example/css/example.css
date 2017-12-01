@@ -27,6 +27,11 @@ a {
   text-decoration: none;
 }
 
+.content {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
 /* Title Styles */
 .title-animated {
 	color: #FC8B45;
@@ -47,6 +52,7 @@ a {
 .cards {
 	background-color: #C8C8C8;
 	display: flex;
+	max-width: 1200px;
 	padding: 35px 0 100px 0;
 	justify-content: center;
 }
@@ -56,11 +62,33 @@ a {
 	margin: 0 5px;
 	width: 320px;
 	height: 420px;
+	-webkit-perspective: 500px;
+	-ms-perspective: 500px;
+	perspective: 500px;
 }
 
 .card img {
 	border: 10px solid #fff;
+	box-shadow: 0 3px 10px #888;
 	width: 100%;
+	-webkit-transform: rotateY(30deg);
+	-moz-transform: rotateY(30deg);
+	-ms-transform: rotateY(30deg);
+	-o-transform: rotateY(30deg);
+	transform: rotateY(30deg);
+	-webkit-transition: transform 0.5s;
+	-moz-transition: transform 0.5s;
+	-ms-transition: transform 0.5s;
+	-o-transition: transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.card:hover img {
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+	transform: rotateY(0deg);
 }
 
 .card .center {
@@ -68,11 +96,57 @@ a {
 	position: absolute;
 	z-index: 1;
 	width: 320px;
+	-webkit-transform: rotateY(30deg) translateZ(45px);
+	-moz-transform: rotateY(30deg) translateZ(45px);
+	-ms-transform: rotateY(30deg) translateZ(45px);
+	-o-transform: rotateY(30deg) translateZ(45px);
+	transform: rotateY(30deg) translateZ(45px);
+	-webkit-transition: transform 0.5s;
+	-moz-transition: transform 0.5s;
+	-ms-transition: transform 0.5s;
+	-o-transition: transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.card:hover .center {
+	-webkit-transform: rotateY(0deg) translateZ(0px);
+	-moz-transform: rotateY(0deg) translateZ(0px);
+	-ms-transform: rotateY(0deg) translateZ(0px);
+	-o-transform: rotateY(0deg) translateZ(0px);
+	transform: rotateY(0deg) translateZ(0px);
 }
 
 .card .info {
+	align-items: center;
 	border: 10px solid #fff;
+	box-shadow: 0 20px 40px #888;
 	background-color: #DEDDCF;
+	display: flex;
+	flex-direction: column;
+	height: 180px;
 	margin: 0 auto;
+	padding: 19px;
+	text-align: center;
 	width: 260px;
 }
+
+.card .info h3 {
+	color: #7E3F3B;
+	font-family: Georgia, serif, Times;
+	font-variant: small-caps;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.card .info p {
+	margin-bottom: 14px;
+}
+
+.card .info a {
+	background-color: #7E3F3B;
+	border-radius: 5px;
+	color: #fff;
+	padding: 4px 2px;
+	width: 100px;
+}
+
