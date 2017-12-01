@@ -1,40 +1,172 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>012 - Checkboxes and Radio Buttons</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link href="../../app.css" rel="stylesheet" type="text/css">
+<head>
+  <meta charset="utf-8">
+  <title>012 - Checkboxes and Radio Buttons</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
 
-    <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
-  </head>
-  <body>
-  	<!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
-          <i class="material-icons">home</i>
-        </a>
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">012 - Checkboxes and Radio Buttons</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
+  <!-- Ignore this, it's for the header -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link href="../../app.css" rel="stylesheet" type="text/css">
+
+  <!-- Import App Css file -->
+  <link href="assets/css/example.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/normalize.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
+        <i class="material-icons">home</i>
+      </a>
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">012 - Checkboxes and Radio Buttons</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <!-- Practice Content Goes Here -->
+        <div class="page-content__wrapper">
+
+          <section class="tabs-section">
+            <input type="radio" name="tabs" class="tab__radio control__input" id="tab-1" checked="checked">
+            <label for="tab-1" class="tab__label">Checkboxes</label>
+            <article class="tab__content">
+              <h5 class="content__heading">Lorem ipsum dolor sit amet</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in arcu magna. Pellentesque sit amet vestibulum ex, eget placerat metus. Sed vel sagittis massa, eu interdum mauris. Ut congue ipsum ex, eu egestas nisi ullamcorper vitae. Suspendisse potenti.
+                Suspendisse blandit placerat ex, vitae suscipit purus dapibus id. Nulla facilisi. Mauris porttitor diam eu orci sodales tempor. Donec rutrum sit amet quam vitae congue. Donec sit amet convallis risus. Quisque mi augue, mattis lacinia mollis
+                non, iaculis sit amet lectus.
+              </p>
+
+              <section class="form-controls-group">
+                <h5 class="content__heading">Checkboxes</h5>
+                <label class="form-control checkbox-control">First checkbox
+                  <input type="checkbox" class="control__input" name="checkbox1" checked="checked">
+                  <span class="control__indicator"></span>
+                </label>
+                <label class="form-control checkbox-control">Second checkbox
+                  <input type="checkbox" class="control__input" name="checkbox1">
+                  <span class="control__indicator"></span>
+                </label>
+                <label class="form-control checkbox-control">Disabled
+                  <input type="checkbox" class="control__input" name="checkbox1" disabled="disabled">
+                  <span class="control__indicator"></span>
+                </label>
+                <label class="form-control checkbox-control">Disabled & checked
+                  <input type="checkbox" class="control__input" name="checkbox1" disabled="disabled" checked="checked">
+                  <span class="control__indicator"></span>
+                </label>
+              </section>
+            </article>
+
+            <input type="radio" name="tabs" class="tab__radio control__input" id="tab-2">
+            <label for="tab-2" class="tab__label">Radio Buttons</label>
+            <article class="tab__content">
+              <h5 class="content__heading">Lorem ipsum dolor sit amet</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in arcu magna. Pellentesque sit amet vestibulum ex, eget placerat metus. Sed vel sagittis massa, eu interdum mauris. Ut congue ipsum ex, eu egestas nisi ullamcorper vitae. Suspendisse potenti.
+                Suspendisse blandit placerat ex, vitae suscipit purus dapibus id. Nulla facilisi. Mauris porttitor diam eu orci sodales tempor. Donec rutrum sit amet quam vitae congue. Donec sit amet convallis risus. Quisque mi augue, mattis lacinia mollis
+                non, iaculis sit amet lectus.
+              </p>
+
+              <section class="form-controls-group">
+                <h5 class="content__heading">Radio Buttons</h5>
+                <label class="form-control radio-control">First radio
+                  <input type="radio" class="control__input" name="radio" checked="checked"/>
+                  <span class="control__indicator"></span>
+                </label>
+                <label class="form-control radio-control">Second radio
+                  <input type="radio" class="control__input" name="radio"/>
+                  <span class="control__indicator"></span>
+                </label>
+                <label class="form-control radio-control">Disabled
+                  <input type="radio" class="control__input" name="radio2" disabled="disabled"/>
+                  <span class="control__indicator"></span>
+                </label>
+                <label class="form-control radio-control">Disabled & checked
+                  <input type="radio" class="control__input" name="radio2" disabled="disabled" checked="checked"/>
+                  <span class="control__indicator"></span>
+                </label>
+              </section>
+            </article>
+
+            <input type="radio" name="tabs" class="tab__radio control__input" id="tab-3">
+            <label for="tab-3" class="tab__label">Cards</label>
+            <article class="tab__content">
+              <h5 class="content__heading">Lorem ipsum dolor sit amet</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in arcu magna. Pellentesque sit amet vestibulum ex, eget placerat metus. Sed vel sagittis massa, eu interdum mauris. Ut congue ipsum ex, eu egestas nisi ullamcorper vitae. Suspendisse potenti.
+                Suspendisse blandit placerat ex, vitae suscipit purus dapibus id. Nulla facilisi. Mauris porttitor diam eu orci sodales tempor. Donec rutrum sit amet quam vitae congue. Donec sit amet convallis risus. Quisque mi augue, mattis lacinia mollis
+                non, iaculis sit amet lectus.
+              </p>
+
+              <ul class="unstyled-list card-list">
+                <li class="list__item">
+                  <img src="assets/images/user.png" />
+                  <div class="content__wrapper">
+                    <h6 class="list__item-title">Headline</h6>
+                    <p>Lorem ipsum dolor sit amet...</p>
+                  </div class="content__wrapper">
+                  <label class="form-control checkbox-control">
+                    <input type="checkbox" class="control__input" name="checkbox2" checked="checked">
+                    <span class="control__indicator"></span>
+                  </label>
+                </li>
+
+                <li class="list__item">
+                  <img src="assets/images/user.png" />
+                  <div class="content__wrapper">
+                    <h6 class="list__item-title">Headline</h6>
+                    <p>Lorem ipsum dolor sit amet...</p>
+                  </div class="content__wrapper">
+                  <label class="form-control checkbox-control">
+                    <input type="checkbox" class="control__input" name="checkbox2">
+                    <span class="control__indicator"></span>
+                  </label>
+                </li>
+
+                <li class="list__item">
+                  <img src="assets/images/user.png" />
+                  <div class="content__wrapper">
+                    <h6 class="list__item-title">Headline</h6>
+                    <p>Lorem ipsum dolor sit amet...</p>
+                  </div class="content__wrapper">
+                  <label class="form-control checkbox-control">
+                    <input type="checkbox" class="control__input" name="checkbox2">
+                    <span class="control__indicator"></span>
+                  </label>
+                </li>
+
+                <li class="list__item">
+                  <img src="assets/images/user.png" />
+                  <div class="content__wrapper">
+                    <h6 class="list__item-title">Headline</h6>
+                    <p>Lorem ipsum dolor sit amet...</p>
+                  </div class="content__wrapper">
+                  <label class="form-control checkbox-control">
+                    <input type="checkbox" class="control__input" name="checkbox2">
+                    <span class="control__indicator"></span>
+                  </label>
+                </li>
+              </ul>
+            </article>
+          </section>
+
         </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-         <!-- Practice Content Goes Here -->
-        </div>
-      </main>
-    </div>
+      </div>
+    </main>
+  </div>
 
-  </body>
+</body>
+
 </html>

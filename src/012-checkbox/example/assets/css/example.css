@@ -1,0 +1,251 @@
+/* Practice Layout */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: #787878;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.trash {
+  color: black;
+}
+
+.unstyled-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* tabs section */
+
+.tabs-section {
+  background: #efefef;
+  box-shadow: 0 48px 80px -32px rgba(0, 0, 0, .3);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.tabs-section .control__input {
+  height: 0;
+  opacity: 0;
+  width: 0;
+}
+
+.tabs-section .tab__label {
+  background: #e5e5e5;
+  color: #7f7f7f;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 1.3rem 2rem;
+  transition: background 0.1s, color 0.1s;
+  width: 100%;
+}
+
+.tabs-section .tab__label:hover {
+  background: #d8d8d8;
+}
+
+.tabs-section .tab__label:active {
+  background: #ccc;
+}
+
+.tabs-section .tab__radio:focus+.tab__label {
+  box-shadow: inset 0px 0px 0px 3px #2aa1c0;
+  z-index: 1;
+}
+
+.tabs-section .tab__radio:checked+.tab__label {
+  background-color: #fff;
+  color: #000;
+}
+
+.tabs-section .tab__content {
+  background-color: #fff;
+  display: none;
+  padding: 1rem 2rem;
+}
+
+.tabs-section .tab__radio:checked+.tab__label+.tab__content {
+  display: block;
+}
+
+.tab__content .content__heading {
+  font-weight: bold;
+  margin: .5rem 0;
+}
+
+.tab__content p {
+  display: -webkit-box;
+  font-size: inherit;
+  margin: 0;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.tab__content .content__heading,
+.tab__content p {
+  line-height: 1.5;
+}
+
+@media (min-width:576px) {
+  .tabs-section .tab__label {
+    width: auto;
+  }
+  .tab__content {
+    order: 1;
+  }
+  .tab__content p {
+    -webkit-line-clamp: initial;
+  }
+}
+
+
+/* Form controls group */
+
+.tab__content .form-controls-group {
+  border: 1px solid #eee;
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.form-control {
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.form-control .control__indicator {
+  display: inline-flex;
+  background-color: #e6e6e6;
+  height: 1.3rem;
+  justify-content: center;
+  margin-right: .5rem;
+  order: -1;
+  width: 1.3rem;
+}
+
+.form-control.radio-control .control__indicator {
+  align-items: center;
+  border-radius: 50%;
+}
+
+.form-control .control__indicator::after {
+  display: none;
+  border: 1px solid #fff;
+  border-width: 0 2px 2px 0;
+  content: "";
+  height: .6rem;
+  transform: rotate(45deg) translate3D(2px, 2px, 0);
+  width: .2rem;
+}
+
+.form-control.radio-control .control__indicator::after {
+  background-color: #fff;
+  border-radius: 50%;
+  height: .3rem;
+  transform: none;
+  width: .3rem;
+}
+
+.form-control .control__input:checked:not(:disabled)+.control__indicator {
+  background-color: #2aa1c0;
+}
+
+.form-control:hover .control__input:not(:disabled)+.control__indicator,
+.form-control .control__input:not(:disabled):focus+.control__indicator {
+  background-color: #ccc;
+}
+
+.form-control:hover .control__input:checked:not(:disabled)+.control__indicator,
+.form-control .control__input:checked:not(:disabled):focus+.control__indicator {
+  background-color: #0e647d;
+}
+
+.form-control .control__input:checked+.control__indicator::after {
+  display: block;
+}
+
+.form-control .control__input:disabled:checked+.control__indicator::after {
+  border-color: #787878;
+  opacity: .5;
+}
+
+.form-control.radio-control .control__input:disabled:checked+.control__indicator::after {
+  background-color: #787878;
+}
+
+@media (min-width:576px) {
+  .tab__content .form-controls-group {
+    margin: 1rem;
+    padding: 2rem;
+  }
+}
+
+
+/* card list */
+
+.card-list {
+  padding: 1.5rem 0;
+}
+
+.card-list .list__item {
+  align-items: flex-start;
+  display: flex;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.card-list .list__item:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.list__item img {
+  width: 60px;
+  height: auto;
+}
+
+.list__item .list__item-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.list__item p {
+  font-size: .8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (min-width:576px) {
+  .card-list {
+    padding: 2rem;
+  }
+  .card-list .list__item {
+    padding: 1rem;
+  }
+  .list__item img {
+    margin-right: 2rem;
+    width: 100px;
+  }
+  .list__item .content__wrapper {
+    margin-right: 2rem;
+  }
+  .list__item .form-control {
+    position: absolute;
+    right: 1rem;
+  }
+}
