@@ -1,5 +1,63 @@
 /* Practice Layout */
 
+body {
+	font-size: 14px;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+h1 {
+	animation: flash 4s infinite;
+	color: #F35626;
+	text-align: center;
+	font-size: 3.5em;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 .trash{
 	color: black;
+}
+
+.cards-container {
+	background-color: #C8C8C8;
+}
+
+.animal-card {
+	position: relative;
+	width: 300px;
+	perspective: 50em;
+}
+
+.animal-card img {
+	border: 10px solid #FFFFFF;
+	box-sizing: border-box;
+	width: 100%;
+	transform: perspective(50em) rotateY(5deg);
+}
+
+.animal-card .info {
+    background-color: #DEDDCD;
+    border: 10px solid	#FFFFFF;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+    width: 250px;
+}
+
+.animal-card h3 {
+	text-align: center;
+	color: #7a3f3a;
+    font-variant: small-caps;
+    font-family: Georgia,serif,Times;
 }
