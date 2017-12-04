@@ -21,7 +21,7 @@ Please check and make the same design and animations than page has in the soluti
 
 Create a the following layout:
 
-![alt-text-1](solved/desktop.jpg) ![alt-text-2](solved/tablet.jpg)
+![alt-text-1](resources/desktop.jpg) ![alt-text-2](resources/tablet.jpg)
 
 1. Using Flex
 
