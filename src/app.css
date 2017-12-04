@@ -1,9 +1,13 @@
 
 /*
-
- 	Page Default Styles
- 	
-*/
+ *
+ *	Page Default Styles
+ *
+ */
+.practice-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 
 .page-content{
 	padding: 20px;
