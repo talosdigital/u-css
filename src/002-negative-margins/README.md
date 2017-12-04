@@ -18,10 +18,10 @@ $ cd u-css/
 $ http-server ./src -p 3000
 ```
 
-1. Please check and make the same design and animations than page has in the solution part, go there clicking in solution button from each box in the home view.
-2. Create 2 columns layouts (Content and Sidebar) using negative margin.
-3. Create a list of 6 elements divide them into 3 columns using negative margin.
-4. Create a Sticky Footer with fixed footer height.
+1. Create 2 columns layouts (Content and Sidebar) using negative margin.
+2. Create a list of 6 elements divide them into 3 columns using negative margin.
+3. Create a Sticky Footer with fixed footer height.
+4. Follow design specified for this practice.
 
 ![alt-text-1](./design.png)
 
@@ -34,7 +34,7 @@ $ http-server ./src -p 3000
 5. Responsive skills are not required.
 6. Use correct Cascade code.
 7. Use correct Inheritance.
-8. Goal: The practice should look as be required.
+8. Goal: The practice should look as the required design.
 
 
 
