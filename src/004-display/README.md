@@ -27,7 +27,7 @@ Using Display CSS Property, create the next items:
 4. Below columns created, do a table with headers and 2 rows. 
 5. Below table created, do a gallery of boxes. 
 
-![alt-text-1](./design.png)
+![alt-text-1](resources/design.png)
 
 
 ### Evaluation Criteria
