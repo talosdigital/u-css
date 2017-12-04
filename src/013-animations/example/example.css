@@ -1,9 +1,5 @@
 /* Practice Layout */
 
-body {
-	font-size: 14px;
-}
-
 @keyframes flash {
   0% {
     opacity: 1;
@@ -13,13 +9,40 @@ body {
   }
 }
 
+@keyframes bounce {
+    0% {
+        transform: scaleY(0.9) scaleX(1.05);
+    }
+    20% {
+        transform: scaleY(1.05) scaleX(0.9);
+    }
+    40% {
+        transform: scaleY(0.9) scaleX(1.05);
+    }
+    60% {
+        transform: scaleY(0.95) scaleX(1.00);
+    }
+    80% {
+        transform: scaleY(0.90) scaleX(1.05);
+    }
+}
+
+body {
+    font-size: 14px;
+}
+
 h1 {
 	animation: flash 4s infinite;
 	color: #F35626;
 	text-align: center;
 	font-size: 3.5em;
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+}
+
+.page-content {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .trash{
@@ -27,32 +50,51 @@ h1 {
 }
 
 .cards-container {
-	background-color: #C8C8C8;
+    background-color: #C8C8C8;
+    padding: 30px 0 120px 50px;
+    box-sizing: border-box;
 }
 
 .animal-card {
 	position: relative;
+    display: inline-block;
+    margin-left: 20px;
 	width: 300px;
 	perspective: 50em;
+    -webkit-perspective: 500;
+    text-align: center;
+}
+
+.animal-card:hover img, .animal-card:hover .info {
+    transform: rotateY(0) translateZ(0);
+}
+
+.animal-card:hover .info {
+    left: 25px;
 }
 
 .animal-card img {
 	border: 10px solid #FFFFFF;
 	box-sizing: border-box;
 	width: 100%;
-	transform: perspective(50em) rotateY(5deg);
+	transform: rotateY(30deg);
+    box-shadow: 0 0px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: transform 0.5s;
 }
 
 .animal-card .info {
     background-color: #DEDDCD;
     border: 10px solid	#FFFFFF;
-    padding: 10px;
+    padding: 20px;
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 50px;
     box-sizing: border-box;
-    transform: translateX(-50%);
+    transform: translateZ(30px) rotateY(30deg);
+    transition: transform 0.5s, left 0.5s;
     width: 250px;
+    height: 160px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .animal-card h3 {
@@ -60,4 +102,123 @@ h1 {
 	color: #7a3f3a;
     font-variant: small-caps;
     font-family: Georgia,serif,Times;
+    margin-bottom: 20px;
+}
+
+.animal-card p {
+    color: #787878;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.animal-card a {
+    background-color: #7A3F3A;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+.animal-card a:hover {
+    background-color: #6A191F;
+}
+
+.notes-container{
+    padding: 50px 20px;
+    margin-top: 20px;
+    display: inline-block;
+    width: calc(100% - 354px);
+    box-sizing: border-box;
+}
+
+.notes-container li {
+    width: 150px;
+    height: 150px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    background-color: #FFFFCC;    
+    display: inline-block;
+    box-shadow: 4px 8px 10px rgba(0,0,0,0.6);
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.notes-container h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.notes-container p {
+    font-size: 1.8em;
+    margin-top: 15px;
+}
+
+.notes-container li:nth-child(2n + 1) {
+    transform: rotate(-6deg);
+}
+
+.notes-container li:nth-child(2n) {
+    transform: rotate(4deg);
+}
+
+.notes-container li:hover {
+    transform: rotate(0deg) scale(1.25,1.25);
+    box-shadow: 7px 10px 12px rgba(0,0,0,0.8);
+}
+
+.buttons-container {
+    width: 350px;
+    background-color: #E8E8E8;
+    text-align: center;
+    padding-top: 20px;
+    display: inline-block;
+    height: 750px;
+    vertical-align: top;
+}
+
+.buttons-container button {
+    background-color: #55C4E6;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: 2px 1px 0px #000000;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 9px rgba(0,0,0,0.6);
+}
+
+.buttons-container button:hover{
+    animation: bounce 2s ease-in-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@media (max-width: 1200px) {
+    .animal-card:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .notes-container li:nth-child(2n+1) {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .animal-card:not(:first-child) {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .buttons-container, .notes-container {
+        display: block;
+    }
+    .buttons-container {
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
