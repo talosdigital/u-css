@@ -29,7 +29,7 @@ Continue the Z Index, !important and Inheritance exercice in which we are going 
 5. On the yellow container the pair items should use ‘pt’ and have a text after saying “using ‘pt’ “ 
 6. On the yellow container the odd items except the first one should be raleway normal, use ‘em’ and have a text after saying “using ‘em’ ”.
  
-![alt text](solved/photo-example.jpg)
+![alt text](resources/photo-example.jpg)
 
 
 ### Evaluation Criteria
