@@ -21,7 +21,7 @@ Please check and make the same design and animations than page has in the soluti
 
 Create a the following view with this colors #D24F2E and #f5a275:
 
-![alt text](solved/photo-example.jpg)
+![alt text](resources/photo-example.jpg)
 
 1. Create a radial gradient to change the background using rgba.
 2. Create a header using text shadows and below create a linear gradient using hexa.
