@@ -24,7 +24,7 @@ Please check and make the same design and animations than page has in the soluti
 3. Create an article with 9 notes, the pair have to be rotate 4deg and the odd -6deg. The hover should scale the note 1.25.
 4. Create a sidebar with buttons this ones should scale between 0.9 to 1.05 for 2s, use timing function ease-in-out, fill mode forwards and @keyframes.
 
-![alt text](solved/Photo-Example.jpg)
+![alt text](resources/photo-example.jpg)
 
 
 ### Evaluation Criteria
