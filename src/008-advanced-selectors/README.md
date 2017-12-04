@@ -26,11 +26,11 @@ Using Complex Selectors, create the next items:
 2. Two columns below (aside and section).
 3. In the first column created, add 3 sections: first one has title and simple list, second one has title and list with items with background, and third one has title and list of avatars.
   
-  ![alt text](solved/images/item1.png)
+  ![alt text](resources/item1.png)
   
 4. Add a section with shopping cards, the fist one with a special link.
  
- ![alt text](solved/images/item2.png)
+ ![alt text](resources/item2.png)
  
 
 ### Evaluation Criteria
