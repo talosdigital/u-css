@@ -26,7 +26,7 @@ $ http-server ./src -p 3000
 4. In the first column created, float an image with text wrapping it.
 5. Below columns created, do a gallery of images. 
 
-![alt-text-1](./design1.png)
+![alt-text-1](resources/design1.png)
 
 ### Evaluation Criteria
 
