@@ -52,14 +52,15 @@ a {
 .cards {
 	background-color: #C8C8C8;
 	display: flex;
+	flex-wrap: wrap;
 	max-width: 1200px;
-	padding: 35px 0 100px 0;
+	padding: 35px 0 45px 0;
 	justify-content: center;
 }
 
 .card {
 	position: relative;
-	margin: 0 5px;
+	margin: 0 5px 100px 5px;
 	width: 320px;
 	height: 420px;
 	-webkit-perspective: 500px;
@@ -150,3 +151,150 @@ a {
 	width: 100px;
 }
 
+/* Notes Styles*/
+.notes {
+	align-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: 60px;
+}
+
+.notes .note {
+	-webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+	box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+	color: #000;
+	height: 180px;
+	margin: 0 20px 30px 20px;
+	padding: 15px;
+	-webkit-transition: transform 0.3s;
+	-moz-transition: transform 0.3s;
+	-ms-transition: transform 0.3s;
+	-o-transition: transform 0.3s;
+	transition: transform 0.3s;
+	width: 180px;
+}
+
+.notes .note:nth-child(odd) {
+  background-color: #FFFFD0;
+	-webkit-transform: rotate(-6deg);
+	-moz-transform: rotate(-6deg);
+	-ms-transform: rotate(-6deg);
+	-o-transform: rotate(-6deg);
+	transform: rotate(-6deg);
+}
+
+.notes .note:nth-child(even) {
+  background-color: #C8FFD0;
+	-webkit-transform: rotate(4deg);
+	-moz-transform: rotate(4deg);
+	-ms-transform: rotate(4deg);
+	-o-transform: rotate(4deg);
+	transform: rotate(4deg);
+}
+
+.notes .note:hover {
+	-webkit-box-shadow: 11px 11px 5px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 11px 11px 5px rgba(0, 0, 0, 0.7);
+	box-shadow: 11px 11px 5px rgba(0, 0, 0, 0.7);
+	position: relative;
+	z-index: 2;
+	-webkit-transform: rotate(0deg) scale(1.25);
+	-moz-transform: rotate(0deg) scale(1.25);
+	-ms-transform: rotate(0deg) scale(1.25);
+	-o-transform: rotate(0deg) scale(1.25);
+	transform: rotate(0deg) scale(1.25);
+}
+
+.note h4{
+	font-size: 1.6em;
+	font-weight: bold;
+	margin-bottom: 20px;
+	line-height: 1.4;
+}
+.note p {
+	font-size: 1.6em;
+	line-height: 1.4;
+}
+
+/* Buttons Styles*/
+aside {
+	align-content: center;
+	background-color: #E8E8E8;
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+
+aside li a {
+	background: #49c4e2; /* Old browsers */
+	background: -moz-linear-gradient(top, #49c4e2 0%, #00abdb 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #49c4e2 0%,#00abdb 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #49c4e2 0%,#00abdb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border-radius: 10px;
+	box-shadow: 0px 10px 14px -7px #275873;
+	color: #fff;
+	display: block;
+	font-weight: bold;
+	font-size: 1.3em;
+	height: 49px;
+	padding: 14px 5px;
+	text-align: center;
+	text-shadow: 2px 1px 0px #000;
+	width: 180px;
+	margin-bottom: 20px;
+}
+
+aside li a:hover {
+	animation: scaling 2s ease-in-out;
+	background: #49c4e2; /* Old browsers */
+	background: -moz-linear-gradient(top, #00abdb 0%, #49c4e2 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #00abdb 0%, #49c4e2 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #00abdb 0%, #49c4e2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+@keyframes scaling {
+	20% {
+		-webkit-transform: scaleY(0.9) scaleX(1.05);
+		-moz-transform: scaleY(0.9) scaleX(1.05);
+		-ms-transform: scaleY(0.9) scaleX(1.05);
+		-o-transform: scaleY(0.9) scaleX(1.05);
+		transform: scaleY(0.9) scaleX(1.05);
+	}
+	35% {
+		-webkit-transform: scaleY(1.05) scaleX(0.9);
+		-moz-transform: scaleY(1.05) scaleX(0.9);
+		-ms-transform: scaleY(1.05) scaleX(0.9);
+		-o-transform: scaleY(1.05) scaleX(0.9);
+		transform: scaleY(1.05) scaleX(0.9);
+	}
+	55% {
+		-webkit-transform: scaleY(0.9) scaleX(1.05);
+		-moz-transform: scaleY(0.9) scaleX(1.05);
+		-ms-transform: scaleY(0.9) scaleX(1.05);
+		-o-transform: scaleY(0.9) scaleX(1.05);
+		transform: scaleY(0.9) scaleX(1.05);
+	}
+	80% {
+		-webkit-transform: scaleY(1.05) scaleX(0.9);
+		-moz-transform: scaleY(1.05) scaleX(0.9);
+		-ms-transform: scaleY(1.05) scaleX(0.9);
+		-o-transform: scaleY(1.05) scaleX(0.9);
+		transform: scaleY(1.05) scaleX(0.9);
+	}
+}
+
+@media (min-width: 950px) {
+	.wrap {
+	  display: flex;
+	}
+
+	.notes {
+		width: 70%;
+	}
+
+	aside {
+		width: 30%;
+	}
+}
