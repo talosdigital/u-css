@@ -26,7 +26,7 @@ $ http-server ./src -p 3000
 4. Below columns created, do a gallery of images. 
 5. Follow design specified for this practice.
 
-![alt-text-1](resources/design1.png)
+[![IMAGE ALT TEXT HERE](./../image-click.svg)](https://drive.google.com/a/talosdigital.com/file/d/1JJ2sibPhLORN9KkOdeFFRw-YJz5Tpjyd/view?usp=sharing)
 
 ### Evaluation Criteria
 
@@ -39,8 +39,5 @@ $ http-server ./src -p 3000
 7. Use correct Inheritance.
 8. Goal: The practice should look as the required design.
 
-![alt-text-2](https://drive.google.com/a/talosdigital.com/file/d/1JJ2sibPhLORN9KkOdeFFRw-YJz5Tpjyd/view?usp=sharing)
-
-[![IMAGE ALT TEXT HERE](resources/design1.png)](https://drive.google.com/a/talosdigital.com/file/d/1JJ2sibPhLORN9KkOdeFFRw-YJz5Tpjyd/view?usp=sharing)
 
 [1]: https://www.smashingmagazine.com/2009/10/the-mystery-of-css-float-property/
