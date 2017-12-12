@@ -23,7 +23,7 @@ Using Z Index, !important and Inheritance CSS Property, create the next items:
 
 Create a the following layout:
 
-![alt text](design.png)
+[![IMAGE ALT TEXT HERE](./../image-click.svg)](https://drive.google.com/a/talosdigital.com/file/d/18tREFj2p4dNQoeVzpAKj7pajqYP7hGtQ/view?usp=sharing)
 
 ### Evaluation Criteria
 

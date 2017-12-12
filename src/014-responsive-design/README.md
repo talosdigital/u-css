@@ -26,13 +26,10 @@ Please check and make the same design and animations than page has in the soluti
 
 Using Mobile first method, follow the next steps:
 
-
 1. Define the breakpoints for media queries. Minimum size is: 320px and Maximum size is 1200px.
 2. Follow the final design.
 
-![alt text](resources/photo-example-mobile.png)
-
-![alt text](resources/photo-example.png)
+[![IMAGE ALT TEXT HERE](./../image-click.svg)](https://drive.google.com/a/talosdigital.com/file/d/1hLOiRqN88kwMrt41P-7Lab5fZ5l9ObMt/view?usp=sharing)
  
 ### Evaluation Criteria
 

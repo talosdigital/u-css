@@ -23,7 +23,7 @@ $ http-server ./src -p 3000
 3. Create a Sticky Footer with fixed footer height.
 4. Follow design specified for this practice.
 
-![alt-text-1](./design.png)
+[![IMAGE ALT TEXT HERE](./../image-click.svg)](https://drive.google.com/a/talosdigital.com/file/d/14TuQHWDn8SBtMFxUTHW_Th3JaXG58V4s/view?usp=sharing)
 
 ### Evaluation Criteria
 

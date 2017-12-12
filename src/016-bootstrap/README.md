@@ -21,8 +21,7 @@ Please check and make the same design and animations than page has in the soluti
 
 Create a the following layout:
 
-![alt text](example.jpg)
-
+[![IMAGE ALT TEXT HERE](./../image-click.svg)](https://drive.google.com/a/talosdigital.com/file/d/13a5ci0ZINqH3xltSgpHYau13VYk9M-Qr/view?usp=sharing)
 
 ### Evaluation Criteria
 

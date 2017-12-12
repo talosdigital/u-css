@@ -28,20 +28,11 @@ Follow the next steps:
 
 1.Create a box with a background image and a centered title.
 
-![alt text](resources/item-1.png)
-
 2.Create a form with 4 fields, a button and a description text. The button needs to have a hover.
-
-![alt text](resources/item-2.png)
-
-![alt text](resources/item-4.png)
 
 3.Create a footer with 3 boxes of items list.
 
-![alt text](resources/item-3.png)
-
-![alt text](resources/item-5.png)
-
+[![IMAGE ALT TEXT HERE](./../image-click.svg)](https://drive.google.com/a/talosdigital.com/file/d/12q-j6A3aYGeOukzzUnkzqL1NJD4BHDgU/view?usp=sharing)
  
 ### Evaluation Criteria
 

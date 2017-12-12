@@ -24,13 +24,10 @@ Using Complex Selectors, create the next items:
 
 1. A bar with a text centered.
 2. Two columns below (aside and section).
-3. In the first column created, add 3 sections: first one has title and simple list, second one has title and list with items with background, and third one has title and list of avatars.
-  
-  ![alt text](resources/item1.png)
-  
+3. In the first column created, add 3 sections: first one has title and simple list, second one has title and list with items with background, and third one has title and list of avatars.  
 4. Add a section with shopping cards, the fist one with a special link.
  
- ![alt text](resources/item2.png)
+[![IMAGE ALT TEXT HERE](./../image-click.svg)](https://drive.google.com/a/talosdigital.com/file/d/1t1Szx_5jfjNxxVQGiNa7ZxBPphqykRWq/view?usp=sharing)
  
 
 ### Evaluation Criteria

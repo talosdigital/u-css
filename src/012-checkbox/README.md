@@ -24,7 +24,7 @@ Please check and make the same design and animations than page has in the soluti
 3. In the second tab create list of 4 radio buttons, the first checked, the second unchecked, the third disable and the fourth disable and checked.
 4. In the third tab create a list of card with a image and text left and a checkbox right.
 
-![alt text](resources/item.png)
+[![IMAGE ALT TEXT HERE](./../image-click.svg)](https://drive.google.com/a/talosdigital.com/file/d/19lSuxFH-fZrZ62vblvYW85eOONYVm7fZ/view?usp=sharing)
 
 
 ### Evaluation Criteria

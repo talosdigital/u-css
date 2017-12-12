@@ -20,8 +20,8 @@ $ http-server ./src -p 3000
 Please check and make the same design and animations than page has in the solution part, go there clicking in solution button from each box in the home view.
 
 Create a the following view with this colors #D24F2E and #f5a275:
-
-![alt text](resources/photo-example.jpg)
+ 
+[![IMAGE ALT TEXT HERE](./../image-click.svg)](https://drive.google.com/a/talosdigital.com/file/d/1DM4RyKRvAFuRh4E_U1VXOGWTmqGAyWSb/view?usp=sharing)
 
 1. Create a radial gradient to change the background using rgba.
 2. Create a header using text shadows and below create a linear gradient using hexa.
