@@ -38,6 +38,22 @@ a {
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
+.top .menu {
+	position: fixed;
+	top: 56px;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	width: 100%;
+}
+
+.menu.navbar-scroll {
+	background-color: #e91e63;
+	top: 0;
+}
+
 .top .img-menu{
 	background: url("../images/backgrounds/bg1.jpg") no-repeat center fixed;
 	background-size: cover;
@@ -70,7 +86,7 @@ a {
 	left: 0;
 	overflow: hidden;
 	position: fixed;
-	top: 56px;
+	top: 0;
 	-webkit-transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);;
 	-moz-transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);;
 	-ms-transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);;
@@ -96,4 +112,62 @@ a {
 	float: right;
 	font-size: 1.5em;
 	padding: 0;
+}
+
+.top li:hover {
+	background-color: #e0e0e0;
+}
+
+.top li:first-child:hover {
+	background-color: inherit;
+}
+
+/** Content Styles **/
+/* crumb styles */
+section {
+	padding: 0 20px;
+	margin-top: 60px;
+}
+
+.crumb {
+  display: flex;
+	justify-content: space-between;
+	margin-bottom: 55px;
+}
+
+.crumb ul li {
+	display: inline-block;
+}
+
+.crumb ul li:before {
+	content: "/ ";
+}
+
+.crumb ul li:first-child:before {
+	content: "";
+}
+
+.crumb a {
+	font-weight: bold;
+	color: #000;
+}
+
+.crumb li:last-child a {
+	color: #909090;
+}
+
+.rows i {
+	border-radius: 50%;
+	color: #e91e63;
+	font-size: 1.5em;
+	padding: 4px;
+}
+
+.rows i:hover {
+  background-color: #ececec;
+}
+
+/* Product content Styles */
+.product .main-img img {
+	width: 100%;
 }
