@@ -1,26 +1,25 @@
-/* General styles */
+/** General styles **/
 * {
 	box-sizing: border-box;
 }
 
 html,
 body {
-	color: #787878;
-	font-family: sans-serif;
+	color: #000;
+	font-family: "Roboto","Helvetica","Arial",sans-serif;
 	font-size: 16px;
 	line-height: 25px;
 	letter-spacing: normal;
 }
 
 h1 {
-	font-size: 3em;
-	margin: 20px 0 55px 0;
-	text-align: center;
+	font-size: 2.2em;
+	margin: 20px 0 20px 0;
+	line-height: 40px;
 }
 
 h2 {
-	font-size: 1.2em;
-	font-weight: bold;
+	font-size: 2.2em;
 }
 
 a {
@@ -31,7 +30,7 @@ a {
   padding: 0;
 }
 
-/* Menu styles */
+/** Menu styles **/
 .top {
   height: 216px;
 	position: relative;
@@ -51,6 +50,9 @@ a {
 
 .menu.navbar-scroll {
 	background-color: #e91e63;
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
 	top: 0;
 }
 
@@ -126,7 +128,7 @@ a {
 /* crumb styles */
 section {
 	padding: 0 20px;
-	margin-top: 60px;
+	margin: 60px 0 45px 0;
 }
 
 .crumb {
@@ -169,5 +171,77 @@ section {
 
 /* Product content Styles */
 .product .main-img img {
+	margin-bottom: 20px;
 	width: 100%;
+}
+
+.product .thumb {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 45px;
+}
+
+.product .thumb a:not(:last-child) {
+	margin-right: 10px;
+}
+
+.product .price {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.save {
+	color: #808080;
+	font-weight: 100;
+	margin: 0 10px 30px 0;
+	text-decoration: line-through;
+}
+
+.product .rating {
+	color: #198BFA;
+	margin-top: 50px;
+}
+
+.product p {
+	color: #7F7F7F;
+	font-size: 1.5em;
+	font-weight: 100;
+	letter-spacing: .02em;
+	line-height: 37px;
+	margin-top: 40px;
+}
+
+/** Discount Styles **/
+.discount {
+	align-content: center;
+	background: url("../images/backgrounds/bg2.jpg") no-repeat center fixed;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	height: 500px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.discount h3 {
+	color: #fff;
+	font-size: 3em;
+	line-height: 73px;
+}
+
+.discount a {
+	background-color: #198BFA;
+	-webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.6);
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.6);
+	color: #fff;
+	display: block;
+	margin: 10px;
+	width: 300px;
+	padding: 8px 0;
+}
+
+.discount a:hover {
+	opacity: .5;
 }
