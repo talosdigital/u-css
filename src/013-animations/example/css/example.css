@@ -111,10 +111,9 @@
 
 .stickers {
   width: 70%;
-  float: left;
 }
 
-.stickers .sticker{
+.stickers .sticker {
   box-sizing: border-box;
   display: inline-block;
   height: 150px;
@@ -123,6 +122,7 @@
   padding: 17px;
   margin: 17px;
   transition: all 0.5s;
+  float: left;
 }
 
 .stickers .sticker h2 {
@@ -148,21 +148,59 @@
 .stickers .sticker:hover {
   width: 200px;
   height: 200px;
-  z-index: 5;
+  z-index: 3;
   transform: rotate(0deg);
+  box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position: relative;
+  animation: 1s ease-in-out forwards;
 }
 
 aside {
   width: 30%;
   float: left;
   background: #E8E8E8;
+  height: 600px;
 }
 
 aside a {
   display: block;
-  width: 200px;
-  height: 40px;
-  background-color: red;
-  border-radius: 10px;
+  width: 150px;
+  border-radius: 5px;
+  background: linear-gradient(to top, #55c4e6 5%, #0babe0 100%);
+  text-align: center;
+  margin: 26px auto;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fFF;
+  padding: 14px;
+  text-shadow: 2px 2px 2px #000;
+  box-shadow: 0px 4px 3px #888;
+}
+
+aside a:hover {
+  animation: bounce 1.5s ease-in-out;
+  background: linear-gradient(to bottom, #55c4e6 5%, #0babe0 100%);
+}
+
+@keyframes bounce {
+  0% {
+    padding: 12px 16px 12px 16px;
+  }
+
+  40% {
+    padding: 16px 7px 16px 7px;
+  }
+
+  80% {
+    padding: 15px 13px 15px 13px;
+  }
+
+  100% {
+    padding: 14px;
+  }
 }
 
