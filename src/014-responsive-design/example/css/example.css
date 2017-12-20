@@ -89,11 +89,11 @@ a {
 	overflow: hidden;
 	position: fixed;
 	top: 0;
-	-webkit-transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);;
-	-moz-transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);;
-	-ms-transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);;
-	-o-transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);;
-	transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);;
+	-webkit-transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	-moz-transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	-ms-transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	-o-transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 	width: 0;
 }
 
@@ -232,9 +232,9 @@ section {
 
 .discount a {
 	background-color: #198BFA;
-	-webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.6);
-	-moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.6);
-	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.6);
+	-moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.6);
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.6);
 	color: #fff;
 	display: block;
 	margin: 10px;
@@ -244,4 +244,64 @@ section {
 
 .discount a:hover {
 	opacity: .5;
+}
+
+/** Footer Styles **/
+footer {
+	background-color: #e91e73;
+	color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 50px;
+}
+
+footer > div {
+  width: 100%;
+	margin-bottom: 30px;
+}
+
+footer input[type=checkbox] {
+	display: none;
+}
+
+footer label {
+	display: block;
+	width: 100%;
+	padding: 20px 0;
+	cursor: pointer;
+}
+
+footer .info {
+	max-height: 0px;
+	overflow: hidden;
+	padding-right: 30px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+footer input:checked + .info {
+	max-height: 600px;
+}
+
+footer p {
+	margin-bottom: 30px;
+}
+
+.schedule .hours {
+	margin-top: 10px;
+}
+
+.schedule .hours .hour {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 12px;
+	margin-bottom: 13px;
+}
+
+.schedule .hour div {
+	opacity: 0.8;
 }
