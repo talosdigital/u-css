@@ -1,0 +1,81 @@
+/* Practice: Responsive Design and Media Queries */
+
+/*==================================================
+=                   Path                           =
+==================================================*/
+
+/* Path Section */
+.path {
+  display: flex;
+  margin: 40px 0;
+  padding: 20px 0;
+}
+
+.path-list ol li {
+  display: inline;
+}
+
+.path-list ol li:not(:first-child)::before {
+  content: ' / ';
+}
+
+.path-list ol li a {
+  color: rgba(0, 0, 0, .87);
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.path-list ol li:not(:last-child) a:hover {
+  color: #448aff;
+}
+
+.path-list ol li:last-child a {
+  cursor: default;
+  opacity: .5;
+}
+
+.navigation {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  border-radius: 50%;
+  color: #e91e63;
+  height: 32px;
+  min-width: 32px;
+  position: relative;
+  width: 32px;
+}
+
+.navigation a:hover {
+  background-color: rgba(158, 158, 158, .2);
+}
+
+.navigation a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  line-height: 24px;
+  -webkit-transform: translate(-12px, -12px);
+  transform: translate(-12px, -12px);
+  width: 24px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+}

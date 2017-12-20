@@ -1,0 +1,84 @@
+/* Practice: Responsive Design and Media Queries */
+
+/*==================================================
+=                   Product                        =
+==================================================*/
+
+/* Product Section */
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
+/* thumbs */
+.product-thumbs {
+  display: flex;
+  flex-direction: row;
+  order: 2;
+  padding-top: 20px;
+}
+
+.product-thumbs > a {
+  cursor: pointer;
+}
+
+.product-thumbs > a:hover {
+  opacity: 0.5;
+}
+
+.product-thumbs > a:not(:last-child) {
+  padding-right: 10px;
+}
+
+/* Slider */
+.product-slider {
+  order: 1;
+}
+
+.product-slider .image {
+  width: 100%;
+}
+
+/* Product description */
+.product-description {
+  order: 3;
+  padding: 40px 0;
+}
+
+.product-description h1,
+.product-description h2{
+  color: #000;
+  font-size: 2.2em;
+}
+
+.product-description del {
+  opacity: 0.5;
+}
+
+.product-description p {
+  color: rgba(0,0,0,.5);
+  font-size: 1.5em;
+  font-weight: 100;
+  letter-spacing: .02em;
+  margin-top: 40px;
+}
+
+.product-description .score {
+  color: #448aff;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+}

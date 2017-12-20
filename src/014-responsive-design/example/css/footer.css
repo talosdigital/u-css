@@ -1,0 +1,125 @@
+/* Practice: Responsive Design and Media Queries */
+
+/*==================================================
+=                 Footer                           =
+==================================================*/
+
+/* general */
+.footer {
+  background-color: #e91e63;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer ul.links-footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer ul.links-footer li {
+  height: 65px;
+  line-height: 65px;
+}
+
+.footer ul.links-footer li:not(:last-child){
+  padding-right: 10px;
+}
+
+/* Mobile dropdowns */
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-footer {
+  display: block;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.dropdown-footer .heading{
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 1em;
+  height: 65px;
+  line-height: 65px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.dropdown-footer .heading::after {
+  cursor: pointer;
+  content: '\E5CF';
+  font-family: 'Material Icons';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.dropdown-footer input {
+  cursor: pointer;
+  height: 65px;
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.dropdown-footer input:checked + .content-down {
+  display: block;
+}
+
+.content-down {
+  display: none;
+  padding-right: 30px;
+}
+
+.content-down p {
+  padding-bottom: 30px;
+}
+
+.content-down .calendar {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-down .calendar .calendar-item{
+  border-bottom: 1px solid #fff;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  line-height: 50px;
+  justify-content: space-between;
+  opacity: 0.8;
+}
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+}

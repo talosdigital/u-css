@@ -1,40 +1,234 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>014 - Responsive Design and Media Queries</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+<head>
+  <meta charset="utf-8">
+  <title>014 - Responsive Design and Media Queries</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link href="../../app.css" rel="stylesheet" type="text/css">
+  <!-- Ignore this, it's for the header -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link href="../../app.css" rel="stylesheet" type="text/css">
 
-    <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
-  </head>
-  <body>
-  	<!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
-          <i class="material-icons">home</i>
-        </a>
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">014 - Responsive Design and Media Queries</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
-        </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-         <!-- Practice Content Goes Here -->
-        </div>
-      </main>
+  <!-- Import App Css file -->
+  <link href="css/reset.css" rel="stylesheet" type="text/css">
+  <link href="css/general.css" rel="stylesheet" type="text/css">
+  <link href="css/header.css" rel="stylesheet" type="text/css">
+  <link href="css/path.css" rel="stylesheet" type="text/css">
+  <link href="css/product.css" rel="stylesheet" type="text/css">
+  <link href="css/discount.css" rel="stylesheet" type="text/css">
+  <link href="css/footer.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
+      <i class="material-icons">home</i>
+    </a>
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">014 - Responsive Design and Media Queries</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
     </div>
+  </header>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <!-- Practice Content Goes Here -->
+      <header>
+        <nav class="navbar">
+          <label for="responsive-menu-toggle" class="responsive-icon">
+            <i class="material-icons">reorder</i>
+          </label>
+          <input type="checkbox" id="responsive-menu-toggle"/>
 
-  </body>
+          <ul id="responsive-menu">
+            <li>
+              <label for="responsive-menu-toggle">
+                <i class="material-icons">clear</i>
+              </label>
+              <input type="checkbox" id="responsive-menu-toggle"/>
+            </li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">News!</a></li>
+            <li><a href="">Customize</a></li>
+            <li><a href="">Cart</a></li>
+            <li><a href="">Checkout</a></li>
+          </ul>
+
+          <a href="" class="logo"><i class="material-icons">gesture</i></a>
+
+          <ul id="menu">
+            <li><a href="">Shop</a></li>
+            <li><a href="">News!</a></li>
+            <li><a href="">Customize</a></li>
+            <li><a href="">Cart</a></li>
+            <li><a href="">Checkout</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="bg-section"></div>
+      <div class="bg-effect"></div>
+
+      <section class="content">
+        <div class="path">
+          <div class="path-list">
+            <ol>
+              <li><a href="">Home</a></li>
+              <li><a href="">Tops</a></li>
+              <li><a href="">Green Top</a></li>
+            </ol>
+          </div>
+          <div class="navigation">
+            <a href=""><i class="material-icons">keyboard_arrow_left</i></a>
+            <a href=""><i class="material-icons">keyboard_arrow_right</i></a>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="product content">
+        <div class="product-thumbs">
+          <a href="#slider-image-1"><img src="../resources/images/products/product-31-a-small-notinclude.jpg" alt=""></a>
+          <a href="#slider-image-2"><img src="../resources/images/products/product-31-b-small-notinclude.jpg" alt=""></a>
+          <a href="#slider-image-3"><img src="../resources/images/products/product-31-c-small-notinclude.jpg" alt=""></a>
+        </div>
+
+        <div class="product-slider">
+          <img src="../resources/images/products/product-31-a-big-notinclude.jpg" class="image" />
+        </div>
+
+        <article class="product-description">
+          <h1>Green Fancy Top</h1>
+          <h2><del>$100.000</del> $50.000</h2>
+          <p class="score">
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star_border</i>
+          </p>
+          <p>Lorem ipsum dolor sit amet, integer modi, hac platea aenean sed ullamcorper phasellus, dui suspendisse dui, magna vel. In libero velit enim optio et, in maecenas, in dolor pellentesque. Velit non dui. Volutpat vehicula sodales lectus donec platea lacus, erat a et morbi ac ac aenean.</p>
+        </article>
+      </section>
+
+      <section class="discount">
+        <div class="discount-background discount-background-parallax"></div>
+        <div class="discount-content">
+          <h2 class="title">Get 10% off on your first order</h2>
+          <div><button class="button" >Get a Discount</button></div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="dropdown-container">
+          <div class="dropdown-footer">
+            <h3 class="heading">About us</h3>
+            <input id="about" type="checkbox">
+            <div class="content-down">
+              <p>Lorem ipsum dolor sit amet, ut vel mollis, amet enim. Leo torquent, mauris at sit dictumst mollis nulla, nulla mollis nulla amet. Integer ultricies mauris, suspendisse cras ac rutrum amet, id quam porttitor porttitor scelerisque pellentesque ullamcorper. Vehicula in pellentesque. Quis fermentum a semper metus ac, id nec. Mauris lorem diam ligula ut sed nunc. Tincidunt velit. Vehicula lobortis, vestibulum dui mauris diam sem, laoreet proin imperdiet posuere.</p>
+              <p>Neque amet venenatis auctor vivamus, elementum mollis neque, nulla scelerisque duis eu integer.</p>
+              <div>
+                <i class="fa fa-cc-mastercard"></i>
+                <i class="fa fa-cc-visa"></i>
+                <i class="fa fa-cc-amex"></i>
+                <i class="fa fa-cc-diners-club"></i>
+                <i class="fa fa-cc-paypal"></i>
+                <i class="fa fa-cc-jcb"></i>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-footer">
+            <h3 class="heading">Open hours</h3>
+            <input id="about" type="checkbox">
+            <div class="content-down">
+              <div class="calendar">
+                <div class="calendar-item">
+                  <div class="day">Monday</div>
+                  <div class="time">10:00 - 20:00</div>
+                </div>
+                <div class="calendar-item">
+                  <div class="day">Tuesday</div>
+                  <div class="time">10:00 - 20:00</div>
+                </div>
+                <div class="calendar-item">
+                  <div class="day">Wednesday</div>
+                  <div class="time">10:00 - 20:00</div>
+                </div>
+                <div class="calendar-item">
+                  <div class="day">Thursday</div>
+                  <div class="time">10:00 - 20:00</div>
+                </div>
+                <div class="calendar-item">
+                  <div class="day">Friday</div>
+                  <div class="time">10:00 - 20:00</div>
+                </div>
+                <div class="calendar-item">
+                  <div class="day">Saturday</div>
+                  <div class="time">10:00 - 20:00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-footer">
+            <h3 class="heading">Latest products</h3>
+            <input id="about" type="checkbox">
+            <div class="content-down">
+              <img src="../resources/images/latest-products/p1.jpg" alt="">
+              <img src="../resources/images/latest-products/p2.jpg" alt="">
+              <img src="../resources/images/latest-products/p3.jpg" alt="">
+              <img src="../resources/images/latest-products/p4.jpg" alt="">
+              <img src="../resources/images/latest-products/p5.jpg" alt="">
+              <img src="../resources/images/latest-products/p6.jpg" alt="">
+              <img src="../resources/images/latest-products/p7.jpg" alt="">
+              <img src="../resources/images/latest-products/p8.jpg" alt="">
+              <img src="../resources/images/latest-products/p9.jpg" alt="">
+              <img src="../resources/images/latest-products/p10.jpg" alt="">
+            </div>
+          </div>
+          <div class="dropdown-footer">
+            <h3 class="heading">Our store</h3>
+            <input id="about" type="checkbox">
+            <div class="content-down">
+              <p>Lorem ipsum dolor sit amet, ut vel mollis, amet enim.</p>
+              <p>
+                Lorem mollis
+                MSU 8-9, Levels 7&9
+                Birmingham B5 4BG
+                (44) 121 616 2169
+              </p>
+
+              <p>lalala.com</p>
+
+              <div>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="links-footer">
+          <li><a href="">Conditions</a></li>
+          <li><a href="">Help</a></li>
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Terms</a></li>
+        </ul>
+
+      </footer>
+
+    </div>
+  </main>
+</div>
+
+
+<script src="https://use.fontawesome.com/bcb0bef265.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script src="app.js"></script>
+</body>
 </html>
