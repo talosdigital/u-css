@@ -10,11 +10,11 @@
 }
 
 .content > h1 {
+  animation: change-opacity 60s infinite;
   color: #f35626;
   text-align: center;
   font-size: 50px;
   margin: 30px;
-  animation: change-opacity 60s infinite;
 }
 
 @keyframes change-opacity {
@@ -28,12 +28,12 @@
 
 .cards {
   background-color: #C8C8C8;
+  box-sizing: border-box;
   clear: both;
   float: left;
-  box-sizing: border-box;
+  height: 600px;
   padding: 39px 15px 15px 15px;
   width: 100%;
-  height: 600px;
 }
 
 .cards {
@@ -53,44 +53,42 @@
 }
 
 .cards .card img {
+  box-shadow: 0 3px 10px #888;
   float: left;
   margin: 0 10px 0 0;
-  width: 300px;
   border: 10px solid #fcfafa;
-  -webkit-transform: rotateY(30deg);
-  -moz-box-shadow: 0 3px 10px #888;
-  -webkit-box-shadow: 0 3px 10px #888;
-  -webkit-transition-property: transform;
-  -webkit-transition-duration: 0.5s;
+  transform: rotateY(30deg);
+  transition-property: transform;
+  transition-duration: 0.5s;
+  width: 300px;
 }
 
 .cards .card:hover img,
 .cards .card:hover .bottom-text{
-  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
 
 .cards .card .bottom-text {
+  bottom: 0;
+  box-shadow: 0 20px 40px #888;
   border: 10px solid #fcfafa;
   padding: 20px;
-  width: 200px;
   height: 120px;
   background-color: #deddcd;
   margin: -195px 0 0 31px;
   position: absolute;
-  bottom: 0;
-  -moz-box-shadow: 0 20px 40px #888;
-  -webkit-box-shadow: 0 20px 35px #888;
-  -webkit-transform: translateZ(30px) rotateY(30deg);
-  -webkit-transition-property: transform, box-shadow, margin;
-  -webkit-transition-duration: 1s;
+  transform: translateZ(30px) rotateY(30deg);
+  transition-property: transform, box-shadow, margin;
+  transition-duration: 1s;
+  width: 200px;
 }
 
 .cards .card .description-title {
+  color:#7a3f3a;
   font-variant: small-caps;
   font-family: Georgia,serif,Times;
   text-align: center;
   margin: 14px;
-  color:#7a3f3a;
 }
 
 .cards .card .description {
@@ -98,34 +96,34 @@
 }
 
 .cards .card .link {
-  color: #FFF;
-  text-decoration: none;
-  display: block;
-  width: 80px;
   background: #7a3f3a;
+  border-radius: 10px;
+  color: #FFF;
+  display: block;
   padding: 10px;
   text-align: center;
-  border-radius: 10px;
+  text-decoration: none;
   margin: 11px auto;
+  width: 80px;
 }
 
 .stickers {
-  width: 70%;
+  box-sizing: border-box;
   float: left;
   padding: 42px;
   overflow: hidden;
-  box-sizing: border-box;
+  width: 70%;
 }
 
 .stickers .sticker {
-  display: inline-block;
-  height: 150px;
-  width: 150px;
   box-shadow: 5px 10px 8px #888888;
-  padding: 17px;
-  margin: 17px;
-  transition: all 0.5s;
+  display: inline-block;
   float: left;
+  height: 150px;
+  margin: 17px;
+  padding: 17px;
+  transition: all 0.5s;
+  width: 150px;
 }
 
 .stickers .sticker h2 {
@@ -149,34 +147,33 @@
 }
 
 .stickers .sticker:hover {
-  z-index: 3;
   transform: rotate(0deg) scale(1.25);
-  box-shadow: 10px 10px 7px rgba(0,0,0,.7);
-  -moz-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  box-shadow: 10px 10px 8px rgba(0,0,0,0.7);
   position: relative;
+  z-index: 3;
 }
 
 aside {
-  width: 30%;
-  float: right;
   background: #E8E8E8;
+  float: right;
   height: 738px;
+  width: 30%;
 }
 
 aside a {
-  display: block;
-  width: 150px;
+  box-shadow: 0px 4px 3px #888;
   border-radius: 5px;
   background: linear-gradient(to top, #55c4e6 5%, #0babe0 100%);
+  color: #fFF;
+  display: block;
   text-align: center;
   margin: 26px auto;
   font-weight: bold;
-  text-decoration: none;
   font-size: 20px;
-  color: #fFF;
+  text-decoration: none;
   padding: 14px;
   text-shadow: 2px 2px 2px #000;
-  box-shadow: 0px 4px 3px #888;
+  width: 150px;
 }
 
 aside a:hover {
@@ -194,15 +191,15 @@ aside a:hover {
   }
 
   60% {
-    transform: scaleY(1.1) scaleX(0.9);
+    transform: scaleY(1.2) scaleX(0.95);
   }
 
   70% {
-    transform: scaleY(0.98) scaleX(1.02);
+    transform: scaleY(0.99) scaleX(1.03);
   }
 
   80% {
-    transform: scaleY(1.02) scaleX(0.98);
+    transform: scaleY(1.02) scaleX(0.92);
   }
 
   100% {
