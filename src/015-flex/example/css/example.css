@@ -1,0 +1,159 @@
+/** General styles **/
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	color: #000;
+	font-family: "Roboto","Helvetica","Arial",sans-serif;
+	font-size: 16px;
+	line-height: 25px;
+	letter-spacing: normal;
+}
+
+h1 {
+	font-size: 2.2em;
+	margin: 20px 0 20px 0;
+	line-height: 40px;
+}
+
+h2 {
+	font-size: 2.2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-content {
+	padding: 0;
+}
+
+/* Header Styles */
+.header-img {
+  background: url("../images/image.jpg") no-repeat center fixed;
+	background-size: 100% 100%;
+	height: 300px;
+}
+
+/* Content Styles */
+section {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: -80px;
+	max-width: 1170px;
+}
+
+.card {
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: 17px 5px;
+	max-width: 354px;
+}
+
+/* Footer Styles */
+/** Footer Styles **/
+footer {
+	background-color: #9171D6;
+	color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	line-height: 20px;
+	padding: 80px;
+}
+
+footer > div {
+	margin-top: 44px;
+	position: relative;
+	width: 100%;
+}
+
+footer input[type=checkbox] {
+	display: none;
+}
+
+footer label {
+	display: block;
+	font-size: 14px;
+	width: 100%;
+	padding: 18px 0;
+	text-align: center;
+	cursor: pointer;
+}
+
+footer label i {
+	position: absolute;
+	right: 0;
+}
+
+footer .info {
+	max-height: 0;
+	overflow: hidden;
+	padding-right: 10px;
+
+}
+
+footer input:checked + .info {
+	max-height: 600px;
+}
+
+footer p {
+	font-size: 14px;
+
+}
+
+.schedule .hours .hour {
+	display: flex;
+	font-size: 14px;
+	justify-content: space-between;
+	border-bottom: 1px solid #9C7FDA;
+	padding-bottom: 5px;
+}
+
+.last-img .info{
+	max-width: 350px;
+}
+
+@media (min-width: 769px) {
+	footer {
+		padding: 0 15px;
+	}
+
+	footer label {
+	  text-align: inherit;
+	}
+
+	footer label i.fa {
+		display: none;
+	}
+
+	footer > div {
+		margin-top: 43px;
+		width: 50%;
+	}
+
+	footer > div:first-child {
+		padding-right: 19px;
+	}
+
+	footer .info {
+		max-height: fit-content;
+	}
+}
+
+@media (min-width: 1201px) {
+	footer > div {
+		margin-top: 0;
+		width: 25%;
+	}
+}
