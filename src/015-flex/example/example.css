@@ -3,3 +3,214 @@
 .trash{
 	color: black;
 }
+
+.page-content {
+    padding: 0;
+}
+
+.main-content::before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: url(../solved/css/images/image.jpg) no-repeat center -50% fixed;
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    margin: -50px auto 0;
+}
+
+.card {
+    width: 350px;
+    border-radius: 5px;
+    border: 2px solid #DDDDDD;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.card img {
+    transition: all 0.5s;
+}
+
+.card:hover img {
+    transform: scale(1.2);
+}
+
+.card p {
+    color: #787878;
+    padding: 10px;
+    line-height: 1.3em;
+}
+
+.img-frame {
+    width: 100%;
+    overflow: hidden;
+}
+
+.info {
+    border-top: 2px solid #DDDDDD;    
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 5px 10px;
+}
+
+.info ul, .info .button {
+    display: inline-block;
+}
+
+.info ul li {
+    display: inline-block;
+}
+
+.info ul li:not(:last-child):after {
+    content: ',';
+    color: #AAAAAA;
+}
+
+.info ul a {
+    text-decoration: none;
+    color: #AAAAAA;
+}
+
+.info ul a:hover {
+    color: #888888;
+}
+
+.info .button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 5px 0;
+    transition: all 1s;
+}
+
+.info .button:hover {
+    background-color: #eee;
+}
+
+.info > .button, .info > ul {
+    align-self: baseline;
+}
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #9370DB;
+    font-size: 0.8em;
+    font-family: sans-serif; 
+}
+
+footer .content {
+    display: none;
+}
+
+footer input[type='checkbox'] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    opacity: 0;
+}
+
+footer label {
+    padding: 40px 50px;
+}
+
+footer .content {
+    padding-left: 50px;
+    padding-right: 80px;
+}
+
+footer label {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    display: block;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.content ul {
+    max-width: 350px;
+}
+
+.content .day {
+    width: 70%;
+}
+
+.content .hours {
+    width: 30%;
+    min-width: 110px;
+}
+
+.content p {
+    color: #FFFFFF;
+    line-height: 1.5em;
+}
+
+.content .icons, .content table {
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.content td:first-child {
+    padding-right: 20px;
+}
+
+.content td {
+    padding-bottom: 10PX;
+    padding-top: 10PX;
+    font-weight: lighter;
+}
+
+.content tr {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+
+}
+
+.content li {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+@media (min-width: 992px) {
+    footer {
+        display: flex;
+        flex-wrap: wrap;  
+        padding: 30px 10px;
+    }
+
+    footer label {
+        padding: 0 0 40px;
+        text-align: left;
+    }
+
+    footer label::after {
+        display: none;
+    }
+
+    footer .content {
+        display: block;
+        padding-left: 0;
+        padding-right: 40px;
+        margin-bottom: 50px;
+    }
+
+    footer .dropdown {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) { 
+    footer .dropdown {
+        width: 25%;
+    }
+}
