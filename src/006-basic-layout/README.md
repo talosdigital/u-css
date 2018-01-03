@@ -1,33 +1,6 @@
 # 006 - Basic Layout
 
-### Before 
-You should read about Equal Heigh Column Layout here [Smashing Magazine][1]
-
-#
-The estimation for this practice is: 2 hours.
-#
-
-### To Do
-
-Run the base project.
-
-```sh
-$ npm install http-server -g
-$ cd u-css/
-$ http-server ./src -p 3000
-```
-
-Please check and make the same design and animations than page has in the solution part, go there clicking in solution button from each box in the home view.
-
-Create a the following layout:
-
-[![IMAGE ALT TEXT HERE](./../image-click.svg)](https://drive.google.com/a/talosdigital.com/file/d/1AlhahHh75yQdSRA8Ix1HOIjBrPnRX25e/view?usp=sharing)
-
-1. Using Equal Heigh Columns
-2. Using Flex
-
-
-### Evaluation Criteria
+## Evaluation Criteria
 
 1. Make it Readable.
 2. Good Practices.
@@ -38,4 +11,26 @@ Create a the following layout:
 7. Use correct Inheritance.
 8. Goal: The practice should look as be required.
 
- [1]: https://www.smashingmagazine.com/2010/11/equal-height-columns-using-borders-and-negative-margins-with-css/
+### Before 
+You should read about Equal Heigh Column Layout here [Smashing Magazine][1]
+
+> The estimation for this practice is: 2 hours.
+
+### To Do
+- [Watch this video with the design][2]
+
+- Run the base project.
+
+```sh
+$ npm install http-server -g
+$ cd u-css/
+$ http-server ./src -p 3000
+```
+
+- Create two layouts with next specifications:
+
+1. Using Equal Height Columns
+2. Using Flex
+
+[1]: https://www.smashingmagazine.com/2010/11/equal-height-columns-using-borders-and-negative-margins-with-css/
+[2]: https://drive.google.com/a/talosdigital.com/file/d/1AlhahHh75yQdSRA8Ix1HOIjBrPnRX25e/view?usp=sharing

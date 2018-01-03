@@ -1,29 +1,6 @@
 # 016 - Bootstrap and Material Column System
 
-### Before 
-You should read about Bootstrap here [V4 Alpha][2], about Responsive Web Design here [Smashing Magazine][1] and about Material here [Material][3].
-
-#
-The estimation for this practice is: 4 hours.
-#
-
-### To Do
-
-Run the base project.
-
-```sh
-$ npm install http-server -g
-$ cd u-css/
-$ http-server ./src -p 3000
-```
-
-Please check and make the same design and animations than page has in the solution part, go there clicking in solution button from each box in the home view.
-
-Create a the following layout:
-
-[![IMAGE ALT TEXT HERE](./../image-click.svg)](https://drive.google.com/a/talosdigital.com/file/d/13a5ci0ZINqH3xltSgpHYau13VYk9M-Qr/view?usp=sharing)
-
-### Evaluation Criteria
+## Evaluation Criteria
 
 1. Make it Readable.
 2. Good Practices.
@@ -34,7 +11,28 @@ Create a the following layout:
 7. Use correct Inheritance.
 8. Goal: The practice should look as be required.
 
+### Before 
+You should read about Bootstrap here [V4 Alpha][2], about Responsive Web Design here [Smashing Magazine][1] and about Material here [Material][3].
+
+> The estimation for this practice is: 4 hours.
+
+### To Do
+
+- [Watch this video with the design][4] 
+
+- Run the base project.
+
+```sh
+$ npm install http-server -g
+$ cd u-css/
+$ http-server ./src -p 3000
+```
+
+- Create the layout that the video in showing.
+
+
 [1]: https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/ 
 [2]: https://v4-alpha.getbootstrap.com/layout/grid/
 [3]: https://material.io/guidelines/layout/responsive-ui.html#
+[4]: https://drive.google.com/a/talosdigital.com/file/d/13a5ci0ZINqH3xltSgpHYau13VYk9M-Qr/view?usp=sharing
 

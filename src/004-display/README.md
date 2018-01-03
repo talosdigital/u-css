@@ -1,36 +1,6 @@
 # 004 - Display
 
-### Before 
-You should read about Display Documentation here [Display][1].
-
-#
-The estimation for this practice is: 2 hours.
-#
-
-### To Do
-
-Run the base project.
-
-```sh
-$ npm install http-server -g
-$ cd u-css/
-$ http-server ./src -p 3000
-```
-
-Please check and make the same design and animations than page has in the solution part, go there clicking in solution button from each box in the home view.
-
-Using Display CSS Property, create the next items:
-
-1. A header with small comment next to it.
-2. A horizontal nav bar menu.
-3. Two columns below nav bar.
-4. Below columns created, do a table with headers and 2 rows. 
-5. Below table created, do a gallery of boxes. 
-
-[![IMAGE ALT TEXT HERE](./../image-click.svg)](https://drive.google.com/a/talosdigital.com/file/d/1jT6gSjJPmO2r6XtXRJoKmq3t4S9CcYnG/view?usp=sharing)
-
-
-### Evaluation Criteria
+## Evaluation Criteria
 
 1. Make it Readable.
 2. Good Practices.
@@ -41,4 +11,32 @@ Using Display CSS Property, create the next items:
 7. Use correct Inheritance.
 8. Goal: The practice should look as be required.
 
+### Before 
+You should read about Display Documentation here [Display][1].
+
+> The estimation for this practice is: 2 hours.
+
+
+### To Do
+
+- [Watch this video with the design][2]
+
+- Run the base project.
+
+```sh
+$ npm install http-server -g
+$ cd u-css/
+$ http-server ./src -p 3000
+```
+
+- Using Display CSS Property, create the next items:
+
+1. A header with small comment next to it.
+2. A horizontal nav bar menu.
+3. Two columns below nav bar.
+4. Below columns created, do a table with headers and 2 rows. 
+5. Below table created, do a gallery of boxes. 
+
+
 [1]: https://css-tricks.com/almanac/properties/d/display/
+[2]: https://drive.google.com/a/talosdigital.com/file/d/1jT6gSjJPmO2r6XtXRJoKmq3t4S9CcYnG/view?usp=sharing

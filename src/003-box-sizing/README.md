@@ -1,42 +1,6 @@
 # 003 - Box Sizing
 
-### Before 
-You should read about Box Model and Box Sizing here:
-
-1. [The CSS Box Model][1] 
-2. [Box Sizing][2]
-
-#
-The estimation for this practice is: 1 hours.
-#
-
-### To Do
-
-Run the base project.
-
-```sh
-$ npm install http-server -g
-$ cd u-css/
-$ http-server ./src -p 3000
-```
-
-Please check and make the same design and animations than page has in the solution part, go there clicking in solution button from each box in the home view.
-
-Create 2 container with:
-- width: 1000px
-- height: 80px;
-- margin: 15px;
-- padding: 15px;
-- border: 5px solid #D24F2E;
-
-1. First container using Content Box.
-	
-2. Second container using Border Box.
-
-[![IMAGE ALT TEXT HERE](./../image-click.svg)](https://drive.google.com/a/talosdigital.com/file/d/11cZG-Vd0vj6Nrf_V-g9OeEvdtGkBO8iI/view?usp=sharing)
-
-
-### Evaluation Criteria
+## Evaluation Criteria
 
 1. Make it Readable.
 2. Good Practices.
@@ -47,5 +11,37 @@ Create 2 container with:
 7. Use correct Inheritance.
 8. Goal: The practice should look as be required.
 
- [1]: https://css-tricks.com/the-css-box-model/ 
- [2]: https://css-tricks.com/almanac/properties/b/box-sizing/
+
+### Before 
+You should read about Box Model and Box Sizing here:
+
+1. [The CSS Box Model][1] 
+2. [Box Sizing][2]
+
+> The estimation for this practice is: 1 hours.
+
+### To Do
+
+- [Watch this video with the design][3]
+
+- Run the base project.
+
+```sh
+$ npm install http-server -g
+$ cd u-css/
+$ http-server ./src -p 3000
+```
+
+- Create 2 container with:
+   -  width: 1000px
+   -  height: 80px;
+   - margin: 15px;
+   - padding: 15px;
+   - border: 5px solid #D24F2E;
+
+1. First one using Content Box.
+2. Second one using Border Box.
+
+[1]: https://css-tricks.com/the-css-box-model/ 
+[2]: https://css-tricks.com/almanac/properties/b/box-sizing/
+[3]: https://drive.google.com/a/talosdigital.com/file/d/11cZG-Vd0vj6Nrf_V-g9OeEvdtGkBO8iI/view?usp=sharing
