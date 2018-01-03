@@ -5,8 +5,8 @@
 1. Make it Readable.
 2. Good Practices.
 3. Use HTML5.
-4. Structure Naming Convention.
-5. Responsive skills are not required.
+4. Structured Naming Convention.
+5. Responsive code is not required.
 6. Use correct Cascade code.
 7. Use correct Inheritance.
 8. Goal: The practice should look as be required.
@@ -18,7 +18,7 @@ You should read about Box Model and Box Sizing here:
 1. [The CSS Box Model][1] 
 2. [Box Sizing][2]
 
-> The estimation for this practice is: 1 hours.
+> The estimation for this practice is: 1 hour.
 
 ### To Do
 
@@ -32,7 +32,7 @@ $ cd u-css/
 $ http-server ./src -p 3000
 ```
 
-- Create 2 container with:
+- Create 2 containers with:
    -  width: 1000px
    -  height: 80px;
    - margin: 15px;

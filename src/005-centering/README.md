@@ -5,14 +5,14 @@
 1. Make it Readable.
 2. Good Practices.
 3. Use HTML5.
-4. Structure Naming Convention.
-5. Responsive skills are optionals.
+4. Structured Naming Convention.
+5. Responsive code is optional.
 6. Use correct Cascade code.
 7. Use correct Inheritance.
-8. Goal: The practice should look as be required.
+8. Goal: The practice should look as required.
 
 ### Before 
-You should read about Centering Components Documentation here:
+You should read about Centering Components here:
 
 1. [CSS align][1]
 2. [Centering CSS][2]
@@ -32,9 +32,9 @@ $ cd u-css/
 $ http-server ./src -p 3000
 ```
 
-- Using methods for Centering in CSS, create the next items:
+- Using the methods you learned about for Centering in CSS, create the next items:
 
-1. A container with max width 1200px and centered horizontally. Use margin property.
+1. A container with a max width of 1200px, centered horizontally. Use margin property.
 2. A bar with a text centered.
 3. A bar with 4 centered links.
 4. Three centered block level elements with text inside.

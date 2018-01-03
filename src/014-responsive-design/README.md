@@ -5,11 +5,11 @@
 1. Make it Readable.
 2. Good Practices.
 3. Use HTML5.
-4. Structure Naming Convention.
-5. Responsive skills screens from 320px.
+4. Structured Naming Convention.
+5. Responsive on screens from 320px.
 6. Use correct Cascade code.
 7. Use correct Inheritance.
-8. Goal: The practice should look as be required.
+8. Goal: The practice should look as required.
 
 
 ### Before 
