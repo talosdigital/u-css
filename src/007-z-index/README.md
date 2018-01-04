@@ -5,11 +5,11 @@
 1. Make it Readable.
 2. Good Practices.
 3. Use HTML5.
-4. Structure Naming Convention.
-5. Responsive skills screens from 320px to 1440px.
+4. Structured Naming Convention.
+5. Responsive on screens from 320px to 1440px.
 6. Use correct Cascade code.
 7. Use correct Inheritance.
-8. Goal: The practice should look as be required.
+8. Goal: The practice should look as required.
 
 ### Before 
 You should read about Z Index Documentation here [CSS Tricks][1], about !important Documentation here [Smashing Magazine][2] and about Inheritance Documentation here [Smashing Magazine][3].
@@ -28,7 +28,7 @@ $ cd u-css/
 $ http-server ./src -p 3000
 ```
 
-- Using Z Index, !important and Inheritance CSS Property, create the next design watched in the video:
+- Using Z Index, !important and Inheritance CSS Property, create the design in the video:
 
  [1]: https://css-tricks.com/almanac/properties/z/z-index/
  [2]: https://www.smashingmagazine.com/2010/11/the-important-css-declaration-how-and-when-to-use-it/

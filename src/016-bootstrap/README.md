@@ -5,11 +5,11 @@
 1. Make it Readable.
 2. Good Practices.
 3. Use HTML5.
-4. Structure Naming Convention.
-5. Responsive skills screens from 320px to 1440px.
+4. Structured Naming Convention.
+5. Responsive on screens from 320px to 1440px.
 6. Use correct Cascade code.
 7. Use correct Inheritance.
-8. Goal: The practice should look as be required.
+8. Goal: The practice should look as required.
 
 ### Before 
 You should read about Bootstrap here [V4 Alpha][2], about Responsive Web Design here [Smashing Magazine][1] and about Material here [Material][3].

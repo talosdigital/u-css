@@ -5,11 +5,11 @@
 1. Make it Readable.
 2. Good Practices.
 3. Use HTML5.
-4. Structure Naming Convention.
-5. Responsive skills are not required.
+4. Structured Naming Convention.
+5. Responsive code is not required.
 6. Use correct Cascade code.
 7. Use correct Inheritance.
-8. Goal: The practice should look as be required.
+8. Goal: The practice should look as required.
 
 ### Before 
 You should read about Equal Heigh Column Layout here [Smashing Magazine][1]
@@ -27,7 +27,7 @@ $ cd u-css/
 $ http-server ./src -p 3000
 ```
 
-- Create two layouts with next specifications:
+- Create two layouts with the following specifications:
 
 1. Using Equal Height Columns
 2. Using Flex

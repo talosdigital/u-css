@@ -2,7 +2,7 @@
 
 ### To Do
 
-Read the following documentation to have a base about CSS:
+Read the following documentation to have a base understanding of CSS:
 
 1. [Introduction][1].
 2. [Syntax][2].
@@ -17,7 +17,7 @@ Read the following documentation to have a base about CSS:
 11. [CSS Architectures: New Best Practices][11]
 12. [Responsive Web Design][12]
 
-Read the following documentation to have a base about HTML5:
+Read the following documentation to have a base understand of HTML5:
 
 1. [Introduction][13].
 2. [Browser Support][14].
