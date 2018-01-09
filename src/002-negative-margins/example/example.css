@@ -37,13 +37,14 @@ h3 {
 
 #section1 .content {
     width: 100%;
-    margin-right: -310px;
+    margin-right: -315px;
 }
 
 #section1 .sidebar{
-    width: 300px;
+    width: 250px;
     border-left: 1px solid #CCCCCC;
     margin-top: 20px;
+    margin-left: 64px
 }
 
 .sidebar > ul {
@@ -101,6 +102,7 @@ h3 {
 #section3 .wrapper {
     min-height: 100%;
     margin-bottom: -50px;
+    width: 100%;
 }
 
 .click-me {
