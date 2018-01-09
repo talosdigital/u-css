@@ -1,5 +1,63 @@
 /* Practice Layout */
 
+body {
+    color: #787878;
+}
+
+a {
+    color: #F0AD4E;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f07a19;
+    text-decoration: none;
+}
+
+.navbar-brand {
+    font-size: 1.2em;
+    line-height: 2em;
+    padding-top: 0;
+}
+
+.list-group-item .content {
+    margin-left: 10px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card.promo p.card-text, .card.search input {
+    margin-bottom: 20px;
+}
+
 .trash{
-	color: black;
+    color: black;
+}
+
+.card.btns button {
+    width: 100%;
+    height: 100%;
+    padding: 15px 20px;
+    text-align: left;
+    border: none;
+}
+
+.card.btns .list-group-item {
+    padding: 0;
+}
+
+.card-group .card {
+    margin-left: 20px !important;
+}
+
+.card-group .btn.btn-warning {
+    text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+    .card-group .card {
+        margin-left: 0 !important;
+    }
 }

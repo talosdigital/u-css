@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link href="../../app.css" rel="stylesheet" type="text/css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
     <!-- Import App Css file -->
+    <link href="./reset.css" rel="stylesheet" type="text/css">
     <link href="./example.css" rel="stylesheet" type="text/css">
     
   </head>
@@ -31,10 +34,143 @@
       </header>
       <main class="mdl-layout__content">
         <div class="page-content">
-         <!-- Practice Content Goes Here -->
+          <!-- Practice Content Goes Here -->
+          <section class="container">
+            <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <h1 class="display-3">Talos Travel</h1>
+                <p class="lead">Travel is the only thing you by that makes you richer</p>
+              </div>
+            </div>
+            <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="#">Navbar</a>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+            </nav>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                    <div class="card-block">What are you looking?</div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <img src="https://placeimg.com/40/40/tech" class="float-left">
+                        <div class="content">
+                          <p>Tecnology</p>
+                          <a href="#">Click!</a>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <img src="https://placeimg.com/40/40/arch" class="float-left">
+                        <div class="content">
+                          <p>Architecture</p>
+                          <a href="#">Click!</a>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <img src="https://placeimg.com/40/40/people" class="float-left">
+                        <div class="content">
+                          <p>People</p>
+                          <a href="#">Click!</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card btns">
+                    <div class="card-block">Buy with us!</div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <button type="button" class="btn btn-secondary">Flights</button>
+                      </li>
+                      <li class="list-group-item">
+                        <button type="button" class="btn btn-secondary">Cars</button>
+                      </li>
+                      <li class="list-group-item">
+                        <button type="button" class="btn btn-secondary">Hotels</button>
+                      </li>
+                    </ul>
+                    <div class="card-block">
+                      <a href="#" class="card-link">Flight + Hotels</a>
+                      <a href="#" class="card-link float-right">Hotels + Cars</a>
+                    </div>
+                  </div>
+                  <div class="card promo">
+                    <div class="card-header">
+                      <h3>Are you searching some promotions?</h3>
+                    </div>
+                    <div class="card-block">
+                      <p class="card-text">Let us show you some special prices for today.</p>
+                      <button type="button" class="btn btn-warning float-right btn-sm">Find Promotions!</button>
+                    </div>
+                  </div>
+                  <div class="card search">
+                    <div class="card-header">
+                      <h3>Are you searching some promotions?</h3>
+                    </div>
+                    <div class="card-block">
+                      <input type="text" name="search" class="form-control" placeholder="Search...">
+                      <button type="button" class="btn btn-warning float-right btn-sm">Search!</button>
+                    </div>
+                  </div>
+                </div>
+                
+              <div class="col-md-8">
+                <div class="card-group">
+                  <div class="card">
+                    <img src="https://placeimg.com/250/350/arch" class="card-img-top">
+                    <div class="card-footer text-muted">
+                      <p class="card-text">Enrich Your Knowledge</p>
+                      <button type="button" class="btn btn-warning float-right btn-sm">Go!</button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="https://placeimg.com/250/350/nature" class="card-img-top">
+                    <div class="card-footer text-muted">
+                      <p class="card-text">Be One With Nature</p>
+                      <button type="button" class="btn btn-warning float-right btn-sm">Go!</button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="https://placeimg.com/250/350/people" class="card-img-top">
+                    <div class="card-footer text-muted">
+                      <p class="card-text">Recommended Places</p>
+                      <button type="button" class="btn btn-warning float-right btn-sm">Go!</button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="https://placeimg.com/250/350/animals" class="card-img-top">
+                    <div class="card-footer text-muted">
+                      <p class="card-text">Pet Friendly Places</p>
+                      <button type="button" class="btn btn-warning float-right btn-sm">Go!</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </section>
         </div>
       </main>
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
 </html>
