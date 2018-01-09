@@ -9,7 +9,7 @@ body {
     color: #777777;
 }
 
-section {
+section.main > div {
     padding-top: 10px;
     padding-bottom: 10px; 
     margin-bottom: 20px;
@@ -40,7 +40,13 @@ p {
 }
 
 .links {
-    text-align: center; 
+    text-align: center;
+    padding: 10px;
+}
+
+.links li {
+    list-style: none;
+    display: inline-block; 
 }
 
 .links a {
