@@ -67,7 +67,7 @@ footer a:hover {
 }
 
 .page-content {
-    padding: 0 0 0 0;
+    padding: 0;
 }
 
 .contact {
@@ -93,7 +93,9 @@ footer a:hover {
 
 .contact-form button {
     background-color: #FBC2D4;
-    padding: 15px 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 180px;
     color: #FFFFFF;
     margin-top: 20px;
     border: 1px solid #FBC2D4;
