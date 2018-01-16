@@ -33,7 +33,6 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
 }
 
 .panel > label {
@@ -46,6 +45,7 @@ p {
     color: #7f7f7f;
     border: 3px solid transparent;
     transition: background 0.1s, color 0.1s;
+    cursor: pointer;
 }
 
 .panel > label:hover {
@@ -61,20 +61,8 @@ p {
     color: #000000;
 }
 
-#checkboxes, label[for="checkboxes"] {
-    order: 1;
-}
-
-#radios, label[for="radios"] {
-    order: 3;
-}
-
-#cards, label[for="cards"] {
-    order: 5;
-}
-
-.panel > input[type="radio"]:checked + label + .tab {
-    display:block;
+input[type="radio"]:checked + label + .tab {
+    display: block;
     flex: 1 100%;
 }
 
@@ -181,7 +169,8 @@ p {
 }
 
 .card-container {
-    width: 470px;
+    max-width: 470px;
+    min-width: 290px;
     margin-left: 30px;
 }
 
@@ -201,7 +190,7 @@ p {
 }
 
 .card-container .card:hover {
-    background: #eee;
+    background-color: #EEEEEE;
 }
 
 .card-container .card img {
@@ -224,16 +213,21 @@ p {
     .panel > label {
         flex: 1 100%;
     }
-
-    #checkboxes + label + .tab {
-        order: 2;
+    .tab {
+        order: inherit;
     }
 
-    #radios + label + .tab {
-        order: 4;
+    p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
     }
+}
 
-    #cards + label + .tab {
-        order: 6;
+@media (max-width: 425px) {
+    p, h1 {
+        text-overflow: ellipsis;
+        overflow : hidden;
     }
 }
