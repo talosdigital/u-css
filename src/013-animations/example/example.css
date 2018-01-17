@@ -159,6 +159,7 @@ h1 {
 
 .notes-container li:nth-child(2n) {
     transform: rotate(4deg);
+    background-color: #CCFFCC;
 }
 
 .notes-container li:hover {
@@ -167,6 +168,10 @@ h1 {
 }
 
 .buttons-container {
+    float: right;   
+}
+
+.buttons-container ul {
     width: 350px;
     background-color: #E8E8E8;
     text-align: center;
@@ -215,10 +220,28 @@ h1 {
 @media (max-width: 650px) {
     .buttons-container, .notes-container {
         display: block;
+        float: none;
     }
-    .buttons-container {
+
+    .buttons-container ul {
+        height: auto;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 426px) {
+    .buttons-container, .notes-container {
+        display: block;
+        float: none;
+    }
+
+    .buttons-container ul {
         height: auto;
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+
+    .notes-container li:not(:nth-child(2)) {
+        display: none;
     }
 }
