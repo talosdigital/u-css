@@ -1,16 +1,17 @@
 /** General styles **/
 html,
 body {
-	color: #857878;
+	color: #787878;
 	font-family: "Roboto","Helvetica","Arial",sans-serif;
 	font-size: 16px;
-	line-height: 25px;
+	font-weight: 100;
+	line-height: 30px;
 	letter-spacing: normal;
 }
 
 h1 {
-	font-size: 2.2em;
-	line-height: 40px;
+	font-size: 4.5em;
+	line-height: 1.1em;
 }
 
 h2 {
@@ -19,4 +20,8 @@ h2 {
 
 a {
   text-decoration: none;
+}
+
+header p {
+	font-size: 1.2em;
 }
