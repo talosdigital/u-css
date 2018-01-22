@@ -14,14 +14,38 @@ h1 {
 	line-height: 1.1em;
 }
 
-h2 {
-	font-size: 2.2em;
-}
-
 a {
   text-decoration: none;
 }
 
 header p {
 	font-size: 1.2em;
+}
+
+.element {
+	margin-bottom: 16px;
+}
+
+.element h2 {
+  margin: 12px 0 9px 0;
+}
+
+.element a {
+	color: #f0ad4e;
+}
+
+.element li .inf {
+	margin-left: 8px;
+}
+
+.element li.no-p {
+	padding: 0;
+}
+
+.element .no-p button {
+	border: 0;
+	border-radius: 0;
+	cursor: pointer;
+	padding: 13px 21px;
+	text-align: left;
 }
