@@ -5,7 +5,7 @@ body {
 	font-family: "Roboto","Helvetica","Arial",sans-serif;
 	font-size: 16px;
 	font-weight: 100;
-	line-height: 30px;
+	line-height: 25px;
 	letter-spacing: normal;
 }
 
@@ -30,7 +30,7 @@ header p {
   margin: 12px 0 9px 0;
 }
 
-.element a {
+.element .list-group-item a {
 	color: #f0ad4e;
 }
 
@@ -48,4 +48,10 @@ header p {
 	cursor: pointer;
 	padding: 13px 21px;
 	text-align: left;
+}
+
+@media (min-width: 800px) {
+	.spaced {
+		 margin: 0 0 16px 16px!important;
+	 }
 }
