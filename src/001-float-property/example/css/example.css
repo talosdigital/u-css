@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/*
+ * Practice : Float Property
+ * Version: 1.0.0
+ * By: Elías Rodelo
+ */
+* {
+  box-sizing: border-box; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto; }
+
+.block, .navigation, .col {
+  padding: 0.5rem 1rem; }
+
+.page-header {
+  background-color: #e9e7e9; }
+
+.navigation {
+  background-color: #e5e4e5; }
+  .navigation-list {
+    overflow: hidden; }
+  .navigation-item {
+    float: left; }
+  .navigation-link {
+    padding: 0.5rem 1rem;
+    display: block; }
+    .navigation-link:first-of-type {
+      padding-left: 0; }
+
+.container {
+  overflow: hidden; }
+
+.col {
+  padding-bottom: 100%;
+  margin-bottom: -100%; }
+  .col--left {
+    width: 200px;
+    background-color: #e9e7e9;
+    height: 100%; }
+  .col--right {
+    background-color: #d3d1d3;
+    width: 700px; }
+
+.gallery {
+  background-color: #f9f7f9; }
+  .gallery-list {
+    overflow: hidden; }
+  .gallery-item {
+    margin: 0 1rem 1rem 0; }
+
+.comments {
+  background-color: #e9e7e9; }
+  .comments::after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: '';
+    clear: both;
+    height: 0; }
+  .comments--green {
+    border: 2px solid green;
+    border-radius: 2px; }
+
+.clear {
+  clear: both; }
+
+.float-left, .col--left, .gallery-item {
+  float: left; }
+
+.float-right, .col--right {
+  float: right; }
+
+.mb-1 {
+  margin-bottom: 1rem; }
+
+.mt-1 {
+  margin-bottom: 1rem; }
+
+.mb-2 {
+  margin-bottom: 0.5rem; }
+
+.ml-2 {
+  margin-left: 0.5rem; }
+
+.mr-1 {
+  margin-right: 1rem; }
+
+.esp-letter {
+  font-size: 4rem;
+  line-height: 100%;
+  margin-right: 1rem;
+  float: left; }
+
+/*# sourceMappingURL=example.css.map */
