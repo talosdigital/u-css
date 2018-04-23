@@ -3,3 +3,60 @@
  * Version: 1
  * By: xxx
  */
+ul.mdl-list{
+  list-style: none;
+  display: inline-block;
+  margin: 1% 0;
+}
+
+ul.mdl-list li {line-height:1.3em;}
+ul.mdl-list li.top {margin-top:-1.9em;}
+ul.mdl-list li.col2 {margin-left:100px;}
+ul.mdl-list li.col3 {margin-left:200px;}
+ul.mdl-list li  a{
+  cursor: pointer;
+  padding: 10px 5px;
+  transition: background-color, color;
+}
+ul.mdl-list li a:hover{
+  background-color: rgba(0,0,0,.3);
+  color: #FFFFFF;
+}
+
+ul.mdl-list-text li {line-height:1.8em;}
+ul.mdl-list-text li.top {margin-top:-5.5em;}
+ul.mdl-list-text li.col2 {margin-left:100px;}
+ul.mdl-list-text li.col3 {margin-left:220px;}
+
+
+footer.nm-site-footer{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  background: #D24F2E;
+}
+ul.nm-footer-list{
+  list-style: none;
+  padding: 2.5% 0;
+  margin: 0 5%;
+}
+ul.nm-footer-list li {line-height:1.8em;}
+ul.nm-footer-list li.top {margin-top:-1.8em;}
+ul.nm-footer-list li.col2 {margin-left:100px;}
+ul.nm-footer-list li.col3 {margin-left:200px;}
+ul.nm-footer-list li a{
+  color: #FFFFFF;
+  padding: 3% 5%;
+  transition: background, color;
+}
+ul.nm-footer-list li a:hover{
+  background: rgba(149, 165, 166,.3);
+  color: rgba(189, 195, 199,1.0);
+}
+
+a > i.icon{
+  position: relative;
+  top: 0.2em;
+}
