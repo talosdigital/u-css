@@ -34,8 +34,8 @@ $ http-server ./src -p 3000
 1.  A header with a small comment next to it. _done_
 2.  A horizontal nav bar menu. _done_
 3.  Two columns below nav bar. _done_
-4.  Below the columns created, make a table with headers and 2 rows.
-5.  Below the table created, make a gallery of boxes.
+4.  Below the columns created, make a table with headers and 2 rows. _done_
+5.  Below the table created, make a gallery of boxes. _done_
 
 [1]: https://css-tricks.com/almanac/properties/d/display/
 [2]: https://drive.google.com/a/talosdigital.com/file/d/1jT6gSjJPmO2r6XtXRJoKmq3t4S9CcYnG/view?usp=sharing
