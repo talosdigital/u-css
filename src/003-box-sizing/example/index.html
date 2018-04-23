@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>003 - Box Sizing</title>
@@ -15,57 +16,60 @@
   <link href="example.css" rel="stylesheet" type="text/css">
 
 </head>
+
 <body>
-<!-- Always shows a header, even in smaller screens. -->
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
-    <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
-      <i class="material-icons">home</i>
-    </a>
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">003 - Box Sizing</span>
-      <!-- Add spacer, to align navigation to the right -->
-      <div class="mdl-layout-spacer"></div>
-    </div>
-  </header>
-  <main class="mdl-layout__content">
-    <div class="page-content">
-      <!-- Practice Content Goes Here -->
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
+        <i class="material-icons">home</i>
+      </a>
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">003 - Box Sizing</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <!-- Practice Content Goes Here -->
 
-      <div>
+        <div class="wrapper">
 
-        <div>
-          <h3> Box Model </h3>
-          <div>
-            <p>Since the dawn of CSS, the box model has worked like this by default:</p>
-            <p>width + padding + border = actual visible/rendered width of an element's box</p>
-            <p>height + padding + border = actual visible/rendered height of an element's box</p>
+          <div class="content">
+            <h3> Box Model </h3>
+            <div class="container cb-example">
+              <p>Since the dawn of CSS, the box model has worked like this by default:</p>
+              <p>width + padding + border = actual visible/rendered width of an element's box</p>
+              <p>height + padding + border = actual visible/rendered height of an element's box</p>
+            </div>
           </div>
-        </div>
 
-        <div>
-          <h3>Box Sizing : Content Box </h3>
-          <div>
-            <p>Default. The width and height properties (and min/max properties) includes only the content. Border,
-              padding, or margin are not included</p>
+          <div class="content">
+            <h3>Box Sizing : Content Box </h3>
+            <div class="container cb-example">
+              <p>Default. The width and height properties (and min/max properties) includes only the content. Border, padding,
+                or margin are not included</p>
+            </div>
           </div>
-        </div>
 
-        <div class="bs-example">
-          <h3>Box Sizing : border-box </h3>
-          <div>
-            <p>The width and height properties (and min/max properties) includes content, padding and border, but not
-              the margin</p>
+          <div class="content">
+            <h3>Box Sizing : border-box </h3>
+            <div class="container bb-example">
+              <p>The width and height properties (and min/max properties) includes content, padding and border, but not the
+                margin
+              </p>
+            </div>
           </div>
+
         </div>
 
       </div>
-
-    </div>
-  </main>
-</div>
+    </main>
+  </div>
 
 
 </body>
+
 </html>

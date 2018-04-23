@@ -1,31 +1,36 @@
-@charset "UTF-8";
 /*
  * Practice : Box Sizing
  * Version: 1.0.0
  * By: Elías Rodelo
  */
+
 .wrapper {
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .content {
   background-color: #e9e7e9;
   padding: 1rem;
-  margin: 1rem 0; }
-  .content:not(:last-of-type) {
-    margin-bottom: 0; }
+  margin: 1rem 0;
+
+  &:not(:last-of-type) {
+    margin-bottom: 0;
+  }
+}
 
 .container {
   border: 5px solid #d24f2e;
   max-width: 1000px;
   min-height: 80px;
   margin: 15px;
-  padding: 15px; }
+  padding: 15px;
+}
 
 .cb-example {
-  box-sizing: content-box; }
+  box-sizing: content-box;
+}
 
 .bb-example {
-  box-sizing: border-box; }
-
-/*# sourceMappingURL=example.css.map */
+  box-sizing: border-box;
+}
