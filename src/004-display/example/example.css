@@ -3,3 +3,98 @@
  * Version: 1
  * By: xxx
  */
+body, html{
+  color: #7D7978;
+}
+.bg-dark{
+  background-color: #C8C8C8;
+}
+.bg-light{
+  background-color: #f4f5f7;
+}
+.bg-dark,.bg-light{
+  padding: 10px;
+}
+
+.bg-light h1,
+.bg-dark h1{
+  font-size: 40px;
+  margin: 0;
+}
+.bg-light h1 > small,
+.bg-dark h1 > small{
+  font-size: 25px;
+}
+
+nav.main-menu{
+  display: inline-block;
+  width: 96%;
+  padding: 1% 2%;
+  background: #DCDCDC;
+}
+nav.main-menu ul{
+  padding: 0;
+  margin: 0;
+  display: block;
+  min-height: 1em;
+}
+nav.main-menu ul li{
+  list-style: none;
+  float: left;
+  margin-left: 1%;
+}
+nav.main-menu a{
+  padding: 10px 15px;
+  transition: background .5s, color .3s;
+}
+nav.main-menu a:hover{
+  background: rgba(0,0,0,.3);
+  color: #FFFFFF;
+}
+
+.row-section{
+  display: flex;
+  flex-direction: row;
+}
+.row-section > div{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+
+.table{
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 1px 2px;
+}
+.table > .table-header{
+  display: table-row;
+  font-weight: bold;
+  font-size: 18px;
+}
+.table > .table-body{
+  display: table-row;
+}
+.table > .table-header > div,
+.table > .table-body > div{
+  display: table-cell;
+  padding: 15px 2px;
+  text-align: center;
+  background-color: #C8C8C8;
+}
+.flexbox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flexbox > div{
+  padding: 10px;
+  width: 200px;
+  min-width: 200px;
+  box-sizing: content-box;
+  border: 2px solid #FD0A1A;
+  margin: 2px;
+}
