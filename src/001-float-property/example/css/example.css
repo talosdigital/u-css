@@ -1,0 +1,133 @@
+/*
+ * Practice : Float Property
+ * Version: 1
+ * By: xxx
+ */
+
+.page-content{
+  color: #787878;
+}
+.bg-dark{
+  background-color: #C8C8C8;
+}
+.bg-light{
+  background-color: #f4f5f7;
+}
+.box-shadow{
+  box-shadow: inset 0 20px 30px -5px rgba(50, 50, 50, 0.18);
+}
+span.capitalize{
+  display: block;
+  font-size: 53px;
+  float: left;
+  height: 32px;
+  padding-top: 16px;
+  margin-right: 2%;
+  margin-bottom: 1%;
+}
+
+.main-container{
+  display: flex;
+  position: relative;
+  top: -5px;
+}
+.aside-nav{
+  width: 33%;
+  padding: 2%;
+}
+.aside-nav label{
+  width: 100%;
+  display: block;
+  font-size: 20px;
+}
+.aside-nav input{
+  width: 90%;
+  border-radius: 3px;
+  border: 1px solid;
+  height: 30px;
+  margin: 2% 0;
+}
+aside p{
+  margin: 2% 0;
+}
+aside ul.aside-menu{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+article.article-content{
+  width: 63%;
+  padding: 2%;
+}
+article.article-content h2{
+  color: #787878;
+}
+
+
+nav.main-menu{
+  display: inline-block;
+  width: 96%;
+  padding: 1% 2%;
+  background: #DCDCDC;
+}
+nav.main-menu ul{
+  padding: 0;
+  margin: 0;
+  display: block;
+  min-height: 1em;
+}
+nav.main-menu ul li{
+  list-style: none;
+  float: left;
+  margin-left: 1%;
+}
+nav.main-menu a{
+  padding: 10px 15px;
+  transition: background .5s, color .3s;
+}
+nav.main-menu a:hover{
+  background: rgba(0,0,0,.3);
+  color: #FFFFFF;
+}
+
+article img{
+  float: right;
+  margin: 0 15px;
+}
+
+ul.gallery-list{
+  margin: 2% 1%;
+  padding: 0;
+  display: inline-block;
+}
+
+ul.gallery-list li{
+  list-style: none;
+  float: left;
+  padding: 1%;
+  width: 18%;
+}
+ul.gallery-list li img{
+  max-width: 250px;
+  width: 100%;
+}
+
+section.text-container{
+  display: inline-block;
+  width: 100%;
+  padding: 2% 0;
+}
+section.text-container img{
+  float: left;
+  margin: 0 15px;
+  max-width: 100px;
+  width: 100%;
+}
+section.text-container p{
+  margin: 1%;
+  padding: 0;
+}
+
+section.border{
+  border: 2px solid #27ae60;
+}
