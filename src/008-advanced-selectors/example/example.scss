@@ -1,0 +1,240 @@
+/*
+ * Practice : Advanced Selectors
+ * Version: 1.0.0
+ * By: Elías Rodelo
+ */
+
+/* Variables */
+
+$hover-color: #d24f2e;
+$button-list-color: #f9e9e5;
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-family: 'Avenir';
+}
+
+h2,
+h1 {
+  font-family: 'Avenir';
+  border-bottom: 1px solid rgba(#0f0f0f, 0.1);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  line-height: 1.75;
+  color: rgba($color: #0f0f0f, $alpha: 0.5);
+
+  &:not(:first-of-type) {
+    margin-top: 2rem;
+  }
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+.as-container {
+  max-width: 80vw;
+  margin: 2rem auto;
+  display: flex;
+
+  > aside {
+    width: 30%;
+    padding: 1rem;
+  }
+
+  > section {
+    padding: 1rem;
+    width: 70%;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.as-link {
+  display: block;
+  padding: 0.25em 0;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+.as-button-list {
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  &-link {
+    display: block;
+    background-color: $button-list-color;
+    border-bottom: 2px solid rgba($hover-color, $alpha: 0.5);
+    padding: 0.5rem;
+    transition: 0.2s all linear;
+
+    &:hover {
+      background-color: rgba($hover-color, 0.5);
+    }
+  }
+}
+
+.as-avatar {
+  display: flex;
+  margin-bottom: 1rem;
+
+  &-meta {
+    width: 80%;
+    padding: 0 1rem;
+
+    > a {
+      padding: 0;
+    }
+  }
+
+  &-img {
+    width: 20%;
+    height: auto;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.as-price {
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0;
+
+  &:after {
+    content: ' total price';
+    font-size: 0.5em;
+  }
+}
+
+.as-top-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  > div {
+    button {
+      border: 1px solid rgba($color: #000000, $alpha: 0.5);
+      border-radius: 3px;
+
+      &:first-child {
+        background-color: #0f0f0f;
+
+        i {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.as-cards {
+  display: flex;
+  flex-wrap: wrap;
+
+  .as-card {
+    width: 33.3%;
+    position: relative;
+
+    .as-price:after {
+      content: none;
+    }
+
+    + .as-card {
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:first-of-type {
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    > p {
+      margin: 0;
+
+      &:first-of-type {
+        font-size: 1em;
+      }
+    }
+
+    &-img {
+      overflow: hidden;
+      position: relative;
+
+      &:hover {
+        opacity: 0.5;
+
+        img {
+          transform: scale(1.1);
+        }
+      }
+
+      img {
+        max-width: 100%;
+        transition: 0.2s all;
+      }
+    }
+
+    .as-onsale {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background-color: $hover-color;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 0.75em;
+      padding: 1rem 1.25rem;
+    }
+  }
+}
+
+footer {
+  background-color: #0f0f0f;
+  padding: 2rem 0;
+  margin: 0 -20px -20px;
+
+  > div {
+    max-width: 80vw;
+    margin: 0 auto;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .as-cards {
+    .as-card {
+      width: 100%;
+    }
+  }
+}
