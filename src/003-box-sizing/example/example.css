@@ -3,3 +3,21 @@
  * Version: 1
  * By: xxx
  */
+
+.box-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.box-picture{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+  border: 1px solid #34495e;
+  border-radius: 5px;
+  float: left;
+  margin-left: 1%;
+  padding: 1%;
+  text-align: center;
+}

@@ -12,6 +12,7 @@
   <link href="../../app.css" rel="stylesheet" type="text/css">
 
   <!-- Import App Css file -->
+  <link href="reset.css" rel="stylesheet" type="text/css">
   <link href="example.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -35,7 +36,7 @@
 
       <div class="nm-container">
 
-        <div class="nm-example">
+        <div class="nm-example bg-light">
           <h3>Negative margin on content to allow right sidebar </h3>
 
           <div class="nm-content">
@@ -46,23 +47,23 @@
               tellus in convallis. Duis interdum nibh ac nisi feugiat hendrerit. Vestibulum vitae elit non lectus
               lobortis sollicitudin eu sit amet odio.</p>
           </div>
-          <div>
+          <div class="nm-menu-list">
             <ul class="mdl-list">
-              <li class="mdl-list__item">
+              <li class="col1 top">
                 <a class="mdl-list__item-primary-content">
-                  <i class="material-icons mdl-list__item-icon">home</i>
+                  <i class="material-icons icon">home</i>
                   Home
                 </a>
               </li>
-              <li class="mdl-list__item">
+              <li class="col2 top">
                 <a class="mdl-list__item-primary-content">
-                  <i class="material-icons mdl-list__item-icon">description</i>
+                  <i class="material-icons icon">description</i>
                   About
                 </a>
               </li>
-              <li class="mdl-list__item">
+              <li class="col3 top">
                 <a class="mdl-list__item-primary-content">
-                  <i class="material-icons mdl-list__item-icon">email</i>
+                  <i class="material-icons icon">email</i>
                   Contact US
                 </a>
               </li>
@@ -70,24 +71,24 @@
           </div>
         </div>
 
-        <div>
+        <div class="nm-content bg-light">
           <h3>Negative margin on top to align < li > </h3>
 
-          <ul>
-            <li>Milk</li>
-            <li>Eggs</li>
-            <li>Cheese</li>
-            <li>Tutty Frutti</li>
-            <li>Bread</li>
-            <li>Mango</li>
-            <li>Coke</li>
-            <li>Apple</li>
-            <li>Orange</li>
+          <ul class="mdl-list-text">
+            <li class="col1">Milk</li>
+            <li class="col1">Eggs</li>
+            <li class="col1">Cheese</li>
+            <li class="col2 top">Tutty Frutti</li>
+            <li class="col2">Bread</li>
+            <li class="col2">Mango</li>
+            <li class="col3 top">Coke</li>
+            <li class="col3">Apple</li>
+            <li class="col3">Orange</li>
           </ul>
 
         </div>
 
-        <div>
+        <div class="nm-content bg-light">
           <h3>Negative margin to create a Sticky Footer using fixed footer height</h3>
 
           <div>
@@ -116,22 +117,19 @@
 
             <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Click Me</button>
           </div>
-
-          <footer class="nm-site-footer">
-            <div>
-              <ul class="nm-footer-list">
-                <li>home</li>
-                <li>about</li>
-                <li>contact us</li>
-              </ul>
-            </div>
-          </footer>
         </div>
-
       </div>
-
     </div>
   </main>
 </div>
+<footer class="nm-site-footer">
+  <div>
+    <ul class="nm-footer-list">
+      <li class="col1"><a href="#">Home</a></li>
+      <li class="col2 top"><a href="#">About</a></li>
+      <li class="col3 top"><a href="#">Contact us</a></li>
+    </ul>
+  </div>
+</footer>
 </body>
 </html>
