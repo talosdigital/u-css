@@ -3,21 +3,28 @@
  * Version: 1
  * By: xxx
  */
-
-.box-container{
-  display: flex;
-  width: 100%;
-  justify-content: center;
+.bg-light{
+  background: #F5F5F5;
+  padding: 15px 10px;
+  margin-top: 1%;
 }
-.box-picture{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.box-model{
+  margin: 15px;
+  border: 5px solid #D24F2E;
+  padding: 15px;
+}
+.box-model p{
+  margin: 0;
+}
+.box-model.border-box {
+  box-sizing: border-box;
+}
+.box-model.content-box {
   box-sizing: content-box;
-  border: 1px solid #34495e;
-  border-radius: 5px;
-  float: left;
-  margin-left: 1%;
-  padding: 1%;
-  text-align: center;
+}
+.box-model.box-sizing{
+}
+
+.box-model.box-sizing-border{
+
 }
