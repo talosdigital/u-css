@@ -37,21 +37,21 @@
         <h3>1. Without a wrapper <code>div</code>, with border and negative margin</h3>
         <div>
           <div>
-            <ul>
-              <li>
+            <ul class="mdl-list-text">
+              <li class="col1">
                 <span> Home </span>
               </li>
-              <li>
+              <li class="col2 top">
                 <span> About </span>
               </li>
-              <li>
+              <li class="col3 top">
                 <span> Contact Us </span>
               </li>
             </ul>
           </div>
 
           <div>
-            <ul class="mdl-list">
+            <ul class="mdl-list bg-light-blue">
               <li class="mdl-list__item">
               <span class="mdl-list__item-primary-content">
                 <i class="material-icons mdl-list__item-icon">home</i>
@@ -81,17 +81,24 @@
             <p>Lorem ipsum...</p>
             <p>Lorem ipsum...</p>
             <p>Lorem ipsum...</p>
-            <div>
-
+            <div class="blocks-container">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
             </div>
           </div>
 
           <div>
-            <ul>
-              <li>
+            <ul class="mdl-list-text">
+              <li class="col1">
                 <span> Talos Digital </span>
               </li>
-              <li>
+              <li class="col2 top">
                 <span> Contact Us </span>
               </li>
             </ul>
@@ -101,8 +108,8 @@
         <h3>2. Using flex, flex-direction, and wrapper <code>div</code></h3>
 
         <div>
-          <div>
-            <ul>
+          <div class="flex-layout">
+            <ul class="flex-menu">
               <li>
                 <span> Home </span>
               </li>
@@ -115,9 +122,9 @@
             </ul>
           </div>
 
-          <div>
-            <div>
-              <ul class="mdl-list">
+          <div class="flex-main">
+            <div class="aside-menu bg-light-blue">
+              <ul class="flex-mdl-list">
                 <li class="mdl-list__item">
                 <span class="mdl-list__item-primary-content">
                   <i class="material-icons mdl-list__item-icon">home</i>
@@ -139,7 +146,7 @@
               </ul>
             </div>
 
-            <div>
+            <div class="flex-main-content">
               <p>Lorem ipsum...</p>
               <p>Lorem ipsum...</p>
               <p>Lorem ipsum...</p>
@@ -148,13 +155,21 @@
               <p>Lorem ipsum...</p>
               <p>Lorem ipsum...</p>
 
-              <div>
+              <div class="blocks-container">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
               </div>
             </div>
           </div>
 
-          <div>
-            <ul>
+          <div class="flex-layout">
+            <ul class="flex-menu">
               <li>
                 <span> Talos Digital </span>
               </li>
