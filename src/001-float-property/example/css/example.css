@@ -1,0 +1,63 @@
+/*
+ * Practice : Float Property
+ * Version: 1
+ * By: xxx
+ */
+
+
+nav.main-menu ul{
+  padding: 0;
+  margin: 0;
+  display: block;
+  min-height: 1em;
+}
+nav.main-menu ul li{
+  list-style: none;
+  float: left;
+  margin-left: 1%;
+}
+nav.main-menu a{
+  padding: 10px 15px;
+  transition: background .5s, color .3s;
+}
+nav.main-menu a:hover{
+  background: rgba(0,0,0,.3);
+  color: #FFFFFF;
+}
+
+article img{
+  float: left;
+  margin: 0 15px;
+}
+
+ul.gallery-list{
+  margin: 2% 1%;
+  padding: 0;
+  display: inline-block;
+}
+
+ul.gallery-list li{
+  list-style: none;
+  float: left;
+  padding: 1%;
+  width: 18%;
+}
+ul.gallery-list li img{
+  max-width: 250px;
+  width: 100%;
+}
+
+section.text-container{
+  display: inline-block;
+  margin: 1%;
+}
+section.text-container img{
+  float: left;
+  margin: 0 15px;
+  max-width: 100px;
+  width: 100%;
+}
+section.text-container p{
+  margin: 1%;
+  padding: 0;
+}
