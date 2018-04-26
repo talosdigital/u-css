@@ -1,5 +1,130 @@
 /*
  * Practice : Background, Color and Shadows
- * Version: 1
- * By: xxx
+ * Version: 1.0.0
+ * By: Elías Rodelo
  */
+
+/*#D24F2E and #f5a275*/
+
+.page-content {
+  background: radial-gradient(
+    circle,
+    rgba(245, 162, 117, 0.75) 0%,
+    rgba(210, 79, 46, 1) 50%
+  );
+  height: calc(100vh - 64px);
+  color: #fefefe;
+}
+
+.page-content * {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 80vw;
+  margin: 3rem auto;
+}
+
+.container > div:first-child {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.container > div:first-child > span {
+  width: 100%;
+  display: block;
+  height: 3px;
+  background: radial-gradient(
+    circle,
+    rgba(245, 162, 117, 1) 60%,
+    rgba(210, 79, 46, 1) 100%
+  );
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h2,
+h3 {
+  line-height: 1.25;
+  margin: 0 0 0.75rem 0;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+.ba-avatar-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ba-avatar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f5a275;
+  border-radius: 15rem;
+  max-width: 30rem;
+  box-shadow: inset 1px 1px 2px 0px rgba(255, 255, 255, 0.75),
+    4px 4px 2px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.25s ease-in-out;
+}
+
+.ba-avatar:not(:first-of-type) {
+  margin-left: 2rem;
+}
+
+.ba-avatar:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.ba-avatar span {
+  width: 10%;
+  min-width: 3rem;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.ba-avatar div {
+  margin-left: 1rem;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  width: 85%;
+}
+
+.ba-avatar h2 {
+  font-size: 1em;
+  margin: 0;
+}
+
+.ba-avatar p {
+  margin: 0;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 768px) {
+  .ba-avatar-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ba-avatar {
+    width: 100%;
+  }
+
+  .ba-avatar:not(:first-of-type) {
+    margin: 0;
+    margin-top: 2rem;
+  }
+}
