@@ -13,9 +13,8 @@ p{
   font-size: 20px
 }
 .page-content{
-  background: url("../resources/background.jpg");
+  background: url("../resources/background.jpg") fixed;
   background-position-x: center;
-  background-position-y: initial;
   padding: 0;
   color: #e0dede;
 }
