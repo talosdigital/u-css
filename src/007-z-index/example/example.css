@@ -38,8 +38,7 @@
       width: 65%; }
     .wrapper-yellow .text {
       text-transform: uppercase;
-      font-weight: 300;
-      opacity: 0.75; }
+      font-weight: 300; }
       .wrapper-yellow .text.bg-light {
         background-color: #e4f3f5;
         color: #070707;

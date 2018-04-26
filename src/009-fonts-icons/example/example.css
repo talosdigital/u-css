@@ -1,5 +1,141 @@
 /*
  * Practice : Fonts, Icons and Sizes
- * Version: 1
- * By: xxx
+ * Version: 1.0.0
+ * By: Elías Rodelo
  */
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../resources/fonts/raleway/raleway-regular-webfont.woff2')
+      format('woff2'),
+    url('../resources/fonts/raleway/raleway-regular-webfont.woff')
+      format('woff'),
+    url('../resources/fonts/raleway/raleway-regular-webfont.ttf')
+      format('truetype'),
+    url('../resources/fonts/raleway/raleway-regular-webfont.eot')
+      format('embedded-opentype'),
+    url('../resources/fonts/raleway/raleway-regular-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../resources/fonts/raleway/raleway-bold-webfont.woff2')
+      format('woff2'),
+    url('../resources/fonts/raleway/raleway-bold-webfont.woff') format('woff'),
+    url('../resources/fonts/raleway/raleway-bold-webfont.ttf')
+      format('truetype'),
+    url('../resources/fonts/raleway/raleway-bold-webfont.eot')
+      format('embedded-opentype'),
+    url('../resources/fonts/raleway/raleway-bold-webfont.svg') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../resources/fonts/raleway/raleway-thin-webfont.woff2')
+      format('woff2'),
+    url('../resources/fonts/raleway/raleway-thin-webfont.woff') format('woff'),
+    url('../resources/fonts/raleway/raleway-thin-webfont.ttf')
+      format('truetype'),
+    url('../resources/fonts/raleway/raleway-thin-webfont.eot')
+      format('embedded-opentype'),
+    url('../resources/fonts/raleway/raleway-thin-webfont.svg') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+
+.page-content {
+  font-family: 'Raleway', 'Verdana', 'Arial', sans-serif;
+  font-weight: lighter;
+}
+
+h1,
+h2,
+p,
+li {
+  font-family: inherit;
+  font-weight: 100;
+}
+
+p::first-letter,
+li::first-letter {
+  font-weight: bold;
+}
+
+.input-find {
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.input-find input[type='text'] {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  background-color: #fff;
+  padding: 1rem 1rem 1rem 0;
+  font-size: 1.25em;
+  border-top: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  transition: ease-in-out all 0.3s;
+}
+
+.input-find input[type='text']:focus {
+  border-color: black;
+  outline: 0;
+}
+
+input[type='text']:focus + span {
+  border-color: black;
+}
+
+.input-find span {
+  padding: 0.9rem;
+  transition: ease-in-out all 0.3s;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+
+.input-find span i {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.icons-right {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.aside ul li:nth-child(odd) {
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.aside ul li:nth-child(odd):after {
+  content: " using 'em'";
+}
+
+.aside ul li:first-child {
+  font-weight: 100;
+}
+
+.aside ul li:first-child:after {
+  content: none;
+}
+
+.aside ul li:nth-child(even) {
+  font-size: 10.5pt;
+}
+
+.aside ul li:nth-child(even):after {
+  content: " using 'pt'";
+}
