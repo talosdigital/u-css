@@ -3,3 +3,92 @@
  * Version: 1
  * By: xxx
  */
+.header{
+  height: 250px;
+  background: url("../resources/images/image.jpg");
+}
+.box-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  top: -70px;
+}
+.box-container > .box{
+  display: flex;
+  flex-direction: column;
+  max-width: 45%;
+  margin: 15px;
+  border: 1px solid #AEAEAE;
+}
+.box .box-description .box-text{
+  padding: 15px 10px;
+}
+.box .box-image img{
+  width: 100%;
+}
+.box .box-footer{
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #AEAEAE;
+  padding: 10px;
+}
+.box .box-footer .box-footer-links{
+  flex: 1;
+}
+.box .box-footer .box-footer-links a{
+  color: #AEAEAE;
+  font-size: 22px;
+}
+.box .box-footer .box-footer-button{
+  display: flex;
+}
+.box .box-footer .box-footer-button a{
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer .footer{
+  display: flex;
+  flex-direction: column;
+  background: #8A6CD6;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.footer h1{
+  font-size: 25px;
+}
+.footer ul{
+  list-style: none;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  footer .footer{
+    flex-direction: row;
+  }
+  footer .footer > div{
+    max-width: 25%;
+  }
+  .box-container > .box{
+    width: 30%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}

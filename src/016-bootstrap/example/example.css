@@ -3,3 +3,42 @@
  * Version: 1
  * By: xxx
  */
+body, html, p{
+  font-size: 16px;
+}
+h3{
+  font-size: 1.1em;
+}
+a{
+  color: #F0AD4E;
+  font-size: 16px;
+}
+a:hover{
+  color: #f09e24;
+}
+.header{
+  color: rgba(0,0,0,.5);
+}
+button{
+  background-color: #F0AD4E;
+  cursor: pointer;
+  color: whitesmoke;
+}
+button:hover{
+  background-color: #f09e24;
+}
+
+.list-group-item .float-left.block{
+  margin-left: 3%;
+}
+.list-group-item .float-left.block p{
+  margin: 0;
+}
+.list-options button{
+  width: 100%;
+  border: none;
+  text-align: left;
+}
+.card-group .card{
+  margin: 2%;
+}
