@@ -3,3 +3,100 @@
  * Version: 1
  * By: xxx
  */
+html, body{
+  font-size: 15px;
+  color: white;
+}
+.page-content{
+  background: linear-gradient(90deg, #D5EADF 60%, #555E59 60%);
+}
+.main-container{
+  background-color: rgba(120, 196, 207, .4);
+  position: relative;
+}
+h1{
+  color: white;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 40px;
+}
+hr{
+  border-color: #E22A43;
+}
+
+.left-block{
+  width: 55%;
+}
+
+.inner-block{
+  background-color: rgba(255,255,255,.9);
+  color: black;
+  padding: 25px;
+}
+.text-block{
+  padding: 15px;
+}
+.right-block{
+  position: absolute;
+  top: 5%;
+  right: 0;
+  background-color: #DFE189;
+  height: 100%;
+  width: 35%;
+  padding: 15px;
+  color: #3D4351;
+  border-left: 60px solid #DFE189;
+}
+.right-block ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.right-block h1{
+  font-size: 40px;
+  color: #3D4351;
+  font-weight: normal;
+}
+.square{
+  width: 100px;
+  height: 100px;
+  transform: rotate(45deg);
+}
+.square-margin1{
+  margin-left: 10px;
+}
+.square-margin2{
+  margin-left: 50px;
+}
+.square-margin3{
+  margin-left: 90px;
+}
+.up-square{
+  margin-top: -70px;
+}
+
+
+.bg-color1{
+  background-color: #E52A44;
+}
+.bg-color2{
+  background-color: #E6772B;
+}
+.bg-color3{
+  background-color: #BEE773;
+}
+.bg-color4{
+  background-color: #63E7C5;
+}
+.bg-color5{
+  background-color: #3D79E2;
+}
+.bg-color6{
+  background-color: #E52CCD;
+}
+.bg-color7{
+  background-color: #D8E2E7;
+}
+.bg-color8{
+  background-color: #E5151F;
+}

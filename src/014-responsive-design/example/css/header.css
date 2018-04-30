@@ -6,77 +6,76 @@
 
 /* General */
 nav.navbar-scroll {
-  background-color: #e91e63;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
-  top: 0;
+    background-color: #e91e63;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    top: 0;
 }
 
 nav.navbar-no-scroll {
-  background-color: transparent;
-  box-shadow: none;
-  top: 64px;
+    background-color: transparent;
+    box-shadow: none;
+    top: 64px;
 }
 
 .bg-effect {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 0, transparent 100%);
-  position: absolute;
-  width: 100%;
-  height: 216px;
-  left: 0;
-  top: 0;
-  z-index: 3;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 0, transparent 100%);
+    position: absolute;
+    width: 100%;
+    height: 216px;
+    left: 0;
+    top: 0;
+    z-index: 3;
 }
 
 .bg-section {
-  background-image: url(../../resources/images/backgrounds/bg1.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  height: 216px;
-  text-align: center;
-  width: 100%;
-  position: relative;
-  filter: blur(3px);
+    background-image: url(../../resources/images/backgrounds/bg1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 216px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    filter: blur(3px);
 }
 
 /* Navbar */
 .navbar {
-  background-color: transparent;
-  box-sizing: border-box;
-  color: #fff;
-  display: flex;
-  position: fixed;
-  transition-duration: .2s;
-  width: 100%;
-  z-index: 4;
+    background-color: transparent;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    position: fixed;
+    transition-duration: .2s;
+    width: 100%;
+    z-index: 4;
 }
 
 .navbar .logo i,
 .navbar .responsive-icon i {
-  cursor: pointer;
-  font-size: 3em;
-  padding: 10px 20px;
+    cursor: pointer;
+    font-size: 3em;
+    padding: 10px 20px;
 }
 
 .navbar a {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .navbar #menu a::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background-color: #fff;
-  transition: width .3s;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width .3s;
 }
 
 .navbar #menu a:hover::after {
-  width: 100%;
+    width: 100%;
 }
-
 .navbar #responsive-menu {
   background-color: #fafafa;
   box-sizing: border-box;
@@ -127,18 +126,118 @@ nav.navbar-no-scroll {
   padding-top: 60px;
 }
 
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  /* Navbar */
+  .navbar {
+    background-color: transparent;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    transition-duration: .2s;
+    width: 100%;
+    height: 216px;
+    z-index: 4;
+    align-items: center;
+  }
+  nav.navbar-no-scroll{
+    position: absolute;
+    top: 0;
+  }
+  nav.navbar-scroll{
+    height: 100px;
+  }
+
+  .navbar .responsive-icon i {
+    display: none;
+  }
+  .navbar a.logo{
+    margin-left: 5%;
+  }
+
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .navbar #menu a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width .3s;
+  }
+
+  .navbar #menu a:hover::after {
+    width: 100%;
+  }
+  .navbar #responsive-menu {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 60%;
+    z-index: 5;
+    top: unset;
+    left: unset;
+    right: 0;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  .navbar #responsive-menu a {
+    color: whitesmoke;
+  }
+
+  .navbar #responsive-menu li {
+    cursor: pointer;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 20px;
+  }
+  .navbar #responsive-menu li hr{
+    width: 0;
+    transition: width .3s;
+  }
+  .navbar #responsive-menu li a:hover ~ hr{
+    width: 100%;
+    height: 2px;
+  }
+
+  .navbar #responsive-menu li:first-child i {
+    display: none;
+  }
+
+  .navbar #responsive-menu li:not(:first-child):hover {
+    background-color: transparent;
+  }
+
+  .navbar #responsive-menu-toggle,
+  .navbar #menu {
+    display: none;
+  }
+
+  .navbar #responsive-menu-toggle:checked + #responsive-menu {
+    width: 240px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+
 }

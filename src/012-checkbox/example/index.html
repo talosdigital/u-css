@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>012 - Checkboxes and Radio Buttons</title>
+  <script src="tabs.js" type="application/javascript"></script>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
 
@@ -37,9 +38,9 @@
       <section class="container">
 
         <div class="tabs">
-          <input name="tabs" type="radio" id="tab-1" checked="checked" class="input"/>
+          <input name="tabs" type="radio" id="tab-1" checked="checked" class="input" onclick="tabAction('tab-1')"/>
           <label for="tab-1" class="label">Checkboxes</label>
-          <div class="panel">
+          <div class="panel hide" id="tab1">
             <h3>Lorem ipsum dolor sit amet</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in arcu magna. Pellentesque sit amet
               vestibulum ex, eget placerat metus. Sed vel sagittis massa, eu interdum mauris. Ut congue ipsum ex, eu
@@ -70,9 +71,9 @@
             </div>
           </div>
 
-          <input name="tabs" type="radio" id="tab-2" class="input"/>
+          <input name="tabs" type="radio" id="tab-2" class="input" onclick="tabAction('tab-2')"/>
           <label for="tab-2" class="label">Radio Buttons</label>
-          <div class="panel">
+          <div class="panel hide" id="tab2">
             <h3>Lorem ipsum dolor sit amet</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in arcu magna. Pellentesque sit amet
               vestibulum ex, eget placerat metus. Sed vel sagittis massa, eu interdum mauris. Ut congue ipsum ex, eu
@@ -84,8 +85,8 @@
             <div class="control-group">
               <h3>Radio Buttons</h3>
               <label class="control control--radio">First radio
-                <input type="radio" name="radio" checked="checked"/>
-                <div class="control__indicator"></div>
+                <input type="radio" name="radio"/>
+                <div class="control__indicator checked"></div>
               </label>
               <label class="control control--radio">Second radio
                 <input type="radio" name="radio"/>
@@ -102,9 +103,9 @@
             </div>
           </div>
 
-          <input name="tabs" type="radio" id="tab-3" class="input"/>
+          <input name="tabs" type="radio" id="tab-3" class="input" onclick="tabAction('tab-3')"/>
           <label for="tab-3" class="label">Cards</label>
-          <div class="panel">
+          <div class="panel hide" id="tab3">
             <h3>Lorem ipsum dolor sit amet</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in arcu magna. Pellentesque sit amet
               vestibulum ex, eget placerat metus. Sed vel sagittis massa, eu interdum mauris. Ut congue ipsum ex, eu
@@ -115,7 +116,7 @@
             <div class="list-checks">
               <ul>
                 <li>
-                  <img src="./images/user.png"/>
+                  <img src="../resources/user.png"/>
                   <div>
                     <h3>Headline</h3>
                     <p>Lorem ipsum dolor sit amet...</p>
@@ -127,7 +128,7 @@
                 </li>
 
                 <li>
-                  <img src="./images/user.png"/>
+                  <img src="../resources/user.png"/>
                   <div>
                     <h3>Headline</h3>
                     <p>Lorem ipsum dolor sit amet...</p>
@@ -139,7 +140,7 @@
                 </li>
 
                 <li>
-                  <img src="./images/user.png"/>
+                  <img src="../resources/user.png"/>
                   <div>
                     <h3>Headline</h3>
                     <p>Lorem ipsum dolor sit amet...</p>
@@ -151,7 +152,7 @@
                 </li>
 
                 <li>
-                  <img src="./images/user.png"/>
+                  <img src="../resources/user.png"/>
                   <div>
                     <h3>Headline</h3>
                     <p>Lorem ipsum dolor sit amet...</p>

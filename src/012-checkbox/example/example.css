@@ -70,6 +70,12 @@ html {
   box-sizing: border-box;
   width: 100%;
 }
+.panel.show{
+  display: block;
+}
+.panel.hide{
+  display: none;
+}
 
 @media (min-width: 600px) {
   .panel {
@@ -130,6 +136,15 @@ html {
   position: absolute;
   display: none;
   content: '';
+}
+
+.control input[type=radio]:checked ~ .control__indicator,
+.control input[type=checkbox]:checked ~ .control__indicator{
+  background: #155b72;
+}
+.control input[type=radio]:checked ~ .control__indicator:after,
+.control input[type=checkbox]:checked ~ .control__indicator:after{
+  display: block;
 }
 
 

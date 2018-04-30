@@ -1,0 +1,20 @@
+{
+  "name": "u-css",
+  "version": "1.0.0",
+  "description": "Css training command handler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ./src -p 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisarts/u-css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisarts/u-css/issues"
+  },
+  "homepage": "https://github.com/chrisarts/u-css#readme"
+}

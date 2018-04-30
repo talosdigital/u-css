@@ -3,3 +3,91 @@
  * Version: 1
  * By: xxx
  */
+.container{
+  background: #ec925d; /* Old browsers */
+  background: radial-gradient(ellipse at center, #ec925d 0%,#c74720 70%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec925d', endColorstr='#c74720',GradientType=1 );
+  min-height: 900px;
+}
+.header-persons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: whitesmoke;
+  padding: 25px 0;
+}
+.header-persons span{
+  width: 90%;
+  height: 2px;
+  display: block;
+  background: #c74720;
+  background: -moz-linear-gradient(left, #c74720 0%, #ec925d 50%, #c74720 99%);
+  background: -webkit-linear-gradient(left, #c74720 0%,#ec925d 50%,#c74720 99%);
+  background: linear-gradient(to right, #c74720 0%,#ec925d 50%,#c74720 99%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c74720', endColorstr='#c74720',GradientType=1 );
+}
+.header-persons h2{
+  margin: 0;
+  text-shadow: 3px -1px 2px rgba(150, 150, 150, 1);
+}
+.header-persons h3{
+  margin: 0;
+  text-shadow: 3px -1px 2px rgba(150, 150, 150, 1);
+}
+.persons-container{
+  display: flex;
+  width: 90%;
+  margin: 20px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.person{
+  display: flex;
+  align-items: center;
+  width: 35%;
+  color: white;
+  padding: 10px 15px;
+  background-color: #ED935F;
+  border-top: solid 1px whitesmoke;
+  border-left: solid 1px whitesmoke;
+  border-bottom-left-radius: 42% 100%;
+  border-bottom-right-radius: 42% 100%;
+  border-top-left-radius: 42% 100%;
+  border-top-right-radius: 42% 100%;
+  box-shadow: 9px 9px 5px -6px #C94B24;
+  cursor: pointer;
+}
+.person:hover{
+  filter: opacity(.6);
+}
+.person img{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 3px solid white;
+}
+.person-text{
+  padding: 15px;
+}
+.person h2{
+  font-size: 20px;
+  margin: 0;
+  text-shadow: 3px 1px 3px rgba(150, 150, 150, 1);
+  line-height: normal;
+}
+.person p{
+  font-size: 18px;
+  margin: 0;
+}
+@media only screen and (max-width: 800px) {
+  .persons-container{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .person{
+    width: 80%;
+    margin: 20px 0;
+  }
+}

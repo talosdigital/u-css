@@ -3,3 +3,113 @@
  * Version: 1
  * By: xxx
  */
+@font-face {
+  font-family: raleway;
+  src: url(../resources/fonts/raleway/raleway-bold-webfont.svg);
+}
+html, body{
+  font-size: 15px;
+  color: white;
+}
+.page-content{
+  background: linear-gradient(90deg, #D5EADF 60%, #555E59 60%);
+}
+.main-container{
+  background-color: rgba(120, 196, 207, .4);
+  position: relative;
+}
+h1{
+  color: white;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 40px;
+}
+hr{
+  border-color: #E22A43;
+}
+
+.left-block{
+  width: 55%;
+}
+
+.inner-block{
+  background-color: rgba(255,255,255,.9);
+  color: black;
+  padding: 25px;
+}
+.text-block{
+  padding: 15px;
+  font-size: 16px;
+}
+.big-text{
+  font-size: 18px;
+}
+.right-block{
+  position: absolute;
+  top: 15%;
+  right: 0;
+  background-color: #DFE189;
+  height: 70%;
+  width: 34%;
+  padding: 15px;
+  color: #3D4351;
+  border-left: 60px solid #DFE189;
+  font-family: raleway, sans-serif;
+}
+.right-block ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.right-block ul li{
+  height: 35px;
+  font-size: 18px;
+}
+.right-block ul li i{
+  margin-right: 10px;
+  font-size: 17px;
+}
+.right-block h1{
+  font-size: 40px;
+  color: #3D4351;
+  font-weight: normal;
+}
+.icon-text-container{
+  width: 100%;
+  text-align: right;
+  font-size: 20px;
+  margin: 1% 0;
+}
+.button-large{
+  width: 350px;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF4382;
+  color: whitesmoke;
+  padding: 5px 0;
+  box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.75);
+}
+.button-large i{
+  margin: 0 4%;
+}
+.search-container{
+  width: 200px;
+  height: 30px;
+  position: relative;
+}
+.search-container i{
+  color: #787878;
+  position: absolute;
+  left: 9px;
+  top: 30%;
+}
+.search-container input{
+  padding-left: 30px;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}

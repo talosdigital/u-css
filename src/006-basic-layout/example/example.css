@@ -3,3 +3,92 @@
  * Version: 1
  * By: xxx
  */
+.bg-light-blue{
+  background-color: #8DD0D1;
+}
+ul.mdl-list-text{
+  list-style: none;
+  background-color: #CF5036;
+  margin: 0;
+  padding: 0;
+}
+ul.mdl-list-text li {
+  line-height:1.8em;
+  width: 10%;
+  text-align: center;
+  padding: 5px 0;
+}
+ul.mdl-list-text li span{
+  display: block;
+  cursor: pointer;
+  padding: 10px 5px;
+  color: whitesmoke;
+  font-size: 16px;
+}
+ul.mdl-list-text li span:hover{
+  color: navajowhite;
+}
+ul.mdl-list-text li.top {margin-top:-55px;}
+ul.mdl-list-text li.col2 {margin-left:8%;}
+ul.mdl-list-text li.col3 {margin-left:16%;}
+
+.mdl-list{
+  float: left;
+  width: 250px;
+  height: 700px;
+  margin: 0;
+}
+.main{
+  border-left: 330px solid #FFD0C5;
+  background-color: #FFD0C5;
+  height: 716px;
+}
+.blocks-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.blocks-container > div{
+  width: 190px;
+  height: 200px;
+  border: 1px solid #CF5036;
+}
+
+.flex-layout{
+  display: flex;
+  flex-direction: column;
+}
+
+ul.flex-menu{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  background-color: #CF5036;
+  margin: 0;
+}
+ul.flex-menu li{
+  width: 8%;
+}
+ul.flex-menu li span{
+  padding: 15px 5px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  color: whitesmoke;
+  font-size: 16px;
+}
+ul.flex-menu li span:hover{
+  color: navajowhite;
+}
+.flex-main{
+  display: flex;
+  flex-direction: row;
+}
+.flex-main .aside-menu{
+  width: 25%;
+}
+.flex-main-content{
+  background-color: #FFD0C5;
+  width: 75%;
+  border-left: 40px solid #FFD0C5;
+}

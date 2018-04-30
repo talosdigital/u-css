@@ -114,10 +114,33 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .footer{
+    flex-direction: row;
+  }
+  .footer .dropdown-container{
+    flex-direction: row;
+  }
+  .footer .dropdown-container .dropdown-footer{
+    width: 25%;
+  }
+  .content-down{
+    display: block;
+  }
+  .footer ul.links-footer{
+    flex-direction: column;
+  }
+  .dropdown-footer .heading::after{
+    display: none;
+  }
+  .discount-content{
+    align-items: flex-end;
+    padding-right: 5%;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
