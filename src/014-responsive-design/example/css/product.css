@@ -77,6 +77,22 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .product {
+    display: flex;
+    flex-direction: row;
+  }
+  .product-thumbs {
+    flex-direction: column;
+    order: 1;
+  }
+  .product-slider{
+    order: 2;
+    width: 40%;
+  }
+  .product-description{
+    width: 50%;
+    padding-left: 5%;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
