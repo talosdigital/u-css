@@ -1,5 +1,180 @@
+@charset "UTF-8";
 /*
  * Practice : Flex
- * Version: 1
- * By: xxx
+ * Version: 1.0.0
+ * By: Elías Rodelo
  */
+body {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+}
+body * {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.page-content {
+  padding: 0;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+.header {
+  display: block;
+  height: 300px;
+  background-image: url('../resources/images/image.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center top;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+}
+.container.n-margin {
+  margin-top: -75px;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.column {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+.column.is-6 {
+  flex-basis: 50%;
+}
+.column.is-4.card {
+  flex-basis: 31.33%;
+}
+@media screen and (max-width: 1024px) {
+  .column.is-4.card {
+    flex-basis: 50%;
+  }
+}
+.column.is-3 {
+  flex-basis: 25%;
+}
+
+.card {
+  margin: 0.5rem;
+  border: 1px solid rgba(225, 225, 225, 0.75);
+  border-radius: 3px;
+  max-width: 285px;
+  transition: 0.3s all;
+}
+.card:hover {
+  cursor: pointer;
+  box-shadow: 1px 2px 2px rgba(225, 225, 225, 0.75);
+}
+.card:hover .card-img img {
+  transform: scale(1.125);
+}
+.card-img {
+  position: relative;
+  overflow: hidden;
+}
+.card-img img {
+  overflow: hidden;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  transition: 0.3s all;
+}
+.card-body {
+  padding: 1rem 0.5rem;
+}
+.card-footer {
+  border-top: 1px solid rgba(225, 225, 225, 0.75);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-footer div:first-of-type {
+  padding: 0.5rem 0 0.5rem 1rem;
+}
+.card-footer div:first-of-type a {
+  color: #c8c8c8;
+}
+.card-footer div:first-of-type a:hover {
+  color: #afafaf;
+}
+.card-footer div:last-of-type a {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-bottom-right-radius: 3px;
+}
+.card-footer div:last-of-type a:hover {
+  background-color: rgba(225, 225, 225, 0.75);
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #e91e63;
+  color: #fefefe;
+}
+.footer-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .footer-wrapper {
+    padding: 3rem 5rem;
+  }
+}
+.footer .column {
+  padding-right: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .footer .column {
+    flex-basis: 100%;
+    align-self: center;
+  }
+  .footer .column h1 {
+    text-align: center;
+  }
+  .footer .column div,
+  .footer .column ul {
+    display: none;
+  }
+}
+.footer h1 {
+  font-size: 1.5em;
+  margin: 0 0 0.75rem;
+}
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 768px) {
+  .footer ul {
+    display: none;
+  }
+}
+.footer ul li {
+  border-bottom: 1px solid rgba(225, 225, 225, 0.75);
+  display: flex;
+  justify-content: space-between;
+}
+.footer .img-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .img-box img {
+  flex-grow: 1;
+  margin: 0 0.25rem 0.25rem 0;
+}
+
+/*# sourceMappingURL=example.css.map */
