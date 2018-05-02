@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>002 - Negative Margins</title>
@@ -12,126 +13,129 @@
   <link href="../../app.css" rel="stylesheet" type="text/css">
 
   <!-- Import App Css file -->
-  <link href="example.css" rel="stylesheet" type="text/css">
+  <link href="./example.css" rel="stylesheet" type="text/css">
 
 </head>
+
 <body>
-<!-- Always shows a header, even in smaller screens. -->
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
-    <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
-      <i class="material-icons">home</i>
-    </a>
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">002 - Negative Margins</span>
-      <!-- Add spacer, to align navigation to the right -->
-      <div class="mdl-layout-spacer"></div>
-    </div>
-  </header>
-  <main class="mdl-layout__content">
-    <div class="page-content">
-      <!-- Practice Content Goes Here -->
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
+        <i class="material-icons">home</i>
+      </a>
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">002 - Negative Margins</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <!-- Practice Content Goes Here -->
 
-      <div class="nm-container">
+        <div class="wrapper">
 
-        <div class="nm-example">
-          <h3>Negative margin on content to allow right sidebar </h3>
+          <div class="container">
+            <h3 class="heading">Negative margin on content to allow right sidebar </h3>
 
-          <div class="nm-content">
-            <h5>Lorem Ipsum dolor sit amet, consectetur adipiscing elit</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus enim arcu, eget lobortis magna
-              mattis sit amet. Fusce rutrum condimentum urna ut accumsan. Pellentesque volutpat semper eleifend. Donec
-              tempus a turpis vitae elementum. Donec quis lorem eget nunc ultrices finibus. Maecenas imperdiet luctus
-              tellus in convallis. Duis interdum nibh ac nisi feugiat hendrerit. Vestibulum vitae elit non lectus
-              lobortis sollicitudin eu sit amet odio.</p>
+            <main class="main">
+              <div class="main-inner">
+                <h5>Lorem Ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus enim arcu, eget lobortis magna mattis
+                  sit amet. Fusce rutrum condimentum urna ut accumsan. Pellentesque volutpat semper eleifend. Donec tempus
+                  a turpis vitae elementum. Donec quis lorem eget nunc ultrices finibus. Maecenas imperdiet luctus tellus
+                  in convallis. Duis interdum nibh ac nisi feugiat hendrerit. Vestibulum vitae elit non lectus lobortis sollicitudin
+                  eu sit amet odio.</p>
+
+              </div>
+            </main>
+            <aside class="sidebar">
+              <ul class="mdl-list">
+                <li class="mdl-list__item">
+                  <a class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">home</i>
+                    Home
+                  </a>
+                </li>
+                <li class="mdl-list__item">
+                  <a class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">description</i>
+                    About
+                  </a>
+                </li>
+                <li class="mdl-list__item">
+                  <a class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">email</i>
+                    Contact US
+                  </a>
+                </li>
+              </ul>
+            </aside>
           </div>
-          <div>
-            <ul class="mdl-list">
-              <li class="mdl-list__item">
-                <a class="mdl-list__item-primary-content">
-                  <i class="material-icons mdl-list__item-icon">home</i>
-                  Home
-                </a>
-              </li>
-              <li class="mdl-list__item">
-                <a class="mdl-list__item-primary-content">
-                  <i class="material-icons mdl-list__item-icon">description</i>
-                  About
-                </a>
-              </li>
-              <li class="mdl-list__item">
-                <a class="mdl-list__item-primary-content">
-                  <i class="material-icons mdl-list__item-icon">email</i>
-                  Contact US
-                </a>
-              </li>
+
+          <div class="container">
+            <h3 class="heading">Negative margin on top to align
+              < li>
+            </h3>
+
+            <ul>
+              <li>Milk</li>
+              <li>Eggs</li>
+              <li>Cheese</li>
+              <li class="col-2 top">Tutty Frutti</li>
+              <li class="col-2">Bread</li>
+              <li class="col-2">Mango</li>
+              <li class="col-3 top">Coke</li>
+              <li class="col-3">Apple</li>
+              <li class="col-3">Orange</li>
             </ul>
-          </div>
-        </div>
 
-        <div>
-          <h3>Negative margin on top to align < li > </h3>
-
-          <ul>
-            <li>Milk</li>
-            <li>Eggs</li>
-            <li>Cheese</li>
-            <li>Tutty Frutti</li>
-            <li>Bread</li>
-            <li>Mango</li>
-            <li>Coke</li>
-            <li>Apple</li>
-            <li>Orange</li>
-          </ul>
-
-        </div>
-
-        <div>
-          <h3>Negative margin to create a Sticky Footer using fixed footer height</h3>
-
-          <div>
-
-            <h5>Lorem Ipsum</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus enim arcu, eget lobortis magna
-              mattis sit amet. Fusce rutrum condimentum urna ut accumsan. Pellentesque volutpat semper eleifend. Donec
-              tempus a turpis vitae elementum. Donec quis lorem eget nunc ultrices finibus. Maecenas imperdiet luctus
-              tellus in convallis. Duis interdum nibh ac nisi feugiat hendrerit. Vestibulum vitae elit non lectus
-              lobortis sollicitudin eu sit amet odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              tempus enim arcu, eget lobortis magna
-              mattis sit amet. Fusce rutrum condimentum urna ut accumsan. Pellentesque volutpat semper eleifend. Donec
-              tempus a turpis vitae elementum. Donec quis lorem eget nunc ultrices finibus. Maecenas imperdiet luctus
-              tellus in convallis. Duis interdum nibh ac nisi feugiat hendrerit. Vestibulum vitae elit non lectus
-              lobortis sollicitudin eu sit amet odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              tempus enim arcu, eget lobortis magna
-              mattis sit amet. Fusce rutrum condimentum urna ut accumsan. Pellentesque volutpat semper eleifend. Donec
-              tempus a turpis vitae elementum. Donec quis lorem eget nunc ultrices finibus. Maecenas imperdiet luctus
-              tellus in convallis. Duis interdum nibh ac nisi feugiat hendrerit. Vestibulum vitae elit non lectus
-              lobortis sollicitudin eu sit amet odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              tempus enim arcu, eget lobortis magna
-              mattis sit amet. Fusce rutrum condimentum urna ut accumsan. Pellentesque volutpat semper eleifend. Donec
-              tempus a turpis vitae elementum. Donec quis lorem eget nunc ultrices finibus. Maecenas imperdiet luctus
-              tellus in convallis. Duis interdum nibh ac nisi feugiat hendrerit. Vestibulum vitae elit non lectus
-              lobortis sollicitudin eu sit amet odio.</p>
-
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Click Me</button>
           </div>
 
-          <footer class="nm-site-footer">
-            <div>
+          <div class="container">
+            <h3 class="heading">Negative margin to create a Sticky Footer using fixed footer height</h3>
+
+            <div class="content-foo">
+
+              <h5>Lorem Ipsum</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus enim arcu, eget lobortis magna mattis
+                sit amet. Fusce rutrum condimentum urna ut accumsan. Pellentesque volutpat semper eleifend. Donec tempus
+                a turpis vitae elementum. Donec quis lorem eget nunc ultrices finibus. Maecenas imperdiet luctus tellus in
+                convallis. Duis interdum nibh ac nisi feugiat hendrerit. Vestibulum vitae elit non lectus lobortis sollicitudin
+                eu sit amet odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus enim arcu, eget lobortis
+                magna mattis sit amet. Fusce rutrum condimentum urna ut accumsan. Pellentesque volutpat semper eleifend.
+                Donec tempus a turpis vitae elementum. Donec quis lorem eget nunc ultrices finibus. Maecenas imperdiet luctus
+                tellus in convallis. Duis interdum nibh ac nisi feugiat hendrerit. Vestibulum vitae elit non lectus lobortis
+                sollicitudin eu sit amet odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus enim
+                arcu, eget lobortis magna mattis sit amet. Fusce rutrum condimentum urna ut accumsan. Pellentesque volutpat
+                semper eleifend. Donec tempus a turpis vitae elementum. Donec quis lorem eget nunc ultrices finibus. Maecenas
+                imperdiet luctus tellus in convallis. Duis interdum nibh ac nisi feugiat hendrerit. Vestibulum vitae elit
+                non lectus lobortis sollicitudin eu sit amet odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Fusce tempus enim arcu, eget lobortis magna mattis sit amet. Fusce rutrum condimentum urna ut accumsan. Pellentesque
+                volutpat semper eleifend. Donec tempus a turpis vitae elementum. Donec quis lorem eget nunc ultrices finibus.
+                Maecenas imperdiet luctus tellus in convallis. Duis interdum nibh ac nisi feugiat hendrerit. Vestibulum vitae
+                elit non lectus lobortis sollicitudin eu sit amet odio.</p>
+
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Click Me</button>
+            </div>
+
+            <footer class="footer-foo">
+
               <ul class="nm-footer-list">
                 <li>home</li>
                 <li>about</li>
                 <li>contact us</li>
               </ul>
-            </div>
-          </footer>
+            </footer>
+          </div>
+
         </div>
 
       </div>
-
-    </div>
-  </main>
-</div>
+    </main>
+  </div>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>008 - Advanced Selectors</title>
@@ -15,189 +16,259 @@
   <link href="./example.css" rel="stylesheet" type="text/css">
 
 </head>
+
 <body>
-<!-- Always shows a header, even in smaller screens. -->
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
-    <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
-      <i class="material-icons">home</i>
-    </a>
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">008 - Advanced Selectors</span>
-      <!-- Add spacer, to align navigation to the right -->
-      <div class="mdl-layout-spacer"></div>
-    </div>
-  </header>
-  <main class="mdl-layout__content">
-    <div class="page-content">
-      <!-- Practice Content Goes Here -->
-      <header class="as-header">
-        <h1>Clothes</h1>
-      </header>
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
+        <i class="material-icons">home</i>
+      </a>
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">008 - Advanced Selectors</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <!-- Practice Content Goes Here -->
+        <header>
+          <h1>Clothes</h1>
+        </header>
 
-      <section class="as-container">
-        <aside>
-          <h2>Categories</h2>
-          <ul>
-            <li><a href="">Blouses and tops</a></li>
-            <li><a href="">Cardigans and kimonos</a></li>
-            <li><a href="">Jackets</a></li>
-            <li><a href="">Crop tops and bralettes</a></li>
-            <li><a href="">Chanel skirt</a></li>
-            <li><a href="">Skirts and shorts</a></li>
-            <li><a href="">New collection</a></li>
-            <li><a href="">Pants</a></li>
-            <li><a href="">Clothes</a></li>
-            <li><a href="">Rumpers</a></li>
-            <li><a href="">Coat</a></li>
-            <li><a href="">Dresses</a></li>
-            <li><a href="">Shoes and accessories</a></li>
-          </ul>
+        <section class="as-container">
+          <aside class="as-aside">
+            <h2>Categories</h2>
+            <ul>
+              <li>
+                <a class="as-link" href="">Blouses and tops</a>
+              </li>
+              <li>
+                <a class="as-link" href="">Cardigans and kimonos</a>
+              </li>
+              <li>
+                <a class="as-link" href="">Jackets</a>
+              </li>
+              <li>
+                <a class="as-link" href="">Crop tops and bralettes</a>
+              </li>
+              <li>
+                <a class="as-link" href="">Chanel skirt</a>
+              </li>
+              <li>
+                <a class="as-link" href="">Skirts and shorts</a>
+              </li>
+              <li>
+                <a class="as-link" href="">New collection</a>
+              </li>
+              <li>
+                <a class="as-link" href="">Pants</a>
+              </li>
+              <li>
+                <a class="as-link" href="">Clothes</a>
+              </li>
+              <li>
+                <a class="as-link" href="">Rumpers</a>
+              </li>
+              <li>
+                <a class="as-link" href="">Coat</a>
+              </li>
+              <li>
+                <a class="as-link" href="">Dresses</a>
+              </li>
+              <li>
+                <a class="as-link" href="">Shoes and accessories</a>
+              </li>
+            </ul>
 
-          <h2>Change Currency</h2>
-          <ul class="as-button-list">
-            <li><a href="">COP</a></li>
-            <li><a href="">USD</a></li>
-            <li><a href="">MXN</a></li>
-          </ul>
+            <h2>Change Currency</h2>
+            <ul class="as-button-list">
+              <li>
+                <a class="as-button-list-link" href="">COP</a>
+              </li>
+              <li>
+                <a class="as-button-list-link" href="">USD</a>
+              </li>
+              <li>
+                <a class="as-button-list-link" href="">MXN</a>
+              </li>
+            </ul>
 
-          <h2>Best Valored</h2>
-          <ul>
-            <li class="as-avatar">
-              <img src="../resources/avatar1.jpg" alt="">
+            <h2>Best Valored</h2>
+            <ul>
+              <li class="as-avatar">
+                <div class="as-avatar-img">
+
+                  <img src="../resources/avatar1.jpg" alt="">
+                </div>
+                <div class="as-avatar-meta">
+                  <a class="as-link" href="#">Cross skirt</a>
+                  <p class="as-price">COP $142,000</p>
+                </div>
+              </li>
+              <li class="as-avatar">
+                <div class="as-avatar-img">
+
+                  <img src="../resources/avatar2.jpg" alt="">
+                </div>
+                <div class="as-avatar-meta">
+                  <a class="as-link" href="#">Grape blonda Croptop </a>
+                  <p class="as-price">COP $97,000</p>
+                </div>
+              </li>
+              <li class="as-avatar">
+                <div class="as-avatar-img">
+                  <img src="../resources/avatar3.jpg" alt="">
+                </div>
+                <div class="as-avatar-meta">
+                  <a class="as-link" href="#">Short sleeve shirt with lace</a>
+                  <p class="as-price">COP $105,000</p>
+                </div>
+              </li>
+            </ul>
+          </aside>
+
+          <section>
+            <div class="as-top-list">
+              <span> Showing 1-12 of 289 results</span>
               <div>
-                <a>Cross skirt</a>
-                <p>COP $142,000</p>
+                <button>
+                  <i class="material-icons mdl-list__item-icon">view_module</i>
+                </button>
+                <button>
+                  <i class="material-icons mdl-list__item-icon">view_list</i>
+                </button>
               </div>
-            </li>
-            <li class="as-avatar">
-              <img src="../resources/avatar2.jpg" alt="">
-              <div>
-                <a>Grape blonda Croptop </a>
-                <p>COP $97,000</p>
+            </div>
+
+            <section class="as-cards">
+              <div class="as-card">
+                <div class="as-card-img">
+                  <img src="../resources/card1.jpg" alt="">
+                </div>
+                <p>Dress</p>
+                <p class="as-price">COP $ 200.000</p>
+                <i class="material-icons">add_shopping_cart</i>
+                <a href="#" class="as-onsale">New Colection</a>
               </div>
-            </li>
-            <li class="as-avatar">
-              <img src="../resources/avatar3.jpg" alt="">
-              <div>
-                <a>Short sleeve shirt with lace</a>
-                <p>COP $105,000</p>
+
+              <div class="as-card">
+                <div class="as-card-img">
+                  <img src="../resources/card2.jpg" alt="">
+                </div>
+                <p>White Croptop</p>
+                <p class="as-price">COP $ 200.000</p>
+                <i class="material-icons">add_shopping_cart</i>
               </div>
-            </li>
-          </ul>
-        </aside>
 
-        <section>
-          <div class="as-top-list">
-            <span> Showing 1-12 of 289 results</span>
-            <div>
-              <button><i class="material-icons mdl-list__item-icon">view_module</i></button>
-              <button><i class="material-icons mdl-list__item-icon">view_list</i></button>
-            </div>
-          </div>
+              <div class="as-card">
+                <div class="as-card-img">
+                  <img src="../resources/card3.jpg" alt="">
+                </div>
+                <p>White Blouse</p>
+                <p class="as-price">COP $ 200.000</p>
+                <i class="material-icons">add_shopping_cart</i>
+              </div>
 
-          <section class="as-cards">
-            <div class="as-card">
-              <div class="as-card-img"><img src="../resources/card1.jpg" alt=""></div>
-              <p>Dress</p>
-              <p>COP $ 200.000</p>
-              <i class="material-icons">add_shopping_cart</i>
-              <a href="" class="as-onsale">New Colection</a>
-            </div>
+              <div class="as-card">
+                <div class="as-card-img">
+                  <img src="../resources/card4.jpg" alt="">
+                </div>
+                <p>Black Blouse</p>
+                <p class="as-price">COP $ 200.000</p>
+                <i class="material-icons">add_shopping_cart</i>
+              </div>
 
-            <div class="as-card">
-              <div class="as-card-img"><img src="../resources/card2.jpg" alt=""></div>
-              <p>White Croptop</p>
-              <p>COP $ 200.000</p>
-              <i class="material-icons">add_shopping_cart</i>
-            </div>
+              <div class="as-card">
+                <div class="as-card-img">
+                  <img src="../resources/card5.jpg" alt="">
+                </div>
+                <p>Long sleeve blouse</p>
+                <p class="as-price">COP $ 200.000</p>
+                <i class="material-icons">add_shopping_cart</i>
+              </div>
 
-            <div class="as-card">
-              <div class="as-card-img"><img src="../resources/card3.jpg" alt=""></div>
-              <p>White Blouse</p>
-              <p>COP $ 200.000</p>
-              <i class="material-icons">add_shopping_cart</i>
-            </div>
-
-            <div class="as-card">
-              <div class="as-card-img"><img src="../resources/card4.jpg" alt=""></div>
-              <p>Black Blouse</p>
-              <p>COP $ 200.000</p>
-              <i class="material-icons">add_shopping_cart</i>
-            </div>
-
-            <div class="as-card">
-              <div class="as-card-img"><img src="../resources/card5.jpg" alt=""></div>
-              <p>Long sleeve blouse</p>
-              <p>COP $ 200.000</p>
-              <i class="material-icons">add_shopping_cart</i>
-            </div>
-
-            <div class="as-card">
-              <div class="as-card-img"><img src="../resources/card6.jpg" alt=""></div>
-              <p>Dark Blue Dress</p>
-              <p>COP $ 200.000</p>
-              <i class="material-icons">add_shopping_cart</i>
-            </div>
-          </section>
+              <div class="as-card">
+                <div class="as-card-img">
+                  <img src="../resources/card6.jpg" alt="">
+                </div>
+                <p>Dark Blue Dress</p>
+                <p class="as-price">COP $ 200.000</p>
+                <i class="material-icons">add_shopping_cart</i>
+              </div>
+            </section>
 
 
-          <h2>Recent</h2>
+            <h2>Recent</h2>
 
-          <section class="as-cards">
-            <div class="as-card">
-              <div class="as-card-img"><img src="../resources/card1.jpg" alt=""></div>
-              <p>Dress</p>
-              <p>COP $ 200.000</p>
-              <i class="material-icons">add_shopping_cart</i>
-              <a href="" class="as-onsale">New Colection</a>
-            </div>
+            <section class="as-cards">
+              <div class="as-card">
+                <div class="as-card-img">
+                  <img src="../resources/card1.jpg" alt="">
+                </div>
+                <p>Dress</p>
+                <p class="as-price">COP $ 200.000</p>
+                <i class="material-icons">add_shopping_cart</i>
+                <a href="#" class="as-onsale">New Colection</a>
+              </div>
 
-            <div class="as-card">
-              <div class="as-card-img"><img src="../resources/card2.jpg" alt=""></div>
-              <p>White Croptop</p>
-              <p>COP $ 200.000</p>
-              <i class="material-icons">add_shopping_cart</i>
-            </div>
+              <div class="as-card">
+                <div class="as-card-img">
+                  <img src="../resources/card2.jpg" alt="">
+                </div>
+                <p>White Croptop</p>
+                <p class="as-price">COP $ 200.000</p>
+                <i class="material-icons">add_shopping_cart</i>
+              </div>
 
-            <div class="as-card">
-              <div class="as-card-img"><img src="../resources/card3.jpg" alt=""></div>
-              <p>White Blouse</p>
-              <p>COP $ 200.000</p>
-              <i class="material-icons">add_shopping_cart</i>
-            </div>
+              <div class="as-card">
+                <div class="as-card-img">
+                  <img src="../resources/card3.jpg" alt="">
+                </div>
+                <p>White Blouse</p>
+                <p class="as-price">COP $ 200.000</p>
+                <i class="material-icons">add_shopping_cart</i>
+              </div>
 
-            <div class="as-card">
-              <div class="as-card-img"><img src="../resources/card4.jpg" alt=""></div>
-              <p>Black Blouse</p>
-              <p>COP $ 200.000</p>
-              <i class="material-icons">add_shopping_cart</i>
-            </div>
+              <div class="as-card">
+                <div class="as-card-img">
+                  <img src="../resources/card4.jpg" alt="">
+                </div>
+                <p>Black Blouse</p>
+                <p class="as-price">COP $ 200.000</p>
+                <i class="material-icons">add_shopping_cart</i>
+              </div>
 
-            <div class="as-card">
-              <div class="as-card-img"><img src="../resources/card5.jpg" alt=""></div>
-              <p>Long sleeve blouse</p>
-              <p>COP $ 200.000</p>
-              <i class="material-icons">add_shopping_cart</i>
-            </div>
+              <div class="as-card">
+                <div class="as-card-img">
+                  <img src="../resources/card5.jpg" alt="">
+                </div>
+                <p>Long sleeve blouse</p>
+                <p class="as-price">COP $ 200.000</p>
+                <i class="material-icons">add_shopping_cart</i>
+              </div>
 
-            <div class="as-card">
-              <div class="as-card-img"><img src="../resources/card6.jpg" alt=""></div>
-              <p>Dark Blue Dress</p>
-              <p>COP $ 200.000</p>
-              <i class="material-icons">add_shopping_cart</i>
-            </div>
+              <div class="as-card">
+                <div class="as-card-img">
+                  <img src="../resources/card6.jpg" alt="">
+                </div>
+                <p>Dark Blue Dress</p>
+                <p class="as-price">COP $ 200.000</p>
+                <i class="material-icons">add_shopping_cart</i>
+              </div>
+            </section>
           </section>
         </section>
-      </section>
 
-      <footer>
-        <div> © 2017 All Rights Reserved. Powered by Zuly Alcaraz</div>
-      </footer>
-    </div>
-  </main>
-</div>
+        <footer>
+          <div> © 2017 All Rights Reserved. Powered by Elías Rodelo</div>
+        </footer>
+      </div>
+    </main>
+  </div>
 
 </body>
+
 </html>

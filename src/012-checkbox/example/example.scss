@@ -1,35 +1,41 @@
-@charset "UTF-8";
 /* 
 * Practice: Checkboxes and Radio Buttons 
 * Version: 1.0.0
 * by: Elías Rodelo
 */
+
 body,
 html {
   color: #787878;
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 .trash {
-  color: black; }
+  color: black;
+}
 
 .container {
   margin: 0 30px;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+}
 
 /*tabs*/
+
 .tabs {
   display: flex;
   flex-wrap: wrap;
   max-width: 700px;
   background: #efefef;
-  box-shadow: 0 48px 80px -32px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 48px 80px -32px rgba(0, 0, 0, 0.3);
+}
 
 .input {
   position: absolute;
-  opacity: 0; }
+  opacity: 0;
+}
 
 .label {
   width: 100%;
@@ -39,38 +45,55 @@ html {
   font-weight: bold;
   font-size: 18px;
   color: #7f7f7f;
-  transition: background 0.1s, color 0.1s; }
+  transition: background 0.1s, color 0.1s;
+}
 
 .label:hover {
-  background: #d8d8d8; }
+  background: #d8d8d8;
+}
 
 .label:active {
-  background: #ccc; }
+  background: #ccc;
+}
 
 .input:focus + .label {
   box-shadow: inset 0px 0px 0px 3px #2aa1c0;
-  z-index: 1; }
+  z-index: 1;
+}
 
-input[type='radio'].input:checked + .label {
-  background-color: #fff;
-  box-shadow: inset 0px 0px 0px 3px #2aa1c0; }
-  input[type='radio'].input:checked + .label + .panel {
-    display: block; }
+input[type='radio'].input:checked {
+  + .label {
+    background-color: #fff;
+    box-shadow: inset 0px 0px 0px 3px #2aa1c0;
+
+    + .panel {
+      display: block;
+    }
+  }
+}
 
 @media (min-width: 600px) {
   .label {
-    width: auto; } }
+    width: auto;
+  }
+}
+
 .panel {
   display: none;
   padding: 20px 30px 30px;
   background: #fff;
   box-sizing: border-box;
-  width: 100%; }
+  width: 100%;
+}
 
 @media (min-width: 600px) {
   .panel {
-    order: 99; } }
+    order: 99;
+  }
+}
+
 /* Checkboxes and Radio Buttons */
+
 .control-group {
   display: inline-block;
   width: 200px;
@@ -80,7 +103,8 @@ input[type='radio'].input:checked + .label {
   text-align: left;
   vertical-align: top;
   background: #fff;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
 
 .control {
   font-size: 18px;
@@ -88,12 +112,14 @@ input[type='radio'].input:checked + .label {
   display: block;
   margin-bottom: 15px;
   padding-left: 30px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .control input {
   position: absolute;
   z-index: -1;
-  opacity: 0; }
+  opacity: 0;
+}
 
 .control__indicator {
   position: absolute;
@@ -101,23 +127,37 @@ input[type='radio'].input:checked + .label {
   left: 0;
   width: 20px;
   height: 20px;
-  background: #e6e6e6; }
+  background: #e6e6e6;
+}
 
 .control--radio .control__indicator {
-  border-radius: 50%; }
+  border-radius: 50%;
+}
 
 .control input:disabled ~ .control__indicator {
   pointer-events: none;
   opacity: 0.6;
-  background: #e6e6e6; }
+  background: #e6e6e6;
+}
 
 .control__indicator:after {
   position: absolute;
   display: none;
-  content: ''; }
+  content: '';
+}
 
-.control--checkbox input:checked + .control__indicator:after, .control--radio input:checked + .control__indicator:after {
-  display: block; }
+.control {
+  &--checkbox,
+  &--radio {
+    input:checked {
+      + .control__indicator {
+        &:after {
+          display: block;
+        }
+      }
+    }
+  }
+}
 
 .control--checkbox .control__indicator:after {
   top: -4px;
@@ -126,7 +166,9 @@ input[type='radio'].input:checked + .label {
   height: 16px;
   transform: rotate(45deg);
   border: solid #2aa1c0;
-  border-width: 0 4px 4px 0; }
+  border-width: 0 4px 4px 0;
+  // transition: ease-in-out all 0.2s; change to animation
+}
 
 .control--radio .control__indicator:after {
   top: 5px;
@@ -134,54 +176,67 @@ input[type='radio'].input:checked + .label {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #2aa1c0; }
+  background: #2aa1c0;
+}
 
 /*Cards*/
+
 .list-checks {
-  margin: 20px; }
+  margin: 20px;
+}
 
 .list-checks ul {
   list-style-type: none;
-  width: 500px; }
+  width: 500px;
+}
 
 h3 {
-  font: bold 20px/1.5 Helvetica, Verdana, sans-serif; }
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
 
 .list-checks li img {
   float: left;
   margin: 0 15px 0 0;
   width: 100px;
-  height: auto; }
+  height: auto;
+}
 
 .list-checks li p {
-  font: 200 12px/1.5 Georgia, Times New Roman, serif; }
+  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
 
 .list-checks li {
   padding: 10px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .list-checks li:hover {
   background: #eee;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .list-checks div {
-  float: left; }
+  float: left;
+}
 
 .list-checks label {
   float: right;
-  padding-right: 10px; }
+  padding-right: 10px;
+}
 
 @media (max-width: 600px) {
   .container {
-    margin: 0; }
+    margin: 0;
+  }
 
   p {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical; }
+    -webkit-box-orient: vertical;
+  }
 
   .control-group {
-    padding: 30px 0; } }
-
-/*# sourceMappingURL=example.css.map */
+    padding: 30px 0;
+  }
+}

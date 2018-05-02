@@ -1,0 +1,121 @@
+/*
+ * Practice : Display
+ * Version: 1.0.0
+ * By: Elías Rodelo
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #e9e7e9;
+
+  h1 {
+    font-size: 2rem;
+    line-height: 1;
+    display: inline;
+  }
+}
+
+.block {
+  padding: 1rem;
+}
+
+.navbar {
+  background-color: #d9d7d9;
+
+  &-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &-item {
+    display: inline-block;
+  }
+
+  &-link {
+    display: block;
+    padding: 0.5rem 1rem;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+  }
+}
+
+.columns {
+  background-color: #e9e7e9;
+  display: flex;
+
+  .col {
+    display: block;
+    flex-grow: 1;
+    flex-basis: 50%;
+
+    + .col {
+      padding-left: 1rem;
+    }
+  }
+
+  .column {
+    border: 2px solid #d24f2e;
+    flex-grow: 1;
+    flex-basis: 25%;
+    padding: 1rem;
+    margin: 1rem;
+
+    + .column {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+
+    &:first-of-type {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
+}
+
+.table {
+  display: table;
+  width: 100%;
+  background-color: #d9d7d9;
+
+  &-row {
+    display: table-row;
+    border-bottom: 1px solid #efefef;
+  }
+
+  &-header-group {
+    display: table-header-group;
+
+    .header {
+      font-weight: bolder;
+      background-color: #c9c7c9;
+      border-top: 1px solid #efefef;
+    }
+  }
+
+  &-cell {
+    display: table-cell;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #efefef;
+    border-left: 1px solid #efefef;
+
+    &:last-of-type {
+      border-right: 1px solid #efefef;
+    }
+  }
+}

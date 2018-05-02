@@ -1,32 +1,38 @@
-@charset "UTF-8";
 /*
  * Practice : Basic Layout
  * Version: 1.0.0
  * By: Elías Rodelo
  */
+
 .container {
   width: 80vw;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .header {
   background-color: #d24f2e;
-  padding: 1rem 1rem; }
+  padding: 1rem 1rem;
+}
 
 ul {
   color: #fff;
   margin: 0;
   padding: 0;
-  list-style: none; }
-  ul li {
+  list-style: none;
+
+  li {
     display: inline;
-    margin-right: 1rem; }
+    margin-right: 1rem;
+  }
+}
 
 .aside {
   width: 250px;
   margin-right: -250px;
   float: left;
   background-color: #76d7c4;
-  position: relative; }
+  position: relative;
+}
 
 .main {
   box-sizing: border-box;
@@ -34,49 +40,64 @@ ul {
   border-left: 250px solid #76d7c4;
   float: left;
   width: 100%;
-  padding: 1rem; }
-  .main .square-container {
+  padding: 1rem;
+
+  .square-container {
     width: 100%;
     height: 75vh;
     display: flex;
-    flex-wrap: wrap; }
-    .main .square-container .square {
+    flex-wrap: wrap;
+
+    .square {
       box-sizing: border-box;
       width: 25%;
       background-color: #76d7c4;
-      border: 1px solid #d24f2e; }
+      border: 1px solid #d24f2e;
+    }
+  }
+}
 
 .footer {
   background-color: #d24f2e;
-  padding: 1rem; }
+  padding: 1rem;
+}
 
 .header,
 .footer {
   overflow: hidden;
   zoom: 1;
-  clear: left; }
-  .header.flex,
-  .footer.flex {
+  clear: left;
+
+  &.flex {
     clear: none;
     overflow: unset;
-    zoom: normal; }
+    zoom: normal;
+  }
+}
 
 .flex-container {
   display: flex;
   width: 100%;
-  box-sizing: content-box; }
-  .flex-container .aside {
+  box-sizing: content-box;
+
+  .aside {
     float: none;
     margin: 0;
-    flex: 25% 1; }
-  .flex-container .main {
+    flex: 25% 1;
+  }
+
+  .main {
     float: none;
     margin: 0;
     flex: 75% 3;
-    border: 0; }
-  .flex-container .square-container {
-    flex-wrap: nowrap; }
-  .flex-container .he {
-    height: 60%; }
+    border: 0;
+  }
 
-/*# sourceMappingURL=example.css.map */
+  .square-container {
+    flex-wrap: nowrap;
+  }
+
+  .he {
+    height: 60%;
+  }
+}

@@ -27,7 +27,7 @@
   line-height: 65px;
 }
 
-.footer ul.links-footer li:not(:last-child){
+.footer ul.links-footer li:not(:last-child) {
   padding-right: 10px;
 }
 
@@ -43,7 +43,7 @@
   position: relative;
 }
 
-.dropdown-footer .heading{
+.dropdown-footer .heading {
   box-sizing: border-box;
   cursor: pointer;
   font-size: 1em;
@@ -95,7 +95,7 @@
   flex-direction: column;
 }
 
-.content-down .calendar .calendar-item{
+.content-down .calendar .calendar-item {
   border-bottom: 1px solid #fff;
   display: flex;
   flex-direction: row;
@@ -105,21 +105,48 @@
   opacity: 0.8;
 }
 
-
-
-
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .footer {
+    background-color: #3f1ee9;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .footer {
+    background-color: #e93f1e;
+  }
+
+  .dropdown-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .dropdown-footer {
+    flex: 50% 1 1;
+  }
+
+  .dropdown-footer .heading::after {
+    content: none;
+  }
+
+  .dropdown-footer .content-down {
+    display: block;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+  .dropdown-footer {
+    flex: 25% 1 1;
+  }
+
+  .footer {
+    background-color: #e91e63;
+  }
 }

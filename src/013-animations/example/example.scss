@@ -1,4 +1,5 @@
 /* Practice: Transform, Transition and Animations */
+
 /* Tags */
 body {
   color: #787878;
@@ -6,27 +7,35 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
-  font-family: 'Avenir', sans-serif; }
-  body * {
-    box-sizing: border-box; }
+  font-family: 'Avenir', sans-serif;
+
+  * {
+    box-sizing: border-box;
+  }
+}
 
 ul {
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /* <----------------- CLASSES----------------> */
+
 .trash {
-  color: black; }
+  color: black;
+}
 
 .container {
   margin: 0 30px;
-  font-family: 'Avenir', sans-serif; }
+  font-family: 'Avenir', sans-serif;
+}
 
 /** wrap  **/
 .wrap {
   margin: 0 auto;
-  max-width: 1200px; }
+  max-width: 1200px;
+}
 
 /* header */
 .title {
@@ -37,7 +46,8 @@ ul {
   -webkit-text-fill-color: transparent;
   font-size: 3em;
   text-align: center;
-  margin: 0 0 30px 0; }
+  margin: 0 0 30px 0;
+}
 
 .pulse {
   animation-name: pulse;
@@ -46,33 +56,46 @@ ul {
   animation-iteration-count: infinite;
   animation-play-state: running;
   animation-delay: 0s;
-  animation-direction: alternate; }
+  animation-direction: alternate;
+}
 
 /* <-----------Article----------->  */
+
 .article {
   background-color: #c8c8c8;
-  padding: 5rem 4rem; }
-  .article ul {
-    perspective: 1500px; }
-  .article li {
+  padding: 5rem 4rem;
+
+  ul {
+    perspective: 1500px;
+  }
+
+  li {
     margin-right: 3rem;
     margin-bottom: 1rem;
     position: relative;
     display: inline-block;
     width: 375px;
     transition: 0.5s all;
-    transform: rotate3d(0, 1, 0, 30deg); }
-    .article li:hover {
-      transform: rotate(0deg); }
-      .article li:hover .animal-info {
+    transform: rotate3d(0, 1, 0, 30deg);
+
+    &:hover {
+      transform: rotate(0deg);
+
+      .animal-info {
         bottom: 0;
         left: 10%;
-        width: 80%; }
-    .article li img {
+        width: 80%;
+      }
+    }
+
+    img {
       margin: 0 10px 0 0;
       max-width: 100%;
       border: 10px solid #fcfafa;
-      box-shadow: 0 3px 10px #888; }
+      box-shadow: 0 3px 10px #888;
+    }
+  }
+}
 
 .animal-info {
   border: 10px solid #fcfafa;
@@ -84,18 +107,23 @@ ul {
   bottom: -5%;
   left: 20%;
   box-shadow: 0 20px 40px #888;
-  transition-duration: 0.5s; }
-  .animal-info h3 {
+  transition-duration: 0.5s;
+
+  h3 {
     color: #7a3f3a;
     font-variant: small-caps;
     font-family: Georgia, serif;
     text-align: center;
     margin: 0;
     margin-bottom: 1rem;
-    font-size: 2em; }
-  .animal-info p {
-    line-height: 1.25; }
-  .animal-info a {
+    font-size: 2em;
+  }
+
+  p {
+    line-height: 1.25;
+  }
+
+  a {
     background-color: #7a3f3a;
     padding: 1rem 3rem;
     color: #eee;
@@ -103,51 +131,77 @@ ul {
     display: block;
     text-align: center;
     margin: 0 auto;
-    border-radius: 5px; }
-    .animal-info a:focus, .animal-info a:hover {
+    border-radius: 5px;
+
+    &:focus,
+    &:hover {
       background-color: #6a191f;
-      color: #fff; }
+      color: #fff;
+    }
+  }
+}
 
 @media (max-width: 1200px) {
-  .article li:last-child {
-    display: none; } }
+  .article {
+    li:last-child {
+      display: none;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .wrap .article li:not(:first-child) {
-    display: none; } }
+    display: none;
+  }
+}
+
 @media (max-width: 426px) {
   .article ul {
-    height: 400px; }
+    height: 400px;
+  }
 
   .article img {
     float: left;
     margin: 0 10px 0 0;
-    width: 275px; }
+    width: 275px;
+  }
 
   .article li:hover .animal-info {
-    margin-left: 18px; } }
+    margin-left: 18px;
+  }
+}
+
 /* <----------- Notes -----------> */
+
 .notes {
   width: calc(100% - 350px);
   height: 100%;
   overflow: auto;
-  padding: 2rem 2rem; }
-  .notes h2,
-  .notes p {
+  padding: 2rem 2rem;
+
+  h2,
+  p {
     font-size: 1em;
     margin: 0;
     margin-bottom: 0.75rem;
-    line-height: 1.125; }
-  .notes h2 {
+    line-height: 1.125;
+  }
+
+  h2 {
     font-weight: bolder;
-    font-size: 1.25em; }
+    font-size: 1.25em;
+  }
+}
 
 .notes .notes ul {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .notes ul li {
   margin-right: 1.5rem;
   margin-bottom: 1.5rem;
-  display: inline-block; }
+  display: inline-block;
+}
 
 .notes ul li div {
   text-decoration: none;
@@ -159,18 +213,25 @@ ul {
   padding: 1rem;
   box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
   transform: rotate(-6deg);
-  transition: 0.3s all; }
-  .notes ul li div:hover {
-    transform: scale(1.25); }
+  transition: 0.3s all;
+
+  &:hover {
+    transform: scale(1.25);
+  }
+}
 
 .notes ul li:nth-child(even) div {
   position: relative;
   background: #cfc;
-  transform: rotate(4deg); }
-  .notes ul li:nth-child(even) div:hover {
-    transform: scale(1.25); }
+  transform: rotate(4deg);
+
+  &:hover {
+    transform: scale(1.25);
+  }
+}
 
 /* <----------- Sidebar -----------> */
+
 .sidebar {
   float: right;
   width: 350px;
@@ -178,7 +239,8 @@ ul {
   padding: 15px;
   background-color: #e8e8e8;
   box-sizing: border-box;
-  text-align: center; }
+  text-align: center;
+}
 
 .sidebar button {
   box-shadow: 0px 10px 14px -7px #275873;
@@ -191,33 +253,52 @@ ul {
   font-weight: bold;
   padding: 13px 32px;
   text-shadow: 2px 1px 0px #275873;
-  margin: 10px; }
-  .sidebar button:hover {
+  margin: 10px;
+
+  &:hover {
     animation-name: stretch;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-    animation-direction: alternate; }
+    animation-direction: alternate;
+  }
+}
 
 @media (max-width: 1024px) {
   .sidebar {
-    height: 500px; } }
+    height: 500px;
+  }
+}
+
 @media (max-width: 426px) {
   .sidebar {
     width: 100%;
-    height: 100%; } }
+    height: 100%;
+  }
+}
+
 /* Animations */
+
 @keyframes pulse {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
+
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
+
 @keyframes stretch {
   0% {
-    transform: scale(1); }
-  20% {
-    transform: scale(1.05); }
-  100% {
-    transform: scale(0.9); } }
+    transform: scale(1);
+  }
 
-/*# sourceMappingURL=example.css.map */
+  20% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}

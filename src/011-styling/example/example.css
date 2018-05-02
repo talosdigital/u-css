@@ -1,5 +1,131 @@
+@charset "UTF-8";
 /*
  * Practice : Styling Buttons, links and lists
- * Version: 1
- * By: xxx
+ * Version: 1.0.0
+ * By: Elías Rodelo
  */
+.page-content {
+  padding: 0; }
+  .page-content * {
+    box-sizing: border-box; }
+
+h1,
+h2,
+.page-content {
+  font-family: 'Avenir', sans-serif;
+  margin: 0;
+  font-size: 2em; }
+
+.st-header {
+  width: 100%;
+  height: 20rem;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../resources/background.jpg");
+  background-attachment: fixed;
+  background-position: 50% top;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+  .st-header h1 {
+    color: #fbeeeb;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 2rem; }
+
+.st-container, .footer-inner {
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 2rem; }
+  .st-container form, .footer-inner form {
+    max-width: 500px;
+    margin: 0 auto; }
+    .st-container form input, .footer-inner form input,
+    .st-container form textarea,
+    .footer-inner form textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      background-color: #eaeaea;
+      padding: 0.5rem 1rem;
+      color: black;
+      border: 0;
+      font-size: 11pt;
+      border: 2px solid transparent;
+      transition: 0.2s all ease-in-out; }
+      .st-container form input:last-child, .footer-inner form input:last-child,
+      .st-container form textarea:last-child,
+      .footer-inner form textarea:last-child {
+        margin-bottom: 0; }
+      .st-container form input:active, .footer-inner form input:active, .st-container form input:focus, .footer-inner form input:focus,
+      .st-container form textarea:active,
+      .footer-inner form textarea:active,
+      .st-container form textarea:focus,
+      .footer-inner form textarea:focus {
+        border-color: #dadada;
+        outline: 0; }
+    .st-container form button, .footer-inner form button {
+      background-color: #d24f2e;
+      color: #fbeeeb;
+      padding: 1rem 3rem;
+      text-transform: uppercase;
+      font-weight: bolder;
+      border: 2px solid #a93f24;
+      transition: 0.2s all ease-in-out;
+      border-radius: 3px; }
+      .st-container form button:hover, .footer-inner form button:hover {
+        cursor: pointer;
+        background-color: #fefefe;
+        color: #a93f24; }
+      .st-container form button:active, .footer-inner form button:active, .st-container form button:focus, .footer-inner form button:focus {
+        outline: 0; }
+    .st-container form p, .footer-inner form p {
+      margin-top: 1rem;
+      font-weight: bolder;
+      opacity: 0.5;
+      text-transform: uppercase; }
+
+.footer {
+  background-color: #d24f2e;
+  color: #fbeeeb; }
+  .footer-inner {
+    display: flex;
+    justify-content: space-around; }
+    .footer-inner > div {
+      width: 33.3%;
+      margin: 0 1rem; }
+      .footer-inner > div:first-of-type {
+        margin-left: 0; }
+      .footer-inner > div:last-of-type {
+        margin-right: 0; }
+      .footer-inner > div p {
+        font-weight: bolder;
+        text-transform: uppercase;
+        line-height: 1.125;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #fbeeeb;
+        letter-spacing: 1pt; }
+    .footer-inner ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+    .footer-inner li {
+      margin-bottom: 0.5rem; }
+    .footer-inner a {
+      color: #fbeeeb;
+      display: block; }
+      .footer-inner a:hover {
+        color: rgba(251, 238, 235, 0.75); }
+
+@media screen and (max-width: 768px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .footer-inner > div {
+      margin: 0;
+      margin-bottom: 2rem;
+      width: 100%; }
+      .footer-inner > div:last-of-type {
+        margin: 0; } }
+
+/*# sourceMappingURL=example.css.map */

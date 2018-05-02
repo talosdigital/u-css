@@ -1,0 +1,119 @@
+/*
+ * Practice : Z-index
+ * Version: 1.0.0
+ * By: Elías Rodelo
+ */
+
+$green-1: #d5eadf;
+$green-2: #e4f3f5;
+$gray-1: #555e59;
+$blue-1: #78c4cf;
+$yellow-1: #dfe189;
+$dark-1: #070707;
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.mdl-layout__content {
+  width: 100vw;
+  background-color: $green-1;
+}
+
+.wrapper {
+  width: 80vw;
+  margin: 5rem auto;
+  z-index: 3;
+  background-color: $blue-1;
+
+  h1 {
+    font-size: 2.5em;
+    font-weight: 200;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1.75em;
+    margin: 0 0 1rem 0;
+    font-weight: 100;
+  }
+
+  &-yellow {
+    position: relative;
+    z-index: 4;
+    color: #fefefe;
+    padding: 3rem;
+
+    hr {
+      border-top-color: #d05036;
+    }
+
+    .content {
+      width: 65%;
+    }
+
+    .text {
+      text-transform: uppercase;
+      font-weight: 300;
+
+      &.bg-light {
+        background-color: $green-2;
+        color: $dark-1;
+        padding: 3rem;
+        text-transform: unset;
+        margin-left: -3rem;
+      }
+    }
+  }
+
+  .aside {
+    background-color: $yellow-1;
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    width: 25vw;
+    height: 100%;
+    z-index: 4;
+    color: $dark-1;
+    padding: 2rem;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &-dark {
+    position: absolute;
+    background-color: $gray-1;
+    width: 30vw;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.5;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    &-dark {
+      display: none;
+    }
+
+    &-yellow {
+      .content {
+        width: 100%;
+      }
+
+      .aside {
+        top: 103%;
+        width: 100%;
+      }
+    }
+  }
+}

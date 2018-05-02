@@ -1,5 +1,81 @@
+@charset "UTF-8";
 /*
- * Practice : Z-index, !important and Inheritance
- * Version: 1
- * By: xxx
+ * Practice : Z-index
+ * Version: 1.0.0
+ * By: Elías Rodelo
  */
+*,
+::after,
+::before {
+  box-sizing: border-box; }
+
+.mdl-layout__content {
+  width: 100vw;
+  background-color: #d5eadf; }
+
+.wrapper {
+  width: 80vw;
+  margin: 5rem auto;
+  z-index: 3;
+  background-color: #78c4cf; }
+  .wrapper h1 {
+    font-size: 2.5em;
+    font-weight: 200;
+    margin: 0;
+    margin-bottom: 1rem; }
+  .wrapper h2 {
+    font-size: 1.75em;
+    margin: 0 0 1rem 0;
+    font-weight: 100; }
+  .wrapper-yellow {
+    position: relative;
+    z-index: 4;
+    color: #fefefe;
+    padding: 3rem; }
+    .wrapper-yellow hr {
+      border-top-color: #d05036; }
+    .wrapper-yellow .content {
+      width: 65%; }
+    .wrapper-yellow .text {
+      text-transform: uppercase;
+      font-weight: 300; }
+      .wrapper-yellow .text.bg-light {
+        background-color: #e4f3f5;
+        color: #070707;
+        padding: 3rem;
+        text-transform: unset;
+        margin-left: -3rem; }
+  .wrapper .aside {
+    background-color: #dfe189;
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    width: 25vw;
+    height: 100%;
+    z-index: 4;
+    color: #070707;
+    padding: 2rem; }
+    .wrapper .aside ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+  .wrapper-dark {
+    position: absolute;
+    background-color: #555e59;
+    width: 30vw;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.5;
+    right: 0;
+    top: 0; }
+
+@media screen and (max-width: 768px) {
+  .wrapper-dark {
+    display: none; }
+  .wrapper-yellow .content {
+    width: 100%; }
+  .wrapper-yellow .aside {
+    top: 103%;
+    width: 100%; } }
+
+/*# sourceMappingURL=example.css.map */

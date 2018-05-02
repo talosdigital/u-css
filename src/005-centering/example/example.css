@@ -1,5 +1,115 @@
+@charset "UTF-8";
 /*
  * Practice : Centering
- * Version: 1
- * By: xxx
+ * Version: 1.0.0
+ * By: Elías Rodelo
  */
+* {
+  box-sizing: border-box; }
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #e9e7e9;
+  display: flex;
+  flex-direction: column; }
+
+.block {
+  padding: 1rem; }
+
+.header {
+  background-color: #d9d7d9;
+  line-height: 1.5;
+  margin: 0 0 1rem 0; }
+
+.text-align-center {
+  text-align: center; }
+
+.navbar {
+  background-color: #d9d7d9;
+  margin-bottom: 1rem; }
+  .navbar .container {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center; }
+  .navbar-link {
+    margin-right: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1rem; }
+    .navbar-link:last-of-type {
+      margin: 0; }
+
+.columns {
+  display: block;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2rem; }
+  .columns .column {
+    display: inline-block;
+    background-color: #d9d7d9;
+    width: 30%;
+    margin: 1rem;
+    padding: 3rem 5rem; }
+
+.columns.flex {
+  display: inherit; }
+  .columns.flex .column {
+    width: unset; }
+
+.center-half {
+  display: block;
+  width: 50%;
+  background-color: #d9d7d9;
+  margin-bottom: 2rem;
+  padding: 2rem 1rem;
+  line-height: 150%; }
+
+.table-like {
+  display: table;
+  vertical-align: center;
+  padding: 1.5rem 3rem;
+  background-color: #d9d7d9;
+  width: 25%;
+  margin-bottom: 2rem; }
+
+.flex-container {
+  display: inherit;
+  padding: 4rem 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #d9d7d9;
+  margin-bottom: 2rem;
+  /* Squares */ }
+  .flex-container p {
+    margin: 0; }
+  .flex-container .height {
+    background-color: #a9a7a9;
+    display: block;
+    width: 100%;
+    padding: 1rem; }
+    .flex-container .height--fixed {
+      height: 80px; }
+  .flex-container.green {
+    background-color: #148f77;
+    height: 500px;
+    justify-content: center; }
+    .flex-container.green .square-1 {
+      height: 175px;
+      width: 20%;
+      background-color: #ec7063;
+      display: inherit;
+      justify-content: inherit;
+      align-items: center; }
+    .flex-container.green .square-2 {
+      display: inherit;
+      justify-content: inherit;
+      width: 65%;
+      height: 120px;
+      background-color: #17202a;
+      align-items: inherit; }
+    .flex-container.green .square-3 {
+      width: 40%;
+      height: 54px;
+      background-color: #d68910; }
+
+/*# sourceMappingURL=example.css.map */

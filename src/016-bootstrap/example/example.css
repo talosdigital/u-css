@@ -1,5 +1,34 @@
 /*
  * Practice : Bootstrap and Material Column System
  * Version: 1
- * By: xxx
+ * By: Elías Rodelo
  */
+
+:root {
+  --yellow: #e9a41e;
+}
+
+.block {
+  margin-left: 1rem;
+}
+
+.block p {
+  margin: 0;
+}
+
+.card-link {
+  color: var(--yellow);
+}
+
+.card-link:hover {
+  color: rgba(233, 164, 30, 0.75);
+}
+
+.btn-sm.float-right {
+  background-color: var(--yellow);
+  color: rgb(255, 255, 255);
+}
+
+.btn-sm.float-right:hover {
+  background-color: #cc901a;
+}
