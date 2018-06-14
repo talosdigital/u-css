@@ -3,3 +3,179 @@
  * Version: 1
  * By: xxx
  */
+
+label,
+div,
+p{
+	color: rgb(93,94,97);
+}
+
+.bottom-p{
+ 	clear:both;
+ 	padding-top: 15px;
+ 	padding-bottom: 60px;
+ }
+
+.top-p{
+	margin-left: 110px;
+}
+
+.bottom-section{
+ 	background-color: rgb(232,232,232);
+ 	padding-top: 30px;
+ 	padding-left: 20px;
+ }
+
+.bottom-section img{
+ 	float:left;
+ 	margin-top: 10px;
+ 	margin-left: 10px;
+ }
+
+.footer{
+ 	background-color: rgb(232,232,232);
+ 	border: solid rgb(97,166,39);
+ 	height: 200px;
+ 	padding-top: 40px;
+ 	padding-left: 30px;
+ }
+
+.footer img{
+ 	float:right;
+ 	padding-right: 25px;
+ }
+
+.gallery{
+	background-color: rgb(245,245,245);
+	padding-top: 20px;
+	padding-left: 15px;
+
+}
+
+.gallery ul{
+	list-style: none;
+	padding-left: 30px;
+}
+
+.gallery li{
+	display: inline-block;
+	padding-right:20px;
+	padding-bottom: 20px;
+}
+
+#header{
+	background-color: rgb(232,232,232);
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+h1{
+	font-size: 30px;
+}
+
+h2{
+	color: rgb(111,111,111);
+	font-size:30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 15px;
+}
+
+.img{
+	float:right;
+	height: 400px;
+	padding-bottom: : 20px;
+	padding-left: 5px;
+	padding-right: 30px;
+	width: 420px;
+}
+
+input{
+	padding-left: 15px;
+}
+
+.link{
+	padding-left: 15px;
+	font-size: 20px;
+}
+
+.link li{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#main{
+	background-color: rgb(200,200,200);
+	clear:right;
+	float:right;
+	height: 800px;
+	width: 900px;
+
+}
+
+.navigation{
+	background-color: rgb(220,220,220);
+	padding-bottom: 40px;
+}
+
+.navigation li{
+	display:inline;
+	float: left;
+	padding: 5px 10px 5px 15px;
+}
+
+.navigation ul{
+	list-style: none;
+	padding-top: 10px;
+}
+
+p{
+	font-size: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 25px;
+}
+
+#section{
+	clear:both;
+}
+
+.search{
+	font-size: 20px;
+	margin-left: 15px;
+}
+
+.search input{
+	border: none;
+	border-radius: 5px;
+	display: block;
+	height: 20px;
+	margin-left: 15px;
+	width: 270px;
+
+}
+
+#sidebar{
+	background-color: rgb(232,232,232);
+	clear:left;
+	float:left;
+	height: 660px;
+	padding-top: 20px;
+	padding-bottom: 120px;
+	width: 340px;
+
+}
+
+span{
+	color: rgb(115,115,115);
+	font-size: 60px;
+	float:left;
+	padding-right: 20px;
+	padding-bottom: 10px;
+}
+
+.title{
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
