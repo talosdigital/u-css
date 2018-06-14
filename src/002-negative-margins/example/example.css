@@ -3,3 +3,86 @@
  * Version: 1
  * By: xxx
  */
+
+.container1,
+ .container2,
+ .container3{
+ 	background-color: rgb(245,245,245);
+ 	padding-left: 15px;
+ 	padding-right: 15px;
+ 	padding-top: 15px;
+ 	width: 1030px;
+ }
+
+.container1{
+	height: 300px;
+	margin-bottom: 20px;
+}
+
+ .container3{
+	 height: 570px;
+	 margin-bottom: -40px;
+ }
+
+ .c1-left{
+	 width: 70%;
+ }
+
+ .c1-right{
+	 height: 100px;
+	 margin-left: 70%;
+	 margin-top: -220px;
+	 padding: 40px;
+	 width: 30%;
+ }
+ .col2{
+	margin-left: 100px;
+ }
+
+ .col3{
+	margin-left: 200px;
+ }
+
+ .container2 ul{
+	 list-style: none;
+	 line-height: 2em;
+	 font-size: 20px;
+ }
+
+ .container2 li{
+	 border-bottom: 1px solid rgb(221,221,221);
+ }
+
+ footer{
+	 height:40px;
+ }
+
+ hr{
+	border-color: rgb(212,68,70);
+ }
+
+ #main{
+	margin-left:100px;
+ }
+
+ .menu{
+	background-color: rgb(212,68,70);
+	height: 40px;
+	margin-top: 40px;
+ }
+
+ .menu ul{
+	list-style: none;
+	padding-top: 7px;
+
+ }
+
+ .menu li{
+	 border-bottom: 1px solid rgb(245,245,245);
+	 color: white;
+	 display: inline;
+ }
+
+ .top{
+	 margin-top: -123px;
+ }
