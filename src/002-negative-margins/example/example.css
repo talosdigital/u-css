@@ -34,7 +34,10 @@
 	 margin-top: -220px;
 	 padding: 40px;
 	 width: 30%;
+
  }
+
+
  .col2{
 	margin-left: 100px;
  }
@@ -53,6 +56,15 @@
 	 border-bottom: 1px solid rgb(221,221,221);
  }
 
+ .container3 footer li{
+	 border-bottom: none;
+	 padding-right: 40px;
+ }
+
+ .division{
+	 border-left: 1px solid rgb(216,216,216);
+ }
+
  footer{
 	 height:40px;
  }
@@ -66,7 +78,7 @@
  }
 
  .menu{
-	background-color: rgb(212,68,70);
+	background-color: rgb(214,77,54);
 	height: 40px;
 	margin-top: 40px;
  }
