@@ -3,3 +3,82 @@
  * Version: 1
  * By: xxx
  */
+.column {
+    display: inline-block;
+    width: 48%;
+    vertical-align: middle;
+}
+
+.division{
+    padding: 15px 10px
+}
+
+header{
+    padding-bottom: 2px;
+}
+
+header,
+.division{
+    background-color: rgb(232,232,232);
+}
+
+header h1{
+    padding-left: 10px;
+}
+
+.navigation {
+    background-color: rgb(220, 220, 220);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navigation ul{
+    list-style: none;
+}
+
+.navigation ul li{
+    display: inline;
+}
+
+
+.section{
+    background-color: rgb(232,232,232);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 35px 50px 20px 15px;
+}
+
+.section div{
+    flex-grow: 1;
+    width: 30%;
+    min-width: 100px;
+}
+
+.section div{
+    border: 1px solid red;
+    display: inline-block;
+    height: 200px;
+    margin: 1px;
+   /* width: 300px;*/
+
+}
+
+#table{
+    display: table;
+    border-collapse: separate;
+    border-spacing: 1px;
+}
+
+#table .row{
+    display:table-row;
+}
+
+#table .row div{
+    background-color: rgb(200,200,200);
+    display: table-cell;
+    height: 50px;
+    width: 800px;
+    text-align: center;
+    padding-top: 30px;
+
+}
