@@ -3,3 +3,30 @@
  * Version: 1
  * By: xxx
  */
+
+.brd-box{
+    border: 5px solid #D24F2E;
+}
+
+.bx{
+    border: 5px solid #D24F2E;
+}
+
+.cnt-box{
+    box-sizing: content-box;
+    border: 5px solid #D24F2E;
+    max-width: calc(100% - 60px);
+    width: 1000px;
+}
+
+.container{
+    background-color: rgb(233,233,233);
+    padding: 5px 15px 15px 15px;
+    margin: 15px 15px;
+}
+
+
+.bx, .brd-box, .cnt-box{
+    margin: 15px;
+    padding: 15px;
+}
