@@ -1,5 +1,109 @@
 /*
  * Practice : Float Property
  * Version: 1
- * By: xxx
+ * By: Laura Alvarez
  */
+
+ .page-content{
+ 	max-width: 1280px;
+ 	margin: auto;
+ }
+
+ header {
+ 	background-color: rgb(232,232,232);
+ }
+
+ h1, h2 {
+ 	font-size: 20px;
+ 	line-height: 45px;
+ 	padding: 8px 0;
+ 	margin: 0;
+ }
+
+ header h1 {
+ 	padding-left: 15px;
+ }
+
+ section h2 {
+ 	padding-left: 10px;
+ }
+
+ nav ul {
+ 	list-style-type: none;
+ 	margin: 0;
+ 	padding-left: 10px;
+ 	overflow:hidden;
+ 	background-color: rgb(220,220,220);
+ 	line-height: 40px;
+ }
+
+ nav li a{
+ 	padding: 5px;
+ 	text-decoration: none;
+ 	width: 100%;
+ }
+
+ nav li{
+ 	float:left;
+ }
+
+ img {
+ 	float:left;
+ 	padding-right: 20px;
+ 	padding-bottom: 15px;
+ }
+
+ * {
+ 	box-sizing: border-box;
+ }
+
+ .column {
+ 	float: left;
+ 	padding-left: 15px;
+ 	padding-right: 15px;
+ 	width: 100%
+ }
+
+ .content {
+ 	width: 70%;
+ 	background-color: rgb(200,200,200);
+ }
+
+ .menu {
+ 	width: 30%;
+ 	padding-top: 15px;
+ }
+
+ .clearfix {
+ 	background-color: rgb(233,233,233);
+ }
+
+ .clearfix::after,
+ section ul:after{
+ 	content: "";
+ 	clear: both;
+ 	display: table;
+ 	min-width: 620px;
+ }
+
+ .gallery {
+ 	padding: 5px;
+ 	background-color: rgb(246,246,246);
+ }
+
+ .gallery ul {
+ 	padding-left: 20px;
+ }
+
+ .input{
+ 	width: 100%;
+ 	padding: 10px;
+ 	border: 0px solid;
+ 	border-radius: 5px;
+ }
+
+ aside p{
+ 	padding-top: 20px;
+ }
+
+
