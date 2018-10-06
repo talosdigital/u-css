@@ -1,5 +1,122 @@
 /*
  * Practice : Negative Margins
  * Version: 1
- * By: xxx
+ * By: Laura Alvarez
  */
+ * {
+ 	box-sizing: border-box;
+ }
+
+ html, body {
+ 	height: 100%;
+ 	margin: 0;
+ }
+
+ h3 {
+ 	border-bottom: 1px solid rgb(212,78,60);
+ 	padding-bottom: 10px;
+ 	font-size: 25px;
+ }
+
+ .page-content {
+ 	max-width: 1120px;
+ 	margin: auto;
+ }
+
+ .nm-content {
+ 	width: 80%;
+ 	position: relative;
+ 	padding-bottom: 30px;
+ }
+
+ .nm-example {
+ 	background-color: rgb(215,215,215);
+ 	padding: 15px;
+ 	padding-top: 1px;
+ }
+
+ .sidebar {
+ 	width: 20%;
+ 	float: right;
+ 	margin-right: -30px;
+ 	margin-top: -190px;
+ 	margin-bottom: 50px;
+ }
+
+ .list {
+ 	width: 30%;
+ }
+
+ .title2-li {
+ 	margin-top: -74px;
+ }
+
+ .column2 {
+ 	margin-left: 100px;
+ }
+
+ .title3-li {
+ 	margin-top: -72px;
+ }
+
+ .column3 {
+ 	margin-left: 225px;
+ }
+
+ .border {
+ 	border-bottom: 1px solid #80808070;
+ }
+
+ .vl {
+ 	border-left: 1px solid #80808070;
+ 	height: 190px;
+ }
+
+ .content {
+ 	float: left;
+ 	width: 100%;
+ 	background-color: rgb(210,210,210);
+ 	margin-bottom: 35px;
+ }
+
+ ul {
+ 	list-style-type: none;
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+ .nm-site-footer ul{
+ 	overflow: hidden;
+ 	background-color: rgb(212,78,60); 
+ 	margin-top: 20px;
+ }
+
+ .nm-footer-list li {
+ 	float: left;
+ 	display: block;
+ 	color: white;
+ 	text-align: center;
+ 	padding: 5px 20px;
+ 	text-decoration: none;
+ }
+
+ .mdl-button {
+ 	margin-top: 10px;
+ 	margin-bottom: 60px;
+ }
+
+ .nm-site-footer,
+ .push {
+ 	height: 50px;
+ 	position:fixed;
+ 	bottom: 0px;
+ 	width: 58%;
+ }
+
+ .wrapper {
+ 	margin-bottom: -50px;
+ 	min-height: 100%;
+ 	margin: 0 auto -50px;
+ }
+
+
