@@ -1,5 +1,119 @@
 /*
  * Practice : Centering
  * Version: 1
- * By: xxx
+ * By: Laura Alvarez
  */
+ .mdl-layout__content {
+ 	margin-top: 20px;
+ }
+
+ .content, .left-square, .left-square-m, .vertically, .gray-square-one, .nav, h4 {
+ 	background: #bdbdbd87;
+ }
+
+ .page-content {
+ 	max-width: 1200px;
+ 	margin: auto;
+ 	background-color: rgb(233,233,233);
+ 	padding-top: 1px;
+ }
+
+ h4, .nav {
+ 	text-align: center;
+ 	padding: 5px;
+ }
+
+ .nav {
+ 	padding: 10px;
+ 	margin-bottom: 20px;
+ }
+
+ .nav a {
+ 	text-decoration: none;
+ 	padding: 10px;
+ }
+
+ .nav div {
+ 	display: inline;
+ }
+
+ .content {
+ 	margin: 10px;
+ 	width: 33%;
+ 	padding: 32px;
+ }
+
+ .content-section {
+ 	display: flex;
+ 	padding: 0 120px;
+ }
+
+ .first-row div{
+ 	margin-top: auto;
+ }
+
+ .second-row {
+ 	margin-bottom: 20px;
+ }
+
+ .left-square{
+ 	width: 50%;
+ 	padding: 30px 0 30px 10px;
+ }
+
+ .left-square-m {
+ 	width: 15%;
+ 	margin: 15px 0;
+ 	padding: 50px 0 50px 10px;
+ }
+
+ .vertically {
+ 	padding: 100px 25px;
+ 	margin: 15px 0;
+ }
+
+ .gray-square-one {
+ 	padding: 150px 20px;
+ 	margin-top: 20px;
+ }
+
+ .gray-square-one div{
+ 	color: white;
+ 	background: darkgrey;
+ }
+
+ .pad1 div{
+ 	padding: 10px 0px 80px 20px;
+ }
+
+ .pad2 div{
+ 	padding: 10px;
+ }
+
+ .green-square {
+ 	background-color: rgb(118, 166, 162);
+ 	padding: 100px;
+ 	margin-top: 20px;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+
+ .red-square {
+ 	padding: 60px;
+ 	background-color: rgb(196, 86, 91);
+ 	position: relative;
+ }
+
+ .black-square {
+ 	padding: 30px;
+ 	background-color: rgb(66,76,88);
+ }
+
+ .yellow-square {
+ 	padding: 18px;
+ 	background-color: rgb(221, 173, 120);
+ 	position: absolute;
+ 	top: 40%;
+ 	left: 40%;
+ }
