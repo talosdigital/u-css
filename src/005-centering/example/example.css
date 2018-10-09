@@ -7,21 +7,25 @@
  	margin-top: 20px;
  }
 
+ .content, .left-square, .left-square-m, .vertically, .gray-square-one, .nav, h4 {
+ 	background: #bdbdbd87;
+ }
+
 .page-content {
 	max-width: 1200px;
-	margin: auto;
+	margin: 0 20px 20px 20px;
 	background-color: rgb(233,233,233);
 	padding-top: 1px;
 }
 
 h4, .nav {
 	text-align: center;
-    background: #bdbdbd87;
     padding: 5px;
 }
 
 .nav {
 	padding: 10px;
+	margin-bottom: 20px;
 }
 
 .nav a {
@@ -31,4 +35,61 @@ h4, .nav {
 
 .nav div {
 	display: inline;
+}
+
+.content {
+    margin: 10px;
+    width: 33%;
+    padding: 32px;
+}
+
+.content-section {
+	display: flex;
+	padding: 0 120px;
+}
+
+.first-row div{
+	margin-top: auto;
+}
+
+.second-row {
+	margin-bottom: 20px;
+}
+
+.left-square{
+	width: 50%;
+	padding: 30px 0 30px 10px;
+}
+
+.left-square-m {
+	width: 15%;
+    margin: 15px 0;
+    padding: 50px 0 50px 10px;
+}
+
+.vertically {
+    padding: 100px 25px;
+    margin: 15px 0;
+}
+
+.gray-square-one {
+	padding: 70px 20px;
+	margin-top: 20px;
+}
+
+.gray-square-one div{
+	color: white;
+    background: darkgrey;
+}
+
+.pad1 div{
+	padding: 10px 0px 70px 20px;
+}
+
+.pad2 div{
+	padding: 10px;
+}
+
+.green-color {
+	
 }
