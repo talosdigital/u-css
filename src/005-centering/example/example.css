@@ -13,7 +13,7 @@
 
 .page-content {
 	max-width: 1200px;
-	margin: 0 20px 20px 20px;
+	margin: auto;
 	background-color: rgb(233,233,233);
 	padding-top: 1px;
 }
@@ -73,7 +73,7 @@ h4, .nav {
 }
 
 .gray-square-one {
-	padding: 70px 20px;
+	padding: 150px 20px;
 	margin-top: 20px;
 }
 
@@ -83,13 +83,37 @@ h4, .nav {
 }
 
 .pad1 div{
-	padding: 10px 0px 70px 20px;
+	padding: 10px 0px 80px 20px;
 }
 
 .pad2 div{
 	padding: 10px;
 }
 
-.green-color {
-	
+.green-square {
+	background-color: rgb(118, 166, 162);
+    padding: 100px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red-square {
+	padding: 60px;
+    background-color: rgb(196, 86, 91);
+    position: relative;
+}
+
+.black-square {
+	padding: 30px;
+    background-color: rgb(66,76,88);
+}
+
+.yellow-square {
+	padding: 18px;
+    background-color: rgb(221, 173, 120);
+    position: absolute;
+    top: 40%;
+    left: 40%;
 }
