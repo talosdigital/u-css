@@ -1,5 +1,97 @@
 /*
  * Practice : Basic Layout
  * Version: 1
- * By: xxx
+ * By: Laura Alvarez
  */
+
+ .page-content {
+ 	width: 80%;
+ 	margin: 20px auto;
+ }
+
+ .container1 {
+ 	background-color: lightpink;
+ }
+
+ .header, 
+ .footer {
+ 	background-color: rgb(219,79,52);
+ 	overflow: hidden;
+ }
+
+ .header ul,
+ .footer ul {
+ 	list-style: none;
+ 	display: inline-flex;
+ 	padding-left: 20px;
+ }
+
+ .header li,
+ .footer li {
+ 	float: left;
+ 	color: white;
+ 	padding-right: 30px;
+ }
+
+ .sidebar {
+ 	float: left;
+ 	width: 300px;
+ 	background-color: rgb(135,208,211);
+ 	padding-bottom: 25em;
+ 	position: relative;
+ 	margin-right: -200px;
+ }
+
+ .sidebar2 {
+ 	width: 300px;
+ 	background-color: rgb(135,208,211);
+ }
+
+ .main {
+ 	padding: 20px 0 20px 20px;
+ 	margin-left: 300px;
+ }
+
+ .main2 {
+ 	padding: 20px;
+ 	width: 70%;
+ }
+
+ .sq1 div,
+ .sq2 div {
+ 	background-color: rgb(135,208,211);
+ 	border: solid 1px rgb(219,79,52);
+ }
+
+ .sq1 div{
+ 	width: 24%;
+ 	display: inline-block;
+ 	height: 120px;
+ 	margin: -3px;
+ }
+
+ .main2 div{
+ 	display: flex;
+ }
+
+ .sq2 div {
+ 	width: 20%;
+ 	margin: -3px 0;
+ }
+
+ .complete-square {
+ 	height: 300px;
+ }
+
+ .cut-square {
+ 	height: 200px;
+ }
+
+ .content2 {
+ 	display: flex;
+ }
+
+ .footer {
+ 	clear: left;
+ }
+
