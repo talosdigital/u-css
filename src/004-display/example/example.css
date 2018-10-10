@@ -1,5 +1,99 @@
 /*
  * Practice : Display
  * Version: 1
- * By: xxx
+ * By: Laura Alvarez
  */
+
+ * {
+ 	box-sizing: border-box;
+ }
+
+ .page-content {
+ 	max-width: 80%;
+ 	margin: auto;
+ }
+
+ h1 {
+ 	background-color: rgb(232,232,232);
+ 	margin: 0;
+ 	font-size: 2rem;
+ 	padding: 15px;
+ }
+
+ ul {
+ 	list-style: none;
+ 	list-style-type: none;
+ 	margin: 0;
+ 	padding-left: 10px;
+ 	overflow:hidden;
+ 	background-color: rgb(220,220,220);
+ 	line-height: 50px;
+ }
+
+ li {
+ 	float: left;
+ }
+
+ li a{
+ 	text-decoration: none;
+ 	padding: 5px;
+ }
+
+ .first-section {
+ 	display: flex;
+ 	background-color: rgb(232,232,232);
+ 	align-items: center;
+ 	flex-direction: column;
+ }
+
+ .first-section div {
+ 	width: 100%;
+ 	padding: 15px;
+ }
+
+ .table {
+ 	display: table;
+ 	width: 100%;
+ 	text-align: center;
+ }
+
+ .table-row {
+ 	display: table-row;
+ }
+
+ .table-row div{
+ 	display: table-cell;
+ 	background-color: rgb(220,220,220);
+ 	padding: 15px;
+ 	border: solid 1px #fff;
+ }
+
+ .content {
+ 	width: 100%;
+ 	padding: 20px;
+ 	background-color: rgb(232,232,232);
+ 	display: flex;
+ 	flex-direction: column;
+ }
+
+ .content div {
+ 	border: solid 1px red;
+ 	padding: 15px;
+ 	margin: 1% 1%;
+ }
+
+ @media screen and (min-width: 768px){
+ 	.first-section, 
+ 	.content{
+ 		flex-direction: row;
+ 		flex-wrap: wrap;
+ 	}
+ 	.first-section div{
+ 		width: 50%;
+ 	}
+
+ 	.content div{
+ 		width: 31.3333%;
+ 	}
+
+ }
