@@ -39,14 +39,25 @@ html {
 
 .sidebar {
 	float: left;
-    width: 30%;
+    width: 300px;
     background-color: rgb(135,208,211);
-    padding-bottom: 30em;
+    padding-bottom: 25em;
+    position: relative;
+    margin-right: -200px;
 }
 
 .main {
-	float: left;
-    padding: 20px;
+    padding: 20px 0 20px 20px;
+    margin-left: 300px;
+}
+
+.sq1 div{
+	background-color: rgb(135,208,211);
+    height: 120px;
+    width: 24%;
+    display: inline-block;
+    margin: -3px;
+    border: solid 1px rgb(219,79,52);;
 }
 
 .footer {
