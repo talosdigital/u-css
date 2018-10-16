@@ -8,6 +8,11 @@ html {
   padding: 0;
 }
 
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 h2 {
   border-bottom: 2px solid #ebebeb;
   font-size: 1.125em;
@@ -17,6 +22,10 @@ h2 {
   margin: 20px 0;
   padding-bottom: 20px;
   text-transform: uppercase;
+}
+
+p {
+  margin: 0;
 }
 
 footer {
@@ -63,6 +72,12 @@ footer div {
   background-color: #ebebeb;
   cursor: pointer;
   padding: 5px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.as-button-list li:hover {
+  background-color: pink;
 }
 
 .as-avatar {
@@ -106,6 +121,14 @@ footer div {
   margin-left: 5px;
 }
 
+.as-top-list button:first-child{
+  background-color: black;
+  border-radius: 5px;
+}
+
+.as-top-list button:first-child i{
+  color: white;
+}
 
 .as-cards {
   display: flex;
@@ -115,8 +138,12 @@ footer div {
 
 .as-card {
   position: relative;
+  cursor: pointer;
 }
 
+.as-card:hover {
+  opacity: 0.7;
+}
 
 .as-card-img {
   box-sizing: border-box;
@@ -135,6 +162,11 @@ footer div {
   transition: all 0.3s;
 }
 
+.as-card-img:hover img {
+  -moz-transition: scale(1.1);
+  -webkit-transition: scale(1.1);
+  transform: scale(1.1);
+}
 
 .as-onsale {
   background-color: #fbc2d4;
@@ -150,4 +182,21 @@ footer div {
   width: 90px;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
 
+a {
+  color: #787878; 
+  text-decoration: none;
+}
+
+.f-list > li a:hover { 
+  color: pink;
+}
+
+.f-list a {
+  text-transform: uppercase;
+  font-size: 12px;
+}
