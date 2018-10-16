@@ -1,5 +1,129 @@
 /*
  * Practice : Z-index, !important and Inheritance
  * Version: 1
- * By: xxx
+ * By: Laura Alvarez
  */
+
+ body {
+ 	background: rgb(211, 234, 224);
+ }
+
+ .black-square {
+ 	position: absolute;
+ 	width: 30%;
+ 	right: 0;
+ 	height: 100%;
+ 	top: 0;
+ 	background: black;
+ 	opacity: 0.75;
+ 	z-index: 3;
+ }
+
+ .p-white {
+ 	color: white;
+ 	padding: 20px 0 0 40px;
+ }
+
+ .p-white h1{
+ 	font-weight: bold;
+ 	font-size: 3rem;
+ }
+
+ .p-white p {
+ 	text-transform: uppercase;
+ 	width: 100%;
+ }
+
+ .content {
+ 	width: 60%;
+ }
+
+ .second-content {
+ 	background-color: rgb(226, 243, 245);
+ 	z-index: 4;
+ 	position: relative;
+ 	padding: 20px 15px 20px 0;
+ }
+
+ .second-content p, .title{
+ 	padding: 0px 0 0 40px;
+ }
+
+ .title-list, .title {
+ 	font-size: 2rem;
+ }
+
+ hr {
+ 	background-color: indianred;
+ }
+
+ ul {
+ 	list-style: none;
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+ @media only screen and (max-width: 992px) {
+ 	.last-content {
+ 		width: 18%;
+ 	}
+ }
+
+ @media only screen and (min-width: 769px) {
+ 	.last-content {
+ 		background-color: rgb(222,225,141);
+ 		z-index: 4;
+ 		position: absolute;
+ 		width: 20%;
+ 		top: 130px;
+ 		right: 71px;
+ 		padding: 50px;
+ 	}
+
+ 	.blue-square {
+ 		background: rgb(107,195,198);
+ 		margin: 50px;
+ 		padding-bottom: 80px;
+ 	}	
+ }
+
+ @media only screen and (max-width: 768px) {
+ 	.black-square {
+ 		display: none !important;
+ 	}
+
+ 	.content {
+ 		width: 90%;
+ 		margin: auto;
+ 		background: rgb(107,195,198);
+ 		padding-bottom: 30px;
+ 	}
+
+ 	.second-content {
+ 		background-color: rgb(226, 243, 245);
+ 		padding: 20px 15px 20px 0;
+ 		width: 90%;
+ 		position: relative;
+ 	}
+
+ 	.last-content {
+ 		background-color: rgb(222,225,141);
+ 		width: 100%;
+ 	}
+
+ 	.last-content ul,
+ 	.title-list {
+ 		padding: 20px 20px 0 20px;
+ 		margin-bottom: 0px;
+ 	}
+
+ 	.last-content ul{
+ 		padding-bottom: 20px;
+ 	}
+
+ 	.p-white,
+ 	.second-content p, 
+ 	.title  {
+ 		padding: 10px 20px 0 20px;
+ 	}
+ }
