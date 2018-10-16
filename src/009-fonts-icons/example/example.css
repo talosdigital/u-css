@@ -7,7 +7,12 @@
  body {
  	background: rgb(211, 234, 224);
  }
-  .black-square {
+
+ .page-content {
+ 	font-family: "Verdana","Arial",sans-serif;
+ }
+
+ .black-square {
  	position: absolute;
  	width: 30%;
  	right: 0;
@@ -17,48 +22,154 @@
  	opacity: 0.75;
  	z-index: 3;
  }
-  .p-white {
+
+ .main-icons {
+ 	font-size: 30px;
+ }
+
+ button, .p-white, .main-icons {
  	color: white;
  	padding: 20px 0 0 40px;
  }
-  .p-white h1{
+
+ .p-white h1{
  	font-weight: bold;
  	font-size: 3rem;
  }
-  .p-white p {
+
+ .p-white p {
  	text-transform: uppercase;
  	width: 100%;
  }
-  .content {
- 	width: 60%;
+
+ .content {
+ 	width: 55%;
  }
-  .second-content {
+
+ .second-content {
  	background-color: rgb(226, 243, 245);
  	z-index: 4;
  	position: relative;
  	padding: 20px 15px 20px 0;
  }
-  .second-content p, .title{
- 	padding: 0px 0 0 40px;
+
+ .second-content p, .title{
+ 	padding: 0 0 0 40px;
  }
-  .title-list, .title {
+
+ .finger button {
+ 	background-color: rgb(253, 59, 130);
+ 	display: inline-block;
+ 	margin: 0 0 0 40px;
+ 	border-radius: 5px;
+ 	padding: 10px;
+ 	border: 0;
+ 	transition-duration: 0.6s;
+ }
+
+ button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+ .finger i {
+ 	padding-right: 10px;
+ }
+
+ .title-list {
+ 	font-size: 1.8rem;
+ 	margin: 0;
+ 	padding-bottom: 10px;
+ }
+
+ .last-content ul li{
+ 	line-height: 20px;
+ 	margin: 5px;
+ }
+
+ .title {
  	font-size: 2rem;
+ 	line-height: 60px;
+ 	margin-top: 0;
  }
-  hr {
+
+ h1 em {
+ 	text-decoration: underline;
+ 	text-decoration-style:dashed;
+ 	font-style: normal;
+ }
+
+ hr {
  	background-color: indianred;
  }
-  ul {
+
+ p::first-letter {
+ 	font-weight: bold;
+ }
+
+ ul {
  	list-style: none;
  	margin: 0;
  	padding: 0;
  }
-  @media only screen and (max-width: 992px) {
+
+ ul li .material-icons {
+ 	font-size: 14px;
+ }
+
+ ul li:first-child {
+ 	font-size: 15px;
+ }
+
+ ul li:nth-child(2),
+ ul li:nth-child(4),
+ ul li:nth-child(6), 
+ ul li:nth-child(8),
+ ul li:nth-child(10),
+ ul li:nth-child(12),
+ ul li:nth-child(14) {
+ 	font-size: 11pt;
+ }
+
+ ul li:nth-child(3),
+ ul li:nth-child(5),
+ ul li:nth-child(7), 
+ ul li:nth-child(9),
+ ul li:nth-child(11),
+ ul li:nth-child(13) {
+ 	font-size: 1.05em;
+ }
+
+ .search-icon {
+ 	background-color: black;
+ 	border-radius: 0 10px 0 0;
+ 	margin: 5px;
+ }
+
+ .search {
+ 	background-color: white;
+ 	margin-bottom: 20px;
+ 	display: inline-block;
+ 	padding-right: 30px;
+ 	border-radius: 5px;
+ }
+
+ .search span {
+ 	vertical-align: middle;
+ 	display: inline-block;
+ }
+
+ input {
+ 	border: 0;
+ 	vertical-align: middle;
+ }
+
+ @media only screen and (max-width: 992px) {
  	.last-content {
  		width: 18%;
  	}
  }
 
-  @media only screen and (max-width: 1023px) and (min-width: 768px){
+ @media only screen and (max-width: 1023px) and (min-width: 768px){
  	.last-content {
  		background-color: rgb(222,225,141);
  		z-index: 4;
@@ -68,59 +179,64 @@
  		right: 71px;
  		padding: 30px;
  	}
-  	.blue-square {
+ 	.blue-square {
  		background: rgb(107,195,198);
  		margin: 50px;
  		padding-bottom: 80px;
  	}	
+
+ 	.last-content ul li {
+ 		line-height: 15px;
+ 	}
  }
 
-  @media only screen and (min-width: 1024px) {
+ @media only screen and (min-width: 1024px) {
  	.last-content {
  		background-color: rgb(222,225,141);
  		z-index: 4;
  		position: absolute;
- 		width: 20%;
- 		top: 130px;
+ 		width: 25%;
+ 		top: 120px;
  		right: 71px;
- 		padding: 50px;
+ 		padding: 40px;
  	}
-  	.blue-square {
+ 	.blue-square {
  		background: rgb(107,195,198);
  		margin: 50px;
  		padding-bottom: 80px;
  	}	
  }
 
-  @media only screen and (max-width: 767px) {
+ @media only screen and (max-width: 767px) {
  	.black-square {
  		display: none !important;
  	}
-  	.content {
+ 	.content {
  		width: 90%;
  		margin: auto;
  		background: rgb(107,195,198);
  		padding-bottom: 30px;
  	}
-  	.second-content {
+ 	.second-content {
  		background-color: rgb(226, 243, 245);
  		padding: 20px 15px 20px 0;
  		width: 90%;
  		position: relative;
  	}
-  	.last-content {
+ 	.last-content {
  		background-color: rgb(222,225,141);
  		width: 100%;
+ 		margin-top: 20px;
  	}
-  	.last-content ul,
+ 	.last-content ul,
  	.title-list {
  		padding: 20px 20px 0 20px;
- 		margin-bottom: 0px;
+ 		margin-bottom: 0;
  	}
-  	.last-content ul{
+ 	.last-content ul{
  		padding-bottom: 20px;
  	}
-  	.p-white,
+ 	.p-white,
  	.second-content p, 
  	.title  {
  		padding: 10px 20px 0 20px;
