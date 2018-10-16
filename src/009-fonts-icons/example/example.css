@@ -241,4 +241,7 @@
  	.title  {
  		padding: 10px 20px 0 20px;
  	}
+ 	.finger button {
+ 		margin: 0 0 0 20px;
+ 	}
  } 
