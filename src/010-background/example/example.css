@@ -1,5 +1,35 @@
 /*
  * Practice : Background, Color and Shadows
  * Version: 1
- * By: xxx
+ * By: Laura Alvarez
  */
+
+.page-content {
+	background-image: radial-gradient(rgba(245, 162, 117, 1), rgba(210, 79, 46, 1));
+}
+
+h2, h3, p {
+	color: white;
+	margin: 0;
+}
+
+.header {
+    text-shadow: 3px 3px black;
+    text-align: center;
+    margin: 0;
+}
+
+.header h2 {
+	margin-top: 20px;
+}
+
+.header h3 {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+#line {
+	height: 2px;
+	background-image: linear-gradient(#f5a275, #D24F2E);
+	margin-bottom: 40px;
+}
