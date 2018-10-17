@@ -1,5 +1,111 @@
 /*
  * Practice : Background, Color and Shadows
  * Version: 1
- * By: xxx
+ * By: Laura Alvarez
  */
+
+ body {
+ 	background-image: radial-gradient(rgba(245, 162, 117, 1), rgba(210, 79, 46, 1));
+ }
+
+ h2, h3, p {
+ 	color: white;
+ 	margin: 0;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;
+ }
+
+ .text {
+ 	white-space: nowrap;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	text-align: left;
+ }
+
+ .content {
+ 	padding-bottom: 500px;
+ 	text-align: center;
+ }
+
+ img {
+ 	height: 100px;
+ 	border: 3px solid white;
+ 	margin-right: 10px;
+ }
+
+ .header {
+ 	text-shadow: 3px 3px black;
+ 	text-align: center;
+ 	margin: 0;
+ }
+
+ .header h2 {
+ 	margin-top: 20px;
+ }
+
+ .header h3 {
+ 	font-size: 30px;
+ 	margin-bottom: 20px;
+ }
+
+ #line {
+ 	height: 2px;
+ 	background-image: linear-gradient(#f5a275, #D24F2E);
+ }
+
+ .boxes {
+ 	background-color: rgb(247, 161, 122);
+ 	width: auto;
+ 	padding: 15px;
+ 	box-shadow: 0px 3px darkred;
+ 	display: flex;
+ 	height: auto;
+ 	border-radius: 100px;
+ 	border: 3px solid rgb(255, 179, 147);
+ }
+
+ .boxes:first-child {
+ 	margin: 100px 0 30px 0;
+ }
+
+ .boxes img:first-child {
+ 	border-radius: 200px;
+ }
+
+ .boxes p, .boxes h2 {
+ 	font-size: 1rem;
+ 	text-shadow: 0px 1px black;
+ 	margin-top: 13px;
+ 	margin-bottom: -20px;
+ 	word-spacing: 2px;
+ }
+
+ .boxes:hover {
+ 	opacity: 0.7;
+ }
+
+ @media only screen and (min-width: 645px) {
+ 	.boxes {
+ 		display: inline-flex;
+ 	}
+ }
+
+ @media only screen and (min-width: 1025px) {
+ 	.content {
+ 		margin-top: 60px;
+ 	}
+
+ 	.boxes {
+ 		margin: 0 auto;
+ 		width: 25%;
+ 	}
+
+ 	.boxes:first-child {
+ 		margin-right: 50px;
+ 	}
+
+ 	.boxes:nth-child(2) {
+ 		margin-left: 50px;
+ 	}
+
+ }
