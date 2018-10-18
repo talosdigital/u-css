@@ -63,6 +63,11 @@
  	padding: 0;
  }
 
+ .last-content li:before {
+ 	content: "Lorem ipsum dolor sit amet";
+ 	display: -webkit-box;
+ }
+
  @media only screen and (min-width: 1024px) {
  	.last-content {
  		background-color: rgb(222,225,141);
