@@ -1,5 +1,69 @@
 /*
  * Practice : Styling Buttons, links and lists
  * Version: 1
- * By: xxx
+ * By: Laura Alvarez
  */
+
+ .page-content {
+ 	padding: 0
+ }
+
+.title {
+	background-image: url("../resources/background.jpg");
+	background-attachment: fixed;
+	text-align: center;
+	height: 300px;
+}
+
+h1 {
+	margin: 0;
+	text-transform: uppercase;
+	color: white;
+	padding: 100px;
+}
+
+form {
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	background-color: pink;
+	padding: 50px;
+	margin-top: 50px;
+}
+
+ul {
+	list-style: none;
+    padding: 0;
+}
+
+li a{
+	color: white;
+	text-decoration: none;
+	 padding: 20px 0;
+    font-size: 12px;
+}
+
+li a:hover{
+	color: black;
+}
+
+.footer-list {
+	display: inline-flex;
+	color: white;
+}
+
+.footer-list div {
+	text-align: left;
+	margin: 0 100px;
+}
+
+.footer-list p {
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+}
