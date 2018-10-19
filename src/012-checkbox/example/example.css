@@ -73,7 +73,7 @@ html {
   color: #7f7f7f;
   transition: background 0.1s, color 0.1s;
   text-align: center;
-  opacity: 0.8;
+  opacity: .8;
 }
 
 .label:hover {
