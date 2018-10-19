@@ -13,10 +13,25 @@ html {
 }
 
 .container {
-  margin: 0 30px;
   font-family: sans-serif;
+  padding: 10px;
+  position: relative;
+  margin: 20px auto;
 }
 
+.container input {
+  opacity: 0;
+  display: none;
+  visibility: hidden;
+}
+
+.container input:checked + label {
+  background: #fff;
+  opacity: 1;
+  box-shadow: 1px 0 0 0 rgba(0,0,0,0.3);
+  color: black;
+  border: 2px solid #1babbb;
+}
 /*tabs*/
 
 .tabs {
@@ -25,6 +40,22 @@ html {
   max-width: 700px;
   background: #efefef;
   box-shadow: 0 48px 80px -32px rgba(0, 0, 0, 0.3);
+}
+
+.panel1 ,
+.panel2 ,
+.panel3 {
+  visibility: hidden;
+  position: absolute;
+}
+
+#tab-1:checked ~ .panel1,
+#tab-2:checked ~ .panel2,
+#tab-3:checked ~ .panel3 {
+  position: relative;
+  visibility: visible;
+  top: 0;
+  left: 0;
 }
 
 .input {
@@ -41,10 +72,14 @@ html {
   font-size: 18px;
   color: #7f7f7f;
   transition: background 0.1s, color 0.1s;
+  text-align: center;
+  opacity: 0.8;
 }
 
 .label:hover {
   background: #d8d8d8;
+  opacity: 1;
+
 }
 
 .label:active {
@@ -63,8 +98,7 @@ html {
   }
 }
 
-.panel {
-  display: none;
+.panel1, .panel2, .panel3 {
   padding: 20px 30px 30px;
   background: #fff;
   box-sizing: border-box;
@@ -72,11 +106,10 @@ html {
 }
 
 @media (min-width: 600px) {
-  .panel {
+  .panel1, .panel2, .panel3 {
     order: 99;
   }
 }
-
 
 /* Checkboxes and Radio Buttons */
 
@@ -120,30 +153,6 @@ html {
   border-radius: 50%;
 }
 
-.control input:disabled ~ .control__indicator {
-  pointer-events: none;
-  opacity: .6;
-  background: #e6e6e6;
-}
-
-.control__indicator:after {
-  position: absolute;
-  display: none;
-  content: '';
-}
-
-
-.control--checkbox .control__indicator:after {
-  top: 4px;
-  left: 8px;
-  width: 3px;
-  height: 8px;
-  transform: rotate(45deg);
-  border: solid #fff;
-  border-width: 0 2px 2px 0;
-}
-
-
 .control--radio .control__indicator:after {
   top: 7px;
   left: 7px;
@@ -153,17 +162,92 @@ html {
   background: #fff;
 }
 
+.control .control--checkbox,
+.control .control--radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+}
 
+.control .control--checkbox input,
+.control .control--radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.control__indicator {
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 25px;
+ width: 25px;
+ background-color: #eee;
+}
+
+.control__indicator .control-group:nth-child(2){
+  border-radius: 50%
+}
+
+.control--checkbox:hover input ~ .control__indicator,
+.control--radio:hover input ~ .control__indicator {
+  background-color: darkgray;
+  opacity: .6;
+}
+
+.control input:disabled ~ .control__indicator {
+  pointer-events: none;
+  opacity: .6;
+  background: #e6e6e6;
+}
+
+.control--checkbox input:checked ~ .control__indicator,
+.control--radio input:checked ~ .control__indicator {
+  background-color: dodgerblue;
+}
+
+.control__indicator:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.control--checkbox input:checked ~ .control__indicator:after,
+.control--radio input:checked ~ .control__indicator:after {
+  display: block;
+}
+
+.control--checkbox .control__indicator:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.control--radio .control__indicator:after {
+  top: 8px;
+  left: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+}
 
 /*Cards*/
 
-.list-checks {
-  margin: 20px;
-}
-
 .list-checks ul {
   list-style-type: none;
-  width: 500px;
+  padding-left: 0;
 }
 
 h3 {
@@ -175,6 +259,7 @@ h3 {
   margin: 0 15px 0 0;
   width: 100px;
   height: auto;
+  content: url('../resources/user.png');
 }
 
 .list-checks li p {
@@ -184,6 +269,7 @@ h3 {
 .list-checks li {
   padding: 10px;
   overflow: hidden;
+  margin: 0 20px;
 }
 
 .list-checks li:hover {
@@ -200,6 +286,11 @@ h3 {
   padding-right: 10px;
 }
 
+.tabs {
+  width: 100%;
+  margin: auto;
+}
+
 @media (max-width: 600px) {
   .container {
     margin: 0;
@@ -213,6 +304,24 @@ h3 {
   }
 
   .control-group {
-    padding: 30px 0;
+    padding: 30px;
   }
 }
+
+@media (max-width: 425px) {
+  .list-checks li {
+    display: inline-flex;
+    margin: 0;
+  }
+
+  .list-checks li img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .list-checks h3 {
+    margin: 0;
+  }
+}
+
+
