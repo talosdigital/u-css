@@ -72,13 +72,66 @@
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
+  .product.content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .product {
+    flex-direction: row;
+  }
+
+  .product-thumbs {
+    flex-direction: column;
+    order: 1;
+    padding-top: 0;
+  }
+
+  .product-slider {
+    width: 50%;
+    order: 2;
+  }
+
+  .product-description {
+    padding-top: 0;
+    padding-left: 15px;
+    width: 34%;
+  }
+
+  .product-description p {
+    margin-top: 20px;
+    font-size: 1em;
+  }
+
+  .product-description h1, .product-description h2 {
+    font-size: 1.9em
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .product-description h1, .product-description h2 {
+    font-size: 2.2em;
+  }
+
+  .product-description p {
+    font-size: 1.5em;
+  }
+
+  .product-description {
+    width: 38%;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
+@media (min-width: 1025px) {
+  .discount-content {
+    text-align: right !important; 
+    padding-right: 40px;
+  }
+
+  .discount-content .button {
+    margin: 3% 0 !important;
+  }
 }

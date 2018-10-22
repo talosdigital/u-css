@@ -70,12 +70,21 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .navigation a i {
+    color: rgb(108,24,196);
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
+  .navigation a i {
+    color: rgb(255,99,37);
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+  .navigation a i {
+    color: #e91e63;
+  }
 }
