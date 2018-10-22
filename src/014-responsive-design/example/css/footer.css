@@ -83,7 +83,6 @@
 
 .content-down {
   display: none;
-  padding-right: 30px;
 }
 
 .content-down p {
@@ -106,20 +105,52 @@
 }
 
 
-
-
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .footer {
+    background-color: rgb(108,24,196);
+  }
+}
+
+@media (min-width: 769px) {
+  .dropdown-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .content-down {
+    display: initial; 
+  }
+
+  .dropdown-footer {
+    width: 50%;
+    padding: 0 20px 0 0;
+  }
+
+  .dropdown-footer .heading::after {
+    content: none;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
+  .footer {
+    background-color: rgb(255,99,37);
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+  .footer {
+    background-color: #e91e63;
+  }
+
+  .dropdown-footer {
+    width: 25%;
+  }
 }
