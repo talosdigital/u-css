@@ -91,8 +91,13 @@ h1 {
   -webkit-box-shadow: 0 3px 10px #888;
 }
 
-img, .animal-info{
-  transform: rotateY(30deg) translateZ(20px);
+img{
+  transform: rotateY(30deg);
+  transition: transform .5s;
+}
+
+.animal-info{
+  transform: rotateY(30deg) translateZ(50px);
   transition: transform .5s;
 }
 
@@ -291,7 +296,7 @@ img, .animal-info{
     transform: scale(1.05,0.9);  
   }
 }
- 
+
 @media (max-width: 1210px) {
   .article li:last-child  {
     display: none;
