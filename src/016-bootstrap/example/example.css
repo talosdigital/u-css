@@ -1,5 +1,107 @@
 /*
  * Practice : Bootstrap and Material Column System
  * Version: 1
- * By: xxx
+ * By: Laura Alvarez
  */
+ .container {
+ 	padding: 0;
+ }
+
+ .display-3 {
+ 	font-size: 5.5rem;
+ }
+
+ .jumbotron.jumbotron-fluid .container {
+ 	padding: 0 15px;
+ }
+
+ .lead {
+ 	font-size: 1.5rem;
+ }
+
+ h3 {
+ 	font-size: 1.1rem;
+ 	line-height: 20px;
+ }
+
+ .bg-faded {
+ 	background-color: rgb(247, 247, 247);
+ }
+
+ .row {
+ 	display: flex;
+ 	justify-content: space-around;
+ }
+
+ .items {
+ 	width: 100%;
+ }
+
+ .float-left {
+ 	padding-left: 10px;
+ }
+
+ .float-left.block p {
+ 	margin-bottom: 0;
+ }
+
+ .float-left.block a, .card-block a{
+ 	color: rgb(247, 167, 82);
+ }
+
+ .sec-section .card:not(:first-child){
+ 	margin-top: 10px;
+ }
+
+ .list-group-item button {
+ 	border: transparent;
+ 	padding: 0;
+ }
+
+ .sec-section {
+ 	width: 100%;
+ }
+
+ .sec-section .card {
+ 	margin: 0 15px;
+ }
+
+ .card-block button, .card-footer button {
+ 	background-color: rgb(247, 167, 82);
+ 	color: white;
+ }
+
+ .card-group .card {
+ 	margin: 0 15px;
+ }
+
+ .card-group .card:first-child {
+ 	margin-top: 10px;
+ }
+
+ @media only screen and (min-width: 576px) {
+ 	.card-group .card:first-child {
+ 		margin-top: 0;
+ 	}
+
+ 	.card-group .card + .card {
+ 		margin-left: 15px;
+ 		border-left: 1px solid rgba(0,0,0,.125);
+ 	}
+ }
+
+ @media only screen and (min-width: 768px) {
+ 	.items {
+ 		width: 55%;
+ 	}
+
+ 	.sec-section {
+ 		width: 40%;
+ 	}
+ }
+
+ @media only screen and (min-width: 1200px) {
+ 	.card-group .card {
+ 		margin-bottom: 15px;
+ 	}
+ }
