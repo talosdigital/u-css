@@ -1,0 +1,105 @@
+/*
+ * Practice : Float Property
+ * Version: 1
+ * By: Johann Garrido
+ */
+
+.clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header {
+  background-color: #eeeeee;
+  padding: 0 20px;
+}
+
+h1 {
+  float: left;
+  display: block;
+}
+
+nav {
+  background-color: #dddddd;
+  padding: 5px 20px;
+}
+
+nav ul {
+  margin: 0;
+  float: left;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+  margin-right: 10px;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+h2 {
+  margin: 0 0 20px 0;
+}
+
+article {
+  background-color: #cccccc;
+  padding: 20px;
+  width: 70%;
+  float: left;
+  box-sizing: border-box;
+}
+
+article img {
+  float: left;
+  display: block;
+  margin: 0 10px 10px 0;
+}
+
+article p {
+  display: inline;
+}
+
+aside {
+  width: 30%;
+  float: right;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+aside input[type="text"] {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding-left: 3px;
+  height: 24px;
+  border: solid 1px #dcdcdc;
+}
+
+aside ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery {
+  clear: both;
+  background-color: #eeeeee;
+  padding: 20px;
+}
+
+.gallery ul {
+  padding: 0;
+  margin: 0;
+}
+
+.gallery li {
+  list-style-type: none;
+  float: left;
+  margin: 0 10px 10px 0;
+}
