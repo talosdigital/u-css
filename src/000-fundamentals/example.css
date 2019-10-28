@@ -1,0 +1,93 @@
+/* Practice Layout */
+
+article {
+    float: right;
+    width: 70%;
+    background-color: darkgrey;
+    box-sizing: border-box;
+    min-height: 700px;
+}
+
+aside {
+    float: left;
+    width: 30%;
+    background-color: slategray;
+    box-sizing: border-box;
+    min-height: 700px;
+}
+
+header {
+    padding: 10px 0 10px 10px;
+    background-color: darkgray;
+}
+
+nav li {
+    display: inline;
+    padding: 8px;
+}
+
+section img {
+    float: left;
+    padding: 10px;
+}
+
+ul {
+    padding-left: 10px;
+}
+
+.background-light {
+    background-color: lightgray;
+}
+
+.common-padding {
+    padding: 15px;
+}
+
+.clear {
+    clear: both;
+}
+
+.footer-border {
+    border: 1px solid green;
+}
+
+.img-left {
+    float: left;
+}
+
+.img-right {
+    float: right;
+}
+
+.initial-letter {
+    text-transform: uppercase;
+    font-size: 24px;
+    float: left;
+    padding: 5px;
+}
+
+.input-margin {
+    margin: 0 0 15px 0;
+}
+
+.mdl-layout__content {
+    padding-left: 600px;
+    padding-right: 600px;
+}
+
+.section-bottom {
+    background-color: darkgray;
+}
+
+.section-bottom:after, .gallery:after, footer:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.trash{
+	color: black;
+}
+
